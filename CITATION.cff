@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  If this repository helps you, you may cite it as below. It is an informal,
+  work-in-progress synthesis of published research, written with Claude, an AI
+  assistant by Anthropic. It is not an official standard, not peer-reviewed,
+  and not a new result.
+title: "recursive-atom (work in progress)"
+abstract: >-
+  One template for a unit of writing whose parts can be units of the same
+  template, so that any body of information is written as a tree that reads
+  the same way at every depth. It builds on reader-ergonomics. Set up, not
+  started: its first job is a literature review.
+type: software
+authors:
+  - name: "Tewf"
+repository-code: "https://github.com/Tewf/recursive-atom"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - documentation
+  - templates
+  - recursion
+  - hierarchical structure
+  - literature review
