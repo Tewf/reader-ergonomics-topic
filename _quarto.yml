@@ -17,6 +17,11 @@ website:
   repo-actions: [source, issue]
   page-navigation: true
   navbar:
+    left:
+      - text: Evidence
+        href: evidence/index.qmd
+      - text: Bibliography
+        href: evidence/bibliography.md
     right:
       - text: The standard
         href: https://tewf.github.io/reader-ergonomics/

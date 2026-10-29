@@ -1,0 +1,82 @@
+# Evidence
+
+One literature review per topic, in the steps reader-ergonomics uses for its own
+[evidence](https://github.com/Tewf/reader-ergonomics/tree/master/evidence): frame, review, state of the art, position, the
+case against, baseline. Every work cited is listed once in the [bibliography](bibliography.md).
+
+| Topic | Question | The repository's question it answers |
+|---|---|---|
+| [typed-units](typed-units/) | how a unit of writing is given a type derived from a base, so a reader who knows the base reads every derivative | genres |
+| [recursive-depth](recursive-depth/) | how a tree of units nested to any depth is shown, so the top levels are kept and any leaf is reached | depth |
+| [node-model](node-model/) | how a unit that holds units of its own type is stored, reused and checked by a program | self-reference, graphs |
+
+## Method
+
+Each topic is a **multivocal literature review**: research and **grey literature** (standards, company practice,
+practitioner books, tools, Q/A sites) in one review, built to a written protocol after Garousi 2019. Two files in each
+topic make the review checkable and rerunnable:
+
+| File | What it holds |
+|---|---|
+| `protocol.md` | why grey literature is included, the questions, every search string with its date and count, the stopping rule, the selection criteria |
+| `sources.md` | every included source, how it was found, and its quality: the evidence grade for research, a score out of 20 for grey literature |
+
+A grey source is scored on Garousi's 20 criteria, in eight groups. The `sources.md` tables abbreviate them: A authority
+(of 4), M methodology (6), O objectivity (4), D date (1), P position among related sources (1), N novelty (2), I impact
+(1), T outlet tier (1). Below 10 of 20 it may illustrate what practice does, but it never supports a claim.
+
+Each review keeps the form most used in practice apart from the best tested one; practice counts as evidence only
+where a study measured its effect.
+
+The three topics share these rules, which their protocols do not repeat:
+
+- **Why grey literature:** each protocol answers the seven questions of Garousi 2019, Table 4; one yes suggests
+  including grey literature.
+- **Q/A sites:** threads are read through the Stack Exchange API, by the method of the software-design-writing
+  [architecture-descriptions protocol](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/protocol.md#qa-sites):
+  its stopping parameters, its API call, how a thread is read and scored, and its limits.
+- **Limits:** search engines personalise and change, so counts differ on a repeat. OpenAlex counts are missing, since
+  its anonymous quota was spent on the day. Semantic Scholar and arXiv counts are not phrase-exact.
+- A number read only in an abstract or a summary is marked "(secondary)".
+- None of these reviews is a standard, a new result, or a claim to the state of the art.
+
+**Second rater.** A second rater re-scored, blind, every fifth scored grey source of the three topics (15 of 82):
+
+- inclusion: the raters agreed on 14 of 15, Cohen's kappa 0.76, unstable at this size (bootstrap 0.00 to 1.00);
+- totals: mean absolute difference 1.20 of 20, the second rater 0.27 points lower;
+- the raters differed most on objectivity (0.63) and methodology (0.57), least on outlet tier (0.03);
+- one source fell below 10 for the second rater (SO 2015b, 11.5 against 9.5), and it is now an example of practice only;
+- seven of the fifteen are Q/A threads, which both raters read through the Stack Exchange API.
+
+## What these reviews do not repeat
+
+Works already reviewed in a sibling repository are linked there, with one line of context, and not reviewed again:
+
+| Repository and topic | Holds |
+|---|---|
+| reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/psycholinguistics) | the levels effect, rhetorical structure theory |
+| reader-ergonomics [file-structure](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/file-structure) | depth against breadth of menus and folders |
+| reader-ergonomics [reading-order](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/reading-order) | advance organizers, elaboration theory and zoom-lens sequencing |
+| reader-ergonomics [learning-science](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/learning-science) | atomic notes, hypertext load, signaling |
+| reader-ergonomics [documentation](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/documentation) | Diataxis and documentation types |
+| reader-ergonomics-academic [academic-papers](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/academic-papers) | IMRaD, moves and steps (Swales) |
+| reader-ergonomics-academic [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/mathematical-writing) | structured proofs |
+| reader-ergonomics-presentations [presentations](https://github.com/Tewf/reader-ergonomics-presentations/tree/master/evidence/presentations) | Minto, assertion-evidence, slide builds |
+| software-design-writing [pseudocode](https://github.com/Tewf/software-design-writing/tree/master/evidence/pseudocode), [architecture-descriptions](https://github.com/Tewf/software-design-writing/tree/master/evidence/architecture-descriptions) | stepwise refinement; C4, arc42 and ISO 42010 |
+
+A key names one work across all five repositories: the keys here were checked by script against the four other
+bibliographies. One key differs on purpose. Horn 1969 here is the 1969 report itself; reader-ergonomics still cites an
+encyclopedia page under it, and will change at its next release.
+
+## Audit
+
+- Every DOI was resolved against Crossref when the reviews were written.
+- On 2026-10-29, the numbers behind four conclusions were checked against the primary text:
+  - Furnas 1986, fisheye against flat views (pages 20 and 21 of the paper);
+  - Horn 1969, typed maps against prose (the report's results table and t test);
+  - He 2026, levels of disclosure for agents (full text);
+  - Juergens 2010, clone coverage (its table).
+- All were correct. One line had left out a condition: Furnas's mixed view, 64%, now stands beside 52% and 75%.
+- Laitenberger 2025 and He 2026 were checked to exist, with their authors, in the arXiv record.
+- Not done: an audit of every numeric line, as the sibling repositories ran. Claims without a number were not audited
+  this way.
