@@ -95,7 +95,9 @@ summary does not.
 
 ## Depth
 
-- **In storage, any depth.** A topic may hold topics that hold topics.
+- **In storage, any depth.** A topic may hold topics that hold topics. In this repository the front page holds
+  [the evidence](../evidence/README.md), which holds three reviews, each holding its steps: three levels below the root,
+  each topic listed by its parent with its summary.
 - **In view, at most three levels.** A view shows the topic, its children by their summaries, and one level more.
 - **The path to the root is always there.** A topic read alone names its parent in See also; the site shows the full
   path.
@@ -108,6 +110,24 @@ summary does not.
 - **Any other parent points to it.** It links the topic and never copies it.
 - **No topic contains itself**, directly or through an inclusion, at any depth.
 - Grade: convention, the rule of every document model read ([document model](../evidence/document-model/position.md)).
+
+## When a part becomes a topic
+
+A part of a topic is a section of its file until one of these holds; then it becomes a topic, in a file of its own.
+
+- **It is used from a second place.** A unit with two parents is reused by a link, never by a copy or a second
+  nesting ([document model](../evidence/document-model/position.md)).
+- **A reader can take it alone.** It has a summary that stands for it without its parent, the topic's own
+  definition, and it carries what its reader needs without its first context.
+- **Its role differs from its parent's.** It follows another shape, or it changes for other reasons, as
+  reader-ergonomics' [one role per file](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/collection/one-role-per-file.md) asks.
+- **It would take its parent past three levels of headings.** The outline stays shallow; the deeper part moves down
+  a level of topics instead.
+
+Otherwise it stays a section: a part cut from its context loses it, as translators of segmented content report (Batova 2014,
+through the [document model](../evidence/document-model/position.md) review). The check reads files, so a section is never a topic.
+
+- Grade: convention, untested, drawn from the rules above; no study measured when to split.
 
 ## The check
 
