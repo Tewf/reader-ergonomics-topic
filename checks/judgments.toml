@@ -93,14 +93,14 @@ answer = "One links the other already: the front page lists the `decisions` fold
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "f4050fd4341c"
+file = "a8bbbad76a62"
 answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
 
 [[answer]]
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "f4050fd4341c"
+file = "a8bbbad76a62"
 answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md`, under `[shape_conformance]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
 
 [[answer]]

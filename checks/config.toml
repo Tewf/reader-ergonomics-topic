@@ -11,7 +11,7 @@ listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing i
 summary_labels = ["summary", "abstract", "short description", "decision"]   # the accepted names of the summary (shapes/topic.md)
 summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
 typed = []           # children listed by type name alone; this repository lists every child with its summary
-shapes = { decision-record = ["decisions/0*.md"] }   # the files that follow a shape, here the standard's, and must link it
+shapes = { decision-record = ["decisions/0*.md"], topic = ["decisions/README.md"] }   # files that follow a shape and must link it
 
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]
