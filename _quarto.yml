@@ -18,6 +18,8 @@ website:
   page-navigation: true
   navbar:
     left:
+      - text: The topic
+        href: shapes/topic.md
       - text: Evidence
         href: evidence/index.qmd
       - text: Bibliography

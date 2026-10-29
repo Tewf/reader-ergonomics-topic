@@ -12,8 +12,8 @@ The name is the field's own. A **topic** is the unit of DITA and of topic-based 
 ([progressive disclosure](evidence/progressive-disclosure/frame.md)).
 
 > **Status:** the literature review is done (2026-10-29): three multivocal reviews, 218 sources, in
-> [evidence](evidence/). The topic template itself is not written yet. It is not an official standard, not a peer-reviewed study
-> and not a new result.
+> [evidence](evidence/). The topic template and its check are written; no reader study has tested them. It is not
+> an official standard, not a peer-reviewed study and not a new result.
 >
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
@@ -71,13 +71,24 @@ Each answer links the review that holds its evidence; a grade says how strong th
 The comparison measures finding, gist against detail, recall after a delay, transfer to a derived type never seen,
 and what a program check catches. Each review's `baseline.md` gives the design.
 
-## Next: the topic template
+## The topic template
 
-1. Write the topic template: a base of a few blocks, each traced to a principle of reader-ergonomics and to the evidence here.
-2. Derive the existing genre shapes from it, as the topic plus what each shape changes. A shape that cannot be derived
-   without loss shows the base is wrong.
-3. Write the one check a program runs on a topic at any depth.
-4. Compare with the baseline above.
+| Part | Summary |
+|---|---|
+| [shapes](shapes/) | the topic, the base every shape derives from, and how the four general shapes of reader-ergonomics fit it |
+| [the check](checks/local/topic.py) | runs on every topic of this repository, at any depth: title, summary, listed by its parent with that summary, no inclusion cycle |
+
+- The topic has five blocks: title, summary, body, contents and see also. Each is traced to a principle of
+  reader-ergonomics and to the evidence here ([topic](shapes/topic.md)).
+- The four general shapes all fit, with two renames and one merge: a commit's subject line is both its title and its
+  summary ([the table](shapes/README.md)).
+- This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
+  [checks/test_topic.py](checks/test_topic.py).
+
+## Next
+
+1. Compare the topic with the baseline above, on readers: the design is in each review's `baseline.md`.
+2. The genre extensions may derive their shapes from the topic; each would say so in its own repository.
 
 ## Check it
 
