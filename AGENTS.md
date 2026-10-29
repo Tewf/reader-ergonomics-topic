@@ -30,12 +30,14 @@ this file is about this repository only.
 
 ## Before handing back
 
-Run them against the release CI uses, not a checkout that may have moved on: extract it once with
-`git -C ../reader-ergonomics archive adb53c5 | tar -x -C ../re-v1.12.0`.
+Run them against the release CI uses, not a checkout that may have moved on. Extract it inside this repository, in
+`checks/out/standard`, which git and the checks both skip (reader-ergonomics extending.md, Versions):
 
 ```sh
-READER_ERGONOMICS_CHECKS=../re-v1.12.0/checks python3 -m unittest discover -s checks   # the topic check's tests
-python3 ../re-v1.12.0/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
+rm -rf checks/out/standard && mkdir -p checks/out/standard
+git -C ../reader-ergonomics archive adb53c5 | tar -x -C checks/out/standard   # the commit checks.yml pins
+READER_ERGONOMICS_CHECKS=checks/out/standard/checks python3 -m unittest discover -s checks   # the topic check's tests
+python3 checks/out/standard/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
 ```
 
 - Fix every error. Read every warning.
