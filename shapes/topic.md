@@ -50,14 +50,26 @@ The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL
    see also: Links
 ```
 
-- **Keep every block.** A derived shape keeps all five. It may rename one (a note calls See also "Links") and must
-  say so. It may leave Contents or See also empty while there is nothing to hold.
+- **Keep every block.** A derived shape keeps all five. It may call a block by another of its accepted names, from
+  the table below, and by no other. It may leave Contents or See also empty while there is nothing to hold.
 - **Title and summary come first**, in that order: they are what a folded view shows. Only metadata may stand between
   them. The other blocks may be ordered by the shape.
 - **Add, never remove.** A shape adds its own blocks, such as a note's Check yourself.
-- **Announce the type.** A document says which shape it is, so a reader knows which blocks to expect.
+- **Announce the type.** A document links the shape it follows, so a reader knows which blocks to expect, and the
+  check knows which to look for.
 - Grade: convention, untested. Whether a reader who knows the topic reads a derived shape better is the open question
   of [information typing](../evidence/information-typing/position.md).
+
+The accepted names, in one place. A shape that needs a new name adds it here first, with the shape that uses it:
+
+| Block | Accepted names | Used by |
+|---|---|---|
+| Title | the one `# ` heading; a subject line | every shape; a commit |
+| Summary | summary, abstract, short description, decision | the topic; papers; DITA; the [decision record](decision-record.md) |
+| Contents | contents, files, steps | the topic and a folder; a review's README; a report |
+| See also | see also, links, references, uses | the topic and a folder; a note; papers; a proof |
+
+The derived shapes of this repository: the [decision record](decision-record.md).
 
 The four general shapes of reader-ergonomics, and six forms of the genre extensions it was not built from, are
 checked against these rules in [the conformance table](README.md). Five of the six fit; a decision record without a

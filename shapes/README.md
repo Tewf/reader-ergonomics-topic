@@ -8,6 +8,7 @@ are not copied here: each is linked at the release this repository checks agains
 | Topic | Summary |
 |---|---|
 | [topic](topic.md) | the base: a title, a summary that stands for it, a body, the topics it holds and the topics it points to |
+| [decision record](decision-record.md) | the first shape derived from the topic here: Nygard's record, with a one-sentence decision as its summary |
 
 ## The four general shapes, against the topic
 

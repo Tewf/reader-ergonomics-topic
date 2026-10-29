@@ -2,7 +2,7 @@
 
 **Decision:** the unit this repository defines is called a topic, the word of DITA and of topic-based authoring.
 
-Status: accepted, 2026-10-29.
+Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 

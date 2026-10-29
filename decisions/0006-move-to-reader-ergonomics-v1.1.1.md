@@ -2,7 +2,7 @@
 
 **Decision:** this repository checks against reader-ergonomics v1.1.1, at commit 257958e, instead of v1.0.0.
 
-Status: accepted, 2026-10-29.
+Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 

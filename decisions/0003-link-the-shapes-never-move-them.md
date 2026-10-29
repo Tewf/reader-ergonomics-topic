@@ -3,7 +3,7 @@
 **Decision:** the four general shapes stay in reader-ergonomics; this repository links down to them and shows from its
 own side that each fits the topic.
 
-Status: accepted, 2026-10-29. It replaces a plan withdrawn the same day.
+Status: accepted, 2026-10-29. It replaces a plan withdrawn the same day. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 
