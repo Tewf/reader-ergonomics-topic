@@ -91,6 +91,8 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 - On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
   Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared
   as types.
+- The first shape derived from the topic is the [decision record](shapes/decision-record.md). This repository's own
+  decision records follow it, and the check verifies that each one says so.
 - This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
   [checks/test_topic.py](checks/test_topic.py).
 

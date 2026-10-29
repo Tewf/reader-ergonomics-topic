@@ -3,7 +3,7 @@
 **Decision:** the evidence is split into three multivocal reviews, one per part of the topic: its types, its display
 at depth, its storage.
 
-Status: accepted, 2026-10-29.
+Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 

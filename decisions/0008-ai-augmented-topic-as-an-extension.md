@@ -1,15 +1,16 @@
-# 0007 A branch for the AI-augmented topic
+# 0008 The AI-augmented topic, as this repository's extension
 
-**Decision:** the AI-augmented topic starts on its own branch of this repository. It has one problem, the topic as
-the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
+**Decision:** the AI-augmented topic is this repository's extension, started on its own branch. It has one problem,
+the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
 
-Status: accepted, 2026-10-29.
+Status: accepted, 2026-10-29; it joins master once its review names a baseline. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 
 - The maintainer proposed a loop. A person writes reasoning as topics, and checks judge the form. A model helps and
   translates formal topics into Lean, Lean judges the logic, and the model turns its verdict into guidance.
 - A project that attacks many problems at once stalls; the idea touches writing, models and formal proof together.
+- The maintainer judged the topic alone too thin to stand as a repository, and chose to keep the extension here.
 
 ## Decision
 
@@ -19,7 +20,7 @@ Status: accepted, 2026-10-29.
 
 ## Consequences
 
-- If the work grows into its own problem, it moves to its own repository, in the family's naming scheme.
+- It stays in this repository, as the topic's extension: the topic gives it its format, and it gives the topic a use.
 - Nothing is built before the review names the baseline to beat.
 
 ## See also

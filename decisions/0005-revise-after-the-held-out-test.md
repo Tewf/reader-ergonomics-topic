@@ -3,7 +3,7 @@
 **Decision:** the topic allows metadata before the summary, names the summary's labels, and lets a typed child be
 listed by its type; the Nygard decision record stays outside it as written.
 
-Status: accepted, 2026-10-29, released as v0.2.0.
+Status: accepted, 2026-10-29, released as v0.2.0. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 

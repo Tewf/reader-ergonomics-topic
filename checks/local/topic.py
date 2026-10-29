@@ -13,7 +13,8 @@ has none. Following parents from any topic reaches the root, so the rules hold a
 - listed: the parent links the topic, so a reader can reach it from the root (exact);
 - with its summary: the parent's listing carries at least `listing_words` words beside the link, unless the
   child is of a type named in `typed`, whose role is stated once where the type is defined (heuristic);
-- no inclusion cycle among `{{< include >}}` shortcodes, in any markdown file (exact).
+- no inclusion cycle among `{{< include >}}` shortcodes, in any markdown file (exact);
+- announced: a file that `[topic] shapes` declares of a shape links that shape's file, `shapes/<name>.md` (exact).
 
 Heading depth, links that resolve and the headings a shape requires are reader-ergonomics' own checks.
 Time O(text) for the blocks and the links, O(files + inclusions) for the cycles.
@@ -21,7 +22,8 @@ Time O(text) for the blocks and the links, O(files + inclusions) for the cycles.
 What a run with no error guarantees, for the files `[topic] files` declares:
 - each opens with one `# ` title, followed by a summary block, or by one an allowed label marks;
 - each but the root is linked from its containing topic, so a chain of links leads from the root to it;
-- no markdown file in scope includes itself through `{{< include >}}`, directly or at any depth.
+- no markdown file in scope includes itself through `{{< include >}}`, directly or at any depth;
+- each file declared of a shape links that shape, so a reader knows which blocks to expect.
 
 What it does not guarantee:
 - that a summary stands for its topic, or that a listing repeats the child's own summary (meaning);
@@ -66,6 +68,7 @@ def check(root: Path, config: dict) -> list[Finding]:
     labels = [label.lower() for label in settings.get("summary_labels", ["summary", "abstract"])]
     within = settings.get("summary_within", 4)
     typed = set(settings.get("typed", []))
+    shapes = settings.get("shapes", {})
     markdown = files_in_scope(root, config, MARKDOWN_SUFFIXES)
     topics = {path for path in markdown
               if path.endswith(".md") and matches_any(path, patterns) and not matches_any(path, exempt)}
@@ -73,6 +76,7 @@ def check(root: Path, config: dict) -> list[Finding]:
     for path in sorted(topics):
         text = (root / path).read_text(encoding="utf-8", errors="replace")
         findings += opening(path, text, summary_words, labels, within)
+        findings += announced(root, path, text, shapes)
         if path == root_topic:
             continue
         parent = containing(path, topics)
@@ -113,6 +117,19 @@ def opening(path: str, text: str, summary_words: int, labels: list[str], within:
         found.append(Finding(NAME, path, summary.line,
                              f"a summary of {words(summary.text)} words, past {summary_words}: "
                              "it no longer stands for the topic when folded", "warning"))
+    return found
+
+
+def announced(root: Path, path: str, text: str, shapes: dict) -> list[Finding]:
+    """A file declared of a shape links that shape's file."""
+    found = []
+    for name, patterns in shapes.items():
+        if not matches_any(path, patterns):
+            continue
+        targets = {target_of(path, match.group(2), root) for match in LINK.finditer(prose_only(text))}
+        if f"shapes/{name}.md" not in targets:
+            found.append(Finding(NAME, path, 1, f"declared a {name} but does not link shapes/{name}.md: "
+                                                "announce the shape, so a reader knows which blocks to expect"))
     return found
 
 

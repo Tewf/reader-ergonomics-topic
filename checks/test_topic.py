@@ -26,7 +26,8 @@ CONFIG = {"topic": {"files": ["README.md", "docs/"], "root": "README.md", "summa
 TOPIC = "# {title}\n\nA short summary of this topic.\n\nBody.\n"
 
 
-class TopicCheck(unittest.TestCase):
+class Base(unittest.TestCase):
+    """A temporary repository, and the helpers every test class shares; no tests of its own."""
     def setUp(self) -> None:
         self.root = Path(tempfile.mkdtemp())
 
@@ -50,6 +51,8 @@ class TopicCheck(unittest.TestCase):
             folder = child
         self.write(f"{folder}README.md", TOPIC.format(title="Leaf"))
 
+
+class TopicCheck(Base):
     def test_a_tree_at_any_depth_passes(self) -> None:
         self.tree(5)
         self.assertEqual(self.found(), [])
@@ -134,7 +137,7 @@ class TopicCheck(unittest.TestCase):
         self.assertEqual(found, [("docs/other.md", "warning")])
 
 
-class ErrorPaths(TopicCheck):
+class ErrorPaths(Base):
     """Inputs a careless check would crash on, or pass silently."""
 
     def test_an_empty_topic_fails_without_crashing(self) -> None:
@@ -173,6 +176,32 @@ class ErrorPaths(TopicCheck):
         self.write("README.md", TOPIC.format(title="Root"))
         self.write("a.qmd", "{{< include a.qmd >}}\n")
         self.assertIn("inclusion cycle: a.qmd -> a.qmd", [message for _, _, message in self.found()])
+
+
+class Announced(Base):
+    """A file declared of a shape links that shape's file."""
+
+    def config(self) -> dict:
+        return {"topic": dict(CONFIG["topic"], shapes={"decision-record": ["docs/0*.md"]})}
+
+    def setup_tree(self, record: str) -> None:
+        self.write("README.md", TOPIC.format(title="Root") + "\n- [docs](docs/README.md): where the records live\n")
+        self.write("docs/README.md", TOPIC.format(title="Docs") + "\n- [one](0001-one.md): the first record, in full\n")
+        self.write("docs/0001-one.md", record)
+
+    def test_a_record_that_links_its_shape_passes(self) -> None:
+        self.setup_tree(TOPIC.format(title="0001 One") + "\nShape: [decision record](../shapes/decision-record.md).\n")
+        self.assertEqual([f.message for f in topic.check(self.root, self.config())], [])
+
+    def test_a_record_that_does_not_announce_its_shape_fails(self) -> None:
+        self.setup_tree(TOPIC.format(title="0001 One"))
+        messages = [f.message for f in topic.check(self.root, self.config())]
+        self.assertEqual(len(messages), 1)
+        self.assertTrue(messages[0].startswith("declared a decision-record but does not link shapes/decision-record.md"))
+
+    def test_a_link_inside_code_is_not_an_announcement(self) -> None:
+        self.setup_tree(TOPIC.format(title="0001 One") + "\n`[decision record](../shapes/decision-record.md)`\n")
+        self.assertEqual(len(topic.check(self.root, self.config())), 1)
 
 
 def random_tree(root: Path, rng: random.Random) -> list[str]:

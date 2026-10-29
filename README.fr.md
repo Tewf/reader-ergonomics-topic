@@ -90,6 +90,8 @@ donne le plan.
 - Sur six formes des extensions de genre dont il n'a pas été tiré, cinq s'ajustent ; un compte rendu de décision
   sans résumé ne s'ajuste pas. Exécutée sur ces trois dépôts, 113 documents, la vérification trouve 7 défauts une
   fois leurs étapes de revue déclarées comme types.
+- La première forme dérivée du topic est le [compte rendu de décision](shapes/decision-record.md). Les comptes
+  rendus de ce dépôt la suivent, et la vérification contrôle que chacun le déclare.
 - Ce dépôt est son propre premier arbre de topics : la vérification s'y exécute en CI, et ses tests sont dans
   [checks/test_topic.py](checks/test_topic.py).
 

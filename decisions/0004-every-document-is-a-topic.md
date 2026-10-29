@@ -2,7 +2,7 @@
 
 **Decision:** every document of this repository is declared a topic, and the topic check runs on all of them in CI.
 
-Status: accepted, 2026-10-29.
+Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
 
 ## Context
 

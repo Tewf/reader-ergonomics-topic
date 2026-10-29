@@ -4,12 +4,12 @@ An answer is a claim about one file, and its reason is the evidence. A reason co
 name words this file does not hold, and still pass every other check. So:
 
 - every phrase an answer quotes in backticks must occur in its file, ignoring case and runs of spaces (exact);
-- an answer to a question about a file's content (the checks named in `[judgment_quotes] require`) must quote at
-  least one phrase, so its reason can be checked at all (exact).
+- an answer to a question named in `[judgment_quotes] require` must quote at least one phrase, so its reason can be
+  checked at all (exact).
 
-Questions about paths, such as a folder's size or two files changing together, are exempt from the second rule; their
-quotes, if any, are still checked against the file when the path is one. An answer for a file that no longer exists
-is left to the standard, which drops it.
+A question about a path is answered from the path: for a folder, each quote must be the name of an entry in it; for
+two files changing together, a quote may also be the other file the question names. An answer for a path that no
+longer exists is left to the standard, which drops it.
 
 What a clean run guarantees: every quoted phrase is in the answered file as it is now. What it does not: that the
 reason is right, or that the quote supports it. Reading decides that.
@@ -27,7 +27,7 @@ NAME = "judgment-quotes"
 EXACT = True
 
 QUOTE = re.compile(r"`([^`]+)`")
-REQUIRE = ["document-mode", "logical-lines", "figures-present", "paraphrase", "name-content"]
+REQUIRE = ["document-mode", "logical-lines", "figures-present", "paraphrase", "name-content", "tree-shape", "co-change"]
 
 
 def flat(text: str) -> str:
@@ -51,13 +51,17 @@ def check(root: Path, config: dict) -> list[Finding]:
         anchor = f'check = "{kind}"\npath = "{path}"'
         line = raw[:raw.find(anchor)].count("\n") + 1 if anchor in raw else 1
         quotes = QUOTE.findall(reason)
-        if not target.is_file():
+        if target.is_dir():
+            text = " | ".join(flat(entry.name) for entry in target.iterdir())
+        elif target.is_file():
+            text = flat(target.read_text(encoding="utf-8", errors="replace")) + " | " + flat(answer.get("question", ""))
+        else:
             continue
-        text = flat(target.read_text(encoding="utf-8", errors="replace"))
         for quote in quotes:
             if flat(quote) not in text:
+                where = "an entry of that folder" if target.is_dir() else "in that file"
                 findings.append(Finding(NAME, "checks/judgments.toml", line,
-                                        f"the answer for {path} ({kind}) quotes `{quote}`, which is not in that file"))
+                                        f"the answer for {path} ({kind}) quotes `{quote}`, which is not {where}"))
         if kind in require and reason and not quotes:
             findings.append(Finding(NAME, "checks/judgments.toml", line,
                                     f"the answer for {path} ({kind}) quotes nothing from its file: put a word or "

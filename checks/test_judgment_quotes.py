@@ -52,12 +52,23 @@ class JudgmentQuotes(unittest.TestCase):
         found = self.run_on(entry("logical-lines", "b.md", "One role. It stays whole."))
         self.assertTrue(found and found[0].startswith("the answer for b.md (logical-lines) quotes nothing"))
 
-    def test_a_path_question_needs_no_quote(self) -> None:
-        self.assertEqual(self.run_on(entry("co-change", "a.md", "They change together by design.")), [])
+    def test_a_path_question_needs_a_quote_too(self) -> None:
+        found = self.run_on(entry("co-change", "a.md", "They change together by design."))
+        self.assertTrue(found and found[0].startswith("the answer for a.md (co-change) quotes nothing"))
 
-    def test_a_folder_or_a_missing_file_is_left_alone(self) -> None:
-        self.assertEqual(self.run_on(entry("tree-shape", "checks", "It stays: `nothing here`."),
-                                     entry("document-mode", "gone.md", "Reference: `anything`.")), [])
+    def test_a_folder_answer_quotes_an_entry_of_the_folder(self) -> None:
+        (self.root / "box").mkdir()
+        (self.root / "box" / "one.py").write_text("x", encoding="utf-8")
+        self.assertEqual(self.run_on(entry("tree-shape", "box", "It stays: it holds `one.py`.")), [])
+        found = self.run_on(entry("tree-shape", "box", "It stays: it holds `two.py`."))
+        self.assertEqual(found, ["the answer for box (tree-shape) quotes `two.py`, which is not an entry of that folder"])
+
+    def test_a_co_change_answer_may_quote_the_other_file_the_question_names(self) -> None:
+        text = '[[answer]]\ncheck = "co-change"\npath = "a.md"\nquestion = "changed together with b.md in 3 commits"\nfile = "x"\nanswer = "By design: `b.md` tests it."\n'
+        self.assertEqual(self.run_on(text), [])
+
+    def test_a_missing_path_is_left_alone(self) -> None:
+        self.assertEqual(self.run_on(entry("document-mode", "gone.md", "Reference: `anything`.")), [])
 
     def test_no_answers_file_means_no_findings(self) -> None:
         self.assertEqual(quotes.check(self.root, {}), [])
