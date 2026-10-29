@@ -1,4 +1,4 @@
-# 0008 The AI-augmented topic, as this repository's extension
+# 0009 The AI-augmented topic, as this repository's extension
 
 **Decision:** the AI-augmented topic is this repository's extension, started on its own branch. It has one problem,
 the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.

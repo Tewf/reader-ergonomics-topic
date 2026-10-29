@@ -14,7 +14,8 @@ then its status, context, decision and consequences, the Nygard form with the su
 | [0005 Revise after the held-out test](0005-revise-after-the-held-out-test.md) | metadata before the summary, labelled summaries, typed children |
 | [0006 Move to reader-ergonomics v1.1.1](0006-move-to-reader-ergonomics-v1.1.1.md) | the pin moves to the standard's new release |
 | [0007 Derive the decision records from the topic](0007-derive-the-decision-records-from-the-topic.md) | the first derived shape, used and checked here |
-| [0008 The AI-augmented topic, as an extension](0008-ai-augmented-topic-as-an-extension.md) | on its own branch until its review names a baseline; one problem, proofs in Lean first |
+| [0008 Move to v1.2.0, drop the local quote check](0008-move-to-v1.2.0-and-drop-the-local-quote-check.md) | the standard now carries the check, kept strict here |
+| [0009 The AI-augmented topic, as an extension](0009-ai-augmented-topic-as-an-extension.md) | on its own branch until its review names a baseline; one problem, proofs in Lean first |
 
 ## See also
 
