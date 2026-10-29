@@ -92,7 +92,7 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 
 - Jimeno Yepes 2024: chunking financial reports by element type improved retrieval-augmented question answering over paragraph chunks (preprint, abstract).
 - Mortezaagha 2026: structure-aware retrieval for models reading a tree, reviewed in [progressive-disclosure](../progressive-disclosure/review.md); its trade-off is in [against](against.md).
-- No study was found that gives a model DITA topic types or Information Mapping blocks and measures the answer. General findings on layout and models: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/evidence/llm-readers/frame.md).
+- No study was found that gives a model DITA topic types or Information Mapping blocks and measures the answer. General findings on layout and models: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/llm-readers/frame.md).
 
 ## 8. Practice
 
@@ -101,7 +101,7 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 | Information Mapping (Horn 1969; Information Mapping 2026) | 1969 | blocks in maps; eight map types in 1969 | company page: nine gains, such as +83% initial learning and -51% reading time, credited to Horn's studies without a reference (example only) |
 | DITA (OASIS 2015) | OASIS Standard 1.0 in 2005; 1.3 on 2015-12-17 | topic, then concept, task, reference | 802 firms listed by DITAWriter 2026; DITA-OT 2026 repository, 458 stars |
 | Kubernetes 2026b | page dated 2026-05-03 | concept, task, tutorial, reference | the project's contributor style guide; no use count |
-| Red Hat 2026b; GitLab 2026 | undated | concept, procedure, reference modules; topic types | reviewed in [documentation](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/evidence/documentation/review.md) |
+| Red Hat 2026b; GitLab 2026 | undated | concept, procedure, reference modules; topic types | reviewed in [documentation](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/documentation/review.md) |
 | SchemaOrg 2026 | 2026-08 counts | CreativeWork, then HowTo, then Recipe; Article, then TechArticle | HowTo on 100K to 1M domains; TechArticle and Recipe on 10K to 100K |
 | Baker 2013 | 2013 | eight traits of a topic, one of them that it conforms to a type | publisher page |
 

@@ -31,11 +31,11 @@ folder and whose Contents table lists each record by its title and summary.
 
 | Block | Rule | Principle | Evidence |
 |---|---|---|---|
-| Title | one per topic; it names what the topic holds | [names predict content](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/collection/names-predict-content.md) | DITA requires a title on every topic ([information typing](../evidence/information-typing/review.md)) |
-| Summary | right after the title, or after its metadata (a byline, a status); at most 60 words; it may be labelled Abstract or Summary; it stands for the topic when folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
-| Body | the parts in the reader's order; at most three heading levels | [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/document/shallow-outline.md) | readers keep the top levels best (levels effect, reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/7a76cc6a86b7a5c1e451e4416534d113abd0f594/evidence/psycholinguistics)) |
-| Contents | each child by its title and its summary, or by its type alone when the type's role is stated once | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
-| See also | links, never copies | [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/collection/one-place-per-fact.md) | the standards reuse by reference ([document model](../evidence/document-model/position.md)) |
+| Title | one per topic; it names what the topic holds | [names predict content](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/collection/names-predict-content.md) | DITA requires a title on every topic ([information typing](../evidence/information-typing/review.md)) |
+| Summary | right after the title, or after its metadata (a byline, a status); at most 60 words; it may be labelled Abstract or Summary; it stands for the topic when folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
+| Body | the parts in the reader's order; at most three heading levels | [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/document/shallow-outline.md) | readers keep the top levels best (levels effect, reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/psycholinguistics)) |
+| Contents | each child by its title and its summary, or by its type alone when the type's role is stated once | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
+| See also | links, never copies | [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/collection/one-place-per-fact.md) | the standards reuse by reference ([document model](../evidence/document-model/position.md)) |
 
 The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL until a reader study sets it.
 
@@ -81,11 +81,11 @@ The accepted names, in one place. A shape that needs a new name adds it here fir
 | Block | Accepted names | Used by |
 |---|---|---|
 | Title | the one `# ` heading; a subject line | every shape; a commit |
-| Summary | summary, abstract, short description, decision | the topic; papers; DITA; the [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md) |
+| Summary | summary, abstract, short description, decision | the topic; papers; DITA; the [decision record](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/decision-record.md) |
 | Contents | contents, files, steps | the topic and a folder; a review's README; a report |
 | See also | see also, links, references, uses | the topic and a folder; a note; papers; a proof |
 
-The [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md) was first written here, then moved down to reader-ergonomics (v1.3.0), where three
+The [decision record](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/decision-record.md) was first written here, then moved down to reader-ergonomics (v1.3.0), where three
 levels can link it; it fits the topic like the four general shapes. The topic's own derived shapes will come from
 its extension.
 
@@ -122,7 +122,7 @@ A part of a topic is a section of its file until one of these holds; then it bec
 - **A reader can take it alone.** It has a summary that stands for it without its parent, the topic's own
   definition, and it carries what its reader needs without its first context.
 - **Its role differs from its parent's.** It follows another shape, or it changes for other reasons, as
-  reader-ergonomics' [one role per file](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/collection/one-role-per-file.md) asks.
+  reader-ergonomics' [one role per file](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/principles/collection/one-role-per-file.md) asks.
 - **It would take its parent past three levels of headings.** The outline stays shallow; the deeper part moves down
   a level of topics instead.
 

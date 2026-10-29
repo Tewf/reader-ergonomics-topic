@@ -27,7 +27,7 @@ This file gathers the evidence against the tree model and its reuse: the critiqu
 - WSE 2018g: readers who dip into documentation need repetition at read time; reuse tools serve this only if each use reads on its own.
 - DITA needs `@copy-to` so that a topic used twice gets its own links and navigation (OASIS 2015): without it, position-bound links are shared.
 - Notion gave up several parents per block because permissions became ambiguous (Notion 2021, the owner's account).
-- Copies are not always wrong: some code clones help maintenance, as [file-structure](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/evidence/file-structure/against.md) reviews (Kapser 2008), linked, not repeated.
+- Copies are not always wrong: some code clones help maintenance, as [file-structure](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/file-structure/against.md) reviews (Kapser 2008), linked, not repeated.
 
 ## Limits of the measured evidence
 

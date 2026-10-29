@@ -1,7 +1,7 @@
 # Shapes
 
 The topic, the base every shape derives from, and how the four general shapes of reader-ergonomics fit it. The four
-are not copied here: each is linked at the release this repository checks against, reader-ergonomics v1.13.0.
+are not copied here: each is linked at the release this repository checks against, reader-ergonomics v1.18.2.
 Their blocks are unchanged since v1.0.0.
 
 ## Contents
@@ -14,7 +14,7 @@ Their blocks are unchanged since v1.0.0.
 
 Each cell says which part of the shape fills the topic's block.
 
-| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/commit.md) | [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md) |
+| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/commit.md) | [decision record](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/decision-record.md) |
 |---|---|---|---|---|---|
 | Title | the topic, named as the field names it | the problem, named by what solving it achieves | what the folder is for | the subject line | NNNN and the choice |
 | Summary | one quoted line: what this is and why it matters | one quoted line: what is asked | one or two sentences: the folder's role | the subject line again | the line labelled Decision |

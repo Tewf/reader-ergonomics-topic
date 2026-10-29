@@ -3,7 +3,7 @@
 **Decision:** this repository checks against reader-ergonomics v1.2.0, whose judgment-quotes check replaces the local
 copy, and it keeps that check strict on path questions.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/decision-record.md).
 
 ## Context
 
