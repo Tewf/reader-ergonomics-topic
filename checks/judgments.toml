@@ -116,3 +116,17 @@ path = "evidence/progressive-disclosure/protocol.md"
 question = "113 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "4b2c44ab6ca2"
 answer = "One role: the record from which another reviewer can rerun this review's search. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "9dca3bd4d22e"
+answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
+
+[[answer]]
+check = "co-change"
+path = "checks/local/topic.py"
+question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "705154f56779"
+answer = "A check and its tests change together by design. They stay apart because the standard's runner executes every module in checks/local/, which must not include the tests; the test file names the check by its path."
