@@ -29,9 +29,9 @@ A **topic** is one unit of writing that a reader can take alone. Its parts may b
 | Block | Rule | Principle | Evidence |
 |---|---|---|---|
 | Title | one per topic; it names what the topic holds | [names predict content](https://github.com/Tewf/reader-ergonomics/blob/master/principles/collection/names-predict-content.md) | DITA requires a title on every topic ([information typing](../evidence/information-typing/review.md)) |
-| Summary | right after the title, at most 60 words; it stands for the topic when the topic is folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
+| Summary | right after the title, or after its metadata (a byline, a status); at most 60 words; it may be labelled Abstract or Summary; it stands for the topic when folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
 | Body | the parts in the reader's order; at most three heading levels | [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/shallow-outline.md) | readers keep the top levels best (levels effect, reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/master/evidence/psycholinguistics)) |
-| Contents | each child by its title and its summary | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/master/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
+| Contents | each child by its title and its summary, or by its type alone when the type's role is stated once | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/master/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
 | See also | links, never copies | [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/master/principles/collection/one-place-per-fact.md) | the standards reuse by reference ([document model](../evidence/document-model/position.md)) |
 
 The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL until a reader study sets it.
@@ -52,14 +52,16 @@ The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL
 
 - **Keep every block.** A derived shape keeps all five. It may rename one (a note calls See also "Links") and must
   say so. It may leave Contents or See also empty while there is nothing to hold.
-- **Title and summary come first**, in that order: they are what a folded view shows. The other blocks may be ordered
-  by the shape.
+- **Title and summary come first**, in that order: they are what a folded view shows. Only metadata may stand between
+  them. The other blocks may be ordered by the shape.
 - **Add, never remove.** A shape adds its own blocks, such as a note's Check yourself.
 - **Announce the type.** A document says which shape it is, so a reader knows which blocks to expect.
 - Grade: convention, untested. Whether a reader who knows the topic reads a derived shape better is the open question
   of [information typing](../evidence/information-typing/position.md).
 
-The four general shapes of reader-ergonomics, checked against these rules, are in [the conformance table](README.md).
+The four general shapes of reader-ergonomics, and six forms of the genre extensions it was not built from, are
+checked against these rules in [the conformance table](README.md). Five of the six fit; a decision record without a
+summary does not.
 
 ## Depth
 
@@ -85,10 +87,10 @@ depth:
 | Rule | Kind |
 |---|---|
 | one title, and it opens the topic | error |
-| a summary right after the title | error |
+| a summary right after the title, or labelled within its first blocks | error |
 | the summary within `summary_words` | warning |
 | listed by its containing topic, so it can be reached from the root | error |
-| listed with its summary, not as a bare link | warning |
+| listed with its summary, or by its declared type, not as a bare link | warning |
 | no inclusion cycle | error |
 
 Heading depth, links that resolve and the headings a shape requires are checked by reader-ergonomics itself.

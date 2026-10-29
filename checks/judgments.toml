@@ -128,7 +128,7 @@ answer = "Not one fact: each protocol names the databases, fields and sort order
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "66eaad467e30"
+file = "1f4e4a6332fa"
 answer = "Reference: the front page, read to learn what the repository holds and what its review found. Its one task, Check it, is two commands and stays."
 
 [[answer]]

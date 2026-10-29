@@ -81,7 +81,11 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 - The topic has five blocks: title, summary, body, contents and see also. Each is traced to a principle of
   reader-ergonomics and to the evidence here ([topic](shapes/topic.md)).
 - The four general shapes all fit, with two renames and one merge: a commit's subject line is both its title and its
-  summary ([the table](shapes/README.md)).
+  summary. They are the material the topic was drawn from, so the fairer test is the next line
+  ([the table](shapes/README.md)).
+- On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
+  Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared
+  as types.
 - This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
   [checks/test_topic.py](checks/test_topic.py).
 
