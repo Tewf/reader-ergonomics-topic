@@ -17,9 +17,9 @@ information is then written as a tree that reads the same way at every depth.
 ```text
         uses ──▶ (points to what it depends on)
 
- level 2   academic-writing-and-presentations   software-design-writing   other projects
-                  │                                   │                         │
-                  └──────────────┬────────────────────┴─────────────────────────┘
+ level 2   reader-ergonomics-academic   reader-ergonomics-presentations   software-design-writing   other projects
+                        │                              │                             │                     │
+                        └────────┬─────────────────────┴─────────────────────────────┴─────────────────────┘
                                  ▼  may use the node as their skeleton (a hypothesis)
  level 1   recursive-atom             one node shape, nested to any depth, its review and its check
                                  │
