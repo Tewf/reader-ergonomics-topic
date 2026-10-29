@@ -1,8 +1,8 @@
-# 0004 Every document here is a topic, checked in CI
+# 0004: Every document here is a topic, checked in CI
 
 **Decision:** every document of this repository is declared a topic, and the topic check runs on all of them in CI.
 
-Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 

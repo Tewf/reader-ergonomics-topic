@@ -1,9 +1,9 @@
-# 0002 Three reviews, one per part of the template
+# 0002: Three reviews, one per part of the template
 
 **Decision:** the evidence is split into three multivocal reviews, one per part of the topic: its types, its display
 at depth, its storage.
 
-Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 

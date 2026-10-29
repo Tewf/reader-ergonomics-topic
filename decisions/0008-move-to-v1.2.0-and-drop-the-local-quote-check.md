@@ -1,9 +1,9 @@
-# 0008 Move to reader-ergonomics v1.2.0, and drop the local quote check
+# 0008: Move to reader-ergonomics v1.2.0, and drop the local quote check
 
 **Decision:** this repository checks against reader-ergonomics v1.2.0, whose judgment-quotes check replaces the local
 copy, and it keeps that check strict on path questions.
 
-Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 

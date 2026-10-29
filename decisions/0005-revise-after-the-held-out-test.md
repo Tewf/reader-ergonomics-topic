@@ -1,9 +1,9 @@
-# 0005 Revise the topic after the held-out test
+# 0005: Revise the topic after the held-out test
 
 **Decision:** the topic allows metadata before the summary, names the summary's labels, and lets a typed child be
 listed by its type; the Nygard decision record stays outside it as written.
 
-Status: accepted, 2026-10-29, released as v0.2.0. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29, released as v0.2.0. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 

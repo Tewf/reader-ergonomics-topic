@@ -1,9 +1,9 @@
-# 0009 The AI-augmented topic, as this repository's extension
+# 0010: The AI-augmented topic, as this repository's extension
 
 **Decision:** the AI-augmented topic is this repository's extension, started on its own branch. It has one problem,
 the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
 
-Status: accepted, 2026-10-29; it joins master once its review names a baseline. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29; it joins master once its review names a baseline. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 
