@@ -108,7 +108,9 @@ summary does not.
 
 - **One containing parent.** A topic lives in one place: in a repository, one folder or one file.
 - **Any other parent points to it.** It links the topic and never copies it.
-- **No topic contains itself**, directly or through an inclusion, at any depth.
+- **No topic contains itself**, directly or through an inclusion, at any depth. In a repository, containment follows
+  folders, which form a tree, so it cannot loop; a cycle can come only from an inclusion, such as a Quarto
+  `{{< include >}}`, and that is what the check looks for.
 - Grade: convention, the rule of every document model read ([document model](../evidence/document-model/position.md)).
 
 ## When a part becomes a topic

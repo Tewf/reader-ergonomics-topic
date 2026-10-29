@@ -102,7 +102,7 @@ and what a program check catches. Each review's `baseline.md` gives the design.
   summary. They are the material the topic was drawn from, so the fairer test is the next line
   ([the table](shapes/README.md)).
 - On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
-  Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared
+  Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared, in that run's configuration
   as types.
 - The [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
   records follow it, and the check verifies that each one says so.
