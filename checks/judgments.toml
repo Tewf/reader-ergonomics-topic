@@ -62,137 +62,11 @@ file = ""
 answer = "It stays: checks/local/ holds this repository's own check, `topic.py`, in the folder the extension contract names for it, where the standard's runner reads it."
 
 [[answer]]
-check = "logical-lines"
-path = "evidence/document-model/review.md"
-question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "b00498be1fbc"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/information-typing/review.md"
-question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "2375152207f0"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/progressive-disclosure/review.md"
-question = "95 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "43721c421820"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
-
-[[answer]]
-check = "co-change"
-path = "checks/config.toml"
-question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "35dca1817b7a"
-answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
-
-[[answer]]
 check = "co-change"
 path = "checks/local/topic.py"
 question = "changed together with checks/test_topic.py in 4 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "722c51e63e2b"
 answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
-
-[[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "24dfa6ac44a1"
-answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
-
-[[answer]]
-check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "b8e629551086"
-answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/README.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "24dfa6ac44a1"
-answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "fead25489020"
-answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/frame.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "27a25bd1e741"
-answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
-
-[[answer]]
-check = "name-content"
-path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
-question = "the name '0008 move' and the opening are far apart in meaning (0.16): does the name predict the content?"
-file = "5bd99b645e77"
-answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `whose judgment-quotes check replaces the local`. The comparison read the name only up to its first dot."
-
-[[answer]]
-check = "document-mode"
-path = "decisions/0010-move-to-reader-ergonomics-v1.4.1.md"
-question = "reads about equally as reference and explanation: one mode per document?"
-file = "1693291e8638"
-answer = "Explanation: like every record here it says why the pin moved, from `Context` to `Consequences`; what it lists, such as `All 25 linked files resolve there`, are the reasons for the move, not entries to look up."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/README.md"
-question = "81 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "24dfa6ac44a1"
-answer = "One role: the ground the three reviews share, from the shared `Method` to the `Audit` that checked them; the lines past the trigger extend the audit. It stays whole."
-
-[[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/information-typing/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "24dfa6ac44a1"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
-
-[[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "24dfa6ac44a1"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
-
-[[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "24dfa6ac44a1"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
-
-[[answer]]
-check = "co-change"
-path = "evidence/information-typing/review.md"
-question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "2375152207f0"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
-
-[[answer]]
-check = "co-change"
-path = "evidence/information-typing/review.md"
-question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "2375152207f0"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
-
-[[answer]]
-check = "co-change"
-path = "checks/config.toml"
-question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "35dca1817b7a"
-answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md` under `[shape_conformance]`, and the folder's README as the topic's filled example, `topic = [\"decisions/README.md\"]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
 
 [[answer]]
 check = "co-change"
@@ -214,3 +88,136 @@ path = "evidence/information-typing/flow.svg"
 question = "changed together with evidence/progressive-disclosure/flow.svg in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "f5cb5608046b"
 answer = "They change together because one shared generator draws all three, each from the flow.json beside it; when the generator changes, all three are drawn again. Each stays in its review's folder, as its `Screened` and `In the review` counts are that review's own."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/README.md"
+question = "81 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "3c64e369494d"
+answer = "One role: the ground the three reviews share, from the shared `Method` to the `Audit` that checked them; the lines past the trigger extend the audit. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/review.md"
+question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "100ab0f01b01"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/review.md"
+question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "13a8906eb6de"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/review.md"
+question = "95 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "6457a069f379"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "8d286f6bbe45"
+answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "8d286f6bbe45"
+answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md` under `[shape_conformance]`, and the folder's README as the topic's filled example, `topic = [\"decisions/README.md\"]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "3c64e369494d"
+answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/information-typing/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "3c64e369494d"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `e8864477a53d713251ba42a4cf7b7a0d761243a2`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "3c64e369494d"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `e8864477a53d713251ba42a4cf7b7a0d761243a2`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "3c64e369494d"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `e8864477a53d713251ba42a4cf7b7a0d761243a2`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/information-typing/review.md"
+question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "13a8906eb6de"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `e8864477a53d713251ba42a4cf7b7a0d761243a2`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/information-typing/review.md"
+question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "13a8906eb6de"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `e8864477a53d713251ba42a4cf7b7a0d761243a2`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "a16a920e88a7"
+answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
+
+[[answer]]
+check = "document-mode"
+path = "decisions/0010-move-to-reader-ergonomics-v1.4.1.md"
+question = "reads about equally as reference and explanation: one mode per document?"
+file = "95e2563a1cc2"
+answer = "Explanation: like every record here it says why the pin moved, from `Context` to `Consequences`; what it lists, such as `All 25 linked files resolve there`, are the reasons for the move, not entries to look up."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "3c64e369494d"
+answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "aafbaa3fba0b"
+answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "05a8a900f67b"
+answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "shapes/topic.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "4a4de2387997"
+answer = "Reference: the shape a writer looks up while writing, its `Skeleton` and the table of `The blocks`; the derivation rules are consulted, not followed as steps."
+
+[[answer]]
+check = "name-content"
+path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
+question = "the name '0008 move' and the opening are far apart in meaning (0.16): does the name predict the content?"
+file = "e60046a6ec1b"
+answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `whose judgment-quotes check replaces the local`. The comparison read the name only up to its first dot."
