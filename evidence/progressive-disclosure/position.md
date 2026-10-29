@@ -13,9 +13,9 @@ Each "not known" below is a statement about this search, not about the world. Te
 
 - A fisheye of a tree keeps the ancestral line and nearby nodes, and its size grows with the logarithm of a regular tree, not its size (Furnas 1986).
 - Expandable contents beat a fully expanded list for finding items in a large three-level tree on five of nine tasks, lost on the easiest, and did not differ on three (Chimera 1994).
-- Shrinking text by importance speeds reading and costs comprehension; an overview beside full text gives the best understanding (Hornbæk 2003, secondary).
+- Shrinking text by importance sped essay work by about 16% with grades no better than linear text; an overview beside the full text gave the best essays (Hornbæk 2003, pp. 140 to 142).
 - Readers of a layered document answer less accurately on topics left out of its first layer; the authors infer that few went past it, without logging opens (McDonald 2009).
-- Hierarchical links beat network links for novices finding facts (Mohageg 1992, secondary); hierarchy with some cross-links can beat both (McDonald 1998, secondary).
+- Hierarchical links beat network links for novices finding facts (Mohageg 1992, p. 359); hierarchy with some cross-links can beat both (McDonald 1998, pp. 22 to 23).
 - No interface for focus and context wins on every task (Cockburn 2009).
 - For model readers, one level of disclosure is enough and a second can harm (He 2026); summary trees add little over passages in their original order for strong readers (Laitenberger 2025).
 

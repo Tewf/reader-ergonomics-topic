@@ -50,14 +50,14 @@ The figure draws the stages of the table for progressive disclosure.
 | Carroll 1984 | formal | lead | measured, abstract | frame; review 1 |
 | Egan 1989 | formal | lead; snowball, Chimera 1994 | measured, abstract (secondary) | review 2; state-of-the-art |
 | Chimera 1994 | formal | F16 | measured, 41 novices, technical report version read | frame; review 2, 5; state-of-the-art; position; against; baseline |
-| Hornbæk 2003 | formal | F10 | measured, through Cockburn 2009 (secondary) | review 2; state-of-the-art; position; against; baseline |
-| Höök 1997 | formal | F1, F20 | measured, abstract (secondary) | review 2 |
+| Hornbæk 2003 | formal | F10 | measured, full text | review 2; state-of-the-art; position; against; baseline |
+| Höök 1997 | formal | F1, F20 | descriptive, full text (9 subjects, no statistical test) | review 2 |
 | McDonald 2009 | formal | F21 | measured, 749 Internet users, authors' version read | frame; review 2; state-of-the-art; position; against; baseline |
 | Springer 2020 | formal | F4 | measured, four studies, abstract | review 2 |
 | Zellweger 2000 | formal | lead | located only | review 2 |
 | Boyle 1994 | formal | lead | located only | review 2 |
-| Mohageg 1992 | formal | lead | measured, abstract (secondary) | frame; review 3; state-of-the-art; position; against |
-| McDonald 1998 | formal | lead | measured, abstract (secondary) | frame; review 3; position; against; baseline |
+| Mohageg 1992 | formal | lead | measured, full text | frame; review 3; state-of-the-art; position; against |
+| McDonald 1998 | formal | lead | measured, full text | frame; review 3; position; against; baseline |
 | McDonald 1996 | formal | F11, F12 | located only | review 3 |
 | Calisir 2003 | formal | F11 | located only | review 3 |
 | Potelle 2003 | formal | lead | located only | review 3 |

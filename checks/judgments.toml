@@ -30,21 +30,21 @@ answer = "One role: this review's pool of sources, from its `Flow` to `Grey sour
 check = "logical-lines"
 path = "evidence/information-typing/sources.md"
 question = "111 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "c3d8b7de8163"
+file = "f42f8e26b122"
 answer = "One role: this review's pool of sources, from its `Flow` to `Grey sources, scored`, one row per source. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/progressive-disclosure/sources.md"
 question = "109 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "dd8c148527f9"
+file = "aa7de6beca3c"
 answer = "One role: this review's pool of sources, from its `Flow` to `Grey sources, scored`, one row per source. It stays whole."
 
 [[answer]]
 check = "figures-present"
 path = "evidence/progressive-disclosure/against.md"
 question = "a long text with no figure, table or diagram: is a relation, set, quantity or process described only in words?"
-file = "5771a3b8597b"
+file = "384c83cc4caf"
 answer = "No: it lists separate findings, each with its source, under questions such as `Whether an overview or a fisheye helps`. The one relation it touches, depth in storage against depth in view, is drawn in position.md."
 
 [[answer]]
@@ -53,13 +53,6 @@ path = "evidence/information-typing/against.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "af69f0703fb1"
 answer = "Reference: findings against typed units, under headings such as `Null results for the typed format itself` and `Rigidity and authoring cost`, each with its source; it sets the reader no steps."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/against.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "5771a3b8597b"
-answer = "Reference: findings against folding, grouped by question (`Whether folding helps the reader`, `Whether trees of summaries help a model`), each with its source; it sets the reader no steps."
 
 [[answer]]
 check = "tree-shape"
@@ -79,14 +72,14 @@ answer = "One role: the reading log of this review's literature, strand by stran
 check = "logical-lines"
 path = "evidence/information-typing/review.md"
 question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "0580744b7df7"
+file = "2375152207f0"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/progressive-disclosure/review.md"
-question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "1cdcecee9bf4"
+question = "95 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "43721c421820"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
@@ -107,7 +100,7 @@ answer = "A check and its tests change together by design: `checks/test_topic.py
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "1aac5f7213f2"
+file = "24dfa6ac44a1"
 answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
 
 [[answer]]
@@ -121,14 +114,14 @@ answer = "Reference: the front page, read for `What the review found` and `The b
 check = "document-mode"
 path = "evidence/README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "1aac5f7213f2"
+file = "24dfa6ac44a1"
 answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "d401e2b5ece8"
+file = "fead25489020"
 answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
 
 [[answer]]
@@ -151,3 +144,10 @@ path = "decisions/0010-move-to-reader-ergonomics-v1.4.1.md"
 question = "reads about equally as reference and explanation: one mode per document?"
 file = "084651734bf9"
 answer = "Explanation: like every record here it says why the pin moved, from `Context` to `Consequences`; what it lists, such as `All 25 linked files resolve there`, are the reasons for the move, not entries to look up."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/README.md"
+question = "81 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "24dfa6ac44a1"
+answer = "One role: the ground the three reviews share, from the shared `Method` to the `Audit` that checked them; the lines past the trigger extend the audit. It stays whole."

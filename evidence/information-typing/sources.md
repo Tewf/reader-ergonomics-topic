@@ -56,7 +56,7 @@ Grade vocabulary as in the README. "lead" means named in the commissioning brief
 | Mandler 1978 | formal | F8; F31 | title and venue only | review 1 |
 | Black 1979 | formal | lead; F8 | critique, abstract | review 1, 6; state-of-the-art; against |
 | Trabasso 1985 | formal | F8 | title and venue only | frame; review 1; against |
-| Kintsch 1982 | formal | F28 | measured, ERIC abstract | review 4; state-of-the-art; baseline |
+| Kintsch 1982 | formal | F28 | measured, ERIC and APA abstracts | review 4; state-of-the-art; baseline |
 | Meyer 2001 | formal | lead | measured, adults, three groups, ERIC abstract | frame; review 5 |
 | Hebert 2016 | formal | F10 | meta-analysis, 45 studies, ERIC abstract (secondary) | review 0, 5; baseline |
 | Pyle 2017 | formal | F10 | meta-analysis, 19 studies, abstract (secondary) | review 0; against |

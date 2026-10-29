@@ -37,8 +37,8 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 | Furnas 1986 | flat window against fisheye of a hierarchy | 52% correct with two flat views, 64% with one of each, 75% with two fisheyes, on order judgments; 20 subjects, 16 pairs each | full text |
 | Egan 1989 | SuperBook, a hypertext book whose contents expands chapters and sections (Chimera 1994), against print | better search and open-book essays; MiteyBook, its PC version, searched about 25% faster and 25% more accurately than print | abstract (secondary) |
 | Chimera 1994 | contents of 1,296 items, three levels deep, 48 screens when fully expanded: stable list, expand/contract, multi-pane | both dynamic interfaces significantly faster for many of nine tasks (41 novices); on the easiest task, the stable list and multi-pane beat expand/contract (p < .01) | technical report version |
-| Hornbæk 2003 | linear text, overview plus detail, fisheye text keeping headings and first and last paragraphs | fisheye read faster at a cost in comprehension; overview plus detail understood best and preferred | through Cockburn 2009 section 7.2.4 (secondary) |
-| Höök 1997 | adaptive stretchtext that hides what the inferred task does not need, against the same system fixed | fewer actions, clear preference, and answers shaped by what the system chose to show | abstract (secondary) |
+| Hornbæk 2003 | linear text, overview plus detail, fisheye text keeping headings and first and last paragraphs | essays graded best with overview plus detail, 2.47 against 2.00 linear and 1.95 fisheye, F(2, 32) = 4.16, p < .05 (p. 140); fisheye essays fastest, 37.4 min against 44.4 and 44.5 (pp. 141 to 142), with the lowest incidental learning, 3.42 against 4.20 and 4.58; answers to questions did not differ; all but one of 20 subjects preferred overview plus detail | full text, after Cockburn 2009 section 7.2.4 |
+| Höök 1997 | adaptive stretchtext that hides what the inferred task does not need, against the same system fixed | within-page actions about halved, navigation between pages about the same (Figure 3, p. 183); 19 of 27 answers chose an item the system had opened; preferred, mean 5 on a scale of 1 to 7 (Table 1, p. 184); 9 subjects, no statistical test | full text |
 | McDonald 2009 | layered privacy policy (short layer, full text behind) against full text and a standard format, 749 participants | layered was faster but less accurate on topics not in the short layer; cookie question 78% correct layered | authors' version, section 4 |
 | Heinonen 2022 | maintenance instructions in DITA layered by skill level, the reader choosing the depth; user studies in three countries | well received across skill levels; observation, interviews and questionnaires, no comparison condition | abstract (secondary) |
 
@@ -51,8 +51,10 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 
 The linked reviews hold the overview and map effects: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/reading-order/review.md) (strand 1) and [learning-science](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/learning-science/review.md) (strand 6), with DeStefano 2007 and Amadieu 2009.
 
-- Mohageg 1992 (abstract, secondary): hierarchical links beat network links by 49 s per task on average; adding network links to the hierarchy gave no consistent gain for novices.
-- McDonald 1998 (abstract): hierarchy plus cross-references beat pure hierarchy and pure network for finding answers; prior knowledge helped overall.
+- Mohageg 1992 (full text): 64 novices, 16 per structure. Hierarchical links beat network links: mean task time 109.21 s against 149.35 s, linear 155.56 s, F(3, 60) = 4.59, p < .01 (Experiment A, p. 359).
+- The abstract's 49 s less per task is an average not found in the pages read. The combination, 115.78 s, did no worse than the hierarchy, with no consistent gain for novices.
+- McDonald 1998 (full text): 30 readers, 15 with prior knowledge. In the first phase the hierarchy and the mixed structure were equal, both faster than the network; at the delayed phase the mixed structure was fastest and opened the fewest extra nodes (pp. 22 to 23).
+- Prior knowledge helped overall; it interacted with structure only for nodes opened while reading, F(2, 24) = 8.1 (Table 1, p. 22).
 - Located, abstract not readable on the day: McDonald 1996, Calisir 2003, Potelle 2003.
 
 ## 4. Q3: focus plus context and zooming for documents and trees

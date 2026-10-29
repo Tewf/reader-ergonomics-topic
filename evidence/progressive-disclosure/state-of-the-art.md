@@ -4,8 +4,8 @@ Two records are kept apart: most adopted (what people use) and best evidence (wh
 
 | Sub-question | Most adopted | Best evidence | Measured how |
 |---|---|---|---|
-| Q1 folded and expandable text | accordion and `details` (WHATWG 2026; GOV.UK 2026a, 2026b) | Chimera 1994; McDonald 2009; Hornbæk 2003 (secondary) | timed retrieval on a 1,296-item contents, 41 novices; accuracy and time on privacy policies, 749 adults; essays and questions on scientific papers |
-| Q2 hierarchy against network | hierarchy with cross-links | Mohageg 1992; McDonald 1998; Chen 1996 (all by abstract) | time per retrieval task; answers found; meta-analysis of 23 experiments |
+| Q1 folded and expandable text | accordion and `details` (WHATWG 2026; GOV.UK 2026a, 2026b) | Chimera 1994; McDonald 2009; Hornbæk 2003 | timed retrieval on a 1,296-item contents, 41 novices; accuracy and time on privacy policies, 749 adults; essays and questions on scientific papers |
+| Q2 hierarchy against network | hierarchy with cross-links | Mohageg 1992; McDonald 1998 (full text); Chen 1996 (abstract) | time per retrieval task; answers found; meta-analysis of 23 experiments |
 | Q3 focus plus context, zooming | a contents pane beside the text (overview plus detail); folding in editors | Cockburn 2009 (review); Hornbæk 2002 (secondary); Jakobsen 2006 (secondary) | task time, accuracy, preference; no technique wins across tasks |
 | Q4 levels in one view | three heading levels (reader-ergonomics shallow outline); at most two disclosure levels (Nielsen 2006b, example of practice); no accordion inside another (GOV.UK 2026a) | for menus, two levels beat three (file-structure, linked); for agents, one level of disclosure beat two (He 2026) | menu search time; question answering on ∞Bench |
 | Q5 outliners and block editors | Logseq, SiYuan, Obsidian outliner plugins (counts below) | none found | no study of reading an outline in an outliner was found |

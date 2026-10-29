@@ -6,7 +6,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 
 | Reader | Baseline | Why this one |
 |---|---|---|
-| Human | **B1, shallow outline with overview plus detail**: the same content as one linear document, at most three heading levels, with its contents list always visible beside the text | overview plus detail gave the best comprehension and was preferred in the one document-reading comparison (Hornbæk 2003, secondary); it is the standard practice (Cockburn 2009); the three-level cap is the [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/shallow-outline.md) the node must obey anyway |
+| Human | **B1, shallow outline with overview plus detail**: the same content as one linear document, at most three heading levels, with its contents list always visible beside the text | overview plus detail gave the best essays and was preferred in the one document-reading comparison (Hornbæk 2003, p. 140); it is the standard practice (Cockburn 2009); the three-level cap is the [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/shallow-outline.md) the node must obey anyway |
 | Human, control | **B0, fully expanded tree**: every level open, no contents pane | the "stable" interface of Chimera 1994, which isolates the effect of folding |
 | Model | **DOS RAG**: passages retrieved and kept in the document's original order, at a matched token budget (Laitenberger 2025) | it matched or beat summary trees and an agent on three benchmarks |
 | Model, agent | **one level of disclosure**: a short description, then an index of chunks, read on demand (He 2026) | no cell rewarded a second level: it tied one level within noise or trailed it (He 2026, tables 1 and 2) |
@@ -34,7 +34,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 
 - Design: within subjects, crossover, order counterbalanced, a delayed test one week later.
 - Report effect sizes with confidence intervals; record preference, but never as the outcome, since preference and performance part ways (Hornbæk 2002).
-- Subjects: novices and readers who know the domain, analysed apart, since structure and knowledge interact (McDonald 1998, secondary).
+- Subjects: novices and readers who know the domain, analysed apart: knowledge helped overall, and interacted with structure on nodes opened while reading (McDonald 1998, p. 22).
 
 For a model reader:
 
