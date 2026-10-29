@@ -14,7 +14,7 @@ Each "not known" below is a statement about this search, not about the world.
 - Typed units are old: Information Mapping had eight typed maps in 1969, and some took every block of the concept map (Horn 1969).
 - DITA declares one base topic and derives every type from it; a program can process any derived unit as its base (OASIS 2015).
 - Readers hold schemata of conventional text types, and the schema decides what reaches the gist (Kintsch 1978).
-- Conventional form with cues helps comprehension; whether the gist gains more than detail is not stated in the abstract read (Kintsch 1982).
+- Conventional form with cues helps global comprehension, the topic and main points, and leaves a cloze test of detail unchanged (Kintsch 1982, abstract).
 - Teaching readers text types helps comprehension at once, with effects that fade by the delayed test (Bogaerds-Hazenberg 2020), and transfers to untaught types (Hebert 2016).
 - Headings help search in an information-mapped text, but more headings and the method's order do not (Kools 2008).
 - Removing the visible typed format from the same content did not significantly lower learning, in one study (Horn 1969).

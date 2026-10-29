@@ -8,7 +8,7 @@ This file gathers the evidence against showing text folded or nested: null resul
 - On the task of finding the item that covers three topics, the fully expanded list was fastest, not significantly: 46.1 s against 85.9 s for expand/contract and 55.0 s for multi-pane (Chimera 1994).
 - The authors explain it: the target sat near the start, and its chapter title did not predict its contents, so readers of the folded views opened the wrong chapters.
 - Chimera 1994 credits part of the expand/contract gain to animation, so folding and animation are confounded.
-- Shrinking text around the focus made reading faster and comprehension worse (Hornbæk 2003, through Cockburn 2009, secondary).
+- Shrinking text around the focus cut the time to read and write an essay by about 16%, with grades no better than linear text, and lowered incidental learning (Hornbæk 2003, pp. 140 to 142).
 - A short first layer made readers faster and less accurate on what it left out; few went further (McDonald 2009, section 4).
 - Sections open on load drew more reading time than folded ones: 190 s against 146 s at the 90th percentile (Wikimedia 2016).
 
@@ -44,7 +44,7 @@ This file gathers the evidence against showing text folded or nested: null resul
 - McDonald 2009: an online sample entered for a lottery, one domain (privacy policies), six companies; 7 of 756 were removed for clicking through.
 - Wikimedia 2016: not a strict A/B test; about 0.05% of users per group, in 2015-12 and 2016-01; it measured time, not understanding.
 - He 2026 and Jayraj 2026 are preprints; He 2026 uses one benchmark, ∞Bench. Laitenberger 2025 appeared at EMNLP (2025).
-- Hornbæk 2003 and the code and tree studies were read only through Cockburn 2009.
+- The code and tree studies were read only through Cockburn 2009; Hornbæk 2003 was read in full afterwards.
 
 ## Limits of the practice evidence
 

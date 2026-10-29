@@ -33,10 +33,10 @@ Question: how is a tree of units nested to any depth shown to a reader, so the t
 | A fisheye of a tree keeps the focus, its neighbours and its ancestral line; in a regular tree its size grows with the logarithm of the tree | supported with caveat (a property of the definition, Furnas 1986) | review.md 1 |
 | Fisheye views beat flat windows for judging order in an unfamiliar hierarchy: 52% correct with two flat views, 64% with one fisheye, 75% with two | measured, one study, 20 subjects | review.md 1 |
 | Expand/contract contents beat a fully expanded list for retrieval in a three-level tree of 1,296 items on five of nine tasks, lost on the easiest, and did not differ on three | measured, one study, 41 novices | review.md 2 |
-| Overview plus detail gives the best comprehension of a document; shrinking text by importance is faster and understood less | measured, one study (secondary) | review.md 2 |
+| Overview plus detail gives the best essays about a document; shrinking text by importance is faster, with grades no better than linear text and less incidental learning | measured, one study, 20 subjects | review.md 2 |
 | Readers of a layered document answer less accurately on topics left out of its first layer (measured); the authors infer that few went past it | measured, one study, 749 Internet users; the inference not measured | review.md 2 |
 | Sections open on load drew more reading time than folded ones on mobile Wikipedia | convention, with data: one uncontrolled test, on a grey source | review.md 7 |
-| Hierarchical links beat network links for novices finding facts; hierarchy with cross-links can beat both | measured (secondary) | review.md 3 |
+| Hierarchical links beat network links for novices finding facts; hierarchy with cross-links can beat both | measured, two studies, 64 and 30 subjects | review.md 3 |
 | No interface for focus and context wins on every task; distortion rarely improves performance | measured (one review) | review.md 0; against.md |
 | On maps and trees, readers preferred an overview without performing better with it | measured, two studies (both secondary) | against.md |
 | For strong long-context models, passages in document order match or beat trees of summaries | measured (benchmarks, matched budgets) | review.md 6 |

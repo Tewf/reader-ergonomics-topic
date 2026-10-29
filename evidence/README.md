@@ -92,7 +92,12 @@ encyclopedia page under it, and will change at its next release.
   written, since a correction is a claim too.
 - The two wrong rows: a review called "the largest" that is not, and a company page said to show no numbers that
   shows nine.
-- The two unverifiable rows: the direction of an effect in Kintsch 1982 is softened to what the abstract read
-  supports; Höök 1997 stays marked "(secondary)", since its abstract could not be reached again.
+- The two unverifiable rows: the direction of an effect in Kintsch 1982 was softened to what the abstract read
+  supported; Höök 1997 stayed marked "(secondary)", since its abstract could not be reached again.
+- Both were read afterwards through the university library, with Hornbæk 2003, Mohageg 1992 and McDonald 1998: four
+  in full, and Kintsch 1982 by its APA abstract, which gives the direction. Their rows now carry numbers and pages.
+- Three claims changed with them. Fisheye text lowered incidental learning, not essay grades against linear text
+  (Hornbæk 2003). Structure and knowledge interacted only on nodes opened while reading (McDonald 1998). Mohageg
+  1992's 49 s is the abstract's average; Experiment A's means are 40 s apart. Höök 1997 is descriptive: 9 subjects.
 - The audit also found missing "(secondary)" marks, grades above their evidence, and findings stated in two reviews;
   all are fixed.
