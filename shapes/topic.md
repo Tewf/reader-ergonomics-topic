@@ -24,6 +24,9 @@ A **topic** is one unit of writing that a reader can take alone. Its parts may b
 ## See also          topics this one points to without holding them: its parent, and related topics
 ```
 
+A filled topic, short enough to read whole: [the decisions folder](../decisions/README.md), whose summary stands for the
+folder and whose Contents table lists each record by its title and summary.
+
 ## The blocks
 
 | Block | Rule | Principle | Evidence |

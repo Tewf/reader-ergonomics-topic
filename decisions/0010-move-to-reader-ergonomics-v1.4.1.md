@@ -27,6 +27,9 @@ take over what its text figures were measured against by hand.
   answered, and the topic check's tests passed. The new check finds no figure past 60 columns.
 - The phone rule of v1.4.1 was applied to the published front page at 375 px. Its figure dropped from 16.7 px to
   9 px type and fitted whole: 324 px wide in a 324 px column, against 516 px before.
+- **Bad:** 9 px is far below the 16 px the standard sets for body text. On a phone a figure is seen whole but read
+  with effort; the standard chose that over a figure cut at its right side, and this repository takes its choice.
+- **Bad:** the move touched 32 files and reopened 11 judgment answers on master, each checked before it was carried over.
 - The commit shape's text changed in v1.4.0: its figure was rewrapped and one rule moved to a list. Its blocks did not
   change, so the [conformance table](../shapes/README.md) holds.
 

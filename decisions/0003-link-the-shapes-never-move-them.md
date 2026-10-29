@@ -23,6 +23,8 @@ own side that each fits the topic.
 
 - The arrows all point down, and each shape's skeleton stays in one place.
 - No shape of reader-ergonomics declares the topic; only a genre extension could, in its own repository.
+- **Bad:** a reader checking a shape's fit follows a link into another repository, one hop more. A change to a general
+  shape reaches this repository only when its pin moves, so the conformance table can lag the standard until then.
 
 ## See also
 

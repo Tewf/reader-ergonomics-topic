@@ -23,6 +23,8 @@ copy, and it keeps that check strict on path questions.
 - The check lives in one place. Its first run here caught an answer quoting a file the removal had just deleted.
 - The decision-record shape is promised for the standard's v1.3.0; when it ships, this repository's shape moves down
   to it.
+- **Bad:** the check is no longer this repository's to fix: a bug in it waits for a release and a pin move. The move
+  itself rewrote the links and reopened answers, as every move does ([0006](0006-move-to-reader-ergonomics-v1.1.1.md)).
 
 ## See also
 

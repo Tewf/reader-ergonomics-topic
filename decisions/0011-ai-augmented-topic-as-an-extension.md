@@ -22,6 +22,9 @@ the topic as the interface between a person, a model and a proof assistant, and 
 
 - It stays in this repository, as the topic's extension: the topic gives it its format, and it gives the topic a use.
 - Nothing is built before the review names the baseline to beat.
+- **Bad:** the repository takes a second subject beside the topic, with a review that, once its formal pass is in,
+  is larger than any of the other three, and the audits grow with it. While the extension lives on its branch, every
+  change to master is merged in, and this record was renumbered four times, from 0007 to 0011.
 
 ## See also
 
