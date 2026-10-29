@@ -28,7 +28,7 @@ The six sub-questions Q1 to Q6 are stated in [frame](frame.md). In short: docume
 
 ## 4. Formal search
 
-Count sources: the Semantic Scholar bulk search (title and abstract, sorted by citations, no key) and the arXiv API (all fields or abstract). The OpenAlex column was counted afterwards, at 10:11 UTC. Semantic Scholar does not match phrases exactly, so its counts are noisy upper bounds; four strings returned mostly unrelated work and carry no weight (marked noise).
+Four strings returned mostly unrelated work and carry no weight; they are marked noise. OpenAlex counted every string at 10:11 UTC, by the method of the [evidence README](../README.md#method).
 
 | Id | String as run | Semantic Scholar | arXiv | OpenAlex |
 |---|---|---|---|---|

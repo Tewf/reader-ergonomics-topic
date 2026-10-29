@@ -35,7 +35,7 @@ Garousi 2019, Table 4, answered for information-typing: all seven questions get 
 
 ## 4. Formal search
 
-Count source: the Semantic Scholar bulk title-and-abstract search, sorted by citation count, and the arXiv search API (all fields). The OpenAlex column was counted afterwards, at 10:09 UTC. Semantic Scholar matches stemmed words, not phrases, so its counts are noisy upper bounds.
+The three counting databases are named in the [evidence README](../README.md#method). Here, Semantic Scholar hits were sorted by citation count, arXiv searched all fields, and OpenAlex counted at 10:09 UTC.
 
 | Id | String as run | Semantic Scholar | arXiv | OpenAlex |
 |---|---|---|---|---|

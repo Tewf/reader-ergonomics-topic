@@ -28,7 +28,7 @@ The sub-questions Q1 to Q7 of [frame](frame.md).
 
 ## 4. Formal search
 
-Count sources: the Semantic Scholar bulk search (title and abstract, no key) and the arXiv search API. The OpenAlex column was counted afterwards, at 10:10 UTC. Semantic Scholar matches words and uses its own operators (`+` for AND, `|` for OR), so its counts are not phrase-exact and are noisy upper bounds.
+The strings below are written in Semantic Scholar's own operators, `+` for AND and `|` for OR. OpenAlex counted them at 10:10 UTC; the databases are named in the [evidence README](../README.md#method).
 
 | Id | String as run (Semantic Scholar syntax) | Semantic Scholar | arXiv | OpenAlex |
 |---|---|---|---|---|

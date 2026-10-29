@@ -37,6 +37,9 @@ The three reviews share these rules, which their protocols do not repeat:
   its stopping parameters, its API call, how a thread is read and scored, and its limits.
 - **Limits:** search engines personalise and change, so counts differ on a repeat. OpenAlex counted every string after the searches,
   on the same day. Semantic Scholar and arXiv counts are not phrase-exact.
+- **Counts:** each formal string was counted in three databases, without a key: the Semantic Scholar bulk search
+  (title and abstract), the arXiv search API, and OpenAlex (title and abstract, phrase search). Semantic Scholar
+  matches stemmed words, not phrases, so its counts are noisy upper bounds.
 - A number read only in an abstract or a summary is marked "(secondary)".
 - None of these reviews is a standard, a new result, or a claim to the state of the art.
 
