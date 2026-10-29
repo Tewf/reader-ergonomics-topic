@@ -2,11 +2,24 @@
 
 Question: how is a tree of units nested to any depth shown to a reader, so the top levels are kept and any leaf is reached? And what does the evidence say about depth, expansion and navigation in nested text?
 
-Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · [review](review.md) · [state of the art](state-of-the-art.md) · [position](position.md) · [against](against.md) · [baseline](baseline.md) · [bibliography](../bibliography.md)
-
 - It covers published research and public practice, for human readers and for models as readers.
 - It holds 47 formal sources, 41 of them new, 3 of those by handoff from the information-typing review.
 - It adds 23 new grey sources, scored out of 20 (8 from the web, 15 threads or posts); 4 fall below the threshold of 10 and are used as examples only.
+
+## Files
+
+| File | Role |
+|---|---|
+| [protocol](protocol.md) | how the pool on folding, zooming and hypertext was searched and scored |
+| [sources](sources.md) | the flow from hits to sources, then each source with its quality |
+| [frame](frame.md) | step 1: the problem, and what interface, hypertext and model research call it |
+| [review](review.md) | step 2: fisheye views, folded text, hypertext structure, outliners, summary trees |
+| [state of the art](state-of-the-art.md) | step 3: most adopted against best evidence; what a capped view can show |
+| [position](position.md) | step 4: depth in storage against depth in view, and its three conditions |
+| [against](against.md) | readers who leave folds closed, null results, the limits of the studies |
+| [baseline](baseline.md) | step 5: three heading levels with contents beside, and document-order retrieval |
+| [bibliography](../bibliography.md) | every cited work, shared by the three reviews |
+| `flow.json` | the flow as data, drawn in the figure of [sources](sources.md) |
 
 ## The repository's question
 

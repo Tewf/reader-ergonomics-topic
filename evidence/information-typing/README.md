@@ -16,7 +16,7 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 | [state of the art](state-of-the-art.md) | step 3: most adopted against best evidence, per question; upper and lower bounds |
 | [position](position.md) | step 4: known, not known, where practice runs ahead of the evidence |
 | [against](against.md) | null results, a failed replication, critiques, costs |
-| [baseline](baseline.md) | step 5: the baseline the node template must beat, and how to measure it |
+| [baseline](baseline.md) | step 5: the baseline the topic template must beat, and how to measure it |
 | [bibliography](../bibliography.md) | every cited work: key, citation, link |
 | `flow.json` | the flow as data, drawn in the figure of [sources](sources.md) |
 

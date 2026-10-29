@@ -1,6 +1,6 @@
-# Baseline: what the node model is compared against
+# Baseline: what the topic's document model is compared against
 
-This file names the baseline a proposed node model must beat on storing, reusing and checking, and how the two would be compared.
+This file names the baseline a proposed model of the topic must beat on storing, reusing and checking, and how the two would be compared.
 
 ## The named baselines
 
@@ -12,11 +12,11 @@ This file names the baseline a proposed node model must beat on storing, reusing
 
 - The grey scores: OASIS 2015 17, DITA-OT 2026b 12.5, Walsh 2019 14.5, Clark 2001 17 and Marsh 2006 16.5 of 20 (sources.md).
 - Markdown with flat headings (CommonMark 2024) is the most adopted form and the practical floor: no section node, no reuse, no grammar beyond the syntax.
-- The maintainer's draft node template is the candidate; the comparison below is what it must win.
+- The [topic template](../../shapes/topic.md) is the candidate; the comparison below is what it must win.
 
 ## Candidate variant to test
 
-- One node type whose children are nodes, nested in one containment tree per document.
+- One topic type whose children are topics, nested in one containment tree per document.
 - Reuse only by reference, resolved into a tree when read, with an identity per use.
 - An acyclic reference graph, checked by program, with a depth cap as a backstop.
 - Cross-tree relations (overlap, links) as stand-off pointers.

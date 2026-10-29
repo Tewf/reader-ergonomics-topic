@@ -1,7 +1,8 @@
 # Review
 
 This file reads the literature on showing a nested tree of text to a reader. Strands run from existing reviews to the seminal work, then one strand per sub-question, then practice.
-"(secondary)" marks a number read in an abstract or in another work's summary. Scores of grey sources are in [sources](sources.md); a source under 10 of 20 is named "example only". Terms are defined in [frame](frame.md).
+
+Terms are in [frame](frame.md); markings and scores, in the [evidence README](../README.md#method).
 
 ## 0. Existing reviews
 

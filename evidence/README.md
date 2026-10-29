@@ -2,7 +2,7 @@
 
 One literature review per part of the template, in the steps reader-ergonomics uses for its own
 [evidence](https://github.com/Tewf/reader-ergonomics/tree/master/evidence): frame, review, state of the art, position, the
-case against, baseline. Every work cited is listed once in the [bibliography](bibliography.md).
+case against, baseline. Every work cited is listed once in the [bibliography](bibliography.md), with its citation and a stable link.
 
 | Review | Question | The repository's question it answers |
 |---|---|---|

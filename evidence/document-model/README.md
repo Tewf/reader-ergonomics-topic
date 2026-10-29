@@ -2,10 +2,23 @@
 
 Question: how is a unit that can hold units of its own type stored, so that it is a tree a reader can follow, reusable in several places and checkable by a program? And what do document models and their critics say?
 
-Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · [review](review.md) · [state of the art](state-of-the-art.md) · [position](position.md) · [against](against.md) · [baseline](baseline.md) · [bibliography](../bibliography.md)
-
 - It covers published research, standards and tools: 46 formal sources and 36 grey ones (25 from the web, 11 threads from Q/A sites).
 - It scores every grey source out of 20; 1 falls below the threshold of 10, and 1 more (SO 2015b) fell below it for the second rater; both are used as examples only.
+
+## Files
+
+| File | Role |
+|---|---|
+| [protocol](protocol.md) | how the pool on document models, reuse and checking was searched and scored |
+| [sources](sources.md) | the pool, counted stage by stage, and each source with its quality |
+| [frame](frame.md) | step 1: the problem, and what markup research and practice call it |
+| [review](review.md) | step 2: OHCO and its critics, content models, reuse, cycles, checking |
+| [state of the art](state-of-the-art.md) | step 3: how fourteen systems treat recursion, reuse and cycles |
+| [position](position.md) | step 4: the answers on self-reference and graphs, and candidate rules |
+| [against](against.md) | the cost of strict models, and fragments reused without their context |
+| [baseline](baseline.md) | step 5: DITA maps and conref, DocBook with RELAX NG, and OHCO |
+| [bibliography](../bibliography.md) | every cited work, shared by the three reviews |
+| `flow.json` | the flow as data, drawn in the figure of [sources](sources.md) |
 
 ## Claims
 
@@ -29,7 +42,7 @@ Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · 
 
 ## The two questions this review answers
 
-- **Self-reference.** The template needs the recursive type, a node whose children are nodes. No model read needs a node that contains itself, and standards forbid it by syntax, by a rule on references, or in the processor ([position](position.md)).
+- **Self-reference.** The template needs the recursive type, a topic whose children are topics. No model read needs a topic that contains itself, and standards forbid it by syntax, by a rule on references, or in the processor ([position](position.md)).
 - **Graphs.** In the standards read, the stored form is a graph of trees (files that reference files), each reading is a tree, and what crosses the hierarchy is held beside it as pointers. No study shows which view helps readers ([position](position.md)).
 
 ## Named baseline

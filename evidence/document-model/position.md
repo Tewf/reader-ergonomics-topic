@@ -42,7 +42,7 @@ Each "not known" below is a statement about this search, not about the world.
 
 ## Self-reference: a tree or a cycle
 
-- **A template needs the recursive type, not the self-containing instance.** A node type whose children are nodes gives trees of any finite depth; no model read needs a node that contains itself.
+- **A template needs the recursive type, not the self-containing instance.** A topic type whose children are topics gives trees of any finite depth; no model read needs a node that contains itself.
 - Document models forbid the second in three ways, from strongest to weakest:
   - by syntax: proper nesting makes a contained element a proper part of its container (Bray 2008, 2.1);
   - by a rule on references: no recursive entity (Bray 2008, 4.1), no include within its own chain (Marsh 2006, 4.2.7);
@@ -76,11 +76,11 @@ Each "not known" below is a statement about this search, not about the world.
 
 ## What this repository adds
 
-Candidate rules for the node, each a hypothesis graded convention, untested:
+Candidate rules for the topic, each a hypothesis graded convention, untested:
 
-- A node's children are nodes; an instance never contains itself.
-- A node has one containing parent; every other use is a reference, resolved into a tree when read.
+- A topic's children are topics; an instance never contains itself.
+- A topic has one containing parent; every other use is a reference, resolved into a tree when read.
 - The reference graph is acyclic; a check reports a cycle, with a depth cap as a backstop.
-- A reused node must be valid in each place it is used (the DITA rule, OASIS 2015), and carries what its reader needs without its first context.
+- A reused topic must be valid in each place it is used (the DITA rule, OASIS 2015), and carries what its reader needs without its first context.
 - Relations that cross the tree (overlap, links) are pointers beside the tree, not nesting.
 - It does not claim a new result or the state of the art.

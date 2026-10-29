@@ -28,7 +28,7 @@ This file gathers the evidence against typed units: null results, a failed repli
 - Black 1979: of the story grammars, one was formally adequate; they missed many stories and accepted a class of non-stories.
 - The same paper argues the grammars add nothing to models of story content.
 - Trabasso 1985 moved the field to causal networks of events, a content account (title and venue only).
-- Lesson for the node: a type can be checked by a program, but passing the check does not make a unit good of its kind.
+- Lesson for the topic: a type can be checked by a program, but passing the check does not make a unit good of its kind.
 
 ## Which list of types
 

@@ -1,7 +1,8 @@
 # Review
 
 This file reads the literature on storing, reusing and checking a tree of units of writing. Strands run from existing reviews to the seminal models, their critique, reuse, cycles, checking and practice.
-"(secondary)" marks a number read in an abstract or a summary, not in the work. Scores of grey sources are in [sources](sources.md); a source under 10 of 20 is named "example only".
+
+Each grey score is in [sources](sources.md), marked as the [evidence README](../README.md#method) says.
 
 ## 0. Existing reviews
 
@@ -13,7 +14,7 @@ This file reads the literature on storing, reusing and checking a tree of units 
 - Murata 2005 (abstract) classes schema languages as tree grammars: DTD local, XML Schema single-type, RELAX NG regular, with a validation algorithm for each.
 - Zhang 2012 (abstract) reviews the 23 GoF patterns to 2009: 611 candidates, 10 papers with 11 experiments, no firm support for the claims made for patterns in general, some for maintenance. Ampatzoglou 2013 and Bafandeh Mayvan 2017 map the same field (title and venue). None studies documents.
 - Fleckenstein 2023 (abstract) pools automated writing evaluation: 20 studies, k = 84, N = 2,828, g = 0.55 on students' writing, heterogeneity high (secondary).
-- How this review differs: none of these joins the stored tree, its reuse and its checking. This one asks it for a recursive node, compares how standards treat cycles, and scores standards and tools as grey sources.
+- How this review differs: none of these joins the stored tree, its reuse and its checking. This one asks it for a recursive topic, compares how standards treat cycles, and scores standards and tools as grey sources.
 
 ## 1. Document models that treat text as a tree
 

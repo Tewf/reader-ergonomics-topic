@@ -48,10 +48,10 @@ Each "not known" below is a statement about this search, not about the world.
 
 ## What this repository adds
 
-- It treats the node as a **base type**, and genre forms as **derived types**, in the sense of OASIS 2015 and Horn 1969.
-- It names the gap the node would fill: a reader-side test of derivation, which neither DITA nor Information Mapping has.
+- It treats the topic as a **base type**, and genre forms as **derived types**, in the sense of OASIS 2015 and Horn 1969.
+- It names the gap the topic would fill: a reader-side test of derivation, which neither DITA nor Information Mapping has.
 - It offers candidate rules, each convention, untested:
-  - the base holds what every derived type keeps (a title, a one-line statement, typed parts, links, child nodes), as the DITA base does;
+  - the base holds what every derived type keeps (a title, a one-line statement, typed parts, links, child topics), as the DITA base does;
   - a derived type adds or narrows parts and never removes a base part, so a reader of the base always finds them;
   - the type is announced to the reader, not only declared in markup, since the positive results all rest on readers who knew the type.
 - It does not claim a new result or the state of the art.

@@ -1,7 +1,8 @@
 # Review
 
 This file reads the literature on typed units of writing. Existing reviews come first, then the seminal theory, Information Mapping read first-hand. DITA, reader studies, transfer, cost, models as readers, and practice follow.
-"(secondary)" marks a number read in an abstract or a summary, not in the paper. Grey scores are in [sources](sources.md); a source under 10 of 20 is named "example only".
+
+How numbers and scores are marked: the [evidence README](../README.md#method).
 
 ## 0. Existing reviews
 
