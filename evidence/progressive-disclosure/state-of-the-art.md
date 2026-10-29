@@ -6,7 +6,7 @@ Two records are kept apart: most adopted (what people use) and best evidence (wh
 |---|---|---|---|
 | Q1 folded and expandable text | accordion and `details` (WHATWG 2026; GOV.UK 2026a, 2026b) | Chimera 1994; McDonald 2009; Hornbæk 2003 (secondary) | timed retrieval on a 1,296-item contents, 41 novices; accuracy and time on privacy policies, 749 adults; essays and questions on scientific papers |
 | Q2 hierarchy against network | hierarchy with cross-links | Mohageg 1992; McDonald 1998; Chen 1996 (all by abstract) | time per retrieval task; answers found; meta-analysis of 23 experiments |
-| Q3 focus plus context, zooming | a contents pane beside the text (overview plus detail); folding in editors | Cockburn 2009 (review); Hornbæk 2002; Jakobsen 2006 (secondary) | task time, accuracy, preference; no technique wins across tasks |
+| Q3 focus plus context, zooming | a contents pane beside the text (overview plus detail); folding in editors | Cockburn 2009 (review); Hornbæk 2002 (secondary); Jakobsen 2006 (secondary) | task time, accuracy, preference; no technique wins across tasks |
 | Q4 levels in one view | three heading levels (reader-ergonomics shallow outline); at most two disclosure levels (Nielsen 2006b, example of practice); no accordion inside another (GOV.UK 2026a) | for menus, two levels beat three (file-structure, linked); for agents, one level of disclosure beat two (He 2026) | menu search time; question answering on ∞Bench |
 | Q5 outliners and block editors | Logseq, SiYuan, Obsidian outliner plugins (counts below) | none found | no study of reading an outline in an outliner was found |
 | Q6 trees of summaries for models | GraphRAG and PageIndex repositories (counts below) | Laitenberger 2025; He 2026; Sarthi 2024 | matched-token comparisons on QuALITY, NarrativeQA, ∞Bench |
@@ -32,8 +32,8 @@ Two records are kept apart: most adopted (what people use) and best evidence (wh
 ## Upper bounds (achieved)
 
 - A fisheye of a regular tree is a logarithmically compressed view of it, computable in time proportional to the view (Furnas 1986, section 3).
-- On order judgments in an unfamiliar hierarchy, correct answers rose from 52% with two flat windows to 64% with one fisheye and 75% with two (Furnas 1986, 20 subjects, page 21).
-- On a three-level contents of 1,296 items, expand/contract and multi-pane views were significantly faster than the fully expanded list on most tasks (Chimera 1994).
+- On order judgments in an unfamiliar hierarchy, correct answers rose from 52% with two flat windows to 64% with one fisheye and 75% with two (Furnas 1986, 20 subjects, pages 20 to 21).
+- On a three-level contents of 1,296 items, expand/contract and multi-pane views were both significantly faster than the fully expanded list on four of nine tasks, and expand/contract on a fifth (Chimera 1994).
 - A hypertext book with an expandable contents beat print on search and essays (Egan 1989, secondary).
 - A tree of summaries raised QuALITY accuracy to 82.6% with GPT-4, against a previous best of 62.3% (Sarthi 2024, Table 7).
 - Retrieval in document order reached 93.1% on ∞Bench at 30K tokens (Laitenberger 2025).
@@ -47,4 +47,4 @@ Two records are kept apart: most adopted (what people use) and best evidence (wh
 - With strong long-context readers, the summaries in a tree did not help: the same pipeline without them did better (Laitenberger 2025, section 4).
 - Distortion-based fisheyes have rarely shown performance gains over the usual alternatives (Cockburn 2009, section 8).
 - A view of at most k lines cannot hold the whole ancestral line of a node deeper than k, so a capped view of an unbounded tree must elide ancestors. This follows from the definitions; it is not a study.
-- Folded or layered text was read less: few readers went past the first layer (McDonald 2009), and folded sections drew less reading time (Wikimedia 2016).
+- Folded or layered text was read less. Readers answered worse on what the first layer left out, and the authors infer few went past it (McDonald 2009). Folded sections drew less reading time (Wikimedia 2016).

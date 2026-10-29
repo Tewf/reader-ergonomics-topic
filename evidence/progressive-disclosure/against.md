@@ -42,7 +42,7 @@ This file gathers the evidence against showing text folded or nested: null resul
 - Furnas 1986: 20 subjects, one task of order judgments, one taxonomy.
 - Chimera 1994: 41 novices, one contents of three levels, one workstation of its time; the title calls it exploratory.
 - McDonald 2009: an online sample entered for a lottery, one domain (privacy policies), six companies; 7 of 756 were removed for clicking through.
-- Wikimedia 2016: not a strict A/B test; about 0.05% of users per group for one week; it measured time, not understanding.
+- Wikimedia 2016: not a strict A/B test; about 0.05% of users per group, in 2015-12 and 2016-01; it measured time, not understanding.
 - He 2026 and Jayraj 2026 are preprints; He 2026 uses one benchmark, ∞Bench. Laitenberger 2025 appeared at EMNLP (2025).
 - Hornbæk 2003 and the code and tree studies were read only through Cockburn 2009.
 

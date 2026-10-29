@@ -9,7 +9,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 | Human | **B1, shallow outline with overview plus detail**: the same content as one linear document, at most three heading levels, with its contents list always visible beside the text | overview plus detail gave the best comprehension and was preferred in the one document-reading comparison (Hornbæk 2003, secondary); it is the standard practice (Cockburn 2009); the three-level cap is the [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/principles/document/shallow-outline.md) the node must obey anyway |
 | Human, control | **B0, fully expanded tree**: every level open, no contents pane | the "stable" interface of Chimera 1994, which isolates the effect of folding |
 | Model | **DOS RAG**: passages retrieved and kept in the document's original order, at a matched token budget (Laitenberger 2025) | it matched or beat summary trees and an agent on three benchmarks |
-| Model, agent | **one level of disclosure**: a short description, then an index of chunks, read on demand (He 2026) | one level beat two in every cell where they differed |
+| Model, agent | **one level of disclosure**: a short description, then an index of chunks, read on demand (He 2026) | no cell rewarded a second level: it tied one level within noise or trailed it (He 2026, tables 1 and 2) |
 
 - The node must beat B1, not B0: beating a fully expanded tree is already shown (Chimera 1994), and B1 is what a careful writer would do without the node.
 - For models, beating RAPTOR (Sarthi 2024) is not enough, since simpler baselines already do (Laitenberger 2025).
@@ -38,7 +38,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 
 For a model reader:
 
-- Benchmarks: QuALITY, NarrativeQA and ∞Bench, as in Sarthi 2024, Laitenberger 2025 and He 2026.
+- Benchmarks: QASPER, NarrativeQA and QuALITY, as in Sarthi 2024; ∞Bench, as in Laitenberger 2025 and He 2026.
 - Conditions: node-tree navigation, DOS RAG, and one-level disclosure, at matched token budgets.
 - Readers of at least two sizes, since gains from compression shrink with stronger readers (Laitenberger 2025).
 - Outcomes: accuracy, tokens read, and whether the answer cites the right leaf.

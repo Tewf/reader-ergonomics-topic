@@ -14,7 +14,7 @@ This file is the progressive-disclosure pool: the flow from hits to sources, the
 
 - Formal:
   - 6,485 records were returned: Semantic Scholar 6,374 and arXiv 111. The two unusable "outliner" counts (F13) are left out.
-  - 422 were screened by title (382 Semantic Scholar, 40 arXiv), with repeats across strings.
+  - 422 were screened by title (382 Semantic Scholar, 40 arXiv), with repeats across strings. The protocol's rule, the 15 most cited per string, would give 392 on Semantic Scholar; the 10 not screened are not recorded.
   - 41 were included as new: 23 from the strings, 11 from leads named in the brief and checked, 4 by backward snowballing, 3 by handoff from information-typing.
   - Excluded, by title, rounded to tens: repeats across strings 40; off topic (medicine, physics, images, maps, biology) 260.
   - Also excluded: systems or techniques with no reader study 60; model pipelines not about reading a document tree 40.
@@ -28,7 +28,7 @@ This file is the progressive-disclosure pool: the flow from hits to sources, the
 
 The figure draws the stages of the table for progressive disclosure.
 
-![6,485 formal hits were returned and 422 screened; 377 grey results were screened. 41 formal and 23 grey sources were added, for 71 sources in the review.](flow.svg)
+![6,485 formal hits were returned and 422 screened; 377 grey results were screened. 41 formal and 23 grey sources were added, and 6 formal and 1 grey carried, for 71 sources in the review.](flow.svg)
 
 ## Formal sources
 
@@ -52,7 +52,7 @@ The figure draws the stages of the table for progressive disclosure.
 | Chimera 1994 | formal | F16 | measured, 41 novices, technical report version read | frame; review 2, 5; state-of-the-art; position; against; baseline |
 | Hornbæk 2003 | formal | F10 | measured, through Cockburn 2009 (secondary) | review 2; state-of-the-art; position; against; baseline |
 | Höök 1997 | formal | F1, F20 | measured, abstract (secondary) | review 2 |
-| McDonald 2009 | formal | F21 | measured, 749 adults, authors' version read | frame; review 2; state-of-the-art; position; against; baseline |
+| McDonald 2009 | formal | F21 | measured, 749 Internet users, authors' version read | frame; review 2; state-of-the-art; position; against; baseline |
 | Springer 2020 | formal | F4 | measured, four studies, abstract | review 2 |
 | Zellweger 2000 | formal | lead | located only | review 2 |
 | Boyle 1994 | formal | lead | located only | review 2 |

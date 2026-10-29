@@ -21,7 +21,7 @@ A body of writing is stored as a tree of units nested to any depth. Decide how i
 
 | Field name | What it names | Entry point |
 |---|---|---|
-| **stretchtext** | text that expands and contracts in place, so the surrounding text stays as context | Wikipedia 2026c, for the coinage in Nelson's work (1970) |
+| **stretchtext** | text that expands and contracts in place, so the surrounding text stays as context | Wikipedia 2026c: defined in print in 1970, described in an unpublished note by Nelson in 1967 |
 | **adaptive presentation**, canned-text adaptation | a system chooses which fragments of a page to show or stretch for this reader | Brusilovsky 2001 |
 | **focus plus context** (focus+context, F+C) | focus and context fused in one view, often by eliding or shrinking the far parts | Cockburn 2009 |
 | **fisheye view**, **degree of interest** (DOI) | show a node when its importance minus its distance from the focus passes a threshold | Furnas 1986 |

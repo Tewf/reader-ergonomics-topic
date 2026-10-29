@@ -8,7 +8,7 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 
 - Cockburn 2009 (read in full): reviews overview plus detail, zooming, focus plus context and cue-based interfaces.
   - Its summary (section 8): none of the four is ideal, and research "fails to provide clear guidelines" on which fits which task.
-  - It found one document-reading comparison and a few on program text and trees; strands 2 and 4 cite them through it.
+  - It holds one reading study with comprehension measured, a web-browser study, a document-navigation study and a few on program text and trees; strands 2 and 4 cite them through it.
 - Chen 1996 (abstract, secondary): a meta-analysis of 23 hypertext experiments, 56 effect sizes. Hypertext users were more effective and less efficient; maps of the organisation raised usefulness; results varied strongly.
 - Dillon 1998 (abstract): hypermedia helps learning only for tasks of repeated searching and manipulation; method flaws limit every conclusion.
 - Brusilovsky 2001 (read in the relevant sections): a survey of adaptive hypermedia. It lists **stretchtext**, text that expands in place, among the canned-text adaptation technologies, beside inserting, altering and dimming fragments.
@@ -22,12 +22,12 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 - Furnas 1986 (read): the **fisheye view** shows a point when its a priori importance minus its distance from the focus passes a threshold.
   - On a tree, importance is minus the depth and distance is the path length; the view keeps the ancestral line, then siblings, then cousins (Figure 2).
   - In a regular tree the view is a logarithmically compressed display, computed in time proportional to the view, not the tree (section 3).
-  - In its experiment, 20 subjects judged the order of two parts of an unfamiliar botanical hierarchy, 16 pairs each (page 21).
+  - In its experiment, 20 subjects judged the order of two parts of an unfamiliar botanical hierarchy, 16 pairs each (pages 20 to 21).
   - Correct answers: 52% with two flat views, 64% with one fisheye and one flat, 75% with two fisheyes.
   - A footnote links fisheye views of outlines to the outline processors then reaching the market.
 - Early systems for a global and a detailed view: Engelbart 1968 (cited so by Furnas 1986), Pad++ for zooming (Bederson 1994), the document lens for continuous distortion (Robertson 1993).
 - None of these three was read beyond its title and those citations.
-- Carroll 1984 (abstract): blocking error-prone function for new users gave faster learning; the control group spent almost a quarter of its time recovering from errors.
+- Carroll 1984 (abstract, secondary): blocking error-prone function for new users gave faster learning; the control group spent almost a quarter of its time recovering from errors.
 - Nielsen 2006b names deferring advanced or rare features to a second level **progressive disclosure**, and dates the idea to over 30 years before 2006.
 
 ## 2. Q1: folded and expandable text
@@ -43,7 +43,7 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 | Heinonen 2022 | maintenance instructions in DITA layered by skill level, the reader choosing the depth; user studies in three countries | well received across skill levels; observation, interviews and questionnaires, no comparison condition | abstract (secondary) |
 
 - McDonald 2009 concludes that few participants went beyond the first page of a layered policy (section 4.1).
-- Springer 2020 (abstract): in four studies of an explained system, users gained from simple feedback first and the detail on demand; it is about explanations, not documents.
+- Springer 2020 (abstract, secondary): in four studies of an explained system, users gained from simple feedback first and the detail on demand; it is about explanations, not documents.
 - Located, not read: Zellweger 2000 (fluid documents, an observational study), Boyle 1994 (MetaDoc, adaptive stretchtext).
 - Johnson 2013 (a blog, 13 of 20, scored in information-typing): one DITA topic per contents entry scatters brief tasks; he would nest them under a parent and favours collapsible sections; no data.
 
@@ -51,13 +51,13 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 
 The linked reviews hold the overview and map effects: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/reading-order/review.md) (strand 1) and [learning-science](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/learning-science/review.md) (strand 6), with DeStefano 2007 and Amadieu 2009.
 
-- Mohageg 1992 (abstract): hierarchical links beat network links by 49 s per task on average; adding network links to the hierarchy gave no consistent gain for novices.
-- McDonald 1998 (abstract): hierarchy plus cross-references beat pure hierarchy and pure network for finding answers; prior knowledge helped in every structure.
+- Mohageg 1992 (abstract, secondary): hierarchical links beat network links by 49 s per task on average; adding network links to the hierarchy gave no consistent gain for novices.
+- McDonald 1998 (abstract): hierarchy plus cross-references beat pure hierarchy and pure network for finding answers; prior knowledge helped overall.
 - Located, abstract not readable on the day: McDonald 1996, Calisir 2003, Potelle 2003.
 
 ## 4. Q3: focus plus context and zooming for documents and trees
 
-- Hornbæk 2002 (abstract): 32 subjects, zoomable maps with and without an overview. Accuracy did not differ and 80% preferred the overview; on the map built in levels with semantic zoom, subjects were faster without it.
+- Hornbæk 2002 (abstract, secondary): 32 subjects, zoomable maps with and without an overview. Accuracy did not differ and 80% preferred the overview; on the map built in levels with semantic zoom, subjects were faster without it.
 - Through Cockburn 2009 (section 7.2, secondary):
   - Jakobsen 2006: a fisheye of source code that folds by degree of interest was significantly faster than a flat listing, and preferred.
   - Nekrasovski 2006: on large trees, pan and zoom beat a rubber-sheet fisheye; an overview did not change task time.
@@ -90,7 +90,7 @@ The linked reviews hold the overview and map effects: [reading-order](https://gi
 - Jayraj 2026 (abstract, secondary): a tree used only to navigate, emitting leaves, matched the strongest flat retriever; the gain came from navigation, not summaries.
 - Chen 2023 (abstract): a model walks a tree of summary nodes to answer; better than long-context and retrieval baselines. Edge 2024 (abstract) summarizes graph communities to answer questions about a whole corpus; it is a graph, not a tree.
 - Mortezaagha 2026 (abstract, secondary): on 2,359 PubMed Central articles, content-similarity retrieval had the best MRR (0.517) but drew from one section; structure-aware retrieval drew from up to 15.6 times more sections.
-- Chang 2024 (abstract, secondary): over 100 books, merging summaries up a hierarchy was more coherent than updating one running summary, which kept more detail.
+- Chang 2024 (abstract, secondary): on 100 books, merging summaries up a hierarchy was more coherent than updating one running summary, which kept more detail.
 
 ## 7. Practice
 
@@ -106,7 +106,7 @@ The linked reviews hold the overview and map effects: [reading-order](https://gi
 | Code editors | folding of blocks and `#region` | standard feature (Cockburn 2009) |
 | Tree retrieval (RAPTOR, GraphRAG, PageIndex) | trees or graphs of summaries for model readers | counts in state-of-the-art.md; PageIndex reports 98.7% on FinanceBench itself (VectifyAI 2026, example only) |
 
-- Wikimedia 2016 is not a strict A/B test: about 0.05% of mobile users per group, one week of 2016-01.
+- Wikimedia 2016 is not a strict A/B test: about 0.05% of mobile users per group, run in 2015-12 and 2016-01; the session chart covers 2016-01-02 to 2016-01-08.
 - Wang 2023 (example only, held by [typography-and-layout](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/typography-and-layout/review.md)) says folded content may be missed.
 
 Q/A sites (searched 2026-10-29; 12 threads, 2 under 10 of 20; strings in [protocol](protocol.md)). Practitioner opinion, no data.

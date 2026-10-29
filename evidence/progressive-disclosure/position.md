@@ -4,7 +4,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 
 ## Against the existing reviews
 
-- Cockburn 2009 reviews interfaces for focus and context, mostly on maps, graphs, menus and code; it holds one document-reading comparison (Hornbæk 2003).
+- Cockburn 2009 reviews interfaces for focus and context, mostly on maps, graphs, menus and code; it holds one reading study with comprehension measured (Hornbæk 2003), beside a web-browser study and a document-navigation study.
 - Chen 1996 and Dillon 1998 review hypertext against linear text, not folded text within one document.
 - Brusilovsky 2001 names stretchtext as an adaptation technology, without a test of it.
 - This review adds: layered documents, outliners, and trees of summaries read by models, beside the interface studies; and the question of depth in storage against depth in view, which none of them asks.
@@ -12,9 +12,9 @@ Each "not known" below is a statement about this search, not about the world. Te
 ## Known
 
 - A fisheye of a tree keeps the ancestral line and nearby nodes, and its size grows with the logarithm of a regular tree, not its size (Furnas 1986).
-- Expandable contents beat a fully expanded list for finding items in a large three-level tree, except on the easiest task (Chimera 1994).
+- Expandable contents beat a fully expanded list for finding items in a large three-level tree on five of nine tasks, lost on the easiest, and did not differ on three (Chimera 1994).
 - Shrinking text by importance speeds reading and costs comprehension; an overview beside full text gives the best understanding (Hornbæk 2003, secondary).
-- Readers of a layered document rarely go past the first layer, and answer less accurately on what lies below it (McDonald 2009).
+- Readers of a layered document answer less accurately on topics left out of its first layer; the authors infer that few went past it, without logging opens (McDonald 2009).
 - Hierarchical links beat network links for novices finding facts (Mohageg 1992, secondary); hierarchy with some cross-links can beat both (McDonald 1998, secondary).
 - No interface for focus and context wins on every task (Cockburn 2009).
 - For model readers, one level of disclosure is enough and a second can harm (He 2026); summary trees add little over passages in their original order for strong readers (Laitenberger 2025).
@@ -56,7 +56,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 - Whether a summary per node improves which branches a reader opens, measured on the reader.
 - Whether outliners help readers, as opposed to writers: no study of reading an outline in an outliner was found.
 - Whether fold-by-default helps or hurts comprehension on mobile, beyond reading time (Wikimedia 2016 measured time, not understanding).
-- Whether trees of summaries help models with long contexts beyond the benchmarks tested (QuALITY, NarrativeQA, ∞Bench).
+- Whether trees of summaries help models with long contexts beyond the benchmarks tested (QASPER, QuALITY, NarrativeQA, ∞Bench).
 
 ## Where practice runs ahead of the evidence
 
