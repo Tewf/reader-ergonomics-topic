@@ -105,13 +105,6 @@ answer = "One links the other already: the protocol names its shared rules by a 
 
 [[answer]]
 check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "cb1d393f2c6e"
-answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
-
-[[answer]]
-check = "document-mode"
 path = "evidence/README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "bafbb1d5f5b3"
@@ -130,3 +123,17 @@ path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "9fdf515d3c6a"
 answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
+
+[[answer]]
+check = "tree-shape"
+path = "ai-augmented"
+question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: ai-augmented/ is this branch's own subject, one record of the repository's work, and it will hold the branch's review and shapes as they come; folded into the root, the branch's scope would mix with master's front page."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "e6fb33b398d8"
+answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."

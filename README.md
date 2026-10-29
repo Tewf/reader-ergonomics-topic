@@ -81,6 +81,7 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 | [shapes](shapes/) | the topic, the base every shape derives from, and how the four general shapes of reader-ergonomics fit it |
 | [the check](checks/local/topic.py) | runs on every topic of this repository, at any depth: title, summary, listed by its parent with that summary, no inclusion cycle |
 | [decisions](decisions/) | one record per architectural choice, each opening with the decision in one sentence |
+| [ai-augmented](ai-augmented/) | on this branch only: the topic as the format a person, a model and a proof assistant all work on |
 
 - The topic has five blocks: title, summary, body, contents and see also. Each is traced to a principle of
   reader-ergonomics and to the evidence here ([topic](shapes/topic.md)).
