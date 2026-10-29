@@ -71,64 +71,71 @@ answer = "No: it lists separate findings, each with its source, under questions 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/against.md"
-question = "114 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "094e2f7b9535"
-answer = "One role: the case against this review's claims, from `Failed replications: accuracy re-judged by people` to `Limits of the practice evidence`, each kind of evidence under its heading. It stays whole."
+question = "116 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "6f78aaae4d94"
+answer = "One role: the case against this review's claims, from `Failed replications: accuracy re-judged by people` to `Limits of the practice evidence`, each kind of evidence under its heading; the lead screen's lines extend `Limits of the benchmarks themselves` and `Limits of the prior art`. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/protocol.md"
-question = "533 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
-file = "d97fb7647780"
-answer = "It stays one file: it is the record a reviewer reruns, and its parts change together, since a string of `4. Formal search` is screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`. The lines past the ceiling are the strands' string tables, kept whole as each strand ran them."
+question = "540 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "d4c758037a94"
+answer = "It stays one file: it is the record a reviewer reruns, and its parts change together, since a string of `4. Formal search` is screened under `7. Stopping rule`, selected under `8. Selection` and limited under `11. Limits`. The lead screen's decisions sit in `4. Formal search` and answer the leads that `Strand B: prior art and feedback` did not pursue. The lines past the ceiling are the strands' string tables, kept whole as each strand ran them."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/protocol.md"
-question = "423 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "d97fb7647780"
-answer = "One role: the record from which another reviewer can rerun this review's search, from `Why grey literature` to `Limits`, each strand's strings under its own part (`Strand A: translation and its faithfulness`, `Strand B: prior art and feedback`, `Strand C: form and limits`). It stays whole."
+question = "430 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "d4c758037a94"
+answer = "One role: the record from which another reviewer can rerun this review's search, from `Why grey literature` to `Limits`, each strand's strings under its own part (`Strand A: translation and its faithfulness`, `Strand B: prior art and feedback`, `Strand C: form and limits`), the lead screen's record under `Formal search`. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
-question = "735 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
-file = "729ccab58dd2"
-answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. Split by pass, each question would be read in two places."
+question = "767 lines, past the ceiling of 500. Review it: split it only into pieces that change separately and each stay whole, or state why it stays one file."
+file = "325e497638c7"
+answer = "It stays one file: it reads one question at a time, from `Answer first` to `Where practice runs ahead of the evidence`, with the grey and formal findings on each question side by side, which `Where the two passes disagree` compares. The lead screen's works joined the questions they answer, such as `Checks of form in CI, and model feedback on writing`; split by pass, each question would be read in two places."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
-question = "440 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "729ccab58dd2"
+question = "468 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "325e497638c7"
 answer = "One role: the reading log of this review's findings, by question from `Q1. Prior art` to `Q5. Limits`. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/sources.md"
-question = "371 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "ff3a615abd50"
-answer = "One role: this review's pool, from its `Flow` to `Result of the grading and the scoring`, one row per work, formal under `Formal sources, graded` and grey under `Grey sources, scored`. It stays whole."
+question = "406 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "d3d5c3c0866f"
+answer = "One role: this review's pool, from its `Flow` to `Result of the grading and the scoring`, one row per work, formal under `Formal sources, graded`, grey under `Grey sources, scored`, the leads set aside under `Leads screened after the merge, set aside`. It stays whole."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/sources.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "d3d5c3c0866f"
+answer = "Reference: the pool looked up by work, one row per key under `Formal sources, graded` and `Grey sources, scored`, beside its `Flow` and its `Keys`; the rows under `Leads screened after the merge, set aside` are records of decisions, not steps, and it sets the reader no task."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/autoformalization/state-of-the-art.md"
-question = "107 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "aeebb0dd06aa"
+question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "03582a12ad7a"
 answer = "One role: step 3, the best evidence on each question, from `Best evidence per question` through `Upper bounds: what has been achieved` and `Lower bounds: what is shown impossible, or not yet shown` to the practice `Most adopted in practice, beside the best evidence`. It stays whole."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/autoformalization/position.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "4daade1a0b4f"
+file = "81280d065051"
 answer = "Explanation: it argues what the evidence allows, under `The repository's question: the topic as the interface`, between `Known` and `Not known`; its four conditions are `candidate rules`, not steps for the reader."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/autoformalization/review.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "729ccab58dd2"
+file = "325e497638c7"
 answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`, grey and formal side by side; it sets the reader no task."
 
 [[answer]]
@@ -227,35 +234,35 @@ check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/information-typing/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "05a2081232f3"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and most of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
 
 [[answer]]
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "05a2081232f3"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and most of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
 
 [[answer]]
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "05a2081232f3"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and most of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
 
 [[answer]]
 check = "co-change"
 path = "evidence/information-typing/review.md"
 question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "c593a441f275"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and most of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
 
 [[answer]]
 check = "co-change"
 path = "evidence/information-typing/review.md"
 question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "c593a441f275"
-answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `7a76cc6a86b7a5c1e451e4416534d113abd0f594`, and most of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
 
 [[answer]]
 check = "document-mode"

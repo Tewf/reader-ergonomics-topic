@@ -67,11 +67,13 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Calder 1990 | Calder, Linton (1990). Glyphs: flyweight objects for user interfaces. UIST 1990, 92-101. Title and venue only | https://doi.org/10.1145/97924.97935 |
 | Calisir 2003 | Calisir, Gurel (2003). Influence of text structure and prior knowledge of the learner on reading comprehension, browsing and perceived control. Computers in Human Behavior 19(2), 135-145 (located only) | https://doi.org/10.1016/S0747-5632(02)00058-4 |
 | Carl 2020 | Carl (2020). Using automated theorem provers for mistake diagnosis in the didactics of mathematics. Preprint | arXiv:2002.05083 |
+| Carl 2020b | Carl (2020). Automatized evaluation of formalization exercises in mathematics. Preprint | arXiv:2006.01800 |
 | Carl 2022 | Carl, Lorenzen, Schmitz (2022). Natural language proof checking in introduction to proof classes: first experiences with Diproche. ThEdu'21, EPTCS 354, 59-70 | https://doi.org/10.4204/EPTCS.354.5 |
 | Carl 2024 | Carl (2024). Improving the Diproche CNL through autoformalization via large language models. ThEdu'23, EPTCS 400, 44-58 | https://doi.org/10.4204/EPTCS.400.4 |
 | Carneiro 2024 | Carneiro (2024). Lean4Lean: verifying a typechecker for Lean, in Lean. Preprint | arXiv:2403.14064 |
 | Carroll 1984 | Carroll, Carrithers (1984). Training wheels in a user interface. Communications of the ACM 27(8), 800-806 | https://doi.org/10.1145/358198.358218 |
 | Carroll 1987 | Carroll, Smith-Kerker, Ford, Mazur-Rimetz (1987). The minimal manual. Human-Computer Interaction 3, 123-153 | https://doi.org/10.1207/s15327051hci0302_2 |
+| Carter 2013 | Carter, Monks (2013). Lurch: a word processor that can grade students' proofs. CICM 2013 Workshops and Work in Progress, CEUR-WS 1010, paper 4 | https://ceur-ws.org/Vol-1010/paper-04.pdf |
 | Chang 2024 | Chang, Lo, Goyal, Iyyer (2024). BooookScore: a systematic exploration of book-length summarization in the era of LLMs. ICLR 2024 | arXiv:2310.00785 |
 | Chen 1996 | Chen, Rada (1996). Interacting with hypertext: a meta-analysis of experimental studies. Human-Computer Interaction 11(2), 125-156 | https://doi.org/10.1207/s15327051hci1102_2 |
 | Chen 2023 | Chen, Pasunuru, Weston, Celikyilmaz (2023). Walking down the memory maze: beyond context limit through interactive reading. Preprint | arXiv:2310.05029 |
@@ -96,6 +98,7 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Corbineau 2008 | Corbineau (2008). A declarative language for the Coq proof assistant. TYPES 2007, LNCS 4941, 69-84. Title and venue only | https://doi.org/10.1007/978-3-540-68103-8_5 |
 | Coscoy 1995 | Coscoy, Kahn, Théry (1995). Extracting text from proofs. TLCA 1995, LNCS 902, 109-123. Title and venue only | https://doi.org/10.1007/BFb0014048 |
 | Cramer 2010 | Cramer, Fisseni, Koepke, Kühlwein, Schröder, Veldman (2010). The Naproche project: controlled natural language proof checking of mathematical texts. CNL 2009, LNCS 5972, 170-186. Title and venue only | https://doi.org/10.1007/978-3-642-14418-9_11 |
+| Cramer 2013 | Cramer (2013). Proof-checking mathematical texts in controlled natural language. Doctoral dissertation, Universität Bonn | https://hdl.handle.net/20.500.11811/5780 |
 | Dai 2026 | Dai, Yan, Lin (2026). The signal-coverage matrix: stratifying type and semantic errors in statement autoformalization. Preprint | arXiv:2606.28013 |
 | Dayton 2010 | Dayton, Hopper (2010). Single sourcing and content management: a survey of STC members. Technical Communication 57(4), November 2010. Abstract read in an archived copy | https://web.archive.org/web/20200715230947/https://www.stc.org/techcomm/?p=1195 |
 | DeepSeek 2025 | DeepSeek (2025-04-30). DeepSeek-Prover-V2-671B. Model card; the owner's results | https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B |
@@ -215,12 +218,14 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Klowden 2026 | Klowden, Tao (2026). Mathematical methods and human thought in the age of AI. Preprint | arXiv:2603.26524 |
 | Knobelsdorf 2017 | Knobelsdorf, Frede, Böhne, Kreitz (2017). Theorem provers as a learning tool in theory of computation. ICER 2017, 83-92 | https://doi.org/10.1145/3105726.3106184 |
 | Knutov 2009 | Knutov, De Bra, Pechenizkiy (2009). AH 12 years later: a comprehensive survey of adaptive hypermedia methods and techniques. New Review of Hypermedia and Multimedia 15(1), 5-38 (title only) | https://doi.org/10.1080/13614560902801608 |
+| Kondylidou 2026 | Kondylidou, Blanchette, Heule (2026). Tao's equational proof challenge accepted. IJCAR 2026, LNCS, 3-21; read in the technical report, arXiv 2605.21200 | https://doi.org/10.1007/978-3-032-32589-1_1 |
 | Kools 2008 | Kools, Ruiter, van de Wiel, Kok (2008). The effects of headings in information mapping on search speed and evaluation of a brief health education text. Journal of Information Science 34, 833-844 | https://doi.org/10.1177/0165551508089719 |
 | Kosmyna 2025 | Kosmyna, Hauptmann, Yuan, Situ, Liao, Beresnitzky, Braunstein, Maes (2025). Your brain on ChatGPT: accumulation of cognitive debt when using an AI assistant for essay writing task. Preprint | arXiv:2506.08872 |
 | Koutsoukou-Argyraki 2020 | Koutsoukou-Argyraki (2020). Formalising mathematics in praxis: a mathematician's first experiences with Isabelle/HOL and the why and how of getting started. Jahresbericht der Deutschen Mathematiker-Vereinigung 123, 3-26 (online 2020, print 2021) | https://doi.org/10.1365/s13291-020-00221-1 |
 | Krishnamurthi 2026 | Krishnamurthi, Flatt (2026). Type-error ablation and AI coding agents. Preprint | arXiv:2606.01522 |
 | Kubernetes 2026b | Kubernetes (2026). Page content types. Kubernetes documentation, last modified 2026-05-03 | https://kubernetes.io/docs/contribute/style/page-content-types/ |
 | Kuhn 2014 | Kuhn (2014). A survey and classification of controlled natural languages. Computational Linguistics 40(1), 121-170 | https://doi.org/10.1162/COLI_a_00168 |
+| Kung 2026 | Kung, Song, Hwang, Yoon, Li, Severini, Olšák, Lockhart, Le, Gokturk, Luong, Pfister, Peng (2026). LEAP: supercharging LLMs for formal mathematics with agentic frameworks. Preprint | arXiv:2606.03303 |
 | Laitenberger 2025 | Laitenberger, Manning, Liu (2025). Stronger baselines for retrieval-augmented generation with long-context language models. EMNLP 2025, 32559-32569 | arXiv:2506.03989 |
 | Lam 2011 | Lam, Munzner (2011). A guide to visual multi-level interface design from synthesis of empirical study evidence. Synthesis Lectures on Visualization (title only; Crossref dates this edition 2011, Semantic Scholar 2010) | https://doi.org/10.1007/978-3-031-02598-3 |
 | Larson 1998 | Larson, Czerwinski (1998). Web page design: implications of memory, structure and scent for information retrieval. CHI (carried) | https://doi.org/10.1145/274644.274649 |
@@ -237,10 +242,12 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Lessing 2025 | Lessing, Ogbonnaya (2025). Reasoning and proof in mathematics education: a systematic literature review. Discover Education 5 | https://doi.org/10.1007/s44217-025-01016-1 |
 | Li 2024b | Li, Sun, Murphy, Su, Li, Zhang, Yang, Si (2024). A survey on deep learning for theorem proving. Preprint | arXiv:2404.09939 |
 | Li 2024c | Li, Wu, Li, Wei, et al. (2024). Autoformalize mathematical statements by symbolic equivalence and semantic consistency. NeurIPS 2024 | arXiv:2410.20936 |
+| Liang 2024c | Liang, Zhang, Cao, Wang, Ding, Yang, Vodrahalli, He, Smith, Yin, McFarland, Zou (2024). Can large language models provide useful feedback on research papers? A large-scale empirical analysis. NEJM AI 1(8); read in the preprint, arXiv 2310.01783 (v1) | https://doi.org/10.1056/AIoa2400196 |
 | Lin 2025 | Lin, Tang, Lyu, Wu, et al. (2025). Goedel-Prover: a frontier model for open-source automated theorem proving. Preprint | arXiv:2502.07640 |
 | Lin 2025b | Lin, Tang, Lyu, Yang, Chung and others, with Jin (2025). Goedel-Prover-V2: scaling formal theorem proving with scaffolded data synthesis and self-correction. Preprint; the model card is Goedel-LM 2025 | arXiv:2508.03613 |
 | Liu 2025b | Liu, Zheng, Lu, Cao, Yan (2025). Rethinking and improving autoformalization: towards a faithful metric and a dependency retrieval-based approach. ICLR 2025 | https://dblp.org/rec/conf/iclr/LiuZLCY25 |
 | Liu 2025c | Liu, Zhu, Liu, et al. (2025). Generalized tree edit distance (GTED): a faithful evaluation metric for statement autoformalization. AI4Math workshop, ICML 2025 | arXiv:2507.07399 |
+| Liu 2025d | Liu, Bao, Zhang, Liu, Chen, Liu, Jiao, Luo (2025). ATLAS: autoformalizing theorems through lifting, augmentation, and synthesis of data. NeurIPS 2025 | arXiv:2502.05567 |
 | Logseq 2023 | Logseq documentation (2023). The difference between block embeds and block references. Page last changed 2023-01-13 | https://github.com/logseq/docs/blob/0c43e2359faa79111af8a80503ab5962b8657579/pages/The%20difference%20between%20block%20embeds%20and%20block%20references.md |
 | Lu 2024 | Lu, Delaware, Zhang (2024). Proof automation with large language models. ASE 2024, 1509-1520 | https://doi.org/10.1145/3691620.3695521 (arXiv:2409.14274) |
 | Lu 2025 | Lu, Wan, Huang, Xiong, et al. (2025). FormalAlign: automated alignment evaluation for autoformalization. ICLR 2025 | arXiv:2410.10135 |
@@ -354,6 +361,7 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Pyle 2017 | Pyle, Vasquez, Lignugaris/Kraft, Gillam, Reutzel, Olszewski (2017). Effects of expository text structure interventions on comprehension: a meta-analysis. Reading Research Quarterly 52, 469-501 | https://doi.org/10.1002/rrq.179 |
 | PyPI 2026 | PyPI statistics (read 2026-10-29). Recent downloads of leanblueprint and lean-lsp-mcp, field last_month. The formal side's count | https://pypistats.org/api/packages/leanblueprint/recent ; https://pypistats.org/api/packages/lean-lsp-mcp/recent |
 | Raiyan 2026 | Raiyan, Kabir, Mahmud, Hasan, Ananiadou (2026). Artificial intelligence for mathematical reasoning: an integrated survey of language models, neuro-symbolic systems, and verified discovery. Preprint | arXiv:2606.08728 |
+| Rammal 2026 | Rammal, Patel, Gloeckle, Hayat, Kempe, Munos, Arnal, Cabannes (2026). Formalizing mathematics at scale. Preprint; the owners' account | arXiv:2605.29955 |
 | Ranta 2026 | Ranta (2026). Symbolic informalization: fluent, productive, multilingual. Preprint | arXiv:2606.16893 |
 | Rav 1999 | Rav (1999). Why do we prove theorems? Philosophia Mathematica 7(1), 5-41. Paywalled | https://doi.org/10.1093/philmat/7.1.5 |
 | Red Hat 2026b | Red Hat (accessed 2026). Modular documentation reference guide | https://redhat-documentation.github.io/modular-docs/ |
@@ -480,6 +488,7 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | Wu 2021 | Wu, Ouyang, Ziegler, Stiennon, Lowe, Leike, Christiano (2021). Recursively summarizing books with human feedback. Preprint | arXiv:2109.10862 |
 | Wu 2022 | Wu, Jiang, Li, Rabe, et al. (2022). Autoformalization with large language models. NeurIPS 2022 | arXiv:2205.12615 |
 | Wu 2025b | Wu, Huang, Wan, et al. (2025). StepFun-Formalizer: unlocking the autoformalization potential of LLMs through knowledge-reasoning fusion. AAAI 2026 | arXiv:2508.04440 |
+| Wu 2026 | Wu (2026). Can AI review improve paper drafting? An empirical study on 20 computer architecture submissions. Preprint | arXiv:2606.01013 |
 | Xin 2024 | Xin, Guo, Shao, Ren, et al. (2024). DeepSeek-Prover: advancing theorem proving in LLMs through large-scale synthetic data. Preprint | arXiv:2405.14333 |
 | Xin 2024b | Xin, Ren, Song, Shao, Zhao and others (2024). DeepSeek-Prover-V1.5: harnessing proof assistant feedback for reinforcement learning and Monte-Carlo tree search. Preprint | arXiv:2408.08152 |
 | Xu 2025 | Xu, Wang, Wang, Li, Watt (2025). A minimalist proof language for neural theorem proving over Isabelle/HOL. OOPSLA 2026 | arXiv:2507.18885 |
