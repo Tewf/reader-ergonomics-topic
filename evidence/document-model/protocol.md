@@ -28,48 +28,48 @@ The six sub-questions Q1 to Q6 are stated in [frame](frame.md). In short: docume
 
 ## 4. Formal search
 
-Count sources: the Semantic Scholar bulk search (title and abstract, sorted by citations, no key) and the arXiv API (all fields or abstract). OpenAlex, the intended source, was not called: its anonymous daily budget was spent until 00:00 UTC on 2026-10-30; the strings in OpenAlex syntax are, for counts to be added by script. Semantic Scholar does not match phrases exactly, so its counts are noisy upper bounds; four strings returned mostly unrelated work and carry no weight (marked noise).
+Count sources: the Semantic Scholar bulk search (title and abstract, sorted by citations, no key) and the arXiv API (all fields or abstract). The OpenAlex column was counted afterwards, at 10:11 UTC; ten strings (F29 to F36, A1, A2) wait for its next daily budget. Semantic Scholar does not match phrases exactly, so its counts are noisy upper bounds; four strings returned mostly unrelated work and carry no weight (marked noise).
 
-| Id | String as run | Semantic Scholar | arXiv |
-|---|---|---|---|
-| F1 | `"ordered hierarchy of content objects" \| OHCO` | 41 | not run |
-| F2 | `"overlapping hierarchies" + markup` | 16 | 0 (with F3, as one OR string) |
-| F3 | `"concurrent markup" \| "multihierarchical markup" \| GODDAG \| "overlapping markup"` | 54 | 0 (`ti:"overlapping markup"`) |
-| F4 | `transclusion` | 95 | 1 |
-| F5 | `"content reuse" + documentation` | 16 | 5 |
-| F6 | `"single sourcing" + documentation` | 265 | refused by the service |
-| F7 | `"component content management"` | 39 | not run |
-| F8 | `(DITA + "Darwin Information Typing Architecture") \| (DITA + conref) \| (DITA + map + reuse)` | 61 | not run |
-| F9 | `(DTD \| "XML Schema") + (recursion \| recursive)` | 152 | refused |
-| F10 | `"JSON Schema" + (empirical \| "real-world" \| recursion \| recursive)` | 80 | 16 |
-| F11 | `"composite pattern" \| "composite design pattern"` | 851 (noise) | 96 (noise) |
-| F12 | `"composite pattern" + (software \| "object-oriented" \| design)` | 169 | not run |
-| F13 | `"design patterns" + ("systematic literature review" \| "mapping study")` | 117 | not run |
-| F14 | `(documentation \| specification) + (clones \| duplicates \| duplication) + (reuse \| "clone detection")` | 243 | refused |
-| F15 | `"prose linting" \| "prose linter" \| "documentation linting" \| "documentation linter" \| "style checker" + documentation` | 2 | 0 |
-| F16 | `(linter \| linting) + (documentation \| prose \| writing \| markdown)` | 150 | not run |
-| F17 | `"documentation smells" \| ("documentation" + "style guide" + automated + checking)` | 2 | not run |
-| F18 | `Schematron \| "RELAX NG"` | 210 | not run |
-| F19 | `("XML documents" \| "XML data" \| DTDs) + ("empirical study" \| "statistical analysis" \| "real-world" \| "the XML web")` | 706 | not run |
-| F20 | `"descriptive markup"` | 57 | not run |
-| F21 | `"structured documents" + ("document model" \| "logical structure" \| editing)` | 275 | not run |
-| F22 | `"quality of the XML web" \| ("XML" + "well-formed" + valid + web + study)` | 12 | not run |
-| F23 | `"Writer's Workbench"` | 58 | not run |
-| F24 | `"controlled language" + checker` | 40 | not run |
-| F25 | `"automated writing evaluation" + meta-analysis` | 14 | not run |
-| F26 | `("markup" + overlap + review) \| "Text as Graph" \| TAGML \| LMNL` | 1,531 (noise) | not run |
-| F27 | `(Xanadu \| "Ted Nelson") + hypertext` | 115 | not run |
-| F28 | `"Text Encoding Initiative" + (model \| critique \| hierarchy)` | 140 | not run |
-| F29 | `"documentation reuse"` | 26 | not run |
-| F30 | `(documentation + "near duplicates") \| ("software documentation" + duplicates)` | 33 | not run |
-| F31 | `"technical documentation" + (clones \| "copy and paste" \| duplication)` | 25 | not run |
-| F32 | `("single sourcing" \| "content reuse" \| "modular documentation" \| "structured authoring") + (experiment \| usability \| comprehension \| "user study")` | 19,449 (noise) | not run |
-| F33 | `("XML" \| "markup") + validation + (errors \| "error detection") + (documents \| documentation) + empirical` | 6 | not run |
-| F34 | `"single sourcing" + usability` | 17,791 (noise) | not run |
-| F35 | `"content reuse" + experiment` | 16 | not run |
-| F36 | `"structured authoring" + study` | 321 | not run |
-| A1 | arXiv only: `abs:"recursive schema" OR abs:"recursive schemas"` | | 7 (noise) |
-| A2 | arXiv only: `abs:"docs as code" OR abs:"documentation as code"` | | 161 (noise) |
+| Id | String as run | Semantic Scholar | arXiv | OpenAlex |
+|---|---|---|---|---|
+| F1 | `"ordered hierarchy of content objects" \| OHCO` | 41 | not run | 45 |
+| F2 | `"overlapping hierarchies" + markup` | 16 | 0 (with F3, as one OR string) | 16 |
+| F3 | `"concurrent markup" \| "multihierarchical markup" \| GODDAG \| "overlapping markup"` | 54 | 0 (`ti:"overlapping markup"`) | 82 |
+| F4 | `transclusion` | 95 | 1 | 100 |
+| F5 | `"content reuse" + documentation` | 16 | 5 | 24 |
+| F6 | `"single sourcing" + documentation` | 265 | refused by the service | 393 |
+| F7 | `"component content management"` | 39 | not run | 48 |
+| F8 | `(DITA + "Darwin Information Typing Architecture") \| (DITA + conref) \| (DITA + map + reuse)` | 61 | not run | 82 |
+| F9 | `(DTD \| "XML Schema") + (recursion \| recursive)` | 152 | refused | 133 |
+| F10 | `"JSON Schema" + (empirical \| "real-world" \| recursion \| recursive)` | 80 | 16 | 189 |
+| F11 | `"composite pattern" \| "composite design pattern"` | 851 (noise) | 96 (noise) | 926 |
+| F12 | `"composite pattern" + (software \| "object-oriented" \| design)` | 169 | not run | 178 |
+| F13 | `"design patterns" + ("systematic literature review" \| "mapping study")` | 117 | not run | 152 |
+| F14 | `(documentation \| specification) + (clones \| duplicates \| duplication) + (reuse \| "clone detection")` | 243 | refused | 452 |
+| F15 | `"prose linting" \| "prose linter" \| "documentation linting" \| "documentation linter" \| "style checker" + documentation` | 2 | 0 | 2 |
+| F16 | `(linter \| linting) + (documentation \| prose \| writing \| markdown)` | 150 | not run | 316 |
+| F17 | `"documentation smells" \| ("documentation" + "style guide" + automated + checking)` | 2 | not run | 6 |
+| F18 | `Schematron \| "RELAX NG"` | 210 | not run | 264 |
+| F19 | `("XML documents" \| "XML data" \| DTDs) + ("empirical study" \| "statistical analysis" \| "real-world" \| "the XML web")` | 706 | not run | 552 |
+| F20 | `"descriptive markup"` | 57 | not run | 63 |
+| F21 | `"structured documents" + ("document model" \| "logical structure" \| editing)` | 275 | not run | 251 |
+| F22 | `"quality of the XML web" \| ("XML" + "well-formed" + valid + web + study)` | 12 | not run | 14 |
+| F23 | `"Writer's Workbench"` | 58 | not run | 58 |
+| F24 | `"controlled language" + checker` | 40 | not run | 32 |
+| F25 | `"automated writing evaluation" + meta-analysis` | 14 | not run | 25 |
+| F26 | `("markup" + overlap + review) \| "Text as Graph" \| TAGML \| LMNL` | 1,531 (noise) | not run | 73 |
+| F27 | `(Xanadu \| "Ted Nelson") + hypertext` | 115 | not run | 114 |
+| F28 | `"Text Encoding Initiative" + (model \| critique \| hierarchy)` | 140 | not run | 167 |
+| F29 | `"documentation reuse"` | 26 | not run | not counted yet |
+| F30 | `(documentation + "near duplicates") \| ("software documentation" + duplicates)` | 33 | not run | not counted yet |
+| F31 | `"technical documentation" + (clones \| "copy and paste" \| duplication)` | 25 | not run | not counted yet |
+| F32 | `("single sourcing" \| "content reuse" \| "modular documentation" \| "structured authoring") + (experiment \| usability \| comprehension \| "user study")` | 19,449 (noise) | not run | not counted yet |
+| F33 | `("XML" \| "markup") + validation + (errors \| "error detection") + (documents \| documentation) + empirical` | 6 | not run | not counted yet |
+| F34 | `"single sourcing" + usability` | 17,791 (noise) | not run | not counted yet |
+| F35 | `"content reuse" + experiment` | 16 | not run | not counted yet |
+| F36 | `"structured authoring" + study` | 321 | not run | not counted yet |
+| A1 | arXiv only: `abs:"recursive schema" OR abs:"recursive schemas"` | | 7 (noise) | not counted yet |
+| A2 | arXiv only: `abs:"docs as code" OR abs:"documentation as code"` | | 161 (noise) | not counted yet |
 
 - Screened by title: the 15 most cited of F1 to F9, the 12 most cited of F10 to F21, and the 10 most cited of F22 to F33. Then the 8 most cited of F34 to F36, and the first 5 to 8 arXiv hits per string.
 - F15, F17 and the arXiv overlap strings returned 0 to 2 results; they were read as wrong queries and followed by rephrased strings (F16; F2, F3 on Semantic Scholar).

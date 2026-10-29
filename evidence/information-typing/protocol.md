@@ -35,45 +35,45 @@ Garousi 2019, Table 4, answered for information-typing: all seven questions get 
 
 ## 4. Formal search
 
-Count source: the Semantic Scholar bulk title-and-abstract search, sorted by citation count, and the arXiv search API (all fields). OpenAlex, the intended source, was not called on the day (its anonymous daily budget was spent); the strings are kept in OpenAlex syntax for a later count. Semantic Scholar matches stemmed words, not phrases, so its counts are noisy upper bounds.
+Count source: the Semantic Scholar bulk title-and-abstract search, sorted by citation count, and the arXiv search API (all fields). The OpenAlex column was counted afterwards, at 10:09 UTC. Semantic Scholar matches stemmed words, not phrases, so its counts are noisy upper bounds.
 
-| Id | String as run | Semantic Scholar | arXiv |
-|---|---|---|---|
-| F1 | "information typing" | 3,828 | 110 |
-| F2 | "DITA" +(topic \| specialization \| authoring) | 243 | 1 (DITA AND topic AND documentation); 0 for "Darwin Information Typing Architecture" |
-| F2b | Darwin Information Typing Architecture (relevance ranking, 20 read) | total not a count | not run |
-| F3 | "information mapping" +Horn | 7 | 0 |
-| F4 | "information mapping" +(writing \| documentation \| instruction) | 52 | not run |
-| F5 | "topic-based" +(authoring \| writing \| documentation) | 977 | 1 ("topic-based authoring") |
-| F6 | "structured authoring" | 993 | refused (HTTP 429) |
-| F7 | "structured writing" +(documentation \| Horn \| technical) | 51 | not run |
-| F8 | "story grammar" (the plural returned the same 787) | 787 | 4 |
-| F9 | superstructure +(text \| discourse) +(comprehension \| schema) | 68 | not run |
-| F10 | "text structure" +instruction +comprehension +meta-analysis | 9 | not run |
-| F11 | "text structure" +strategy +(recall \| comprehension) | 369 | refused (HTTP 429) |
-| F12 | "genre knowledge" +(reading \| comprehension \| readers) | 102 | not run |
-| F13 | "genre as social action" | 71 | not run |
-| F14 | "rhetorical genre studies" | 136 | not run |
-| F15 | "genre awareness" +transfer | 40 | not run |
-| F16 | "minimal manual" | 1,115 | not run |
-| F17 | "minimalism" +(documentation \| manual \| instruction) +Carroll | 44 | not run |
-| F18 | "component content management" | 39 | not run |
-| F19 | "content reuse" +(documentation \| topic) | 34 | not run |
-| F20 | "single sourcing" +documentation | 265 | not run |
-| F21 | "text types" +(typology \| genre) +comprehension | 85 | not run |
-| F22 | "information mapped" \| "information-mapped" | 1,385 | not run |
-| F23 | Horn +"structured writing" | 3 | not run |
-| F24 | "information types" +(documentation \| technical communication \| DITA) | 94 | not run |
-| F25 | "topic types" +(documentation \| writing) | 39 | not run |
-| F26 | "genre expectations" +(reading \| comprehension) | 48 | not run |
-| F27 | "procedural instructions" +(principles \| examples) +transfer | 7 | not run |
-| F28 | "rhetorical structure" +"text comprehension" | 9 | not run |
-| F29 | (DITA \| "structured authoring" \| "topic-based authoring") +("systematic review" \| "literature review") | 37 | not run |
-| F30 | "Every Page is Page One" \| "topic-based writing" | 19 | not run |
-| F31 | "story schema" +recall | 23 | not run |
-| X1 | arXiv only: "element type" AND chunking AND retrieval | not run | 1 |
-| X2 | arXiv only: "document structure" AND chunking AND "retrieval augmented" | not run | 26 |
-| X3 | arXiv only: "technical documentation" AND "retrieval augmented generation" | not run | 37 |
+| Id | String as run | Semantic Scholar | arXiv | OpenAlex |
+|---|---|---|---|---|
+| F1 | "information typing" | 3,828 | 110 | 4,314 |
+| F2 | "DITA" +(topic \| specialization \| authoring) | 243 | 1 (DITA AND topic AND documentation); 0 for "Darwin Information Typing Architecture" | 327 |
+| F2b | Darwin Information Typing Architecture (relevance ranking, 20 read) | total not a count | not run | 88 |
+| F3 | "information mapping" +Horn | 7 | 0 | 5 |
+| F4 | "information mapping" +(writing \| documentation \| instruction) | 52 | not run | 60 |
+| F5 | "topic-based" +(authoring \| writing \| documentation) | 977 | 1 ("topic-based authoring") | 1,236 |
+| F6 | "structured authoring" | 993 | refused (HTTP 429) | 1,198 |
+| F7 | "structured writing" +(documentation \| Horn \| technical) | 51 | not run | 68 |
+| F8 | "story grammar" (the plural returned the same 787) | 787 | 4 | 895 |
+| F9 | superstructure +(text \| discourse) +(comprehension \| schema) | 68 | not run | 82 |
+| F10 | "text structure" +instruction +comprehension +meta-analysis | 9 | not run | 8 |
+| F11 | "text structure" +strategy +(recall \| comprehension) | 369 | refused (HTTP 429) | 445 |
+| F12 | "genre knowledge" +(reading \| comprehension \| readers) | 102 | not run | 138 |
+| F13 | "genre as social action" | 71 | not run | 80 |
+| F14 | "rhetorical genre studies" | 136 | not run | 191 |
+| F15 | "genre awareness" +transfer | 40 | not run | 72 |
+| F16 | "minimal manual" | 1,115 | not run | 1,490 |
+| F17 | "minimalism" +(documentation \| manual \| instruction) +Carroll | 44 | not run | 58 |
+| F18 | "component content management" | 39 | not run | 48 |
+| F19 | "content reuse" +(documentation \| topic) | 34 | not run | 39 |
+| F20 | "single sourcing" +documentation | 265 | not run | 393 |
+| F21 | "text types" +(typology \| genre) +comprehension | 85 | not run | 100 |
+| F22 | "information mapped" \| "information-mapped" | 1,385 | not run | 1,451 |
+| F23 | Horn +"structured writing" | 3 | not run | 1 |
+| F24 | "information types" +(documentation \| technical communication \| DITA) | 94 | not run | 162 |
+| F25 | "topic types" +(documentation \| writing) | 39 | not run | 41 |
+| F26 | "genre expectations" +(reading \| comprehension) | 48 | not run | 83 |
+| F27 | "procedural instructions" +(principles \| examples) +transfer | 7 | not run | 9 |
+| F28 | "rhetorical structure" +"text comprehension" | 9 | not run | 8 |
+| F29 | (DITA \| "structured authoring" \| "topic-based authoring") +("systematic review" \| "literature review") | 37 | not run | 50 |
+| F30 | "Every Page is Page One" \| "topic-based writing" | 19 | not run | 21 |
+| F31 | "story schema" +recall | 23 | not run | 26 |
+| X1 | arXiv only: "element type" AND chunking AND retrieval | not run | 1 | 1 |
+| X2 | arXiv only: "document structure" AND chunking AND "retrieval augmented" | not run | 26 | 64 |
+| X3 | arXiv only: "technical documentation" AND "retrieval augmented generation" | not run | 37 | 140 |
 
 - Totals: Semantic Scholar 10,979 records over 31 strings; arXiv 180 over 9 strings.
 - Screened by title: the 20 most cited of each Semantic Scholar string (fewer where fewer were returned), 554 in all; the 20 of F2b; 16 arXiv titles listed by the script. 590 in all, with repeats across strings.

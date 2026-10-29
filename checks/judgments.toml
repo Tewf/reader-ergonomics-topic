@@ -37,7 +37,7 @@ answer = "Reference: it names the baseline and the measures a comparison would u
 check = "logical-lines"
 path = "evidence/document-model/protocol.md"
 question = "125 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "579ac8df95fa"
+file = "ceaa6bdddf24"
 answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
 
 [[answer]]
@@ -58,7 +58,7 @@ answer = "One role: this review's pool of sources, counted and scored row by row
 check = "logical-lines"
 path = "evidence/information-typing/protocol.md"
 question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "7a4a8694e9d3"
+file = "61dfa439457b"
 answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
 
 [[answer]]
@@ -79,7 +79,7 @@ answer = "One role: this review's pool of sources, counted and scored row by row
 check = "logical-lines"
 path = "evidence/progressive-disclosure/protocol.md"
 question = "114 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "c057a02623e2"
+file = "0818d37c13ee"
 answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
 
 [[answer]]
@@ -137,3 +137,24 @@ path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "2bbee33c8deb"
 answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/information-typing/protocol.md"
+question = "says nearly what evidence/progressive-disclosure/protocol.md (line 31) says, similarity 0.94: one fact in two places?"
+file = "61dfa439457b"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/document-model/protocol.md"
+question = "says nearly what evidence/information-typing/protocol.md (line 38) says, similarity 0.93: one fact in two places?"
+file = "ceaa6bdddf24"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/document-model/protocol.md"
+question = "says nearly what evidence/progressive-disclosure/protocol.md (line 31) says, similarity 0.93: one fact in two places?"
+file = "ceaa6bdddf24"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."

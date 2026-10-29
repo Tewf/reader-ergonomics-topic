@@ -28,41 +28,41 @@ The sub-questions Q1 to Q7 of [frame](frame.md).
 
 ## 4. Formal search
 
-Count sources: the Semantic Scholar bulk search (title and abstract, no key) and the arXiv search API. OpenAlex was not called: its anonymous daily budget was spent until 00:00 UTC on 2026-10-30; the strings are kept in OpenAlex syntax for a later count. Semantic Scholar matches words and uses its own operators (`+` for AND, `|` for OR), so its counts are not phrase-exact and are noisy upper bounds.
+Count sources: the Semantic Scholar bulk search (title and abstract, no key) and the arXiv search API. The OpenAlex column was counted afterwards, at 10:10 UTC. Semantic Scholar matches words and uses its own operators (`+` for AND, `|` for OR), so its counts are not phrase-exact and are noisy upper bounds.
 
-| Id | String as run (Semantic Scholar syntax) | Semantic Scholar | arXiv |
-|---|---|---|---|
-| R1 | (hypertext \| hypermedia) +("meta-analysis" \| "systematic review" \| "review of") | 2,068 | not run |
-| R2 | (stretchtext \| "adaptive presentation" \| "adaptive hypermedia") +(survey \| review) | 139 | not run |
-| R3 | ("tree visualization" \| "hierarchy visualization" \| "multi-level interface") +(survey \| review \| "empirical study") | 78 | not run |
-| R4 | ("retrieval-augmented generation" \| RAG) +(hierarchical \| tree) +survey | 49 | not run |
-| F1 | "stretchtext" | 13 | 0 |
-| F2 | "expandable text" | 212 | refused (timeout) |
-| F3 | "collapsible" +outline | 77 | not run |
-| F4 | "progressive disclosure" | 241 | 40 |
-| F5 | "progressive disclosure" +(text \| document \| reading) | 41 | not run |
-| F6 | "focus+context" \| "focus plus context" | 1,111 | 17 |
-| F7 | "fisheye view" \| "fisheye views" | 278 | 6 |
-| F8 | "overview+detail" \| "overview plus detail" | 294 | 8 |
-| F9 | "zoomable user interface" \| "zoomable user interfaces" | 221 | 0 |
-| F10 | (fisheye \| "overview+detail" \| "focus+context") +(document \| documents \| reading) +(text \| electronic) | 56 | not run |
-| F11 | hypertext +structure +hierarchical +(network \| linear) +(comprehension \| navigation) | 50 | 0 (hierarchical AND comprehension) |
-| F12 | hypertext +disorientation | 144 | 0 |
-| F13 | "outliner" | 1,256,416 (not parsed; unusable) | 23,865 (unusable) |
-| F14 | "outline processor" | 415 (noise) | not run |
-| F15 | "collapsible outline" \| "outline view" | 121 (noise) | not run |
-| F16 | "table of contents" +browsing +hierarchical | 36 | 0 |
-| F17 | "recursive summarization" \| "recursively summarizing" | 27 | 12 (A1) |
-| F18 | "tree-structured retrieval" \| "tree-organized retrieval" \| "hierarchical retrieval" +(summaries \| summary) +(language model \| LLM) | 9 | 14 (A2) |
-| F19 | "hierarchical summarization" +(long documents \| books) +(LLM \| "language models") | 7 | not run |
-| F20 | stretchtext \| "expandable text" \| "telescopic text" | 227 | not run |
-| F21 | "layered" +("privacy notice" \| "privacy policy" \| "privacy policies") +(comprehension \| format) | 10 | not run |
-| F22 | ("layered consent" \| "tiered consent" \| "layered information") +(consent \| comprehension) +(randomized \| trial) | 13 | not run |
-| F23 | breadcrumb +navigation +(study \| usability \| experiment) | 88 | not run |
-| F24 | "code folding" \| "fisheye" +"source code" +(navigation \| comprehension) | 10 | not run |
-| F25 | ("outlining software" \| "outline editor" \| "hierarchical note-taking" \| "networked notes") | 339 (noise) | not run |
-| A3 | arXiv only: abs:RAPTOR AND abs:retrieval | not run | 13 |
-| A4 | arXiv only: abs:"hierarchical" AND abs:"long document" AND abs:"tree" AND abs:"question answering" | not run | 1 |
+| Id | String as run (Semantic Scholar syntax) | Semantic Scholar | arXiv | OpenAlex |
+|---|---|---|---|---|
+| R1 | (hypertext \| hypermedia) +("meta-analysis" \| "systematic review" \| "review of") | 2,068 | not run | 504 |
+| R2 | (stretchtext \| "adaptive presentation" \| "adaptive hypermedia") +(survey \| review) | 139 | not run | 127 |
+| R3 | ("tree visualization" \| "hierarchy visualization" \| "multi-level interface") +(survey \| review \| "empirical study") | 78 | not run | 90 |
+| R4 | ("retrieval-augmented generation" \| RAG) +(hierarchical \| tree) +survey | 49 | not run | 93 |
+| F1 | "stretchtext" | 13 | 0 | 12 |
+| F2 | "expandable text" | 212 | refused (timeout) | 266 |
+| F3 | "collapsible" +outline | 77 | not run | 96 |
+| F4 | "progressive disclosure" | 241 | 40 | 367 |
+| F5 | "progressive disclosure" +(text \| document \| reading) | 41 | not run | 77 |
+| F6 | "focus+context" \| "focus plus context" | 1,111 | 17 | 1,181 |
+| F7 | "fisheye view" \| "fisheye views" | 278 | 6 | 280 |
+| F8 | "overview+detail" \| "overview plus detail" | 294 | 8 | 354 |
+| F9 | "zoomable user interface" \| "zoomable user interfaces" | 221 | 0 | 216 |
+| F10 | (fisheye \| "overview+detail" \| "focus+context") +(document \| documents \| reading) +(text \| electronic) | 56 | not run | 56 |
+| F11 | hypertext +structure +hierarchical +(network \| linear) +(comprehension \| navigation) | 50 | 0 (hierarchical AND comprehension) | 36 |
+| F12 | hypertext +disorientation | 144 | 0 | 141 |
+| F13 | "outliner" | 1,256,416 (not parsed; unusable) | 23,865 (unusable) | 1,685,230 (unusable) |
+| F14 | "outline processor" | 415 (noise) | not run | 570 |
+| F15 | "collapsible outline" \| "outline view" | 121 (noise) | not run | 137 |
+| F16 | "table of contents" +browsing +hierarchical | 36 | 0 | 36 |
+| F17 | "recursive summarization" \| "recursively summarizing" | 27 | 12 (A1) | 28 |
+| F18 | "tree-structured retrieval" \| "tree-organized retrieval" \| "hierarchical retrieval" +(summaries \| summary) +(language model \| LLM) | 9 | 14 (A2) | 13 |
+| F19 | "hierarchical summarization" +(long documents \| books) +(LLM \| "language models") | 7 | not run | 3 |
+| F20 | stretchtext \| "expandable text" \| "telescopic text" | 227 | not run | 280 |
+| F21 | "layered" +("privacy notice" \| "privacy policy" \| "privacy policies") +(comprehension \| format) | 10 | not run | 16 |
+| F22 | ("layered consent" \| "tiered consent" \| "layered information") +(consent \| comprehension) +(randomized \| trial) | 13 | not run | 24 |
+| F23 | breadcrumb +navigation +(study \| usability \| experiment) | 88 | not run | 82 |
+| F24 | "code folding" \| "fisheye" +"source code" +(navigation \| comprehension) | 10 | not run | 72 |
+| F25 | ("outlining software" \| "outline editor" \| "hierarchical note-taking" \| "networked notes") | 339 (noise) | not run | 427 |
+| A3 | arXiv only: abs:RAPTOR AND abs:retrieval | not run | 13 | 99 |
+| A4 | arXiv only: abs:"hierarchical" AND abs:"long document" AND abs:"tree" AND abs:"question answering" | not run | 1 | 13 |
 
 - A1 and A2 are the arXiv forms of F17 and F18: A1 `abs:"recursive summarization" OR abs:"recursively summarizing"`; A2 `abs:"tree-structured" AND abs:retrieval AND abs:summar*`.
 - Screened by title: the 15 most cited results of each Semantic Scholar string (all results where fewer), and every arXiv result of A1 to A4.

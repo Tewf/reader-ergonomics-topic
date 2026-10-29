@@ -35,8 +35,8 @@ The three reviews share these rules, which their protocols do not repeat:
 - **Q/A sites:** threads are read through the Stack Exchange API, by the method of the reader-ergonomics-software-design
   [architecture-descriptions protocol](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/protocol.md#qa-sites):
   its stopping parameters, its API call, how a thread is read and scored, and its limits.
-- **Limits:** search engines personalise and change, so counts differ on a repeat. OpenAlex counts are missing, since
-  its anonymous quota was spent on the day. Semantic Scholar and arXiv counts are not phrase-exact.
+- **Limits:** search engines personalise and change, so counts differ on a repeat. OpenAlex counted the strings after the searches,
+  on the same day; ten strings of document-model wait for its next daily budget. Semantic Scholar and arXiv counts are not phrase-exact.
 - A number read only in an abstract or a summary is marked "(secondary)".
 - None of these reviews is a standard, a new result, or a claim to the state of the art.
 
