@@ -33,3 +33,9 @@ shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["
 # answers already quote their paths, so it stays strict.
 [judgment_quotes]
 optional = []
+
+[bibliography_keys]
+# A key names one work across the family (reader-ergonomics decision 0003); CI clones each name beside this repository.
+family = ["reader-ergonomics", "reader-ergonomics-academic", "reader-ergonomics-learning",
+          "reader-ergonomics-presentations", "reader-ergonomics-software-design"]
+shared_links = []
