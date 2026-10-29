@@ -3,7 +3,7 @@
 **Decision:** the four general shapes stay in reader-ergonomics; this repository links down to them and shows from its
 own side that each fits the topic.
 
-**Status:** accepted, 2026-10-29. It replaces a plan withdrawn the same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. It replaces a plan withdrawn the same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/shapes/decision-record.md).
 
 ## Context
 

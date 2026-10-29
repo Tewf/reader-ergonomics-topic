@@ -69,7 +69,7 @@ digraph progressive_disclosure {
 - Condition 1: the ancestral line must be shown, or elided visibly, since a capped view cannot hold all ancestors of a deep node (state-of-the-art.md, lower bounds). Breadcrumbs are the practice name.
 - Condition 2: what most readers need must sit above the cap, because folded and layered content is read less (McDonald 2009; Wikimedia 2016; GOV.UK 2026b).
 - Condition 3: each folded node must carry a summary that stands for it, so the reader can judge whether to open it.
-- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/psycholinguistics/review.md)).
+- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/psycholinguistics/review.md)).
 - Folded views were slowed when a chapter title did not predict its contents (Chimera 1994); folding without a name hides more than it shows (SESE 2014e).
 - What is not allowed: claiming the cap of three levels is measured for documents. It is a convention borrowed from menus and outlines.
 - For a model reader, the cap is one level of disclosure, not three (He 2026); this is one study, a preprint.
@@ -99,7 +99,7 @@ digraph progressive_disclosure {
 ## What this repository adds
 
 - A reading of the depth question from the reader's side, with the three conditions above as candidate rules, each graded convention, untested until compared (baseline.md):
-  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/document/overview-first.md));
+  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/document/overview-first.md));
   - a view shows at most three levels and always the path to the root;
   - what most readers need is never below the first fold.
 - It does not claim a new result or the state of the art.

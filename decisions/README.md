@@ -1,6 +1,6 @@
 # Decisions
 
-One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md) of
+One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/shapes/decision-record.md) of
 reader-ergonomics: the decision in one sentence under its title, then its status, context, decision and consequences.
 
 **Shape:** [topic](../shapes/topic.md), as the filled example the shape points to.
@@ -21,6 +21,7 @@ reader-ergonomics: the decision in one sentence under its title, then its status
 | [0010 Move to reader-ergonomics v1.4.1](0010-move-to-reader-ergonomics-v1.4.1.md) | the standard now checks figure widths and shrinks figures on a phone |
 | [0011 Move to reader-ergonomics v1.9.0](0011-move-to-reader-ergonomics-v1.9.0.md) | the standard now checks keys, records, shape examples and drawn figures |
 | [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | the topic's extension, joined to master once its review named B1; one problem, proofs in Lean first |
+| [0013 Move to reader-ergonomics v1.11.0](0013-move-to-reader-ergonomics-v1.11.0.md) | the standard now checks the drawn figures: typed, alt, source, contrast |
 
 ## See also
 

@@ -45,7 +45,7 @@ Give each unit of writing a declared type, derived from one base, so that a read
 | **structured writing** | Horn 1981; Baker 2018b (example only) | writing to a declared structure |
 | **topic-based authoring**, **modular authoring** | Baker 2013; WSE 2018a | units read on their own |
 | **Every Page is Page One** (EPPO) | Baker 2013 | a topic that conforms to a type and stands alone |
-| **modules**: concept, procedure, reference | Red Hat 2026b, reviewed in [documentation](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/documentation/frame.md) | derived types |
+| **modules**: concept, procedure, reference | Red Hat 2026b, reviewed in [documentation](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/documentation/frame.md) | derived types |
 | **data module** | S1000D, named in WSE 2018b | typed unit in aerospace documentation |
 | **type hierarchy**: CreativeWork, HowTo, Recipe | SchemaOrg 2026 | derivation for machine readers |
 | **story structure**, **hero's journey**, **three-act structure** | fiction writers (WSE 2022a; WSE 2020a, example only) | story grammar, in practice |
@@ -75,8 +75,8 @@ Give each unit of writing a declared type, derived from one base, so that a read
 
 ## Not reviewed here
 
-- The levels effect and rhetorical structure theory: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/psycholinguistics/frame.md).
-- The four documentation modes of Diataxis: [documentation](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/documentation/frame.md).
+- The levels effect and rhetorical structure theory: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/psycholinguistics/frame.md).
+- The four documentation modes of Diataxis: [documentation](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/documentation/frame.md).
 - Moves, steps and CARS in research articles: [academic-papers](https://github.com/Tewf/reader-ergonomics-academic/blob/master/evidence/academic-papers/frame.md).
 - Storing, nesting and reusing typed units (DITA maps, conref, schemas): the document-model review.
 - Showing a nested tree to a reader: the progressive-disclosure review.
