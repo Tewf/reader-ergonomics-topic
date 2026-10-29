@@ -114,7 +114,7 @@ answer = "One links the other already: the protocol names its shared rules by a 
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "6f321d5e9a97"
+file = "e3e45afe97ae"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]

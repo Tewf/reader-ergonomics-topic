@@ -23,24 +23,34 @@ This page in French: [README.fr.md](README.fr.md).
 ## Where it sits
 
 ```text
-        uses ──▶ (points to what it depends on)
+ ▼ uses: points to what it depends on
 
- level 2   the genre extensions: reader-ergonomics-academic,          other projects
-           reader-ergonomics-presentations, reader-ergonomics-software-design
-                                 │                                        │
-                                 ├────────────────────────────────────────┘
-                                 ▼  may use the topic as their skeleton (a hypothesis)
- level 1   reader-ergonomics-topic    one topic shape, nested to any depth, its review and its check
-                                 │
-                                 ▼  obeys the principles; CI runs their checks here
- level 0   reader-ergonomics          how any text serves its reader
+ level 2  reader-ergonomics-learning
+          │  pins a release; its shapes will derive
+          │  from the topic
+          │
+          │   reader-ergonomics-academic,
+          │   -presentations, -software-design,
+          │   other projects
+          │   │  may use the topic as their
+          │   │  skeleton (a hypothesis)
+          ▼   ▼
+ level 1  reader-ergonomics-topic
+          │  one topic shape, nested to any depth,
+          │  its review and its check
+          ▼  obeys the principles; CI runs their
+             checks here
+ level 0  reader-ergonomics
+             how any text serves its reader
 ```
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
 - **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/extending.md)).
   This repository links down to the standard, never up to the extensions.
-- **That the projects above will use it is a hypothesis.** If none does, this repository still answers one question.
+- **One extension says it will use it:** reader-ergonomics-learning pins a release and states that its shapes will
+  derive from the topic; none is written yet. That the others will use it is a hypothesis. If none does, this
+  repository still answers one question.
 
 ## Scope
 
