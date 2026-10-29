@@ -68,9 +68,9 @@ Works already reviewed in a sibling repository are linked there, with one line o
 | reader-ergonomics-presentations [presentations](https://github.com/Tewf/reader-ergonomics-presentations/tree/master/evidence/presentations) | Minto, assertion-evidence, slide builds |
 | reader-ergonomics-software-design [pseudocode](https://github.com/Tewf/reader-ergonomics-software-design/tree/master/evidence/pseudocode), [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/tree/master/evidence/architecture-descriptions) | stepwise refinement; C4, arc42 and ISO 42010 |
 
-A key names one work across all five repositories: the keys here were checked by script against the four other
-bibliographies. One key differs on purpose. Horn 1969 here is the 1969 report itself; reader-ergonomics still cites an
-encyclopedia page under it, and will change at its next release.
+A key names one work across the family, as `[bibliography_keys]` in checks/config.toml lists it; CI checks each key
+against those bibliographies. When these reviews were written, the keys were checked by script against the four other
+bibliographies of the time. Horn 1969 then differed on purpose; since reader-ergonomics v1.1.0 both cite the 1969 report.
 
 ## Audit
 

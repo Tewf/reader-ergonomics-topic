@@ -18,8 +18,8 @@ this file is about this repository only.
 - Every claim carries a grade: **measured**, **supported with caveat**, **convention** or **not supported**. A grade
   moves only with a cited source.
 - Cite as `Author Year`; the entry goes once into [evidence/bibliography.md](evidence/bibliography.md), with a DOI,
-  an arXiv id or a stable URL. A key names one work across the five repositories of the family: check it against
-  their bibliographies before adding it.
+  an arXiv id or a stable URL. A key names one work across the family (reader-ergonomics decision 0003): the family is
+  listed under `[bibliography_keys]` in checks/config.toml, and CI checks every key against its bibliographies.
 - Evidence against a rule goes into the review's `against.md`, never deleted to make a rule look stronger.
 - A number read in a summary rather than in the source is marked "(secondary)".
 
