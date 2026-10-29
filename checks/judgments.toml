@@ -184,7 +184,7 @@ answer = "One role: the record from which another reviewer can rerun this review
 check = "logical-lines"
 path = "evidence/autoformalization/review.md"
 question = "142 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "5138b5284450"
+file = "cff317c648d8"
 answer = "One role: the reading log of this review's findings, by question from `Q1. Prior art` to `Q5. Limits`. It stays whole."
 
 [[answer]]
@@ -219,7 +219,7 @@ answer = "Reference: the shared `Method`, the boundaries (`What these reviews do
 check = "document-mode"
 path = "evidence/autoformalization/baseline.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "3a78909baa22"
+file = "9bf11c3ecc8c"
 answer = "Reference: it names the baseline under `The named baseline` and says `How a comparison would be measured`; the steps it lists describe a study design, not a task for the reader."
 
 [[answer]]
@@ -233,5 +233,5 @@ answer = "Reference: how the pool was built, looked up by section from `Why grey
 check = "document-mode"
 path = "evidence/autoformalization/review.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "5138b5284450"
+file = "cff317c648d8"
 answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`; it sets the reader no task."
