@@ -1,6 +1,6 @@
 # Sources: the pool, the flow and the scores
 
-This file is the typed-units pool: the flow from hits to sources, then each source with its quality. Searches: [protocol](protocol.md).
+This file is the information-typing pool: the flow from hits to sources, then each source with its quality. Searches: [protocol](protocol.md).
 
 ## Flow
 
@@ -27,7 +27,7 @@ This file is the typed-units pool: the flow from hits to sources, then each sour
   - repeats across strings: 60;
   - another field using the same words (genetics, physics, image annotation, topic models, crisis tweets): 330;
   - school writing and second-language teaching with no reading or typing claim: 90;
-  - reuse, single-sourcing and content management without types (node-model): 30;
+  - reuse, single-sourcing and content management without types (document-model): 30;
   - relevant but not reached or not opened, located only: 10 (Clark 2016, Harrison 2005, Horn 1992, Schmitz 2017, Dixon 2009, Yayli 2011, Mustafa 1995). Also: the Berkenkotter and Huckin book, a 2013 review of the Sydney School book.
 - Grey exclusions, rounded:
   - known sources seen again: 10;
@@ -37,7 +37,7 @@ This file is the typed-units pool: the flow from hits to sources, then each sour
 - Added by snowballing: Mandler 1977, Rumelhart 1975 and Stein 1975 were reached again from Kintsch 1978; Bogaerds-Hazenberg 2023 from Bogaerds-Hazenberg 2020.
 - Existing reviews found: 8, listed in review.md strand 0.
 
-The figure draws the stages of the table for typed units.
+The figure draws the stages of the table for information typing.
 
 ![11,159 formal hits were returned and 590 screened; 238 grey results were screened. 42 formal and 21 grey sources were added, for 65 sources in the review.](flow.svg)
 

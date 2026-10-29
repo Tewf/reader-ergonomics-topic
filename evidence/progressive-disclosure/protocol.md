@@ -1,12 +1,12 @@
 # Protocol: how the pool of sources was built
 
-This file records every search, count and rule of the recursive-depth review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29. Its terms are defined in [frame](frame.md).
+This file records every search, count and rule of the progressive-disclosure review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29. Its terms are defined in [frame](frame.md).
 
 ## 1. Why grey literature
 
-Garousi 2019, Table 4, answered for recursive-depth: six of seven questions get a yes.
+Garousi 2019, Table 4, answered for progressive-disclosure: six of seven questions get a yes.
 
-| # | Question | Answer for this topic |
+| # | Question | Answer for this review |
 |---|---|---|
 | 1 | Complex, not solvable from formal literature alone? | yes: accordions, `details`, outliners and folding come from practice |
 | 2 | Lack of volume or quality of evidence? | yes: one review (Cockburn 2009) finds no clear guidelines; few studies use documents |
@@ -70,7 +70,7 @@ Count sources: the Semantic Scholar bulk search (title and abstract, no key) and
 - Backward snowballing read four reference lists: Furnas 1986 (gave Engelbart 1968 and Nelson's book), Cockburn 2009 (gave Nekrasovski 2006, Plaisant 2002 and the code-folding studies).
 - Also Chimera 1994 (gave SuperBook) and He 2026 (gave Edge 2024).
 - Forward snowballing: the arXiv strings A3 and F18 return works that cite RAPTOR (Laitenberger 2025, Jayraj 2026); no citation index was paged.
-- By handoff from the typed-units review, 2026-10-29: Heinonen 2022, Swarts 2022, Mortezaagha 2026, Johnson 2013, WSE 2018c and the User Experience thread 119762 (UXSE 2018b). Each was verified here against Crossref, arXiv, the page or the Stack Exchange API; none was dropped. Johnson 2013 and WSE 2018c keep the scores typed-units gave them.
+- By handoff from the information-typing review, 2026-10-29: Heinonen 2022, Swarts 2022, Mortezaagha 2026, Johnson 2013, WSE 2018c and the User Experience thread 119762 (UXSE 2018b). Each was verified here against Crossref, arXiv, the page or the Stack Exchange API; none was dropped. Johnson 2013 and WSE 2018c keep the scores information-typing gave them.
 
 ## 5. Grey search
 
@@ -146,7 +146,7 @@ Strings RD1 to RD16 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 
 ## 10. Limits
 
-- One first rater for recursive-depth; the second rater's blind sample is reported in the [evidence README](../README.md#method).
+- One first rater for progressive-disclosure; the second rater's blind sample is reported in the [evidence README](../README.md#method).
 - The ACM Digital Library and ScienceDirect refused automated reads on the day. ACM papers were read in author or course copies where found, otherwise through their abstract or through Cockburn 2009, and marked so.
 - Shared limits: [evidence README](../README.md#method). Here: one arXiv call timed out (F2).
 - Forward snowballing was not paged in a citation index.

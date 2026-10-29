@@ -1,5 +1,5 @@
 {
-  "title": "Node model: how the pool of sources was built",
+  "title": "Document model: how the pool of sources was built",
   "columns": ["Formal", "Grey"],
   "rows": [
     ["Returned by the strings", 43464, null],

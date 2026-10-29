@@ -1,0 +1,5 @@
+---
+title: "Progressive disclosure: showing a tree of text nested to any depth"
+---
+
+{{< include README.md >}}

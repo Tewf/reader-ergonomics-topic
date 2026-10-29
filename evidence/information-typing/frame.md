@@ -78,5 +78,5 @@ Give each unit of writing a declared type, derived from one base, so that a read
 - The levels effect and rhetorical structure theory: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/frame.md).
 - The four documentation modes of Diataxis: [documentation](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/documentation/frame.md).
 - Moves, steps and CARS in research articles: [academic-papers](https://github.com/Tewf/reader-ergonomics-academic/blob/master/evidence/academic-papers/frame.md).
-- Storing, nesting and reusing typed units (DITA maps, conref, schemas): the node-model review.
-- Showing a nested tree to a reader: the recursive-depth review.
+- Storing, nesting and reusing typed units (DITA maps, conref, schemas): the document-model review.
+- Showing a nested tree to a reader: the progressive-disclosure review.

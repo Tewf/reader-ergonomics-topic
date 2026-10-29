@@ -1,4 +1,4 @@
-# Typed units: how a unit of writing is given a type derived from a base
+# Information typing: how a unit of writing is given a type derived from a base
 
 Question: how is a unit of writing given a type, so that a reader who knows the base form can read every form derived from it? And what does the evidence say about typed units and how types derive from a base?
 

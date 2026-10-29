@@ -1,11 +1,11 @@
-# Recursive depth: showing a tree of text nested to any depth
+# Progressive disclosure: showing a tree of text nested to any depth
 
 Question: how is a tree of units nested to any depth shown to a reader, so the top levels are kept and any leaf is reached? And what does the evidence say about depth, expansion and navigation in nested text?
 
 Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · [review](review.md) · [state of the art](state-of-the-art.md) · [position](position.md) · [against](against.md) · [baseline](baseline.md) · [bibliography](../bibliography.md)
 
 - It covers published research and public practice, for human readers and for models as readers.
-- It holds 47 formal sources, 41 of them new, 3 of those by handoff from the typed-units review.
+- It holds 47 formal sources, 41 of them new, 3 of those by handoff from the information-typing review.
 - It adds 23 new grey sources, scored out of 20 (8 from the web, 15 threads or posts); 4 fall below the threshold of 10 and are used as examples only.
 
 ## The repository's question

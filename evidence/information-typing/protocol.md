@@ -1,12 +1,12 @@
 # Protocol: how the pool of sources was built
 
-This file records every search, count and rule of the typed-units review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29.
+This file records every search, count and rule of the information-typing review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29.
 
 ## 1. Why grey literature
 
-Garousi 2019, Table 4, answered for typed-units: all seven questions get a yes.
+Garousi 2019, Table 4, answered for information-typing: all seven questions get a yes.
 
-| # | Question | Answer for this topic |
+| # | Question | Answer for this review |
 |---|---|---|
 | 1 | Complex, not solvable from formal literature alone? | yes: the main typed systems (DITA, Information Mapping) come from practice |
 | 2 | Lack of volume or quality of evidence? | yes: one controlled test of a typed format against untyped text was found, in a 1969 government report |
@@ -80,7 +80,7 @@ Count source: the Semantic Scholar bulk title-and-abstract search, sorted by cit
 - F1, F5, F6, F16 and F22 were too noisy to screen past the first page (genetics, physics, image annotation).
 - Abstracts were then read through the public ERIC, PubMed and Crossref services, without any identity; these lookups add no records to the counts.
 - Leads named in the brief and verified: Kintsch 1978, Mandler 1977, Thorndyke 1977, Stein and Glenn (found as the 1975 report), Black 1979, Meyer 2001, Miller 1984, Horn 1969, Baker 2013, Baker 2018b.
-- Leads not used: Horn's book (1989; not located in a readable form), Rockley's and Hackos's books (not opened; reuse belongs to the node-model review), van Dijk and Kintsch's book (1983; not opened). Also not used: Stein and Glenn's chapter (1979; not opened; the 1975 report used instead), Carroll's book (1990; not opened; Carroll 1987 located instead). Also not used: an IBM article of 2001 by Day, Priestley and Schell (listed by Semantic Scholar without a stable link, not read; Priestley 2001 and Priestley 2002 used).
+- Leads not used: Horn's book (1989; not located in a readable form), Rockley's and Hackos's books (not opened; reuse belongs to the document-model review), van Dijk and Kintsch's book (1983; not opened). Also not used: Stein and Glenn's chapter (1979; not opened; the 1975 report used instead), Carroll's book (1990; not opened; Carroll 1987 located instead). Also not used: an IBM article of 2001 by Day, Priestley and Schell (listed by Semantic Scholar without a stable link, not read; Priestley 2001 and Priestley 2002 used).
 - Snowballing, backward: the section "Role of the schema" of Kintsch 1978 was read for further type systems; it names Mandler 1977, Rumelhart 1975 and Stein and Glenn, all reached. Forward: none beyond the strings.
 
 ## 5. Grey search
@@ -119,7 +119,7 @@ Strings TU1 to TU14 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 | TU14 | `tagged=technical-writing&title=structure` | Writing | 5 | 1 | 1 |
 | Total | 14 strings | | 179 | 12 (distinct) | 12 |
 
-- Opened: threads whose title bore on a question of the topic; the question and its two top answers were read.
+- Opened: threads whose title bore on a question of the review; the question and its two top answers were read.
 - Excluded after reading: how-to and tool questions (learning DITA, XSLT), writers' craft with no reader claim, and threads of another topic (reuse, page length).
 - Included: 12, scored on the 20 criteria (section 8) with the shared rules for Q/A threads; 2 fall below 10 of 20 and are examples only.
 - The run ended after TU14; the last string that added a thread was TU14 (1 new).
@@ -139,7 +139,7 @@ Strings TU1 to TU14 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 - Exclude:
   - automatic genre classification and topic modelling (the words "topic" and "type" in another sense);
   - school writing interventions with no reading or typing claim;
-  - reuse, maps, schemas and validation (node-model review) and nested display (recursive-depth review), passed to those reviews when met;
+  - reuse, maps, schemas and validation (document-model review) and nested display (progressive-disclosure review), passed to those reviews when met;
   - sources whose abstract could not be read and whose title does not settle relevance (kept as located only).
 
 ## 8. Quality of grey sources (Garousi Guideline 11, Table 7)
@@ -157,7 +157,7 @@ Strings TU1 to TU14 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 
 ## 10. Limits
 
-- One first rater for typed-units; the second rater's blind sample is reported in the [evidence README](../README.md#method).
+- One first rater for information-typing; the second rater's blind sample is reported in the [evidence README](../README.md#method).
 - Shared limits: [evidence README](../README.md#method). Here: two arXiv strings were refused.
 - Most formal sources were read by abstract only, several by title only; sources.md says which. Publisher pages of Elsevier, Wiley, IEEE and APA were not readable without access.
 - No archived copy was made of the practice pages; three of them (DITAWriter, Information Mapping, a blog) may move.

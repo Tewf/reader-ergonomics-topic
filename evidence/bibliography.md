@@ -195,7 +195,7 @@ Every work cited anywhere in this repository, once. The text cites `Author Year`
 | UXSE 2015 | User Experience Stack Exchange (2015). How can a very long (100+) breadcrumb trail be made usable? Question 76077 | https://ux.stackexchange.com/questions/76077 |
 | UXSE 2016 | User Experience Stack Exchange (2016). Expand All / Collapse All. Question 101910 | https://ux.stackexchange.com/questions/101910 |
 | UXSE 2018a | User Experience Stack Exchange (2018). Problem with 3 or more level of tree-view UI on Mobile. Question 117318 | https://ux.stackexchange.com/questions/117318 |
-| UXSE 2018b | User Experience Stack Exchange (2018). Documentation: one long page or several short pages. Question 119762 (handed over by typed-units) | https://ux.stackexchange.com/questions/119762 |
+| UXSE 2018b | User Experience Stack Exchange (2018). Documentation: one long page or several short pages. Question 119762 (handed over by information-typing) | https://ux.stackexchange.com/questions/119762 |
 | VectifyAI 2026 | VectifyAI (read 2026-10-29). PageIndex, repository README. The vendor's own claims | https://github.com/VectifyAI/PageIndex |
 | W3C 2026b | W3C Web Accessibility Initiative (read 2026-10-29). ARIA Authoring Practices Guide: tree view pattern. Page undated | https://www.w3.org/WAI/ARIA/apg/patterns/treeview/ |
 | Walsh 2019 | Walsh (2019). DocBook 5.2: The Definitive Guide, version 5.2.19, last revised 2019-10-31; entry section | https://tdg.docbook.org/tdg/5.2/section |

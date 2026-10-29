@@ -1,5 +1,5 @@
 {
-  "title": "Typed units: how the pool of sources was built",
+  "title": "Information typing: how the pool of sources was built",
   "columns": ["Formal", "Grey"],
   "rows": [
     ["Returned by the strings", 11159, null],

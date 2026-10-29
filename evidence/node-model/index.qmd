@@ -1,5 +1,0 @@
----
-title: "Node model: how a unit that holds units of its own type is stored, reused and checked"
----
-
-{{< include README.md >}}

@@ -1,12 +1,12 @@
 # Protocol: how the pool of sources was built
 
-This file records every search, count and rule of the node-model review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29. Terms are defined in [frame](frame.md).
+This file records every search, count and rule of the document-model review. Shared rules: [evidence README](../README.md#method). Searches ran on 2026-10-29. Terms are defined in [frame](frame.md).
 
 ## 1. Why grey literature
 
-Garousi 2019, Table 4, answered for node-model: all seven questions get a yes.
+Garousi 2019, Table 4, answered for document-model: all seven questions get a yes.
 
-| # | Question | Answer for this topic |
+| # | Question | Answer for this review |
 |---|---|---|
 | 1 | Complex, not solvable from formal literature alone? | yes: the rules for nesting, reuse and cycles live in standards and tools (XML, XInclude, DITA, TEI) |
 | 2 | Lack of volume or quality of evidence? | yes: no reader study of reuse was found; the corpus studies are from 2002 to 2011 |
@@ -76,7 +76,7 @@ Count sources: the Semantic Scholar bulk search (title and abstract, sorted by c
 - Snowballing, backward: the reference lists of Renear 1996 (giving Barnard 1988, Goldfarb 1981, DeRose 1990), Mlýnková 2006 (Choi 2002, Mignet 2003, Bex 2004) and TEI 2026 chapter 21 (GODDAG, LMNL).
 - Forward: Semantic Scholar citations of Coombs 1987 (293) and Sperberg-McQueen 2004 (92); the 12 most cited since 2010 of each were screened. They confirmed Schmidt 2010, Di Iorio 2011 and Haentjens Dekker 2017, and added none.
 - Web searches used only to find a readable copy of a formal work are not counted as strings.
-- Added by handoff from the two sibling topics, which ran at the same time: Priestley 2001 and OASIS 2015 sections 2.2.1.6 and B.11 (typed-units), Edge 2024 and Nelson's transclusion (recursive-depth). Each was read here before use; Rockley's book on enterprise content was located (an Open Library record) but not opened, so it supports no claim.
+- Added by handoff from the two sibling reviews, which ran at the same time: Priestley 2001 and OASIS 2015 sections 2.2.1.6 and B.11 (information-typing), Edge 2024 and Nelson's transclusion (progressive-disclosure). Each was read here before use; Rockley's book on enterprise content was located (an Open Library record) but not opened, so it supports no claim.
 
 ## 5. Grey search
 
@@ -118,8 +118,8 @@ Strings NM1 to NM13 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 | Total | 13 strings, 16 calls | | 214 | 9 (distinct) | 9 |
 
 - Included: 9, scored on the 20 criteria of section 8 with the shared Q/A rules; none below 10.
-- Added by handoff from typed-units: SO 2016b and SO 2015b (question 31749306), read with the same API on 2026-10-29 and scored the same way; 11 threads in all.
-- Opened and excluded: two Composite threads with low-voted answers, a how-to on recursive JSON Schema, and a Writing thread on topic-based against modular authoring, handed to typed-units.
+- Added by handoff from information-typing: SO 2016b and SO 2015b (question 31749306), read with the same API on 2026-10-29 and scored the same way; 11 threads in all.
+- Opened and excluded: two Composite threads with low-voted answers, a how-to on recursive JSON Schema, and a Writing thread on topic-based against modular authoring, handed to information-typing.
 - NM1 shows a homonym: 28 of the 30 Stack Overflow titles use "transclusion" for content projection in Angular, Vue or Aurelia, 1 for org-mode and 1 for MediaWiki.
 - Stopping point: the run ended after NM13, when each field term had been run in one form; NM13 added the last new thread. The API quota is shared by address, so the run was kept short.
 
@@ -154,7 +154,7 @@ Strings NM1 to NM13 ran on 2026-10-29, one reviewer, grey tier 2. Other rules: [
 
 ## 10. Limits
 
-- One first rater for node-model; the second rater's blind sample is reported in the [evidence README](../README.md#method).
+- One first rater for document-model; the second rater's blind sample is reported in the [evidence README](../README.md#method).
 - Shared limits: [evidence README](../README.md#method). Here: arXiv refused some calls on the day.
 - Several works were reachable only by title and venue: publisher sites refused automated access, and no identity was sent to any service to reach them. Those works carry no number in the text.
 - Forward snowballing covered two works; backward snowballing three.

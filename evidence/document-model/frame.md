@@ -75,8 +75,8 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 
 ## Not reviewed here
 
-- How a unit is given a type, and how types derive from a base (DITA specialization, information typing): [typed-units](../typed-units/frame.md).
-- How a nested tree is shown to a reader (expandable text, outliners, depth per view): [recursive-depth](../recursive-depth/frame.md).
+- How a unit is given a type, and how types derive from a base (DITA specialization, information typing): [information-typing](../information-typing/frame.md).
+- How a nested tree is shown to a reader (expandable text, outliners, depth per view): [progressive-disclosure](../progressive-disclosure/frame.md).
 - Duplication in code, minimal DAGs and the rule of one place per fact: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/file-structure/review.md), linked, not repeated.
 - The levels effect, readers recalling the top of a hierarchy best: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/review.md).
 - Docs as code as a practice: [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).

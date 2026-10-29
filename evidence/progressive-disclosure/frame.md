@@ -77,4 +77,4 @@ A body of writing is stored as a tree of units nested to any depth. Decide how i
 - Progressive disclosure of context to agents, instruction files: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/llm-readers/review.md).
 - Hierarchical proofs, Lamport's steps and levels: [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/blob/master/evidence/mathematical-writing/review.md).
 - Slide builds as progressive disclosure: [presentations](https://github.com/Tewf/reader-ergonomics-presentations/blob/master/evidence/presentations/review.md).
-- Storing the tree, reuse and validation: topic node-model of this repository; unit types: topic typed-units.
+- Storing the tree, reuse and validation: topic document-model of this repository; unit types: topic information-typing.

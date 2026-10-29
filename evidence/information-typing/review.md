@@ -5,7 +5,7 @@ This file reads the literature on typed units of writing. Existing reviews come 
 
 ## 0. Existing reviews
 
-| Review | Scope | Finding for this topic | Read |
+| Review | Scope | Finding for this review | Read |
 |---|---|---|---|
 | Hebert 2016 | meta-analysis, 45 studies, grades 2 to 12, expository text structure instruction | effective on proximal measures, and across three levels of transfer: maintenance, untaught text structures, general comprehension; far transfer small and inconsistent | abstract (secondary) |
 | Pyle 2017 | meta-analysis, 19 of 21 studies, kindergarten to grade 12, 1970-2013 | mean effect 0.95; larger with one or two structures taught, 11 to 20 hours, researcher implementers | abstract (secondary) |
@@ -89,7 +89,7 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 ## 7. Models as readers (Q6)
 
 - Jimeno Yepes 2024: chunking financial reports by element type improved retrieval-augmented question answering over paragraph chunks (preprint, abstract).
-- Mortezaagha 2026: structure-aware retrieval for models reading a tree, reviewed in [recursive-depth](../recursive-depth/review.md); its trade-off is in [against](against.md).
+- Mortezaagha 2026: structure-aware retrieval for models reading a tree, reviewed in [progressive-disclosure](../progressive-disclosure/review.md); its trade-off is in [against](against.md).
 - No study was found that gives a model DITA topic types or Information Mapping blocks and measures the answer. General findings on layout and models: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/llm-readers/frame.md).
 
 ## 8. Practice

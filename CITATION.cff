@@ -4,16 +4,16 @@ message: >-
   work-in-progress synthesis of published research, written with Claude, an AI
   assistant by Anthropic. It is not an official standard, not peer-reviewed,
   and not a new result.
-title: "recursive-atom (work in progress)"
+title: "reader-ergonomics-topic (work in progress)"
 abstract: >-
   One template for a unit of writing whose parts can be units of the same
   template, so that any body of information is written as a tree that reads
-  the same way at every depth. It builds on reader-ergonomics. Set up, not
-  started: its first job is a literature review.
+  the same way at every depth. It builds on reader-ergonomics. Its literature
+  review is done; the template itself is not written yet.
 type: software
 authors:
   - name: "Tewf"
-repository-code: "https://github.com/Tewf/recursive-atom"
+repository-code: "https://github.com/Tewf/reader-ergonomics-topic"
 license:
   - Apache-2.0
   - CC-BY-4.0

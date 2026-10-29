@@ -1,18 +1,18 @@
 # Evidence
 
-One literature review per topic, in the steps reader-ergonomics uses for its own
+One literature review per part of the template, in the steps reader-ergonomics uses for its own
 [evidence](https://github.com/Tewf/reader-ergonomics/tree/master/evidence): frame, review, state of the art, position, the
 case against, baseline. Every work cited is listed once in the [bibliography](bibliography.md).
 
-| Topic | Question | The repository's question it answers |
+| Review | Question | The repository's question it answers |
 |---|---|---|
-| [typed-units](typed-units/) | how a unit of writing is given a type derived from a base, so a reader who knows the base reads every derivative | genres |
-| [recursive-depth](recursive-depth/) | how a tree of units nested to any depth is shown, so the top levels are kept and any leaf is reached | depth |
-| [node-model](node-model/) | how a unit that holds units of its own type is stored, reused and checked by a program | self-reference, graphs |
+| [information-typing](information-typing/) | how a unit of writing is given a type derived from a base, so a reader who knows the base reads every derivative | genres |
+| [progressive-disclosure](progressive-disclosure/) | how a tree of units nested to any depth is shown, so the top levels are kept and any leaf is reached | depth |
+| [document-model](document-model/) | how a unit that holds units of its own type is stored, reused and checked by a program | self-reference, graphs |
 
 ## Method
 
-Each topic is a **multivocal literature review**: research and **grey literature** (standards, company practice,
+Each review is a **multivocal literature review**: research and **grey literature** (standards, company practice,
 practitioner books, tools, Q/A sites) in one review, built to a written protocol after Garousi 2019. Two files in each
 topic make the review checkable and rerunnable:
 
@@ -28,7 +28,7 @@ A grey source is scored on Garousi's 20 criteria, in eight groups. The `sources.
 Each review keeps the form most used in practice apart from the best tested one; practice counts as evidence only
 where a study measured its effect.
 
-The three topics share these rules, which their protocols do not repeat:
+The three reviews share these rules, which their protocols do not repeat:
 
 - **Why grey literature:** each protocol answers the seven questions of Garousi 2019, Table 4; one yes suggests
   including grey literature.
@@ -40,7 +40,7 @@ The three topics share these rules, which their protocols do not repeat:
 - A number read only in an abstract or a summary is marked "(secondary)".
 - None of these reviews is a standard, a new result, or a claim to the state of the art.
 
-**Second rater.** A second rater re-scored, blind, every fifth scored grey source of the three topics (15 of 82):
+**Second rater.** A second rater re-scored, blind, every fifth scored grey source of the three reviews (15 of 82):
 
 - inclusion: the raters agreed on 14 of 15, Cohen's kappa 0.76, unstable at this size (bootstrap 0.00 to 1.00);
 - totals: mean absolute difference 1.20 of 20, the second rater 0.27 points lower;

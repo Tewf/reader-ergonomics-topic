@@ -44,7 +44,7 @@ This file reads the literature on showing a nested tree of text to a reader. Str
 - McDonald 2009 concludes that few participants went beyond the first page of a layered policy (section 4.1).
 - Springer 2020 (abstract): in four studies of an explained system, users gained from simple feedback first and the detail on demand; it is about explanations, not documents.
 - Located, not read: Zellweger 2000 (fluid documents, an observational study), Boyle 1994 (MetaDoc, adaptive stretchtext).
-- Johnson 2013 (a blog, 13 of 20, scored in typed-units): one DITA topic per contents entry scatters brief tasks; he would nest them under a parent and favours collapsible sections; no data.
+- Johnson 2013 (a blog, 13 of 20, scored in information-typing): one DITA topic per contents entry scatters brief tasks; he would nest them under a parent and favours collapsible sections; no data.
 
 ## 3. Q2: hierarchical against networked hypertext
 
@@ -115,7 +115,7 @@ Q/A sites (searched 2026-10-29; 12 threads, 2 under 10 of 20; strings in [protoc
 - Nesting folds is advised against: an accordion inside an accordion confuses (UXSE 2012a; UXSE 2014b), as GOV.UK 2026a says.
 - Do not hide answers to save scrolling; list the questions with anchor links instead (UXSE 2012b).
 - A deep heading should name itself in full, since a reader may meet it without its ancestors (WSE 2013); whether every level carries text of its own divides practitioners (WSE 2018e).
-- One long page or many granular ones: cohesion matters more than length, and a tree keeps overview pages near the root (WSE 2018c, scored in typed-units).
+- One long page or many granular ones: cohesion matters more than length, and a tree keeps overview pages near the root (WSE 2018c, scored in information-typing).
 - UXSE 2018b (example only) asks the same of a three-level nest.
 - Folding code hides a long block but gives it no name, scope or dependencies, which a function does (SESE 2014e; SESE 2011o).
 - Depth can be shown by colour or a gutter per level instead of indentation (SESE 2011r).

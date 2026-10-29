@@ -26,7 +26,7 @@ Each "not known" below is a statement about this search, not about the world.
 - Whether reuse by reference keeps documentation more consistent than copies, measured over time; Juergens 2010 counts copies and estimates cost.
 - How often overlap occurs in ordinary documentation, as opposed to literary and Biblical texts.
 - The recall of structure and prose checkers on documentation.
-- Whether a capped section (five or seven levels) or an unbounded one serves readers better: depth in view belongs to [recursive-depth](../recursive-depth/position.md).
+- Whether a capped section (five or seven levels) or an unbounded one serves readers better: depth in view belongs to [progressive-disclosure](../progressive-disclosure/position.md).
 
 ## Where practice runs ahead of the evidence
 

@@ -1,4 +1,4 @@
-# Node model: how a unit that holds units of its own type is stored, reused and checked
+# Document model: how a unit that holds units of its own type is stored, reused and checked
 
 Question: how is a unit that can hold units of its own type stored, so that it is a tree a reader can follow, reusable in several places and checkable by a program? And what do document models and their critics say?
 
@@ -27,7 +27,7 @@ Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · 
 | Reuse by reference helps readers or keeps documentation consistent | not found: no study in this search | position.md |
 | One containing parent, acyclic references, each reuse valid in each place | convention, untested (candidate rules) | position.md |
 
-## The two questions this topic answers
+## The two questions this review answers
 
 - **Self-reference.** The template needs the recursive type, a node whose children are nodes. No model read needs a node that contains itself, and standards forbid it by syntax, by a rule on references, or in the processor ([position](position.md)).
 - **Graphs.** In the standards read, the stored form is a graph of trees (files that reference files), each reading is a tree, and what crosses the hierarchy is held beside it as pointers. No study shows which view helps readers ([position](position.md)).
@@ -44,4 +44,4 @@ Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · 
 - [One place per fact](https://github.com/Tewf/reader-ergonomics/blob/master/principles/collection/one-place-per-fact.md), with its evidence on duplication and clones in [file-structure](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/file-structure/review.md).
 - [Shallow outline](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/shallow-outline.md), and the levels effect in [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/review.md).
 - Docs as code in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md); tools that check documentation in the reader-ergonomics [checks README](https://github.com/Tewf/reader-ergonomics/blob/master/checks/README.md).
-- Typed units and derived types: [typed-units](../typed-units/README.md). Showing nested trees to readers: [recursive-depth](../recursive-depth/README.md).
+- Typed units and derived types: [information-typing](../information-typing/README.md). Showing nested trees to readers: [progressive-disclosure](../progressive-disclosure/README.md).

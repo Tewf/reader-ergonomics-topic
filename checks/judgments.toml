@@ -1,34 +1,6 @@
 [[answer]]
-check = "logical-lines"
-path = "evidence/recursive-depth/review.md"
-question = "94 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "1685d3b5b4d1"
-answer = "One role: the reading log of this topic's literature, strand by strand. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/recursive-depth/sources.md"
-question = "109 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "6f0c9a653d26"
-answer = "One role: this topic's pool of sources, counted and scored row by row. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/typed-units/review.md"
-question = "83 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "76e99cc5ea78"
-answer = "One role: the reading log of this topic's literature, strand by strand. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/typed-units/sources.md"
-question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "d4057ee0b136"
-answer = "One role: this topic's pool of sources, counted and scored row by row. It stays whole."
-
-[[answer]]
 check = "figures-present"
-path = "evidence/recursive-depth/against.md"
+path = "evidence/progressive-disclosure/against.md"
 question = "a long text with no figure, table or diagram: is a relation, set, quantity or process described only in words?"
 file = "e2dc8d8863af"
 answer = "No: it lists separate findings against the rules, each with its source. The one relation it touches, depth in storage against depth in view, is drawn in position.md."
@@ -41,85 +13,127 @@ file = ""
 answer = "It stays: checks/ is the folder the extension contract names (reader-ergonomics extending.md, the layout table), and the standard reads checks/judgments.toml from there. The sibling extensions hold the same single file."
 
 [[answer]]
-check = "logical-lines"
-path = "evidence/node-model/protocol.md"
-question = "125 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "add054dcfa42"
-answer = "One role: how this topic's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/recursive-depth/protocol.md"
-question = "114 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "f7ee4d9b9d32"
-answer = "One role: how this topic's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/typed-units/protocol.md"
-question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "9d650fce99fc"
-answer = "One role: how this topic's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
-
-[[answer]]
 check = "paraphrase"
-path = "evidence/node-model/protocol.md"
-question = "says nearly what evidence/typed-units/protocol.md (line 38) says, similarity 0.95: one fact in two places?"
-file = "add054dcfa42"
-answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by topic."
-
-[[answer]]
-check = "paraphrase"
-path = "evidence/node-model/protocol.md"
-question = "says nearly what evidence/recursive-depth/protocol.md (line 31) says, similarity 0.95: one fact in two places?"
-file = "add054dcfa42"
-answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by topic."
-
-[[answer]]
-check = "paraphrase"
-path = "evidence/recursive-depth/protocol.md"
-question = "says nearly what evidence/typed-units/protocol.md (line 38) says, similarity 0.92: one fact in two places?"
+path = "evidence/progressive-disclosure/protocol.md"
+question = "says nearly what evidence/information-typing/protocol.md (line 38) says, similarity 0.92: one fact in two places?"
 file = "f7ee4d9b9d32"
 answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by topic."
 
 [[answer]]
 check = "document-mode"
-path = "evidence/recursive-depth/against.md"
+path = "evidence/progressive-disclosure/against.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "e2dc8d8863af"
 answer = "Reference: findings against the rules, looked up by question. Its imperative words (fold, cap, show) name the designs criticised, not steps for the reader."
 
 [[answer]]
 check = "document-mode"
-path = "evidence/recursive-depth/baseline.md"
+path = "evidence/progressive-disclosure/baseline.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "e31ccd0bac8f"
 answer = "Reference: it names the baseline and the measures a comparison would use. The steps it lists describe a study design, not a task for the reader."
 
 [[answer]]
-check = "document-mode"
-path = "evidence/recursive-depth/frame.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "1c9aa2a2c1ea"
-answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
+check = "logical-lines"
+path = "evidence/document-model/protocol.md"
+question = "125 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "579ac8df95fa"
+answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/node-model/sources.md"
-question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "dc1680dad39e"
-answer = "One role: this topic's pool of sources, counted and scored row by row. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/node-model/review.md"
+path = "evidence/document-model/review.md"
 question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "a1f2587037bd"
-answer = "One role: the reading log of this topic's literature, strand by strand. It stays whole."
+file = "a2b8196952d9"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/sources.md"
+question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "432bfad093e3"
+answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/protocol.md"
+question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "7a4a8694e9d3"
+answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/review.md"
+question = "83 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "3b8fefea8ce0"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/sources.md"
+question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "09bd3f4a7676"
+answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/protocol.md"
+question = "114 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "c057a02623e2"
+answer = "One role: how this review's pool of sources was searched, screened and scored, so another reviewer can rerun it. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/review.md"
+question = "94 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "09c1322a33a0"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/sources.md"
+question = "109 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0a88b28c38d2"
+answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
 
 [[answer]]
 check = "paraphrase"
-path = "evidence/node-model/review.md"
-question = "says nearly what evidence/typed-units/review.md (line 106) says, similarity 0.95: one fact in two places?"
-file = "a1f2587037bd"
-answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this topic; the shared Q/A method is linked from the evidence README."
+path = "evidence/document-model/protocol.md"
+question = "says nearly what evidence/information-typing/protocol.md (line 38) says, similarity 0.95: one fact in two places?"
+file = "579ac8df95fa"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/document-model/review.md"
+question = "says nearly what evidence/information-typing/review.md (line 106) says, similarity 0.95: one fact in two places?"
+file = "a2b8196952d9"
+answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this review; the shared Q/A method is linked from the evidence README."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/document-model/protocol.md"
+question = "says nearly what evidence/progressive-disclosure/protocol.md (line 31) says, similarity 0.95: one fact in two places?"
+file = "579ac8df95fa"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/information-typing/protocol.md"
+question = "says nearly what evidence/progressive-disclosure/protocol.md (line 31) says, similarity 0.92: one fact in two places?"
+file = "7a4a8694e9d3"
+answer = "Not one fact: each protocol names the databases, fields and sort order that gave its own counts on its day; the shared rules are in the evidence README method, and the counts that follow differ by review."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "90babb408187"
+answer = "Reference: the front page, read to learn what the repository holds and what its review found. Its one task, Check it, is two commands and stays."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "2bbee33c8deb"
+answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."

@@ -1,6 +1,6 @@
 # Sources: the pool, the flow and the scores
 
-This file is the recursive-depth pool: the flow from hits to sources, then each source with its quality. Searches: [protocol](protocol.md); terms in [frame](frame.md).
+This file is the progressive-disclosure pool: the flow from hits to sources, then each source with its quality. Searches: [protocol](protocol.md); terms in [frame](frame.md).
 
 ## Flow
 
@@ -15,18 +15,18 @@ This file is the recursive-depth pool: the flow from hits to sources, then each 
 - Formal:
   - 6,485 records were returned: Semantic Scholar 6,374 and arXiv 111. The two unusable "outliner" counts (F13) are left out.
   - 422 were screened by title (382 Semantic Scholar, 40 arXiv), with repeats across strings.
-  - 41 were included as new: 23 from the strings, 11 from leads named in the brief and checked, 4 by backward snowballing, 3 by handoff from typed-units.
+  - 41 were included as new: 23 from the strings, 11 from leads named in the brief and checked, 4 by backward snowballing, 3 by handoff from information-typing.
   - Excluded, by title, rounded to tens: repeats across strings 40; off topic (medicine, physics, images, maps, biology) 260.
   - Also excluded: systems or techniques with no reader study 60; model pipelines not about reading a document tree 40.
 - Grey:
   - The web strings showed 45 links and the producer visits 14 pages; the Q/A strings returned 318 threads. Engine totals were not recorded.
   - 377 were screened (27 for G1, 18 for G2, 14 visits, 318 threads).
-  - 23 were included as new: 8 from the web and 12 threads, scored here; 3 by handoff from typed-units (one blog, two threads). Two public counts (GitHub 2026c, Obsidian 2026) are the reviewer's measurements and are not scored.
+  - 23 were included as new: 8 from the web and 12 threads, scored here; 3 by handoff from information-typing (one blog, two threads). Two public counts (GitHub 2026c, Obsidian 2026) are the reviewer's measurements and are not scored.
   - Excluded: Q/A threads not included after the title or the thread, 306; tickets, fan and catalogue pages, 41.
   - Also excluded: pages with no data or unreachable (two Web Almanac chapters, two 404 pages, one paywalled guideline), 5.
 - Existing reviews found: 7, placed in review.md strand 0.
 
-The figure draws the stages of the table for recursive depth.
+The figure draws the stages of the table for progressive disclosure.
 
 ![6,485 formal hits were returned and 422 screened; 377 grey results were screened. 41 formal and 23 grey sources were added, for 71 sources in the review.](flow.svg)
 
@@ -79,9 +79,9 @@ The figure draws the stages of the table for recursive depth.
 | Jayraj 2026 | formal | F18, A3 | measured, preprint, abstract (secondary) | review 6; against |
 | He 2026 | formal | F5 | measured on ∞Bench, preprint, full text | frame; review 5, 6; state-of-the-art; position; against; baseline |
 | Otter 2000 | formal | F12 | title only | baseline |
-| Heinonen 2022 | formal | handoff, typed-units | exploratory user studies, three countries, abstract (secondary) | review 2 |
-| Swarts 2022 | formal | handoff, typed-units | measured, descriptive, corpus, abstract | review 5 |
-| Mortezaagha 2026 | formal | handoff, typed-units | measured, 2,359 articles, preprint, abstract (secondary) | review 6 |
+| Heinonen 2022 | formal | handoff, information-typing | exploratory user studies, three countries, abstract (secondary) | review 2 |
+| Swarts 2022 | formal | handoff, information-typing | measured, descriptive, corpus, abstract | review 5 |
+| Mortezaagha 2026 | formal | handoff, information-typing | measured, 2,359 articles, preprint, abstract (secondary) | review 6 |
 | Garousi 2019 | formal, carried | method | guidelines | protocol |
 
 ## Grey sources, scored
@@ -111,15 +111,15 @@ Subtotals as in the [evidence README](../README.md#method).
 | SESE 2011o | grey tier 2 | RD11 | 15 of 20 (2.5 / 4.5 / 3.5 / 1 / 0.5 / 1.5 / 1 / 0.5) | review 7; against |
 | SESE 2011r | grey tier 2 | RD12 | 13 of 20 (0.5 / 4.5 / 3.5 / 1 / 0.5 / 1.5 / 1 / 0.5) | review 7 |
 | SESE 2014e | grey tier 2 | RD12 | 14 of 20 (2 / 4.5 / 3.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | review 7; position; against |
-| Johnson 2013 | grey tier 3 | handoff, typed-units | 13 of 20 there (2 / 4.5 / 3 / 1 / 1 / 1 / 0.5 / 0) | review 2 |
-| WSE 2018c | grey tier 2 | handoff, typed-units | 12.5 of 20 there (2 / 4 / 2.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | review 7 |
-| UXSE 2018b | grey tier 2 | handoff, typed-units | 8.5 of 20 (0.5 / 3 / 2.5 / 1 / 0.5 / 0.5 / 0 / 0.5) | review 7 (example only) |
+| Johnson 2013 | grey tier 3 | handoff, information-typing | 13 of 20 there (2 / 4.5 / 3 / 1 / 1 / 1 / 0.5 / 0) | review 2 |
+| WSE 2018c | grey tier 2 | handoff, information-typing | 12.5 of 20 there (2 / 4 / 2.5 / 1 / 0.5 / 1.5 / 0.5 / 0.5) | review 7 |
+| UXSE 2018b | grey tier 2 | handoff, information-typing | 8.5 of 20 (0.5 / 3 / 2.5 / 1 / 0.5 / 0.5 / 0 / 0.5) | review 7 (example only) |
 
 Counts, not scored: GitHub 2026c (stars and topic counts) and Obsidian 2026 (plugin downloads), both read on 2026-10-29, used in state-of-the-art.md.
 
 ## Result of the scoring
 
-- 21 grey sources scored here: 8 from the web, 13 Q/A threads; 2 more keep their typed-units scores. 4 fall below 10: VectifyAI 2026, UXSE 2016, UXSE 2018a, UXSE 2018b. With the carried Wang 2023, 5 are examples only.
+- 21 grey sources scored here: 8 from the web, 13 Q/A threads; 2 more keep their information-typing scores. 4 fall below 10: VectifyAI 2026, UXSE 2016, UXSE 2018a, UXSE 2018b. With the carried Wang 2023, 5 are examples only.
 - UXSE 2014b sits exactly at 10 and stays in.
 - The highest scores go to a government design system (GOV.UK 2026a) and a research wiki page with data (Wikimedia 2016).
 - A Q/A thread scores 0.5 on authority for the site, plus 1 for a top answerer at or above 20,000 reputation, or 0.5 at or above 5,000.
