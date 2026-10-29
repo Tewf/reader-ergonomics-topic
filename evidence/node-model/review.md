@@ -97,7 +97,7 @@ This file reads the literature on storing, reusing and checking a tree of units 
   - Macdonald 1982 describes the Writer's Workbench, computer aids for text analysis (title and venue only).
   - Juergens 2010: clone detection on specifications reached precision above 85% for each document after 1 to 33 minutes of tailoring (mean 99%), from as low as 2% before; recall was not measured.
   - Fleckenstein 2023 (strand 0) is the only effect size found for automated feedback on writing, and it concerns students.
-- Checking tools for documentation are compared with the reader-ergonomics checks in its [checks README](https://github.com/Tewf/reader-ergonomics/blob/master/checks/README.md); docs as code is reviewed in [architecture-descriptions](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/review.md).
+- Checking tools for documentation are compared with the reader-ergonomics checks in its [checks README](https://github.com/Tewf/reader-ergonomics/blob/master/checks/README.md); docs as code is reviewed in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).
 
 ## 6. Practice
 

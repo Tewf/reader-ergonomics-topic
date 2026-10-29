@@ -32,8 +32,8 @@ The three topics share these rules, which their protocols do not repeat:
 
 - **Why grey literature:** each protocol answers the seven questions of Garousi 2019, Table 4; one yes suggests
   including grey literature.
-- **Q/A sites:** threads are read through the Stack Exchange API, by the method of the software-design-writing
-  [architecture-descriptions protocol](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/protocol.md#qa-sites):
+- **Q/A sites:** threads are read through the Stack Exchange API, by the method of the reader-ergonomics-software-design
+  [architecture-descriptions protocol](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/protocol.md#qa-sites):
   its stopping parameters, its API call, how a thread is read and scored, and its limits.
 - **Limits:** search engines personalise and change, so counts differ on a repeat. OpenAlex counts are missing, since
   its anonymous quota was spent on the day. Semantic Scholar and arXiv counts are not phrase-exact.
@@ -62,7 +62,7 @@ Works already reviewed in a sibling repository are linked there, with one line o
 | reader-ergonomics-academic [academic-papers](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/academic-papers) | IMRaD, moves and steps (Swales) |
 | reader-ergonomics-academic [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/mathematical-writing) | structured proofs |
 | reader-ergonomics-presentations [presentations](https://github.com/Tewf/reader-ergonomics-presentations/tree/master/evidence/presentations) | Minto, assertion-evidence, slide builds |
-| software-design-writing [pseudocode](https://github.com/Tewf/software-design-writing/tree/master/evidence/pseudocode), [architecture-descriptions](https://github.com/Tewf/software-design-writing/tree/master/evidence/architecture-descriptions) | stepwise refinement; C4, arc42 and ISO 42010 |
+| reader-ergonomics-software-design [pseudocode](https://github.com/Tewf/reader-ergonomics-software-design/tree/master/evidence/pseudocode), [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/tree/master/evidence/architecture-descriptions) | stepwise refinement; C4, arc42 and ISO 42010 |
 
 A key names one work across all five repositories: the keys here were checked by script against the four other
 bibliographies. One key differs on purpose. Horn 1969 here is the 1969 report itself; reader-ergonomics still cites an

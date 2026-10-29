@@ -105,21 +105,21 @@ answer = "Reference: a table of names, looked up by term. Its imperative words (
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/node-model/review.md"
-question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "e8ac6a1450a8"
-answer = "One role: the reading log of this topic's literature, strand by strand. It stays whole."
-
-[[answer]]
-check = "logical-lines"
 path = "evidence/node-model/sources.md"
 question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "dc1680dad39e"
 answer = "One role: this topic's pool of sources, counted and scored row by row. It stays whole."
 
 [[answer]]
+check = "logical-lines"
+path = "evidence/node-model/review.md"
+question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "a1f2587037bd"
+answer = "One role: the reading log of this topic's literature, strand by strand. It stays whole."
+
+[[answer]]
 check = "paraphrase"
 path = "evidence/node-model/review.md"
 question = "says nearly what evidence/typed-units/review.md (line 106) says, similarity 0.95: one fact in two places?"
-file = "e8ac6a1450a8"
+file = "a1f2587037bd"
 answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this topic; the shared Q/A method is linked from the evidence README."

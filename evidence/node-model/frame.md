@@ -45,7 +45,7 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 | AST, mdast, the Pandoc AST | the document tree |
 | prose linter, style linter, markdownlint | style checker, controlled language checker |
 | schema, RNG, Schematron rules, BREX (S1000D) | validation |
-| docs as code, docs like code | no research term found; reviewed in [architecture-descriptions](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/frame.md) |
+| docs as code, docs like code | no research term found; reviewed in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/frame.md) |
 
 - On Stack Overflow "transclusion" is mostly a homonym: 28 of the 30 most-voted titles with the word concern content projection in Angular, Vue or Aurelia (string NM1, protocol.md).
 
@@ -79,4 +79,4 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 - How a nested tree is shown to a reader (expandable text, outliners, depth per view): [recursive-depth](../recursive-depth/frame.md).
 - Duplication in code, minimal DAGs and the rule of one place per fact: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/file-structure/review.md), linked, not repeated.
 - The levels effect, readers recalling the top of a hierarchy best: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/review.md).
-- Docs as code as a practice: [architecture-descriptions](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/review.md).
+- Docs as code as a practice: [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).

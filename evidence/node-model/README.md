@@ -43,5 +43,5 @@ Steps: [protocol](protocol.md) · [sources](sources.md) · [frame](frame.md) · 
 
 - [One place per fact](https://github.com/Tewf/reader-ergonomics/blob/master/principles/collection/one-place-per-fact.md), with its evidence on duplication and clones in [file-structure](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/file-structure/review.md).
 - [Shallow outline](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/shallow-outline.md), and the levels effect in [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/review.md).
-- Docs as code in [architecture-descriptions](https://github.com/Tewf/software-design-writing/blob/master/evidence/architecture-descriptions/review.md); tools that check documentation in the reader-ergonomics [checks README](https://github.com/Tewf/reader-ergonomics/blob/master/checks/README.md).
+- Docs as code in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md); tools that check documentation in the reader-ergonomics [checks README](https://github.com/Tewf/reader-ergonomics/blob/master/checks/README.md).
 - Typed units and derived types: [typed-units](../typed-units/README.md). Showing nested trees to readers: [recursive-depth](../recursive-depth/README.md).
