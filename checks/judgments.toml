@@ -20,25 +20,11 @@ file = "705154f56779"
 answer = "A check and its tests change together by design. They stay apart because the standard's runner executes every module in checks/local/, which must not include the tests; the test file names the check by its path."
 
 [[answer]]
-check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "425287eb8666"
-answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
-
-[[answer]]
 check = "logical-lines"
 path = "evidence/document-model/protocol.md"
 question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "45d3c2eeec45"
 answer = "One role: the record from which another reviewer can rerun this review's search, from `Why grey literature` to `Limits`. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/document-model/review.md"
-question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "0fcd8189902d"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
@@ -49,24 +35,10 @@ answer = "One role: this review's pool of sources, from its `Flow` to `Grey sour
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/information-typing/review.md"
-question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "5cd317002c70"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
-
-[[answer]]
-check = "logical-lines"
 path = "evidence/information-typing/sources.md"
 question = "111 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "c3d8b7de8163"
 answer = "One role: this review's pool of sources, from its `Flow` to `Grey sources, scored`, one row per source. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/progressive-disclosure/review.md"
-question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "9577e830f636"
-answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
@@ -91,38 +63,10 @@ answer = "Reference: findings against typed units, under headings such as `Null 
 
 [[answer]]
 check = "document-mode"
-path = "evidence/progressive-disclosure/README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "12c524dbf3ed"
-answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
-
-[[answer]]
-check = "document-mode"
 path = "evidence/progressive-disclosure/against.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "5771a3b8597b"
 answer = "Reference: findings against folding, grouped by question (`Whether folding helps the reader`, `Whether trees of summaries help a model`), each with its source; it sets the reader no steps."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/frame.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "8c9b9ac17a00"
-answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
-
-[[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "e750e49688b8"
-answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/README.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "e750e49688b8"
-answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
 
 [[answer]]
 check = "tree-shape"
@@ -130,3 +74,59 @@ path = "checks/local"
 question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
 answer = "It stays: checks/local/ is the folder the extension contract names for an extension's own checks (reader-ergonomics extending.md), and the standard's runner reads it there."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/review.md"
+question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "11c2bcca58a4"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/review.md"
+question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "8e1a9ae4f357"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/review.md"
+question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "a8fa7e26fc6a"
+answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "bafbb1d5f5b3"
+answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "cb1d393f2c6e"
+answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "bafbb1d5f5b3"
+answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "2eb86746f662"
+answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "9fdf515d3c6a"
+answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."

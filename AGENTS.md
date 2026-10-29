@@ -1,12 +1,12 @@
 # Contributing to this repository
 
 For anyone changing this repository, person or language model. To apply the reader-ergonomics standard elsewhere,
-read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/standard.md);
+read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/standard.md);
 this file is about this repository only.
 
 ## Before writing
 
-1. Read the standard, at the release this repository checks against (v1.0.0), then [shapes/topic.md](shapes/topic.md).
+1. Read the standard, at the release this repository checks against (v1.1.1), then [shapes/topic.md](shapes/topic.md).
 2. Every document here is a topic: a title, a summary right after it, and a line in its parent that lists it with
    that summary. A new file is listed by the README of its folder. A new folder gets a README.md, listed by the README
    above it, and a one-line `index.qmd` that includes it, because the site generator skips README files.
@@ -31,11 +31,11 @@ this file is about this repository only.
 ## Before handing back
 
 Run them against the release CI uses, not a checkout that may have moved on: extract it once with
-`git -C ../reader-ergonomics archive 40cd9fb | tar -x -C ../re-v1.0.0`.
+`git -C ../reader-ergonomics archive 257958e | tar -x -C ../re-v1.1.1`.
 
 ```sh
-READER_ERGONOMICS_CHECKS=../re-v1.0.0/checks python3 -m unittest discover -s checks   # the topic check's tests
-python3 ../re-v1.0.0/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
+READER_ERGONOMICS_CHECKS=../re-v1.1.1/checks python3 -m unittest discover -s checks   # the topic check's tests
+python3 ../re-v1.1.1/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
 ```
 
 - Fix every error. Read every warning.

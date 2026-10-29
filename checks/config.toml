@@ -15,3 +15,11 @@ typed = []           # children listed by type name alone; this repository lists
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]
 exempt = ["standard.md", "llms.txt", "evidence/bibliography.md", "checks/judgments.toml"]
+
+# The site loads the standard's own stylesheet (_standard/site.css, checked out in pages.yml), so there is none here
+# to measure; reader-ergonomics extending.md asks such an extension to list none.
+[readable_measure]
+stylesheets = []
+
+[sufficient_contrast]
+stylesheets = []

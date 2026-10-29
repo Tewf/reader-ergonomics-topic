@@ -1,7 +1,7 @@
 # Shapes
 
 The topic, the base every shape derives from, and how the four general shapes of reader-ergonomics fit it. The four
-are not copied here: each is linked at the release this repository checks against, reader-ergonomics v1.0.0.
+are not copied here: each is linked at the release this repository checks against, reader-ergonomics v1.1.1; they are unchanged since v1.0.0.
 
 ## Contents
 
@@ -13,7 +13,7 @@ are not copied here: each is linked at the release this repository checks agains
 
 Each cell says which part of the shape fills the topic's block.
 
-| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/shapes/commit.md) |
+| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/shapes/commit.md) |
 |---|---|---|---|---|
 | Title | the topic, named as the field names it | the problem, named by what solving it achieves | what the folder is for | the subject line |
 | Summary | one quoted line: what this is and why it matters | one quoted line: what is asked | one or two sentences: the folder's role | the subject line again |
