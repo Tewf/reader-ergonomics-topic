@@ -20,7 +20,7 @@ reader-ergonomics: the decision in one sentence under its title, then its status
 | [0009 Follow the standard's decision record](0009-follow-the-standards-decision-record.md) | the shape moved down to reader-ergonomics v1.3.0 |
 | [0010 Move to reader-ergonomics v1.4.1](0010-move-to-reader-ergonomics-v1.4.1.md) | the standard now checks figure widths and shrinks figures on a phone |
 | [0011 Move to reader-ergonomics v1.9.0](0011-move-to-reader-ergonomics-v1.9.0.md) | the standard now checks keys, records, shape examples and drawn figures |
-| [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | on its own branch until its review names a baseline; one problem, proofs in Lean first |
+| [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | the topic's extension, joined to master once its review named B1; one problem, proofs in Lean first |
 
 ## See also
 

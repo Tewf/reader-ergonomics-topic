@@ -9,7 +9,7 @@ Each page's markdown source is served at the same path with a .md extension. Thi
 - [Topic](https://tewf.github.io/reader-ergonomics-topic/shapes/topic.md): the base shape: title, summary, body, contents, see also, and the rules of derivation, depth and graph
 - [Shapes](https://tewf.github.io/reader-ergonomics-topic/shapes/README.md): how the four general shapes of reader-ergonomics, and six forms of the genre extensions, fit the topic
 - [Decisions](https://tewf.github.io/reader-ergonomics-topic/decisions/README.md): one record per choice that shapes the repository
-- [AI-augmented topic](https://github.com/Tewf/reader-ergonomics-topic/blob/ai-augmented-topic/ai-augmented/README.md): on the ai-augmented-topic branch: the topic as the format a person, a model and a proof assistant share
+- [AI-augmented topic](https://tewf.github.io/reader-ergonomics-topic/ai-augmented/README.md): the topic's extension: the topic as the format a person, a model and a proof assistant share
 
 ## Evidence
 
@@ -17,6 +17,7 @@ Each page's markdown source is served at the same path with a .md extension. Thi
 - [Information typing](https://tewf.github.io/reader-ergonomics-topic/evidence/information-typing/README.md): how a unit of writing is given a type derived from a base
 - [Progressive disclosure](https://tewf.github.io/reader-ergonomics-topic/evidence/progressive-disclosure/README.md): how a tree nested to any depth is shown to a reader
 - [Document model](https://tewf.github.io/reader-ergonomics-topic/evidence/document-model/README.md): how a unit that holds units of its own type is stored, reused and checked
+- [Autoformalization](https://tewf.github.io/reader-ergonomics-topic/evidence/autoformalization/README.md): the extension's review: how practice and research join a person's reasoning, a model and Lean, and catch the wrong statement
 - [Bibliography](https://tewf.github.io/reader-ergonomics-topic/evidence/bibliography.md): every cited work, once
 
 ## Contributing
