@@ -107,7 +107,7 @@ answer = "One links the other already: the protocol names its shared rules by a 
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "398e15e82504"
+file = "b8e629551086"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]
@@ -193,3 +193,24 @@ path = "checks/config.toml"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "35dca1817b7a"
 answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md` under `[shape_conformance]`, and the folder's README as the topic's filled example, `topic = [\"decisions/README.md\"]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
+
+[[answer]]
+check = "co-change"
+path = "evidence/document-model/flow.svg"
+question = "changed together with evidence/information-typing/flow.svg in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "2e36bdd8019b"
+answer = "They change together because one shared generator draws all three, each from the flow.json beside it; when the generator changes, all three are drawn again. Each stays in its review's folder, as its `Screened` and `In the review` counts are that review's own."
+
+[[answer]]
+check = "co-change"
+path = "evidence/document-model/flow.svg"
+question = "changed together with evidence/progressive-disclosure/flow.svg in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "2e36bdd8019b"
+answer = "They change together because one shared generator draws all three, each from the flow.json beside it; when the generator changes, all three are drawn again. Each stays in its review's folder, as its `Screened` and `In the review` counts are that review's own."
+
+[[answer]]
+check = "co-change"
+path = "evidence/information-typing/flow.svg"
+question = "changed together with evidence/progressive-disclosure/flow.svg in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "f5cb5608046b"
+answer = "They change together because one shared generator draws all three, each from the flow.json beside it; when the generator changes, all three are drawn again. Each stays in its review's folder, as its `Screened` and `In the review` counts are that review's own."

@@ -24,6 +24,27 @@ This page in French: [README.fr.md](README.fr.md).
 
 ![Three levels: learning pins the topic and other projects may use it as a skeleton; the topic obeys reader-ergonomics, whose checks its CI runs.](where-it-sits.svg)
 
+<details>
+<summary>Graphviz source</summary>
+
+```dot
+digraph where_it_sits {
+  graph [rankdir=TB, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  LE [label=<<b>reader-ergonomics-learning</b><br/><font point-size="11" color="#55575F">level 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  OT [label=<<b>reader-ergonomics-academic, -presentations,</b><br/><font point-size="11" color="#55575F">-software-design, other projects</font><br/><font point-size="11" color="#55575F">level 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F", style="rounded,filled,dashed"];
+  TO [label=<<b>reader-ergonomics-topic</b><br/><font point-size="11" color="#55575F">one topic shape, nested to any depth,</font><br/><font point-size="11" color="#55575F">its review and its check</font><br/><font point-size="11" color="#55575F">level 1</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  RE [label=<<b>reader-ergonomics</b><br/><font point-size="11" color="#55575F">how any text serves its reader</font><br/><font point-size="11" color="#55575F">level 0</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  LE -> TO [label=" pins a release; its shapes\l will derive from the topic\l"];
+  OT -> TO [style=dashed, color="#6A6D77", label=" may use the topic as their\l skeleton (a hypothesis)\l"];
+  TO -> RE [label=" obeys the principles; CI\l runs their checks here\l"];
+  {rank=same; LE; OT}
+}
+```
+
+</details>
+
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
 - **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/extending.md)).

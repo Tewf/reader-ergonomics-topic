@@ -43,6 +43,29 @@ The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL
 
 ![Note, report, folder and commit each derive from the topic shape and add their own parts.](topic-shapes.svg)
 
+<details>
+<summary>Graphviz source</summary>
+
+```dot
+digraph topic_shapes {
+  graph [rankdir=BT, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  TP [label=<<b>topic</b><br/><font point-size="11" color="#55575F">title · summary · body · contents · see also</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  NO [label=<<b>note</b><br/><font point-size="11" color="#55575F">+ terms + check yourself + open</font><br/><font point-size="11" color="#55575F">see also: Links</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  RP [label=<<b>report</b><br/><font point-size="11" color="#55575F">+ what it tests + plan and steps</font><br/><font point-size="11" color="#55575F">+ checks</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  FO [label=<<b>folder</b><br/><font point-size="11" color="#55575F">+ example + rules for the folder</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  CO [label=<<b>commit</b><br/><font point-size="11" color="#55575F">title and summary share one line</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  NO -> TP [label=" derives from"];
+  RP -> TP;
+  FO -> TP;
+  CO -> TP;
+  {rank=same; NO; RP; FO; CO}
+}
+```
+
+</details>
+
 - **Keep every block.** A derived shape keeps all five. It may call a block by another of its accepted names, from
   the table below, and by no other. It may leave Contents or See also empty while there is nothing to hold.
 - **Title and summary come first**, in that order: they are what a folded view shows. Only metadata may stand between
