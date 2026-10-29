@@ -3,7 +3,7 @@ extends = "reader-ergonomics"
 
 # The topic check, checks/local/topic.py: which files form this repository's tree of topics, and its two bounds.
 [topic]
-files = ["README.md", "evidence/", "shapes/", "decisions/", "ai-augmented/"]
+files = ["README.md", "evidence/", "shapes/", "decisions/"]
 root = "README.md"
 exempt = []
 summary_words = 60   # PROVISIONAL: the longest summary that still stands for a folded topic; no study sets it

@@ -4,7 +4,8 @@
 the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
 
 **Status:** accepted, 2026-10-29; its review named the baseline, B1, with both passes in, and it joined master the
-same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
+same day. Superseded the same day by [0016](0016-move-the-ai-augmented-strand-out.md): the strand moved to a
+repository of its own. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
 
 ## Context
 
@@ -17,7 +18,7 @@ same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics
 
 - A branch, not master: it may be abandoned, and master stays the released topic.
 - One problem, the interface; one instance, proofs in Lean. Other targets are named in the scope and left out.
-- The work starts with a grey literature review, since the tools move faster than the papers.
+- The work starts with a [grey literature](../evidence/README.md) review, since the tools move faster than the papers.
 
 ## Consequences
 
@@ -29,4 +30,4 @@ same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics
 
 ## See also
 
-[Decisions](README.md); the [scope](../ai-augmented/README.md).
+[Decisions](README.md); the [scope](https://github.com/Tewf/reader-ergonomics-topic/blob/3ce8ec139fc08c2852f77e893b8bc38f073f668e/ai-augmented/README.md), as it stood at v0.5.0; [0016](0016-move-the-ai-augmented-strand-out.md), the move out.

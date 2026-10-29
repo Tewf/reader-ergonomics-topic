@@ -20,10 +20,11 @@ reader-ergonomics: the decision in one sentence under its title, then its status
 | [0009 Follow the standard's decision record](0009-follow-the-standards-decision-record.md) | the shape moved down to reader-ergonomics v1.3.0 |
 | [0010 Move to reader-ergonomics v1.4.1](0010-move-to-reader-ergonomics-v1.4.1.md) | the standard now checks figure widths and shrinks figures on a phone |
 | [0011 Move to reader-ergonomics v1.9.0](0011-move-to-reader-ergonomics-v1.9.0.md) | the standard now checks keys, records, shape examples and drawn figures |
-| [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | the topic's extension, joined to master once its review named B1; one problem, proofs in Lean first |
+| [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | the topic's extension, joined to master once its review named B1; superseded by 0016 |
 | [0013 Move to reader-ergonomics v1.11.0](0013-move-to-reader-ergonomics-v1.11.0.md) | the standard now checks the drawn figures: typed, alt, source, contrast |
 | [0014 Move to reader-ergonomics v1.12.0](0014-move-to-reader-ergonomics-v1.12.0.md) | every workflow now checks out the standard at one commit, checked |
 | [0015 Move to reader-ergonomics v1.13.0](0015-move-to-reader-ergonomics-v1.13.0.md) | every link into the standard now names the pinned commit, checked |
+| [0016 Move the AI-augmented strand out](0016-move-the-ai-augmented-strand-out.md) | it leaves with its history for a repository of its own; the topic keeps its template, check and three reviews |
 
 ## See also
 

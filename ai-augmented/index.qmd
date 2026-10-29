@@ -1,5 +1,0 @@
----
-title: "AI-augmented topic"
----
-
-{{< include README.md >}}
