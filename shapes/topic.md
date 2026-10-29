@@ -39,15 +39,14 @@ The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL
 ## How a shape derives from it
 
 ```text
-                              topic
-            title · summary · body · contents · see also
-                                ▲
-         ┌───────────────┬──────┴─────────┬──────────────────┐
-       note            report           folder             commit
-   + terms           + what it tests   + example          title and summary
-   + check yourself  + plan and steps  + rules for          share one line
-   + open            + checks            the folder
-   see also: Links
+ topic    title · summary · body · contents · see also
+   ▲  each shape below derives from it
+   ├─ note     + terms  + check yourself  + open
+   │           see also: Links
+   ├─ report   + what it tests  + plan and steps
+   │           + checks
+   ├─ folder   + example  + rules for the folder
+   └─ commit   title and summary share one line
 ```
 
 - **Keep every block.** A derived shape keeps all five. It may call a block by another of its accepted names, from

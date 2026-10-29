@@ -52,18 +52,28 @@ Each "not known" below is a statement about this search, not about the world.
 ## Graphs: is the tree only the storage, and the graph the meaning
 
 ```text
- stored: a graph of trees                    read: one tree per reading
+ stored: a graph of trees
 
- ┌ file A ──────────┐                         A
- │ section a1       │      expand              ├─ a1
- │ reference ──▶ B  │   ──────────▶            ├─ B   (use 1: own links, own numbering)
- │ reference ──▶ B  │                          └─ B   (use 2: own links, own numbering)
+ ┌ file A ──────────┐
+ │ section a1       │
+ │ reference ──▶ B  │
+ │ reference ──▶ B  │
  └──────────────────┘
  ┌ file B ──────────┐
- │ reference ──▶ A  │   a cycle: forbidden (XML, XInclude), reported (DITA-OT, MediaWiki, Sphinx), or capped (Asciidoctor)
- └──────────────────┘
+ │ reference ──▶ A  │  a cycle: forbidden (XML,
+ └──────────────────┘  XInclude), reported (DITA-OT,
+          │            MediaWiki, Sphinx), or capped
+          │            (Asciidoctor)
+          ▼  expand
+ read: one tree per reading
 
- beside the tree: overlap, links, variants as stand-off pointers (TEI chapter 21, TAG)
+ A
+ ├─ a1
+ ├─ B   use 1: own links, own numbering
+ └─ B   use 2: own links, own numbering
+
+ beside the tree: overlap, links, variants as
+ stand-off pointers (TEI chapter 21, TAG)
 ```
 
 - **The standards read invert the question.** What is stored is a graph of trees: files that include or reference other files, each a tree. What one reading gets is a tree: the references expanded for that place.
