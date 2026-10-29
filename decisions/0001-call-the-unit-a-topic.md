@@ -1,8 +1,8 @@
-# 0001 Call the unit a topic
+# 0001: Call the unit a topic
 
 **Decision:** the unit this repository defines is called a topic, the word of DITA and of topic-based authoring.
 
-Status: accepted, 2026-10-29. Shape: [decision record](../shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md).
 
 ## Context
 

@@ -11,7 +11,7 @@ listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing i
 summary_labels = ["summary", "abstract", "short description", "decision"]   # the accepted names of the summary (shapes/topic.md)
 summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
 typed = []           # children listed by type name alone; this repository lists every child with its summary
-shapes = { decision-record = ["decisions/0*.md"] }   # the files that follow a derived shape, and must link it
+shapes = { decision-record = ["decisions/0*.md"] }   # the files that follow a shape, here the standard's, and must link it
 
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]
@@ -25,7 +25,7 @@ stylesheets = []
 [sufficient_contrast]
 stylesheets = []
 
-# The headings each derived shape requires, checked by the standard (shapes/decision-record.md).
+# The headings the standard's decision-record shape requires (reader-ergonomics v1.3.0, shapes/decision-record.md).
 [shape_conformance]
 shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] }]
 

@@ -193,6 +193,14 @@ class Announced(Base):
         self.setup_tree(TOPIC.format(title="0001 One") + "\nShape: [decision record](../shapes/decision-record.md).\n")
         self.assertEqual([f.message for f in topic.check(self.root, self.config())], [])
 
+    def test_a_record_may_link_a_shape_kept_in_another_repository(self) -> None:
+        self.setup_tree(TOPIC.format(title="0001 One") + "\n**Shape:** [decision record](https://github.com/o/r/blob/abc/shapes/decision-record.md).\n")
+        self.assertEqual([f.message for f in topic.check(self.root, self.config())], [])
+
+    def test_a_remote_link_to_another_shape_is_not_an_announcement(self) -> None:
+        self.setup_tree(TOPIC.format(title="0001 One") + "\n[note](https://github.com/o/r/blob/abc/shapes/note.md)\n")
+        self.assertEqual(len(topic.check(self.root, self.config())), 1)
+
     def test_a_record_that_does_not_announce_its_shape_fails(self) -> None:
         self.setup_tree(TOPIC.format(title="0001 One"))
         messages = [f.message for f in topic.check(self.root, self.config())]

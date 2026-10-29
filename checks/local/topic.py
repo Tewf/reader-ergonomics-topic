@@ -14,7 +14,8 @@ has none. Following parents from any topic reaches the root, so the rules hold a
 - with its summary: the parent's listing carries at least `listing_words` words beside the link, unless the
   child is of a type named in `typed`, whose role is stated once where the type is defined (heuristic);
 - no inclusion cycle among `{{< include >}}` shortcodes, in any markdown file (exact);
-- announced: a file that `[topic] shapes` declares of a shape links that shape's file, `shapes/<name>.md` (exact).
+- announced: a file that `[topic] shapes` declares of a shape links that shape's file, `shapes/<name>.md`, here or in
+  another repository, such as the standard's (exact).
 
 Heading depth, links that resolve and the headings a shape requires are reader-ergonomics' own checks.
 Time O(text) for the blocks and the links, O(files + inclusions) for the cycles.
@@ -126,8 +127,10 @@ def announced(root: Path, path: str, text: str, shapes: dict) -> list[Finding]:
     for name, patterns in shapes.items():
         if not matches_any(path, patterns):
             continue
-        targets = {target_of(path, match.group(2), root) for match in LINK.finditer(prose_only(text))}
-        if f"shapes/{name}.md" not in targets:
+        addresses = [match.group(2) for match in LINK.finditer(prose_only(text))]
+        local = {target_of(path, address, root) for address in addresses}
+        remote = {address.split("#")[0] for address in addresses if re.match(r"^https?://", address)}
+        if f"shapes/{name}.md" not in local and not any(url.endswith(f"/shapes/{name}.md") for url in remote):
             found.append(Finding(NAME, path, 1, f"declared a {name} but does not link shapes/{name}.md: "
                                                 "announce the shape, so a reader knows which blocks to expect"))
     return found

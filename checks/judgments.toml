@@ -72,75 +72,75 @@ answer = "It stays: checks/local/ holds this repository's own check, `topic.py`,
 check = "logical-lines"
 path = "evidence/document-model/review.md"
 question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "13f057fc39ea"
+file = "78cb29859050"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/information-typing/review.md"
 question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "9faea66a4894"
+file = "ce387c3cf3fc"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/progressive-disclosure/review.md"
 question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "639ab5cf3789"
+file = "73b20d127ed9"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "5de60f7b085d"
+file = "cbcdef01531f"
 answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
 
 [[answer]]
 check = "co-change"
 path = "checks/local/topic.py"
 question = "changed together with checks/test_topic.py in 4 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "8218c076aadd"
+file = "722c51e63e2b"
 answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
 
 [[answer]]
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "5471b9ff1a73"
+file = "fb0cc58bb2e0"
 answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
 
 [[answer]]
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "bad84e375064"
+file = "6f321d5e9a97"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "5471b9ff1a73"
+file = "fb0cc58bb2e0"
 answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "61d52e63aa15"
+file = "47ee39676ef8"
 answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "716e32f25052"
+file = "65e528c22e80"
 answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
 
 [[answer]]
 check = "name-content"
 path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
-question = "the name '0008 move' and the opening are far apart in meaning (0.14): does the name predict the content?"
-file = "14ff88946567"
+question = "the name '0008 move' and the opening are far apart in meaning (0.16): does the name predict the content?"
+file = "b04d8739c75c"
 answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `replaces the local copy`. The comparison read the name only up to its first dot."

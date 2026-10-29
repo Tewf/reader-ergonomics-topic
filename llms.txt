@@ -7,7 +7,6 @@ Each page's markdown source is served at the same path with a .md extension. Thi
 ## The topic
 
 - [Topic](https://tewf.github.io/reader-ergonomics-topic/shapes/topic.md): the base shape: title, summary, body, contents, see also, and the rules of derivation, depth and graph
-- [Decision record](https://tewf.github.io/reader-ergonomics-topic/shapes/decision-record.md): the first shape derived from the topic
 - [Shapes](https://tewf.github.io/reader-ergonomics-topic/shapes/README.md): how the four general shapes of reader-ergonomics, and six forms of the genre extensions, fit the topic
 - [Decisions](https://tewf.github.io/reader-ergonomics-topic/decisions/README.md): one record per choice that shapes the repository
 

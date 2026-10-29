@@ -38,7 +38,7 @@ This page in French: [README.fr.md](README.fr.md).
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
-- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/6d4e324157b17862aa5c5158fde0ba02db992729/extending.md)).
+- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/extending.md)).
   This repository links down to the standard, never up to the extensions.
 - **That the projects above will use it is a hypothesis.** If none does, this repository still answers one question.
 
@@ -90,8 +90,8 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 - On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
   Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared
   as types.
-- The first shape derived from the topic is the [decision record](shapes/decision-record.md). This repository's own
-  decision records follow it, and the check verifies that each one says so.
+- The [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
+  records follow it, and the check verifies that each one says so.
 - This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
   [checks/test_topic.py](checks/test_topic.py).
 

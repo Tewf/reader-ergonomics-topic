@@ -1,7 +1,7 @@
 # Decisions
 
-One record per choice that shapes this repository. Each is a topic: the decision in one sentence under its title,
-then its status, context, decision and consequences, the Nygard form with the summary it lacked.
+One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md) of
+reader-ergonomics: the decision in one sentence under its title, then its status, context, decision and consequences.
 
 ## Contents
 
@@ -15,6 +15,7 @@ then its status, context, decision and consequences, the Nygard form with the su
 | [0006 Move to reader-ergonomics v1.1.1](0006-move-to-reader-ergonomics-v1.1.1.md) | the pin moves to the standard's new release |
 | [0007 Derive the decision records from the topic](0007-derive-the-decision-records-from-the-topic.md) | the first derived shape, used and checked here |
 | [0008 Move to v1.2.0, drop the local quote check](0008-move-to-v1.2.0-and-drop-the-local-quote-check.md) | the standard now carries the check, kept strict here |
+| [0009 Follow the standard's decision record](0009-follow-the-standards-decision-record.md) | the shape moved down to reader-ergonomics v1.3.0 |
 
 ## See also
 
