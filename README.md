@@ -56,7 +56,8 @@ The topic is meant to be copied and kept as your own. Copy it from a tagged rele
    python3 reader-ergonomics/checks/run.py path/to/your/repository
    ```
 
-5. A disagreement with the shape or the check goes in an issue on this repository.
+5. How to take your own version of the family, and where a disagreement goes: the standard's
+   [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/README.md#take-your-own-version).
 
 ## Where it sits
 

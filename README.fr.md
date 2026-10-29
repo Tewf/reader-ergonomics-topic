@@ -54,7 +54,8 @@ Le topic est fait pour être copié et gardé comme le vôtre. Copiez-le depuis 
    python3 reader-ergonomics/checks/run.py chemin/vers/votre/dépôt
    ```
 
-5. Un désaccord avec la forme ou la vérification va dans une issue sur ce dépôt.
+5. Comment prendre votre propre version de la famille, et où va un désaccord : la section
+   [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/README.md#take-your-own-version) de la norme.
 
 ## Où il se place
 
