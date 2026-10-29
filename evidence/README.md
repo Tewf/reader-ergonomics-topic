@@ -9,6 +9,7 @@ case against, baseline. Every work cited is listed once in the [bibliography](bi
 | [information-typing](information-typing/) | how a unit of writing is given a type derived from a base, so a reader who knows the base reads every derivative | genres |
 | [progressive-disclosure](progressive-disclosure/) | how a tree of units nested to any depth is shown, so the top levels are kept and any leaf is reached | depth |
 | [document-model](document-model/) | how a unit that holds units of its own type is stored, reused and checked by a program | self-reference, graphs |
+| [autoformalization](autoformalization/) | on this branch, grey pass only: how practice joins a person's reasoning, a model and Lean, and catches the wrong statement | the extension's five questions |
 
 ## Method
 
