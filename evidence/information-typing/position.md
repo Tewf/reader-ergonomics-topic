@@ -14,7 +14,7 @@ Each "not known" below is a statement about this search, not about the world.
 - Typed units are old: Information Mapping had eight typed maps in 1969, and some took every block of the concept map (Horn 1969).
 - DITA declares one base topic and derives every type from it; a program can process any derived unit as its base (OASIS 2015).
 - Readers hold schemata of conventional text types, and the schema decides what reaches the gist (Kintsch 1978).
-- Conventional form with cues helps global comprehension (Kintsch 1982).
+- Conventional form with cues helps comprehension; whether the gist gains more than detail is not stated in the abstract read (Kintsch 1982).
 - Teaching readers text types helps comprehension at once, with effects that fade by the delayed test (Bogaerds-Hazenberg 2020), and transfers to untaught types (Hebert 2016).
 - Headings help search in an information-mapped text, but more headings and the method's order do not (Kools 2008).
 - Removing the visible typed format from the same content did not significantly lower learning, in one study (Horn 1969).
@@ -34,7 +34,7 @@ Each "not known" below is a statement about this search, not about the world.
 ## Where practice runs ahead of the evidence
 
 - DITA's specification says information typing rests on extensive research and names Horn and STOP, but cites no reader study (OASIS 2015, 2.2.1.4).
-- The one controlled study in Horn's own report found no significant learning gain (Horn 1969); the company page claims benefits without numbers (Information Mapping 2026, example only).
+- The one controlled study in Horn's own report found no significant learning gain (Horn 1969). The company page credits his studies with gains such as +83% initial learning, without a reference (Information Mapping 2026, example only).
 - 802 firms list DITA (DITAWriter 2026); no reader study of a DITA topic type was found.
 - Topic types spread to open-source documentation (Kubernetes 2026b; Red Hat 2026b) with no comparison against untyped pages.
 - Schema.org types reach 100K to 1M domains for HowTo (SchemaOrg 2026); this is adoption by machine readers, not evidence of reader benefit.

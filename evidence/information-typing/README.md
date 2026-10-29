@@ -25,13 +25,14 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 | Claim | Grade | Where |
 |---|---|---|
 | Readers hold schemata of conventional text types: categories plus rules of order, sometimes recursive, that decide what reaches the gist | supported with caveat (theory, read first-hand) | review.md 1 |
-| Typed units with a base were already in use in 1969: eight map types, some taking every block of the concept map | measured, descriptive (one report, read first-hand) | review.md 2 |
-| The same content with or without the typed format gave no significant difference in learning (19.56 against 17.65, 41 students) | measured, one study | review.md 2; against.md |
+| Typed units with a base were already in use in 1969: eight map types, some taking every block of the concept map | convention, described in one report (read first-hand) | review.md 2 |
+| The same content with or without the typed format gave no significant difference in learning (19.56 against 17.65, 41 students) | supported with caveat: one controlled test, in a report not peer-reviewed | review.md 2; against.md |
 | Headings help search in an information-mapped text; more headings and the method's order do not | measured, one study (abstract) | review.md 4 |
-| Conventional form with cues helps global comprehension more than local | measured, one study (abstract) | review.md 4 |
-| Teaching readers text types helps comprehension at once (g = 0.25 to 0.57), with no advantage at delay | measured, meta-analysis of 44 studies (secondary) | review.md 0 |
+| Information-mapped text matched programmed instruction on recall and beat it on retrieving information | measured, one study (abstract, secondary) | review.md 2 |
+| Conventional form with cues helps comprehension; the effect depended on whether the test was global or local, in a direction the abstract does not give | measured, one study (abstract, secondary) | review.md 4 |
+| Teaching readers text types helps comprehension at once (g = 0.25 to 0.57); at a delay the advantage is gone, except with individual practice | measured, meta-analysis of 44 studies (secondary) | review.md 0 |
 | Text structure instruction transfers to untaught structures; far transfer is small and inconsistent | measured, meta-analysis of 45 studies (secondary) | review.md 0, 5 |
-| A genre label changed processing in 1994 and not in three online experiments in 2021 | measured, contested | review.md 4; against.md |
+| A genre label changed processing in 1994 and not in three online experiments in 2021 | measured, contested (the 2021 study read by abstract, secondary) | review.md 4; against.md |
 | DITA declares one base topic, derives concept, task and reference from it, and lets a program read any derived unit as its base | convention, standardised (read first-hand) | review.md 3 |
 | 802 firms are listed as using DITA (2026-04-24) | measured, descriptive (informal list) | state-of-the-art.md |
 | Schema.org HowTo is used on 100K to 1M domains | measured, descriptive (the vocabulary's own band, 2026-08) | state-of-the-art.md |
@@ -42,7 +43,7 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 
 ## Named baseline
 
-- To beat: the DITA 1.3 base topic with its concept, task and reference specializations (OASIS 2015).
+- To beat: the DITA 1.3 base topic (OASIS 2015) with the concept, task and reference specializations of its technical content edition (OASIS 2015b).
 - Historical anchor and control: Information Mapping's typed maps and the same content as untyped prose, as in Horn 1969.
 - Comparison: find, understand (global against local), recall at delay, transfer to an unseen derived type, and a program check at every depth; crossover with a delayed session, Hedges' g per outcome (baseline.md).
 

@@ -12,7 +12,7 @@ How numbers and scores are marked: the [evidence README](../README.md#method).
 | Pyle 2017 | meta-analysis, 19 of 21 studies, kindergarten to grade 12, 1970-2013 | mean effect 0.95; larger with one or two structures taught, 11 to 20 hours, researcher implementers | abstract (secondary) |
 | Bogaerds-Hazenberg 2020 | meta-analysis, 44 studies, grades 4 to 6, informational and narrative | immediate g = 0.25 (questions), 0.57 (summary), 0.37 (recall), 0.38 (structure knowledge); no advantage at delayed posttest | abstract (secondary); the thesis chapter read for transfer (Bogaerds-Hazenberg 2023) |
 | Eiriksdottir 2011 | review of instructions: procedures, principles, examples | specific instructions help first performance; general ones help learning and transfer | abstract |
-| Andersen 2015; Batova 2014; Batova 2017 | integrative and systematic reviews of component content management | none extracted | title and venue only |
+| Andersen 2015; Batova 2014; Batova 2017 | integrative and systematic reviews of component content management | none extracted here | title and venue only here; read in [document-model](../document-model/review.md) |
 
 - No review was found of DITA, Information Mapping or topic types measured on readers. That is a statement about this search.
 - The three meta-analyses test **teaching readers the types**, not **writing to a type**. Their effect is a lower bound on what a schema in the reader can do, not a test of a template.
@@ -25,10 +25,10 @@ How numbers and scores are marked: the [evidence README](../README.md#method).
   - The schema controls which propositions reach the gist; it is shared by a cultural group (section "Role of the schema").
 - Rumelhart 1975: the first schema for stories (title and venue only).
 - Mandler 1977: an analysis of simple stories; children and adults recall them differently, so schemata develop (ERIC abstract).
-- Thorndyke 1977: two experiments vary the amount of structure in passages and separate structure from content (ERIC abstract).
+- Thorndyke 1977: two experiments vary the amount of structure in passages and separate structure from content (ERIC abstract, secondary).
 - Stein 1975: a story schema tested on 48 first and fifth graders; recall differed by age and delay, but which categories were recalled was stable across stories (ERIC abstract, secondary).
 - Mandler 1978: the story schema used in retrieval (title and venue only).
-- Black 1979 evaluated the grammars: one formally adequate, many stories not generated, one class of non-story generated, nothing added over content models (abstract).
+- Black 1979 evaluated the grammars: one formally adequate, many stories not generated, one class of non-story generated, nothing added over content models (abstract, secondary).
 - Trabasso 1985: causal networks of events, the content-based account that followed (title and venue only).
 
 ## 2. Information Mapping, read first-hand
@@ -42,9 +42,10 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 - The one controlled comparison (chapter 5, Harvard series):
   - same content, same questions, either as information maps (IM) or with the labels, boxes and unit pages removed (prose, P); random assignment;
   - adjusted posttest means 19.56 (IM, n = 20) against 17.65 (P, n = 21), t = 1.17, 38 df, not significant;
-  - the authors conclude the visible features may contribute less to first learning than the content analysis or the feedback questions.
+  - the authors offer two readings and favour the second: the one-session class test was not sensitive enough to show a difference.
 - Chapter 7 warns that such evaluations test one book, not the method, and have no external reference point.
-- Later formal work, mostly not opened: Horn 1981 (structured writing for software documentation), Horn 1999 (STOP against structured writing), Fields 1981 (a survey, ERIC abstract). Also later formal work, mostly not opened: Fields 1982 (an evaluation, title only), Hartley 1981 (a critique), Jonassen 1980 (information mapping against programmed instruction; ERIC abstract gives no result).
+- Jonassen 1980 (journal abstract, secondary): information mapping against programmed instruction; no difference in recall, but retrieving information from the text benefited significantly from mapping.
+- Later formal work, mostly not opened: Horn 1981 (structured writing for software documentation), Horn 1999 (STOP against structured writing), Fields 1981 (a survey, ERIC abstract). Also later formal work, mostly not opened: Fields 1982 (an evaluation, title only), Hartley 1981 (a critique).
 - Kools 2008 varied one health text by the method: headings sped search, the number of headings did not change speed, and the method's information order had no effect (abstract).
 
 ## 3. DITA and topic-based authoring
@@ -58,17 +59,17 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 - Priestley 2001 and Priestley 2002: the IBM architecture papers on reuse and on specialization (title and venue only).
 - Evia 2015: teaching DITA through rhetorical and computational thinking (title and venue only).
 - Swarts 2022: a corpus of topic-based documentation; relative clauses signal context to readers who arrive at one topic alone (abstract).
-- Heinonen 2022: DITA layered by skill level, tested with maintenance staff in three countries by observation, interview and questionnaire; well received (abstract; no control).
+- Heinonen 2022: DITA layered by skill level, tested with maintenance staff in three countries by observation, interview and questionnaire; well received (abstract, secondary; no control).
 
 ## 4. Does a typed structure help the reader (Q2)
 
 | Study | Manipulation | Result | Grade |
 |---|---|---|---|
-| Kintsch 1982 | essays in good rhetorical form with cues, against bad form, no cues, deviant order | better global comprehension; the effect depended on global versus local tests | measured (ERIC abstract) |
+| Kintsch 1982 | essays in good rhetorical form with cues, against bad form, no cues, deviant order | better comprehension with good form and cues; the effect depended on whether the test was global or local, direction not given in the abstract | measured (ERIC abstract) |
 | Horn 1969 | typed maps against the same text as prose | no significant difference in learning | measured, one study, 41 students |
 | Kools 2008 | headings and order of an information-mapped text | headings help search; amount of headings and order do not | measured (abstract) |
 | Zwaan 1994 | one text framed as literature or as news | literary framing: longer reading, better surface memory, weaker situation memory | measured (secondary) |
-| Triantafyllopoulos 2021 | the same framing, three online experiments | no difference in comprehension by genre expectation | measured (abstract) |
+| Triantafyllopoulos 2021 | the same framing, three online experiments | no difference in comprehension by genre expectation | measured (abstract, secondary) |
 | Markevich 2025 | narrative, expository and poetic texts, 44 adolescents, eye tracking | forward reading for narrative, more lookbacks for expository and poetry | measured, descriptive (abstract) |
 | Carroll 1987; Lazonder 1993 | task-oriented minimal manual against a standard manual | not extracted | title and venue only |
 
@@ -76,14 +77,14 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 
 - Hebert 2016: instruction transferred to untaught text structures (near transfer); far transfer was small and inconsistent (abstract).
 - Bogaerds-Hazenberg 2023: some delayed posttests in the pooled studies used untaught structures; too few to test transfer (thesis, chapter on the meta-analysis).
-- Meyer 2001: nine hours of structure strategy training raised adults' total recall from a variety of texts and from an informative video; interest training did not (ERIC abstract).
+- Meyer 2001: nine hours of structure strategy training raised adults' total recall from a variety of texts and from an informative video; interest training did not (ERIC abstract, secondary).
 - Eiriksdottir 2011: abstract instructions favour transfer, specific ones favour first performance.
 - Writing studies treat transfer of genre knowledge as recontextualisation (Cheng 2007; Artemeva 2008; Brent 2011; titles and venues only).
 - No study was found that teaches readers a base type and tests them on a type derived from it.
 
 ## 6. What typing costs (Q5)
 
-- Batova 2018: a 12-month qualitative study of one company's move to component content management; writers' motivation fell when it was framed as efficiency only, and rose with job crafting (abstract).
+- Batova 2018, on writers' motivation in a move to component content management, is reviewed in [document-model](../document-model/review.md).
 - Bailie 2015 and Coggio 2015: case studies of content management changing how writers write (titles and venues only).
 - Black 1979: a type grammar can accept non-stories and reject stories, so form alone does not define the kind.
 
@@ -97,7 +98,7 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 
 | Who | Since | Base and derived types | Evidence of use |
 |---|---|---|---|
-| Information Mapping (Horn 1969; Information Mapping 2026) | 1969 | blocks in maps; eight map types in 1969 | company page without numbers (example only) |
+| Information Mapping (Horn 1969; Information Mapping 2026) | 1969 | blocks in maps; eight map types in 1969 | company page: nine gains, such as +83% initial learning and -51% reading time, credited to Horn's studies without a reference (example only) |
 | DITA (OASIS 2015) | OASIS Standard 1.0 in 2005; 1.3 on 2015-12-17 | topic, then concept, task, reference | 802 firms listed by DITAWriter 2026; DITA-OT 2026 repository, 458 stars |
 | Kubernetes 2026b | page dated 2026-05-03 | concept, task, tutorial, reference | the project's contributor style guide; no use count |
 | Red Hat 2026b; GitLab 2026 | undated | concept, procedure, reference modules; topic types | reviewed in [documentation](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/documentation/review.md) |

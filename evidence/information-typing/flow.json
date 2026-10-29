@@ -1,10 +1,33 @@
 {
   "title": "Information typing: how the pool of sources was built",
-  "columns": ["Formal", "Grey"],
-  "rows": [
-    ["Returned by the strings", 11159, null],
-    ["Screened", 590, 238],
-    ["Included as new", 42, 21]
+  "columns": [
+    "Formal",
+    "Grey"
   ],
-  "total": ["In the review", 65]
+  "rows": [
+    [
+      "Returned by the strings",
+      11159,
+      null
+    ],
+    [
+      "Screened",
+      590,
+      238
+    ],
+    [
+      "Included as new",
+      42,
+      21
+    ],
+    [
+      "Carried, read again",
+      1,
+      1
+    ]
+  ],
+  "total": [
+    "In the review",
+    65
+  ]
 }

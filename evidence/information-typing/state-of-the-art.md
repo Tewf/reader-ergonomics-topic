@@ -8,7 +8,7 @@ An **upper bound** is what has been achieved; a **lower bound** is what has not 
 | Question | Most adopted | Best evidence | Measured how |
 |---|---|---|---|
 | Q1 What a base unit holds, and how types derive | DITA topic: title, short description, prolog, body, related links, nested topics; concept, task, reference by specialization (OASIS 2015) | none measured; Kintsch 1978 gives the theory: a type is categories plus rules of order | specification read first-hand; theory |
-| Q2 Does a typed structure help readers | topic types in DITA, Kubernetes 2026b, Red Hat 2026b | Kintsch 1982 (form plus cues helps global comprehension); Kools 2008 (headings help search); Horn 1969 (typed format against prose: no significant gain) | controlled comparisons, small; abstracts except Horn 1969 |
+| Q2 Does a typed structure help readers | topic types in DITA, Kubernetes 2026b, Red Hat 2026b | Kintsch 1982 (form plus cues helps comprehension; global against local not given); Kools 2008 (headings help search); Jonassen 1980 (mapping helped retrieval, not recall); Horn 1969 (typed format against prose: no significant gain) | controlled comparisons, small; abstracts except Horn 1969 |
 | Q2, readers taught the types | text structure instruction in schools | Bogaerds-Hazenberg 2020, 44 studies, g = 0.25 to 0.57 at once, none at delay; Pyle 2017, 19 studies, 0.95 | meta-analyses (secondary) |
 | Q3 Does knowing one type transfer | DITA generalization: a program reads any derived unit as its base (OASIS 2015, 2.5.4) | Hebert 2016: near transfer to untaught structures, weak far transfer; Meyer 2001: training transferred across texts and a video | meta-analysis (secondary); one experiment (abstract) |
 | Q4 What practice adopts | DITA: 802 firms (DITAWriter 2026, informal list, 2026-04-24) | Andersen 2015 and Batova 2017 review component content management (not extracted) | owner-compiled list; reviews by title only |
@@ -47,7 +47,7 @@ An **upper bound** is what has been achieved; a **lower bound** is what has not 
 
 - A typed base with declared derivation and fallback processing is standardised and in industrial use (OASIS 2015; DITAWriter 2026).
 - Teaching readers several text types raises comprehension at once (Pyle 2017; Bogaerds-Hazenberg 2020) and transfers to untaught types (Hebert 2016).
-- Conventional form with cues helps the reader's gist more than local detail (Kintsch 1982).
+- Conventional form with cues helps comprehension, by an amount that depended on whether the test was global or local; the abstract does not say which gained more (Kintsch 1982).
 - Typed boundaries help a model retrieve, in one domain (Jimeno Yepes 2024).
 
 ## Lower bounds (not shown)
@@ -55,5 +55,5 @@ An **upper bound** is what has been achieved; a **lower bound** is what has not 
 - No study found compares the same content as untyped text, as DITA topics and as another typed template, on readers.
 - The one controlled test of a typed format against prose found no significant gain in learning (Horn 1969), and it has not been repeated in this search.
 - No study found tests the hypothesis that a reader who knows a base type reads a derived type faster or better.
-- No effect of a type survives a delayed posttest in the largest review (Bogaerds-Hazenberg 2020).
+- In the 44-study review, taught students no longer outperformed controls at the delayed posttest; interventions with individual practice kept higher delayed effects on comprehension questions (Bogaerds-Hazenberg 2020).
 - A grammar of types cannot by itself tell a story from a non-story (Black 1979): form is not sufficient to define a kind.

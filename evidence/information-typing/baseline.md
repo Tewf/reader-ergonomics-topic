@@ -6,7 +6,7 @@ This file names the baseline a typed topic template is compared against, and how
 
 | Role | Baseline | Why this one |
 |---|---|---|
-| Typed units with derivation (the one to beat) | the DITA 1.3 base topic with its concept, task and reference specializations (OASIS 2015) | the only system found that declares a base, derives types from it, and lets a program read any derived unit as its base; an OASIS Standard since 2005, listed by 802 firms (DITAWriter 2026) |
+| Typed units with derivation (the one to beat) | the DITA 1.3 base topic (OASIS 2015) with the concept, task and reference specializations of its technical content edition (OASIS 2015b) | the only system found that declares a base, derives types from it, and lets a program read any derived unit as its base; an OASIS Standard since 2005, listed by 802 firms (DITAWriter 2026) |
 | Historical anchor | Information Mapping's typed maps, as in Horn 1969 | the first typed system found with derivation (a map type taking every block of another), and the only one with a controlled test against untyped text |
 | Control | the same content as untyped prose, Horn's "P version" | removes the visible typing and keeps the words, so a gain belongs to the type |
 

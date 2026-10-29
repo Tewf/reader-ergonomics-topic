@@ -29,17 +29,18 @@ This file is the information-typing pool: the flow from hits to sources, then ea
   - school writing and second-language teaching with no reading or typing claim: 90;
   - reuse, single-sourcing and content management without types (document-model): 30;
   - relevant but not reached or not opened, located only: 10 (Clark 2016, Harrison 2005, Horn 1992, Schmitz 2017, Dixon 2009, Yayli 2011, Mustafa 1995). Also: the Berkenkotter and Huckin book, a 2013 review of the Sydney School book.
+- The categories above account for 520 of the 548 formal exclusions; 28 were excluded without a recorded reason.
 - Grey exclusions, rounded:
   - known sources seen again: 10;
   - not about typed units: 25;
   - pages found but not read (one vendor page timed out; drafts of DITA 2.0): 5;
   - Q/A records not included after reading the title or the thread: 167, repeats across the 14 strings included.
 - Added by snowballing: Mandler 1977, Rumelhart 1975 and Stein 1975 were reached again from Kintsch 1978; Bogaerds-Hazenberg 2023 from Bogaerds-Hazenberg 2020.
-- Existing reviews found: 8, listed in review.md strand 0.
+- Existing reviews found: 8; 7 are in review.md strand 0, and Clark 2016 was located only.
 
 The figure draws the stages of the table for information typing.
 
-![11,159 formal hits were returned and 590 screened; 238 grey results were screened. 42 formal and 21 grey sources were added, for 65 sources in the review.](flow.svg)
+![11,159 formal hits were returned and 590 screened; 238 grey results were screened. 42 formal and 21 grey sources were added and one of each carried, for 65 sources in the review.](flow.svg)
 
 ## Formal sources
 
@@ -61,9 +62,9 @@ Grade vocabulary as in the README. "lead" means named in the commissioning brief
 | Pyle 2017 | formal | F10 | meta-analysis, 19 studies, abstract (secondary) | review 0; against |
 | Bogaerds-Hazenberg 2020 | formal | F10 | meta-analysis, 44 studies, abstract (secondary) | review 0; against; baseline |
 | Eiriksdottir 2011 | formal | F27 | narrative review, PubMed abstract | frame; review 0, 5; position |
-| Andersen 2015 | formal | F18; F29 | integrative review, title and venue only | frame; review 0 |
-| Batova 2014 | formal | F18 | integrative review, title and venue only | review 0 |
-| Batova 2017 | formal | F18 | systematic review, title and venue only | review 0 |
+| Andersen 2015 | formal | F18; F29 | integrative review, title and venue only here; read in document-model | frame; review 0 |
+| Batova 2014 | formal | F18 | integrative review, title and venue only here; read in document-model | review 0 |
+| Batova 2017 | formal | F18 | systematic review, title and venue only here; read in document-model | review 0 |
 | Zwaan 1994 | formal | F26 | measured, two experiments, abstract (secondary) | frame; review 4; against |
 | Triantafyllopoulos 2021 | formal | F26 | measured, three online experiments, abstract | review 4; against |
 | Markevich 2025 | formal | F26 | measured, descriptive, 44 adolescents, abstract | review 4 |
@@ -72,9 +73,9 @@ Grade vocabulary as in the README. "lead" means named in the commissioning brief
 | Fields 1981 | formal | F4 | survey, ERIC abstract | review 2 |
 | Fields 1982 | formal | F3 | evaluation, title and venue only | review 2 |
 | Hartley 1981 | formal | F4 | critique, abstract | review 2 |
-| Jonassen 1980 | formal | F4 | comparison, ERIC abstract without its result | review 2 |
+| Jonassen 1980 | formal | F4 | measured, one comparison; journal abstract (secondary), the ERIC abstract gave no result | review 2; state-of-the-art |
 | Kools 2008 | formal | F4 | measured, one text varied, abstract | review 2, 4; against; baseline |
-| Priestley 2001 | formal | F2 | architecture paper, title and venue only | review 3 |
+| Priestley 2001 | formal | F2 | architecture paper, title and venue only here; read in document-model | review 3 |
 | Priestley 2002 | formal | F2 | architecture paper, title and venue only | review 3 |
 | Evia 2015 | formal | F2; F18 | teaching account, title and venue only | review 3 |
 | Swarts 2022 | formal | F30 | measured, descriptive, corpus, abstract | review 3 |

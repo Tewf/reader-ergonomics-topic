@@ -101,7 +101,7 @@ Subtotals as in the [evidence README](../README.md#method).
 | Bray 2008 | grey tier 1 | P | 18 of 20 (4 / 4.5 / 3.5 / 1 / 1 / 2 / 1 / 1) | frame; review 1, 3, 4; state-of-the-art; position |
 | Marsh 2006 | grey tier 1 | P | 16.5 of 20 (4 / 4.5 / 3.5 / 1 / 1 / 1 / 0.5 / 1) | frame; review 3, 4; state-of-the-art; position; baseline |
 | Wright 2022 | grey tier 1 | P | 17 of 20 (3.5 / 4.5 / 3.5 / 1 / 1 / 1.5 / 1 / 1) | review 4; state-of-the-art |
-| OASIS 2015 | grey tier 1 | G1, G4; handoff | 17 of 20 (4 / 4.5 / 3 / 1 / 1 / 1.5 / 1 / 1) | review 1, 3; state-of-the-art; position; against; baseline |
+| OASIS 2015 | grey tier 1 | G1, G4; handoff | 16.5 of 20 (4 / 4.5 / 2.5 / 1 / 1 / 1.5 / 1 / 1), the score information-typing gave | review 1, 3; state-of-the-art; position; against; baseline |
 | OASIS 2010 | grey tier 1 | P | 15.5 of 20 (4 / 4 / 3 / 1 / 0.5 / 1 / 1 / 1) | review 3, 4; state-of-the-art; position |
 | DITA-OT 2026b | grey tier 2 | G2 | 12.5 of 20 (3 / 3.5 / 3.5 / 0 / 0.5 / 1 / 0.5 / 0.5) | frame; review 4; state-of-the-art; position; baseline |
 | Walsh 2019 | grey tier 1 | P | 14.5 of 20 (3.5 / 3.5 / 3.5 / 1 / 0.5 / 1 / 0.5 / 1) | frame; review 1, 4; state-of-the-art; position; baseline |
@@ -141,6 +141,6 @@ GitHub 2026d is the reviewer's count of public repository metadata, not a source
 
 - 36 grey sources scored: 25 from the web and 11 Q/A threads. One falls below 10 of 20: Schematron 2026, used only for its own claim about its edition.
 - By tier: 9 tier 1 (standards and two books) and 15 tier 2 (project documentation, community specifications, a pull request, a wiki page). Then 1 tier 3 (a company post), and 11 Q/A threads at tier 2.
-- The highest scores go to standards: TEI 2026 (18.5), Bray 2008 (18), Wright 2022, OASIS 2015 and Clark 2001 (17).
+- The highest scores go to standards: TEI 2026 (18.5), Bray 2008 (18), Wright 2022 and Clark 2001 (17), then OASIS 2015 (16.5, the score information-typing gave).
 - Gamma 1995 scores 11 with its unseen parts at 0; it supports only the pattern's intent and the case-study title.
 - Three threads are shared with information-typing under the same keys (WSE 2014a, WSE 2018b, SO 2016b); each keeps the score information-typing gave it, so a source has one score.

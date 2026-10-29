@@ -5,8 +5,8 @@ This file gathers the evidence against typed units: null results, a failed repli
 ## Null results for the typed format itself
 
 - Horn 1969: the same content with or without the typed format gave adjusted posttest means of 19.56 and 17.65, not a significant difference (t = 1.17, 38 df).
-  - The authors give two readings: the visible features matter less than the content analysis, or the classroom test was too coarse.
-  - Students with the typed version reported more study time (5.21 against 3.87 hours), also not significant.
+  - The authors give two readings: the visible features matter less than the content analysis, or the classroom test was too coarse. They favour the second.
+  - Among those who finished (15 typed, 10 prose), the typed group reported more study time (5.21 against 3.87 hours), not significant; the prose finishers had started higher (pretest 14.00 against 8.73).
 - Kools 2008: neither the number of headings nor the Information Mapping order changed search speed; only having headings did (abstract).
 - Both tests are small and old; neither was replicated in this search.
 
@@ -49,7 +49,7 @@ This file gathers the evidence against typed units: null results, a failed repli
 ## Typing for language models
 
 - No vendor claim on typed content and model accuracy was read in full; one page timed out and is not cited.
-- Mortezaagha 2026 shows the trade-off: structure-aware retrieval covers more sections, while plain content similarity ranks the single best chunk higher (abstract, secondary).
+- Mortezaagha 2026's trade-off between structure-aware and similarity retrieval is reviewed in [progressive-disclosure](../progressive-disclosure/review.md).
 
 ## Limits of the evidence used here
 
