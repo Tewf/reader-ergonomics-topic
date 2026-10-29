@@ -97,20 +97,6 @@ file = "722c51e63e2b"
 answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
 
 [[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "fb0cc58bb2e0"
-answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/README.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "fb0cc58bb2e0"
-answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
-
-[[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
@@ -179,3 +165,73 @@ path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "2805b58d1562"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/formal-leads.md"
+question = "89 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0f327c382ee4"
+answer = "One role: the works met and not reviewed, by question from `Q1. Prior art` to `Authors to search by name`, kept for the formal pass. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/protocol.md"
+question = "137 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "2fcd92d9ce85"
+answer = "One role: the record from which another reviewer can rerun this review's search, from `Why grey literature` to `Limits`, each side's search kept in its own section (`Grey search, formal side`, `Grey search, human side`). It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/review.md"
+question = "142 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "5138b5284450"
+answer = "One role: the reading log of this review's findings, by question from `Q1. Prior art` to `Q5. Limits`. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/autoformalization/sources.md"
+question = "136 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "2f0adbed700a"
+answer = "One role: this review's pool of sources, from its `Flow` to `Result of the scoring`, one row per source. It stays whole."
+
+[[answer]]
+check = "figures-present"
+path = "evidence/autoformalization/formal-leads.md"
+question = "a long text with no figure, table or diagram: is a relation, set, quantity or process described only in words?"
+file = "0f327c382ee4"
+answer = "No: it lists works to read, one per line, under the five questions and `Benchmarks named in practice`; it describes no relation, set or process."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "fed56841bd0c"
+answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "fed56841bd0c"
+answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/baseline.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "3a78909baa22"
+answer = "Reference: it names the baseline under `The named baseline` and says `How a comparison would be measured`; the steps it lists describe a study design, not a task for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/protocol.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "2fcd92d9ce85"
+answer = "Reference: how the pool was built, looked up by section from `Why grey literature` to `Limits`; its imperative words are the search strings as run, not steps for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/autoformalization/review.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "5138b5284450"
+answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`; it sets the reader no task."
