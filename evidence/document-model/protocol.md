@@ -28,7 +28,7 @@ The six sub-questions Q1 to Q6 are stated in [frame](frame.md). In short: docume
 
 ## 4. Formal search
 
-Count sources: the Semantic Scholar bulk search (title and abstract, sorted by citations, no key) and the arXiv API (all fields or abstract). The OpenAlex column was counted afterwards, at 10:11 UTC; ten strings (F29 to F36, A1, A2) wait for its next daily budget. Semantic Scholar does not match phrases exactly, so its counts are noisy upper bounds; four strings returned mostly unrelated work and carry no weight (marked noise).
+Count sources: the Semantic Scholar bulk search (title and abstract, sorted by citations, no key) and the arXiv API (all fields or abstract). The OpenAlex column was counted afterwards, at 10:11 UTC. Semantic Scholar does not match phrases exactly, so its counts are noisy upper bounds; four strings returned mostly unrelated work and carry no weight (marked noise).
 
 | Id | String as run | Semantic Scholar | arXiv | OpenAlex |
 |---|---|---|---|---|
@@ -60,16 +60,16 @@ Count sources: the Semantic Scholar bulk search (title and abstract, sorted by c
 | F26 | `("markup" + overlap + review) \| "Text as Graph" \| TAGML \| LMNL` | 1,531 (noise) | not run | 73 |
 | F27 | `(Xanadu \| "Ted Nelson") + hypertext` | 115 | not run | 114 |
 | F28 | `"Text Encoding Initiative" + (model \| critique \| hierarchy)` | 140 | not run | 167 |
-| F29 | `"documentation reuse"` | 26 | not run | not counted yet |
-| F30 | `(documentation + "near duplicates") \| ("software documentation" + duplicates)` | 33 | not run | not counted yet |
-| F31 | `"technical documentation" + (clones \| "copy and paste" \| duplication)` | 25 | not run | not counted yet |
-| F32 | `("single sourcing" \| "content reuse" \| "modular documentation" \| "structured authoring") + (experiment \| usability \| comprehension \| "user study")` | 19,449 (noise) | not run | not counted yet |
-| F33 | `("XML" \| "markup") + validation + (errors \| "error detection") + (documents \| documentation) + empirical` | 6 | not run | not counted yet |
-| F34 | `"single sourcing" + usability` | 17,791 (noise) | not run | not counted yet |
-| F35 | `"content reuse" + experiment` | 16 | not run | not counted yet |
-| F36 | `"structured authoring" + study` | 321 | not run | not counted yet |
-| A1 | arXiv only: `abs:"recursive schema" OR abs:"recursive schemas"` | | 7 (noise) | not counted yet |
-| A2 | arXiv only: `abs:"docs as code" OR abs:"documentation as code"` | | 161 (noise) | not counted yet |
+| F29 | `"documentation reuse"` | 26 | not run | 37 |
+| F30 | `(documentation + "near duplicates") \| ("software documentation" + duplicates)` | 33 | not run | 61 |
+| F31 | `"technical documentation" + (clones \| "copy and paste" \| duplication)` | 25 | not run | 61 |
+| F32 | `("single sourcing" \| "content reuse" \| "modular documentation" \| "structured authoring") + (experiment \| usability \| comprehension \| "user study")` | 19,449 (noise) | not run | 22,870 (noise) |
+| F33 | `("XML" \| "markup") + validation + (errors \| "error detection") + (documents \| documentation) + empirical` | 6 | not run | 13 |
+| F34 | `"single sourcing" + usability` | 17,791 (noise) | not run | 20,992 (noise) |
+| F35 | `"content reuse" + experiment` | 16 | not run | 22 |
+| F36 | `"structured authoring" + study` | 321 | not run | 323 |
+| A1 | arXiv only: `abs:"recursive schema" OR abs:"recursive schemas"` | | 7 (noise) | 47 |
+| A2 | arXiv only: `abs:"docs as code" OR abs:"documentation as code"` | | 161 (noise) | 32 |
 
 - Screened by title: the 15 most cited of F1 to F9, the 12 most cited of F10 to F21, and the 10 most cited of F22 to F33. Then the 8 most cited of F34 to F36, and the first 5 to 8 arXiv hits per string.
 - F15, F17 and the arXiv overlap strings returned 0 to 2 results; they were read as wrong queries and followed by rephrased strings (F16; F2, F3 on Semantic Scholar).
