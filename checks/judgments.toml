@@ -136,7 +136,7 @@ check = "co-change"
 path = "README.fr.md"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "098364367274"
-answer = "They change together when a folder joins the tree of topics: `checks/config.toml` declares it, and both front pages list it, here `ai-augmented`. Each stays where the contract puts it; the listing is the link between them."
+answer = "One links the other already: the French front page lists the `decisions` folder, `un compte rendu par choix d'architecture`, whose README lists each record. A change that shapes the repository adds a record there and a line on both front pages, so they move together by design."
 
 [[answer]]
 check = "co-change"
@@ -157,7 +157,7 @@ check = "co-change"
 path = "checks/config.toml"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "805ed6550f6a"
-answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
+answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md`, under `[shape_conformance]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
 
 [[answer]]
 check = "document-mode"
