@@ -22,6 +22,8 @@
 - The four general shapes are unchanged between the two releases, so the conformance table still holds.
 - The judgment-quotes check is promised for the standard's v1.2.0; when it ships, this repository drops its copy and
   moves again.
+- **Bad:** every link into the standard names the pinned commit, so a move rewrites links in most files. It also
+  reopens the judgment answers of each file it touches, which are checked and carried over by hand.
 
 ## See also
 

@@ -23,6 +23,8 @@ and the check verifies that each one says so.
 - The derivation rule is now exercised on real documents and checked, not only described.
 - Path answers in `checks/judgments.toml` must quote a name from their path, closing the gap template answers could
   still pass through.
+- **Bad:** each record adds judgment questions, and every answer must quote its file, so answers cost more to write.
+  A path answer quotes a name from its path, which proves the answer was read against that file, not that it is right.
 
 ## See also
 

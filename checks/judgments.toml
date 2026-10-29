@@ -135,14 +135,14 @@ answer = "Reference: names looked up by term, under `What the field calls it` an
 check = "name-content"
 path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
 question = "the name '0008 move' and the opening are far apart in meaning (0.16): does the name predict the content?"
-file = "001b4651df8f"
+file = "5bd99b645e77"
 answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `whose judgment-quotes check replaces the local`. The comparison read the name only up to its first dot."
 
 [[answer]]
 check = "document-mode"
 path = "decisions/0010-move-to-reader-ergonomics-v1.4.1.md"
 question = "reads about equally as reference and explanation: one mode per document?"
-file = "084651734bf9"
+file = "1693291e8638"
 answer = "Explanation: like every record here it says why the pin moved, from `Context` to `Consequences`; what it lists, such as `All 25 linked files resolve there`, are the reasons for the move, not entries to look up."
 
 [[answer]]
@@ -151,3 +151,38 @@ path = "evidence/README.md"
 question = "81 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "24dfa6ac44a1"
 answer = "One role: the ground the three reviews share, from the shared `Method` to the `Audit` that checked them; the lines past the trigger extend the audit. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/information-typing/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "24dfa6ac44a1"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "24dfa6ac44a1"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "24dfa6ac44a1"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/information-typing/review.md"
+question = "changed together with evidence/progressive-disclosure/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "2375152207f0"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "evidence/information-typing/review.md"
+question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "2375152207f0"
+answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
