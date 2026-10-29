@@ -26,7 +26,7 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 |---|---|---|
 | Readers hold schemata of conventional text types: categories plus rules of order, sometimes recursive, that decide what reaches the gist | supported with caveat (theory, read first-hand) | review.md 1 |
 | Typed units with a base were already in use in 1969: eight map types, some taking every block of the concept map | convention, described in one report (read first-hand) | review.md 2 |
-| The same content with or without the typed format gave no significant difference in learning (19.56 against 17.65, 41 students) | supported with caveat: one controlled test, in a report not peer-reviewed | review.md 2; against.md |
+| The same content with or without the typed format gave no significant difference in learning (19.56 against 17.65, 41 students) | measured: one controlled test, 41 students, in a report not peer-reviewed | review.md 2; against.md |
 | Headings help search in an information-mapped text; more headings and the method's order do not | measured, one study (abstract) | review.md 4 |
 | Information-mapped text matched programmed instruction on recall and beat it on retrieving information | measured, one study (abstract, secondary) | review.md 2 |
 | Conventional form with cues helps comprehension; the effect depended on whether the test was global or local, in a direction the abstract does not give | measured, one study (abstract, secondary) | review.md 4 |

@@ -66,7 +66,7 @@ Horn 1969 (the 1969 Air Force report, read in full scan) replaces the encycloped
 | Study | Manipulation | Result | Grade |
 |---|---|---|---|
 | Kintsch 1982 | essays in good rhetorical form with cues, against bad form, no cues, deviant order | better comprehension with good form and cues on questions about the topic and main points (global); the cloze test (local) did not differ; 2 experiments, 72 students; no numbers in the abstracts | measured (ERIC and APA abstracts) |
-| Horn 1969 | typed maps against the same text as prose | no significant difference in learning | measured, one study, 41 students |
+| Horn 1969 | typed maps against the same text as prose | no significant difference in learning | measured: one controlled test, 41 students, in a report not peer-reviewed |
 | Kools 2008 | headings and order of an information-mapped text | headings help search; amount of headings and order do not | measured (abstract) |
 | Zwaan 1994 | one text framed as literature or as news | literary framing: longer reading, better surface memory, weaker situation memory | measured (secondary) |
 | Triantafyllopoulos 2021 | the same framing, three online experiments | no difference in comprehension by genre expectation | measured (abstract, secondary) |
