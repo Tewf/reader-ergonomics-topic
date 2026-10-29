@@ -64,69 +64,83 @@ answer = "Reference: findings against folding, grouped by question (`Whether fol
 [[answer]]
 check = "tree-shape"
 path = "checks/local"
-question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
-answer = "It stays: checks/local/ holds this repository's own checks, `topic.py` and `judgment_quotes.py`, in the folder the extension contract names for them, where the standard's runner reads them."
+answer = "It stays: checks/local/ holds this repository's own check, `topic.py`, in the folder the extension contract names for it, where the standard's runner reads it."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/document-model/review.md"
 question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "11c2bcca58a4"
+file = "13f057fc39ea"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/information-typing/review.md"
 question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "8e1a9ae4f357"
+file = "9faea66a4894"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/progressive-disclosure/review.md"
 question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "a8fa7e26fc6a"
+file = "639ab5cf3789"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "5de60f7b085d"
+answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
+
+[[answer]]
+check = "co-change"
+path = "checks/local/topic.py"
+question = "changed together with checks/test_topic.py in 4 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "8218c076aadd"
+answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
 
 [[answer]]
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "bafbb1d5f5b3"
+file = "5471b9ff1a73"
 answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "bad84e375064"
+answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "bafbb1d5f5b3"
+file = "5471b9ff1a73"
 answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "2eb86746f662"
+file = "61d52e63aa15"
 answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "9fdf515d3c6a"
+file = "716e32f25052"
 answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
 
 [[answer]]
-check = "co-change"
-path = "checks/local/topic.py"
-question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "8218c076aadd"
-answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
-
-[[answer]]
-check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "9b48314950ca"
-answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
+check = "name-content"
+path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
+question = "the name '0008 move' and the opening are far apart in meaning (0.14): does the name predict the content?"
+file = "14ff88946567"
+answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `replaces the local copy`. The comparison read the name only up to its first dot."

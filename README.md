@@ -38,7 +38,7 @@ This page in French: [README.fr.md](README.fr.md).
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
-- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/257958ed3bcb26d2c213bb1b0a66ac19e9645157/extending.md)).
+- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/6d4e324157b17862aa5c5158fde0ba02db992729/extending.md)).
   This repository links down to the standard, never up to the extensions.
 - **That the projects above will use it is a hypothesis.** If none does, this repository still answers one question.
 

@@ -28,3 +28,8 @@ stylesheets = []
 # The headings each derived shape requires, checked by the standard (shapes/decision-record.md).
 [shape_conformance]
 shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] }]
+
+# The standard's judgment-quotes check (v1.2.0) makes path questions optional by default; this repository's path
+# answers already quote their paths, so it stays strict.
+[judgment_quotes]
+optional = []
