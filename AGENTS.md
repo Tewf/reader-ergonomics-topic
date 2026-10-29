@@ -1,0 +1,48 @@
+# Contributing to this repository
+
+For anyone changing this repository, person or language model. To apply the reader-ergonomics standard elsewhere,
+read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/standard.md);
+this file is about this repository only.
+
+## Before writing
+
+1. Read the standard, at the release this repository checks against (v1.0.0), then [shapes/topic.md](shapes/topic.md).
+2. Every document here is a topic: a title, a summary right after it, and a line in its parent that lists it with
+   that summary. A new file is listed by the README of its folder. A new folder gets a README.md, listed by the README
+   above it, and a one-line `index.qmd` that includes it, because the site generator skips README files.
+3. This repository has no principles of its own, so it has no `standard.md` card: the standard's card is the one
+   to follow.
+
+## Rules for claims
+
+- Every claim carries a grade: **measured**, **supported with caveat**, **convention** or **not supported**. A grade
+  moves only with a cited source.
+- Cite as `Author Year`; the entry goes once into [evidence/bibliography.md](evidence/bibliography.md), with a DOI,
+  an arXiv id or a stable URL. A key names one work across the five repositories of the family: check it against
+  their bibliographies before adding it.
+- Evidence against a rule goes into the review's `against.md`, never deleted to make a rule look stronger.
+- A number read in a summary rather than in the source is marked "(secondary)".
+
+## Links
+
+- Down to reader-ergonomics: pinned to the release's commit, as CI is, so a rename there cannot break them silently.
+- Up to the extensions: none. A source in an extension is cited by repository, path and commit.
+
+## Before handing back
+
+```sh
+READER_ERGONOMICS_CHECKS=../reader-ergonomics/checks python3 -m unittest discover -s checks   # the topic check's tests
+python3 ../reader-ergonomics/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
+```
+
+- Fix every error. Read every warning.
+- Answer the questions in `checks/out/needs-judgment.md` in `checks/judgments.toml`. A model does not review its own
+  text in place of the checks; its answers are advice until the maintainer has read them.
+- Keep [llms.txt](llms.txt) in step when a topic is added, moved or removed: nothing generates it.
+- Keep [README.md](README.md) and [README.fr.md](README.fr.md) in step.
+
+## House conventions
+
+- No em dash or en dash in prose; use a comma, a colon, parentheses, or a hyphen for ranges.
+- Commit messages follow the standard's commit shape: a subject of at most 72 characters, then why.
+- The maintainer decides every push.

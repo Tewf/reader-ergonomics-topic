@@ -11,6 +11,8 @@ The name is the field's own. A **topic** is the unit of DITA and of topic-based 
 ([document model](evidence/document-model/frame.md)), and studies of trees on screen call it a node
 ([progressive disclosure](evidence/progressive-disclosure/frame.md)).
 
+This page in French: [README.fr.md](README.fr.md).
+
 > **Status:** the literature review is done (2026-10-29): three multivocal reviews, 218 sources, in
 > [evidence](evidence/). The topic template and its check are written; no reader study has tested them. It is not
 > an official standard, not a peer-reviewed study and not a new result.
@@ -36,7 +38,8 @@ The name is the field's own. A **topic** is the unit of DITA and of topic-based 
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
-- **reader-ergonomics may link to it, never copy it:** a link is a reference, not a dependency.
+- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/extending.md)).
+  This repository links down to the standard, never up to the extensions.
 - **That the projects above will use it is a hypothesis.** If none does, this repository still answers one question.
 
 ## Scope
