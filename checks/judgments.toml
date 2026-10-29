@@ -13,13 +13,6 @@ file = "4b2c44ab6ca2"
 answer = "One role: the record from which another reviewer can rerun this review's search, from `Why grey literature` to `Limits`. It stays whole."
 
 [[answer]]
-check = "co-change"
-path = "checks/local/topic.py"
-question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "705154f56779"
-answer = "A check and its tests change together by design. They stay apart because the standard's runner executes every module in checks/local/, which must not include the tests; the test file names the check by its path."
-
-[[answer]]
 check = "logical-lines"
 path = "evidence/document-model/protocol.md"
 question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
@@ -73,7 +66,7 @@ check = "tree-shape"
 path = "checks/local"
 question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
-answer = "It stays: checks/local/ is the folder the extension contract names for an extension's own checks (reader-ergonomics extending.md), and the standard's runner reads it there."
+answer = "It stays: checks/local/ holds this repository's own checks, `topic.py` and `judgment_quotes.py`, in the folder the extension contract names for them, where the standard's runner reads them."
 
 [[answer]]
 check = "logical-lines"
@@ -101,14 +94,7 @@ check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "bafbb1d5f5b3"
-answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
-
-[[answer]]
-check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "cb1d393f2c6e"
-answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
+answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
 
 [[answer]]
 check = "document-mode"
@@ -130,3 +116,17 @@ path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "9fdf515d3c6a"
 answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
+
+[[answer]]
+check = "co-change"
+path = "checks/local/topic.py"
+question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "8218c076aadd"
+answer = "A check and its tests change together by design: `checks/test_topic.py` tests it. They stay apart because the standard's runner executes every module in checks/local/, which must not hold the tests."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "9b48314950ca"
+answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
