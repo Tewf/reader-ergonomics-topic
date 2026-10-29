@@ -41,9 +41,9 @@ python3 ../re-v1.0.0/checks/run.py . --tiers program,meaning --judge flag       
 - Fix every error. Read every warning.
 - Answer the questions in `checks/out/needs-judgment.md` in `checks/judgments.toml`. A model does not review its own
   text in place of the checks; its answers are advice until the maintainer has read them.
-- Each answer about a file's content quotes, in backticks, a word or heading of that file, and is written after
-  reading it. `checks/local/judgment_quotes.py` fails an answer whose quote is not in its file, so a reason cannot
-  be copied from another file's answer unread.
+- Each answer about a file's content is written after reading the file, and quotes in backticks a word or heading
+  of it. `checks/local/judgment_quotes.py` fails an answer whose quote is not in its file. A reason then cannot be
+  copied from another file's answer unread.
 - Keep [llms.txt](llms.txt) in step when a topic is added, moved or removed: nothing generates it.
 - Keep [README.md](README.md) and [README.fr.md](README.fr.md) in step.
 
