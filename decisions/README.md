@@ -3,6 +3,8 @@
 One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md) of
 reader-ergonomics: the decision in one sentence under its title, then its status, context, decision and consequences.
 
+**Shape:** [topic](../shapes/topic.md), as the filled example the shape points to.
+
 ## Contents
 
 | Record | Summary |

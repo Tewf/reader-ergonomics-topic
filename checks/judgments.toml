@@ -86,7 +86,7 @@ answer = "One role: the reading log of this review's literature, strand by stran
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "757b9d2f5b31"
+file = "35dca1817b7a"
 answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
 
 [[answer]]
