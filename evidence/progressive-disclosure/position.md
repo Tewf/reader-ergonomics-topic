@@ -24,18 +24,29 @@ Each "not known" below is a statement about this search, not about the world. Te
 - **What the evidence allows:** yes, as a design, with three conditions. It is supported with caveat, not measured.
 
 ```text
- stored: any depth                         shown: the focus F, at most three levels
+ stored: any depth
 
- A                                         A ▸ … ▸ D          condition 1: the path to the root, elided visibly
- └─ B                                      └─ F  summary      the focus, opened
-    └─ C                                      ├─ G  summary ▸ condition 3: each folded child shows its summary
-       └─ D                                   └─ H  summary ▸
+ A
+ └─ B
+    └─ C
+       └─ D
           └─ F  ◀ focus
-             ├─ G ─ … any depth                condition 2: what most readers need sits in F,
-             └─ H ─ … any depth                above the first fold
+             ├─ G ─ … any depth
+             └─ H ─ … any depth
+
+ shown: the focus F, at most three levels
+
+ A ▸ … ▸ D          condition 1: the path to the
+ │                  root, elided visibly
+ └─ F  summary      the focus, opened
+    ├─ G  summary ▸ condition 3: each folded
+    └─ H  summary ▸ child shows its summary
+
+ condition 2: what most readers need sits in F,
+ above the first fold
 ```
 
-- The figure reads left to right: the same tree, stored in full on the left, shown capped on the right.
+- The figure reads top to bottom: the same tree, stored in full above, shown capped below.
 - Why it is allowed:
   - nothing found shows a cost of depth in storage that the reader does not see;
   - the fisheye result gives a bounded view of any tree: the focus, its children, its siblings and its ancestral line (Furnas 1986);

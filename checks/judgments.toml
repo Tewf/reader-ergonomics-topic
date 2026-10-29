@@ -128,21 +128,21 @@ answer = "It stays: ai-augmented/ is the extension's own folder, now `README.md`
 check = "co-change"
 path = "README.fr.md"
 question = "changed together with checks/config.toml in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "242d1eee2233"
+file = "098364367274"
 answer = "They change together when a folder joins the tree of topics: `checks/config.toml` declares it, and both front pages list it, here `ai-augmented`. Each stays where the contract puts it; the listing is the link between them."
 
 [[answer]]
 check = "co-change"
 path = "README.fr.md"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "242d1eee2233"
+file = "098364367274"
 answer = "They change together when a folder joins the tree of topics: `checks/config.toml` declares it, and both front pages list it, here `ai-augmented`. Each stays where the contract puts it; the listing is the link between them."
 
 [[answer]]
 check = "co-change"
 path = "README.md"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "2805b58d1562"
+file = "af370bff6d21"
 answer = "One links the other already: the front page lists the `decisions` folder, whose README lists each record. A change that shapes the repository adds a record there and a line here, so the two move together by design."
 
 [[answer]]
@@ -163,7 +163,7 @@ answer = "They change together by design: `checks/local/topic.py` reads its sett
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "2805b58d1562"
+file = "af370bff6d21"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]

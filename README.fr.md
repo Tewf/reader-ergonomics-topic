@@ -20,25 +20,34 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 ## Où il se place
 
 ```text
-        utilise ──▶ (pointe vers ce dont il dépend)
+ ▼ utilise : pointe vers ce dont il dépend
 
- niveau 2   les extensions de genre : reader-ergonomics-academic,      autres projets
-            reader-ergonomics-presentations, reader-ergonomics-software-design
-                                 │                                        │
-                                 ├────────────────────────────────────────┘
-                                 ▼  peuvent prendre le topic pour squelette (une hypothèse)
- niveau 1   reader-ergonomics-topic    une forme de topic, imbriquée à toute profondeur, sa revue et sa vérification
-                                 │
-                                 ▼  obéit aux principes ; la CI exécute leurs vérifications ici
- niveau 0   reader-ergonomics          comment un texte sert son lecteur
+ niveau 2  reader-ergonomics-learning
+           │  épingle une version ; ses formes
+           │  dériveront du topic
+           │
+           │   reader-ergonomics-academic,
+           │   -presentations, -software-design,
+           │   autres projets
+           │   │  peuvent prendre le topic pour
+           │   │  squelette (une hypothèse)
+           ▼   ▼
+ niveau 1  reader-ergonomics-topic
+           │  une forme de topic, imbriquée à toute
+           │  profondeur, sa revue et sa vérification
+           ▼  obéit aux principes ; la CI exécute
+              leurs vérifications ici
+ niveau 0  reader-ergonomics
+              comment un texte sert son lecteur
 ```
 
 - **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, donc il se place un niveau au-dessus,
   et un projet qui l'utilise se place au-dessus de lui. Aucun niveau ne dépend d'un niveau supérieur.
 - **reader-ergonomics ne pointe jamais vers lui :** la norme ne pointe vers aucune extension. Ce dépôt pointe vers
   la norme, jamais vers les extensions.
-- **Que les projets du dessus l'utilisent est une hypothèse.** Si aucun ne le fait, ce dépôt répond quand même à une
-  question.
+- **Une extension dit qu'elle l'utilisera :** reader-ergonomics-learning épingle une version et écrit que ses formes
+  dériveront du topic ; aucune n'est encore écrite. Que les autres l'utilisent est une hypothèse. Si aucune ne le
+  fait, ce dépôt répond quand même à une question.
 
 ## Périmètre
 
