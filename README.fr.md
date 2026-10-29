@@ -20,6 +20,42 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
 > reader-ergonomics. Les corrections sont bienvenues sous forme d'issues.
 
+## Le prendre
+
+Le topic est fait pour être copié et gardé comme le vôtre. Copiez-le depuis une version étiquetée
+([tags](https://github.com/Tewf/reader-ergonomics-topic/tags)) : un changement ici ne change jamais votre copie.
+
+1. Copiez [shapes/topic.md](shapes/topic.md), la forme, et [checks/local/topic.py](checks/local/topic.py), la
+   vérification, aux mêmes chemins dans votre dépôt.
+2. Écrivez vos topics : chacun un fichier avec un titre et un résumé, le README de chaque dossier listant ses enfants
+   avec les leurs.
+3. Ajoutez `checks/config.toml` ; les deux dernières tables valent pour un dépôt sans feuille de style de site :
+
+   ```toml
+   extends = "reader-ergonomics"
+
+   [topic]
+   files = ["README.md", "docs/"]   # vos topics : fichiers et dossiers
+   root = "README.md"
+
+   [readable_measure]
+   stylesheets = []
+
+   [sufficient_contrast]
+   stylesheets = []
+   ```
+
+4. Lancez les vérifications de la norme au commit que la version épingle (`ref:` dans son
+   [checks.yml](.github/workflows/checks.yml)) ; celle du topic tourne à côté :
+
+   ```sh
+   git clone https://github.com/Tewf/reader-ergonomics
+   git -C reader-ergonomics checkout <le commit épinglé>
+   python3 reader-ergonomics/checks/run.py chemin/vers/votre/dépôt
+   ```
+
+5. Un désaccord avec la forme ou la vérification va dans une issue sur ce dépôt.
+
 ## Où il se place
 
 ![Trois niveaux : learning épingle le topic et d'autres projets peuvent en faire leur squelette ; le topic obéit à reader-ergonomics, dont sa CI exécute les vérifications.](where-it-sits.fr.svg)

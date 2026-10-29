@@ -23,6 +23,41 @@ This page in French: [README.fr.md](README.fr.md).
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
 
+## Take it
+
+The topic is meant to be copied and kept as your own. Copy it from a tagged release
+([tags](https://github.com/Tewf/reader-ergonomics-topic/tags)), so a later change here never changes your copy.
+
+1. Copy [shapes/topic.md](shapes/topic.md), the shape, and [checks/local/topic.py](checks/local/topic.py), the check,
+   into the same paths of your repository.
+2. Write your topics: each a file with a title and a summary, each folder's README listing its children with theirs.
+3. Add `checks/config.toml`; the last two tables are for a repository with no site stylesheet:
+
+   ```toml
+   extends = "reader-ergonomics"
+
+   [topic]
+   files = ["README.md", "docs/"]   # your topics: files and folders
+   root = "README.md"
+
+   [readable_measure]
+   stylesheets = []
+
+   [sufficient_contrast]
+   stylesheets = []
+   ```
+
+4. Run the standard's checks at the commit the release pins (`ref:` in its
+   [checks.yml](.github/workflows/checks.yml)); the topic check runs beside them:
+
+   ```sh
+   git clone https://github.com/Tewf/reader-ergonomics
+   git -C reader-ergonomics checkout <the pinned commit>
+   python3 reader-ergonomics/checks/run.py path/to/your/repository
+   ```
+
+5. A disagreement with the shape or the check goes in an issue on this repository.
+
 ## Where it sits
 
 ![Three levels: learning pins the topic and other projects may use it as a skeleton; the topic obeys reader-ergonomics, whose checks its CI runs.](where-it-sits.svg)
