@@ -69,12 +69,12 @@ A body of writing is stored as a tree of units nested to any depth. Decide how i
 
 ## Not reviewed here, linked instead
 
-- Recall of the top levels of a text, the **levels effect**: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/psycholinguistics/review.md).
-- Depth against breadth of menus and folders: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/file-structure/against.md).
-- General before detail, advance organizers, zoom-lens sequencing: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/reading-order/review.md).
-- Hypertext cognitive load, signaling, segmenting: [learning-science](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/learning-science/review.md).
-- Collapsed content missed, as one company article: [typography-and-layout](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/typography-and-layout/review.md).
-- Progressive disclosure of context to agents, instruction files: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/master/evidence/llm-readers/review.md).
+- Recall of the top levels of a text, the **levels effect**: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/psycholinguistics/review.md).
+- Depth against breadth of menus and folders: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/file-structure/against.md).
+- General before detail, advance organizers, zoom-lens sequencing: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/reading-order/review.md).
+- Hypertext cognitive load, signaling, segmenting: [learning-science](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/learning-science/review.md).
+- Collapsed content missed, as one company article: [typography-and-layout](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/typography-and-layout/review.md).
+- Progressive disclosure of context to agents, instruction files: [llm-readers](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/llm-readers/review.md).
 - Hierarchical proofs, Lamport's steps and levels: [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/blob/master/evidence/mathematical-writing/review.md).
 - Slide builds as progressive disclosure: [presentations](https://github.com/Tewf/reader-ergonomics-presentations/blob/master/evidence/presentations/review.md).
 - Storing the tree, reuse and validation: topic document-model of this repository; unit types: topic information-typing.

@@ -48,7 +48,7 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 
 ## General principles linked, not reviewed again
 
-- [Names predict content](https://github.com/Tewf/reader-ergonomics/blob/master/principles/collection/names-predict-content.md)
-- [One mode per document](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/one-mode-per-document.md)
-- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/master/principles/document/overview-first.md)
-- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/master/principles/page/signal-the-structure.md)
+- [Names predict content](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/principles/collection/names-predict-content.md)
+- [One mode per document](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/principles/document/one-mode-per-document.md)
+- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/principles/document/overview-first.md)
+- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/principles/page/signal-the-structure.md)

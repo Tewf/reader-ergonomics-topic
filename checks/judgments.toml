@@ -13,32 +13,11 @@ file = "e2dc8d8863af"
 answer = "Reference: findings against the rules, looked up by question. Its imperative words (fold, cap, show) name the designs criticised, not steps for the reader."
 
 [[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/baseline.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "e31ccd0bac8f"
-answer = "Reference: it names the baseline and the measures a comparison would use. The steps it lists describe a study design, not a task for the reader."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/document-model/review.md"
-question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "a218148093e4"
-answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
-
-[[answer]]
 check = "logical-lines"
 path = "evidence/document-model/sources.md"
 question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "432bfad093e3"
 answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/information-typing/review.md"
-question = "83 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "f5da19e6be22"
-answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
 
 [[answer]]
 check = "logical-lines"
@@ -55,39 +34,11 @@ file = "0a88b28c38d2"
 answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
 
 [[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/frame.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "2bbee33c8deb"
-answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
-
-[[answer]]
 check = "tree-shape"
 path = "checks/local"
 question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
 answer = "It stays: checks/local/ is the folder the extension contract names for an extension's own checks (reader-ergonomics extending.md), and the standard's runner reads it there."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/progressive-disclosure/review.md"
-question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "c346e67477e5"
-answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
-
-[[answer]]
-check = "paraphrase"
-path = "evidence/document-model/review.md"
-question = "says nearly what evidence/information-typing/review.md (line 107) says, similarity 0.95: one fact in two places?"
-file = "a218148093e4"
-answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this review; the shared Q/A method is linked from the evidence README."
-
-[[answer]]
-check = "document-mode"
-path = "evidence/progressive-disclosure/README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "386cdb09daeb"
-answer = "Reference: the review's front page, looked up for its files and claims. Its imperative words (fold, cap, show) name the designs reviewed, not steps for the reader."
 
 [[answer]]
 check = "logical-lines"
@@ -112,13 +63,6 @@ answer = "One role: the record from which another reviewer can rerun this review
 
 [[answer]]
 check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/document-model/protocol.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "9dca3bd4d22e"
-answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
-
-[[answer]]
-check = "co-change"
 path = "checks/local/topic.py"
 question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "705154f56779"
@@ -130,3 +74,59 @@ path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "425287eb8666"
 answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/review.md"
+question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "8e83a5a3a8a6"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/information-typing/review.md"
+question = "83 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "1e0959e34218"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/progressive-disclosure/review.md"
+question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "09531683bbfa"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "95fc64ae669b"
+answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
+
+[[answer]]
+check = "paraphrase"
+path = "evidence/document-model/review.md"
+question = "says nearly what evidence/information-typing/review.md (line 107) says, similarity 0.95: one fact in two places?"
+file = "8e83a5a3a8a6"
+answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this review; the shared Q/A method is linked from the evidence README."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "95fc64ae669b"
+answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "876e17135dbd"
+answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/progressive-disclosure/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "b9bd14138558"
+answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
