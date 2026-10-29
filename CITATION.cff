@@ -8,8 +8,9 @@ title: "reader-ergonomics-topic (work in progress)"
 abstract: >-
   One template for a unit of writing whose parts can be units of the same
   template, so that any body of information is written as a tree that reads
-  the same way at every depth. It builds on reader-ergonomics. Its literature
-  review is done; the template itself is not written yet.
+  the same way at every depth. It builds on reader-ergonomics. It holds the
+  template, a check a program runs on it at any depth, and three reviews of
+  the evidence; no reader study has tested it yet.
 type: software
 authors:
   - name: "Tewf"
