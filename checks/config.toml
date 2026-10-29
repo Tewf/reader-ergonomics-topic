@@ -8,6 +8,9 @@ root = "README.md"
 exempt = []
 summary_words = 60   # PROVISIONAL: the longest summary that still stands for a folded topic; no study sets it
 listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing is a bare link, not a summary
+summary_labels = ["summary", "abstract", "short description"]   # the names a summary goes by (held-out test, shapes/README.md)
+summary_within = 4   # PROVISIONAL: how many blocks of metadata may stand before a labelled summary
+typed = []           # children listed by type name alone; this repository lists every child with its summary
 
 # The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
 [co_change]

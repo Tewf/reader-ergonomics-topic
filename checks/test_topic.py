@@ -107,6 +107,31 @@ class TopicCheck(unittest.TestCase):
         self.write("README.md", TOPIC.format(title="Root"))
         self.assertEqual(self.found(), [])
 
+    def test_a_byline_may_stand_before_a_labelled_abstract(self) -> None:
+        self.write("README.md", "# A result\n\nFirst Author, Institution.\n\n**Abstract.** What is proved, in one sentence.\n\nBody.\n")
+        self.assertEqual(self.found(), [])
+
+    def test_an_abstract_heading_holds_the_summary(self) -> None:
+        self.write("README.md", "# A finding\n\nFirst Author.\n\n## Abstract\n\nWhat was found, in one sentence.\n")
+        self.assertEqual(self.found(), [])
+
+    def test_an_abstract_heading_with_nothing_under_it_is_no_summary(self) -> None:
+        self.write("README.md", "# A finding\n\n## Abstract\n\n## Methods\n\nText.\n")
+        self.assertIn("no summary", " ".join(message for _, _, message in self.found()))
+
+    def test_a_labelled_summary_is_measured_without_its_label(self) -> None:
+        self.write("README.md", "# A result\n\nAuthor.\n\n**Abstract.** " + "word " * 13 + "\n")
+        self.assertEqual([kind for _, kind, _ in self.found()], ["warning"])
+
+    def test_a_typed_child_may_be_listed_by_its_type_name(self) -> None:
+        config = {"topic": dict(CONFIG["topic"], typed=["frame.md"])}
+        self.write("README.md", TOPIC.format(title="Root") + "\n- [docs](docs/README.md): where the documents live\n")
+        self.write("docs/README.md", TOPIC.format(title="Docs") + "\nSteps: [frame](frame.md) · [other](other.md)\n")
+        self.write("docs/frame.md", TOPIC.format(title="Frame"))
+        self.write("docs/other.md", TOPIC.format(title="Other"))
+        found = [(f.path, f.kind) for f in topic.check(self.root, config)]
+        self.assertEqual(found, [("docs/other.md", "warning")])
+
 
 if __name__ == "__main__":
     unittest.main()

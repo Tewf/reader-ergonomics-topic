@@ -6,10 +6,13 @@ README.md of the nearest folder above it that is a topic (for a README.md, of th
 has none. Following parents from any topic reaches the root, so the rules hold at any depth:
 
 - title: the first block is the one `# ` heading of the file (exact);
-- summary: the next block, after any line of badges, is a paragraph or a quote (exact), of at most
-  `summary_words` words (heuristic: the bound is a tunable);
+- summary: within the first `summary_within` blocks after the title, a block labelled with one of
+  `summary_labels` (a `## Abstract` heading and the paragraph under it, or a paragraph opening `**Abstract.**`),
+  so a byline or a status line may stand before it; with no label, the next block after any badges, which must be
+  a paragraph or a quote (exact); at most `summary_words` words (heuristic: the bound is a tunable);
 - listed: the parent links the topic, so a reader can reach it from the root (exact);
-- with its summary: the parent's listing carries at least `listing_words` words beside the link (heuristic);
+- with its summary: the parent's listing carries at least `listing_words` words beside the link, unless the
+  child is of a type named in `typed`, whose role is stated once where the type is defined (heuristic);
 - no inclusion cycle among `{{< include >}}` shortcodes, in any markdown file (exact).
 
 Heading depth, links that resolve and the headings a shape requires are reader-ergonomics' own checks.
@@ -47,25 +50,40 @@ def check(root: Path, config: dict) -> list[Finding]:
     root_topic = settings.get("root", "README.md")
     summary_words = settings.get("summary_words", 60)
     listing_words = settings.get("listing_words", 3)
+    labels = [label.lower() for label in settings.get("summary_labels", ["summary", "abstract"])]
+    within = settings.get("summary_within", 4)
+    typed = set(settings.get("typed", []))
     markdown = files_in_scope(root, config, MARKDOWN_SUFFIXES)
     topics = {path for path in markdown
               if path.endswith(".md") and matches_any(path, patterns) and not matches_any(path, exempt)}
     findings = []
     for path in sorted(topics):
         text = (root / path).read_text(encoding="utf-8", errors="replace")
-        findings += opening(path, text, summary_words)
+        findings += opening(path, text, summary_words, labels, within)
         if path == root_topic:
             continue
         parent = containing(path, topics)
         if parent is None:
             findings.append(Finding(NAME, path, 1, f"no containing topic: no path leads from {root_topic} to it"))
             continue
-        findings += listing(root, parent, path, listing_words)
+        findings += listing(root, parent, path, listing_words, typed)
     findings += cycles(root, markdown)
     return findings
 
 
-def opening(path: str, text: str, summary_words: int) -> list[Finding]:
+def labelled(units: list, labels: list[str], within: int):
+    """The summary a label announces among the first blocks after the title, or None."""
+    for index, unit in enumerate(units[:within]):
+        name = re.sub(r"^[\d.\s]+", "", unit.text).strip().rstrip(".:").lower()
+        if unit.kind == "heading" and name in labels:
+            return units[index + 1] if index + 1 < len(units) else None
+        bold = re.match(r"^\*\*([^*]+?)[.:]?\*\*[.:]?\s*", unit.text)
+        if unit.kind == "paragraph" and bold and bold.group(1).strip().lower() in labels:
+            return type(unit)(unit.kind, unit.line, unit.text[bold.end():], unit.info)
+    return False
+
+
+def opening(path: str, text: str, summary_words: int, labels: list[str], within: int) -> list[Finding]:
     """The title first, then the summary that stands for the topic when it is folded."""
     units = blocks(text)
     titles = [unit for unit in units if unit.kind == "heading" and unit.info == "1"]
@@ -73,7 +91,8 @@ def opening(path: str, text: str, summary_words: int) -> list[Finding]:
         return [Finding(NAME, path, units[0].line if units else 1, "a topic opens with its title, one '# ' heading")]
     found = [Finding(NAME, path, title.line, "a second '# ' title: a topic has one title") for title in titles[1:]]
     following = [unit for unit in units[1:] if not (unit.kind == "paragraph" and not BADGE.sub("", unit.text).strip())]
-    summary = following[0] if following else None
+    found_label = labelled(following, labels, within)
+    summary = found_label if found_label is not False else (following[0] if following else None)
     if summary is None or summary.kind not in ("paragraph", "quote"):
         found.append(Finding(NAME, path, summary.line if summary else units[0].line,
                              "no summary after the title: one to three sentences that stand for the topic"))
@@ -111,8 +130,8 @@ def target_of(source: str, address: str, root: Path) -> str | None:
     return path
 
 
-def listing(root: Path, parent: str, child: str, listing_words: int) -> list[Finding]:
-    """The parent links the child, and the line that does so says more than the bare link."""
+def listing(root: Path, parent: str, child: str, listing_words: int, typed: set[str]) -> list[Finding]:
+    """The parent links the child, and the line that does so says more than the bare link, or the child is typed."""
     text = prose_only((root / parent).read_text(encoding="utf-8", errors="replace"))
     for number, line in enumerate(text.splitlines(), 1):
         for match in LINK.finditer(line):
@@ -124,7 +143,7 @@ def listing(root: Path, parent: str, child: str, listing_words: int) -> list[Fin
             else:
                 after = line[match.end():]
                 beside = after[:next_link.start()] if (next_link := LINK.search(after)) else after
-            if words(beside) < listing_words:
+            if words(beside) < listing_words and posixpath.basename(child) not in typed:
                 return [Finding(NAME, child, 1, f"listed by {parent} (line {number}) as a bare link: "
                                                 "list it with its summary", "warning")]
             return []
