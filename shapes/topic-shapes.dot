@@ -1,0 +1,15 @@
+digraph topic_shapes {
+  graph [rankdir=BT, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  TP [label=<<b>topic</b><br/><font point-size="11" color="#55575F">title · summary · body · contents · see also</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  NO [label=<<b>note</b><br/><font point-size="11" color="#55575F">+ terms + check yourself + open</font><br/><font point-size="11" color="#55575F">see also: Links</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  RP [label=<<b>report</b><br/><font point-size="11" color="#55575F">+ what it tests + plan and steps</font><br/><font point-size="11" color="#55575F">+ checks</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  FO [label=<<b>folder</b><br/><font point-size="11" color="#55575F">+ example + rules for the folder</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  CO [label=<<b>commit</b><br/><font point-size="11" color="#55575F">title and summary share one line</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  NO -> TP [label=" derives from"];
+  RP -> TP;
+  FO -> TP;
+  CO -> TP;
+  {rank=same; NO; RP; FO; CO}
+}

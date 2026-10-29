@@ -1,0 +1,13 @@
+digraph where_it_sits {
+  graph [rankdir=TB, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  LE [label=<<b>reader-ergonomics-learning</b><br/><font point-size="11" color="#55575F">niveau 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  OT [label=<<b>reader-ergonomics-academic, -presentations,</b><br/><font point-size="11" color="#55575F">-software-design, autres projets</font><br/><font point-size="11" color="#55575F">niveau 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F", style="rounded,filled,dashed"];
+  TO [label=<<b>reader-ergonomics-topic</b><br/><font point-size="11" color="#55575F">une forme de topic, imbriquée à toute</font><br/><font point-size="11" color="#55575F">profondeur, sa revue et sa vérification</font><br/><font point-size="11" color="#55575F">niveau 1</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  RE [label=<<b>reader-ergonomics</b><br/><font point-size="11" color="#55575F">comment un texte sert son lecteur</font><br/><font point-size="11" color="#55575F">niveau 0</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  LE -> TO [label=" épingle une version ; ses formes\l dériveront du topic\l"];
+  OT -> TO [style=dashed, color="#6A6D77", label=" peuvent prendre le topic pour\l squelette (une hypothèse)\l"];
+  TO -> RE [label=" obéit aux principes ; la CI\l exécute leurs vérifications ici\l"];
+  {rank=same; LE; OT}
+}

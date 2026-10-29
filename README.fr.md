@@ -19,27 +19,7 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 
 ## Où il se place
 
-```text
- ▼ utilise : pointe vers ce dont il dépend
-
- niveau 2  reader-ergonomics-learning
-           │  épingle une version ; ses formes
-           │  dériveront du topic
-           │
-           │   reader-ergonomics-academic,
-           │   -presentations, -software-design,
-           │   autres projets
-           │   │  peuvent prendre le topic pour
-           │   │  squelette (une hypothèse)
-           ▼   ▼
- niveau 1  reader-ergonomics-topic
-           │  une forme de topic, imbriquée à toute
-           │  profondeur, sa revue et sa vérification
-           ▼  obéit aux principes ; la CI exécute
-              leurs vérifications ici
- niveau 0  reader-ergonomics
-              comment un texte sert son lecteur
-```
+![Trois niveaux : learning épingle le topic et d'autres projets peuvent en faire leur squelette ; le topic obéit à reader-ergonomics, dont sa CI exécute les vérifications.](where-it-sits.fr.svg)
 
 - **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, donc il se place un niveau au-dessus,
   et un projet qui l'utilise se place au-dessus de lui. Aucun niveau ne dépend d'un niveau supérieur.

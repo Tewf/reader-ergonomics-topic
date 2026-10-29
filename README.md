@@ -22,27 +22,7 @@ This page in French: [README.fr.md](README.fr.md).
 
 ## Where it sits
 
-```text
- ▼ uses: points to what it depends on
-
- level 2  reader-ergonomics-learning
-          │  pins a release; its shapes will derive
-          │  from the topic
-          │
-          │   reader-ergonomics-academic,
-          │   -presentations, -software-design,
-          │   other projects
-          │   │  may use the topic as their
-          │   │  skeleton (a hypothesis)
-          ▼   ▼
- level 1  reader-ergonomics-topic
-          │  one topic shape, nested to any depth,
-          │  its review and its check
-          ▼  obeys the principles; CI runs their
-             checks here
- level 0  reader-ergonomics
-             how any text serves its reader
-```
+![Three levels: learning pins the topic and other projects may use it as a skeleton; the topic obeys reader-ergonomics, whose checks its CI runs.](where-it-sits.svg)
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
