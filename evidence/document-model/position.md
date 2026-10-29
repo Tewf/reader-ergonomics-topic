@@ -38,7 +38,7 @@ Each "not known" below is a statement about this search, not about the world.
 ## Where evidence is ignored by practice
 
 - Translators report that segmented content loses context (Batova 2014), yet reuse guidance in the standards read addresses validity, not context.
-- Copies are common in specifications (Juergens 2010) and inconsistent copies cause faults in code ([file-structure](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/file-structure/against.md)), yet the most adopted format read, CommonMark, has no reuse mechanism in its specification (CommonMark 2024).
+- Copies are common in specifications (Juergens 2010) and inconsistent copies cause faults in code ([file-structure](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/evidence/file-structure/against.md)), yet the most adopted format read, CommonMark, has no reuse mechanism in its specification (CommonMark 2024).
 
 ## Self-reference: a tree or a cycle
 

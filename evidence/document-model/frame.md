@@ -39,7 +39,7 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 |---|---|
 | includes, partials, snippets, embeds, shortcodes | transclusion |
 | conref, conkeyref, keyref, XInclude, the include directive, MediaWiki templates | reuse by reference |
-| single source of truth, DRY in documentation | single sourcing; [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/collection/one-place-per-fact.md) |
+| single source of truth, DRY in documentation | single sourcing; [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/collection/one-place-per-fact.md) |
 | CCMS, structured authoring | component content management |
 | blocks, nested blocks, block references | recursive content model; transclusion |
 | AST, mdast, the Pandoc AST | the document tree |
@@ -77,6 +77,6 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 
 - How a unit is given a type, and how types derive from a base (DITA specialization, information typing): [information-typing](../information-typing/frame.md).
 - How a nested tree is shown to a reader (expandable text, outliners, depth per view): [progressive-disclosure](../progressive-disclosure/frame.md).
-- Duplication in code, minimal DAGs and the rule of one place per fact: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/file-structure/review.md), linked, not repeated.
-- The levels effect, readers recalling the top of a hierarchy best: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/evidence/psycholinguistics/review.md).
+- Duplication in code, minimal DAGs and the rule of one place per fact: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/evidence/file-structure/review.md), linked, not repeated.
+- The levels effect, readers recalling the top of a hierarchy best: [psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/evidence/psycholinguistics/review.md).
 - Docs as code as a practice: [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).

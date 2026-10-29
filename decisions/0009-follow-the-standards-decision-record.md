@@ -3,7 +3,7 @@
 **Decision:** this repository's records follow the decision-record shape of reader-ergonomics v1.3.0, and its own copy
 of the shape is removed.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md).
 
 ## Context
 

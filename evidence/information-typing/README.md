@@ -49,7 +49,7 @@ Question: how is a unit of writing given a type, so that a reader who knows the 
 
 ## General principles linked, not reviewed again
 
-- [Names predict content](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/collection/names-predict-content.md)
-- [One mode per document](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/document/one-mode-per-document.md)
-- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/document/overview-first.md)
-- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/page/signal-the-structure.md)
+- [Names predict content](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/collection/names-predict-content.md)
+- [One mode per document](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/document/one-mode-per-document.md)
+- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/document/overview-first.md)
+- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/page/signal-the-structure.md)

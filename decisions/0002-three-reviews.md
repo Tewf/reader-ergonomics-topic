@@ -3,7 +3,7 @@
 **Decision:** the evidence is split into three multivocal reviews, one per part of the topic: its types, its display
 at depth, its storage.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md).
 
 ## Context
 

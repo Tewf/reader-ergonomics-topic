@@ -55,6 +55,6 @@ Question: how is a tree of units nested to any depth shown to a reader, so the t
 
 ## General principles linked, not reviewed again
 
-- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/document/overview-first.md)
-- [Shallow outline](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/document/shallow-outline.md)
-- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/6980fa64583912922d6f5b5c01316749d654345f/principles/page/signal-the-structure.md)
+- [Overview first](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/document/overview-first.md)
+- [Shallow outline](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/document/shallow-outline.md)
+- [Signal the structure](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/page/signal-the-structure.md)
