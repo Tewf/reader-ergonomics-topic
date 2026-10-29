@@ -72,21 +72,21 @@ answer = "It stays: checks/local/ holds this repository's own check, `topic.py`,
 check = "logical-lines"
 path = "evidence/document-model/review.md"
 question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "78cb29859050"
+file = "b00498be1fbc"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/information-typing/review.md"
 question = "84 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "ce387c3cf3fc"
+file = "0580744b7df7"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
 check = "logical-lines"
 path = "evidence/progressive-disclosure/review.md"
 question = "93 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "73b20d127ed9"
+file = "1cdcecee9bf4"
 answer = "One role: the reading log of this review's literature, strand by strand from `Existing reviews` on. It stays whole."
 
 [[answer]]
@@ -100,22 +100,22 @@ answer = "A check and its tests change together by design: `checks/test_topic.py
 check = "document-mode"
 path = "evidence/progressive-disclosure/README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "47ee39676ef8"
+file = "d401e2b5ece8"
 answer = "Reference: the review's front page, looked up for its `Files` and its `Claims`; `The repository's question` is answered there, not set as a task."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "65e528c22e80"
+file = "27a25bd1e741"
 answer = "Reference: names looked up by term, under `What the field calls it` and `What practitioners call it`; its `Sub-questions` are the review's own, not tasks for the reader."
 
 [[answer]]
 check = "name-content"
 path = "decisions/0008-move-to-v1.2.0-and-drop-the-local-quote-check.md"
 question = "the name '0008 move' and the opening are far apart in meaning (0.16): does the name predict the content?"
-file = "b04d8739c75c"
-answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `replaces the local copy`. The comparison read the name only up to its first dot."
+file = "001b4651df8f"
+answer = "Yes: the full name, move to v1.2.0 and drop the local quote check, is what the record opens with, `checks against reader-ergonomics v1.2.0`, `whose judgment-quotes check replaces the local`. The comparison read the name only up to its first dot."
 
 [[answer]]
 check = "tree-shape"
@@ -128,35 +128,35 @@ answer = "It stays: ai-augmented/ is the extension's own folder, now `README.md`
 check = "co-change"
 path = "README.fr.md"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "098364367274"
+file = "117c5c0d2967"
 answer = "One links the other already: the French front page lists the `decisions` folder, `un compte rendu par choix d'architecture`, whose README lists each record. A change that shapes the repository adds a record there and a line on both front pages, so they move together by design."
 
 [[answer]]
 check = "co-change"
 path = "README.md"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "af370bff6d21"
+file = "dfffd0778ea6"
 answer = "One links the other already: the front page lists the `decisions` folder, whose README lists each record. A change that shapes the repository adds a record there and a line here, so the two move together by design."
 
 [[answer]]
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "805ed6550f6a"
+file = "f4050fd4341c"
 answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
 
 [[answer]]
 check = "co-change"
 path = "checks/config.toml"
 question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "805ed6550f6a"
+file = "f4050fd4341c"
 answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md`, under `[shape_conformance]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
 
 [[answer]]
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "af370bff6d21"
+file = "dfffd0778ea6"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]
@@ -198,14 +198,14 @@ answer = "No: it lists works to read, one per line, under the five questions and
 check = "co-change"
 path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "fed56841bd0c"
+file = "cf76e3666d53"
 answer = "One links the other already: the protocol names its shared rules by a link to the README's `Method`. They changed together because those rules moved out of `evidence/document-model/protocol.md` into the README."
 
 [[answer]]
 check = "document-mode"
 path = "evidence/README.md"
 question = "reads about equally as reference and how-to: one mode per document?"
-file = "fed56841bd0c"
+file = "cf76e3666d53"
 answer = "Reference: the shared `Method`, the boundaries (`What these reviews do not repeat`) and the `Audit`, looked up by a reader of any review; it asks no step of them."
 
 [[answer]]
@@ -228,3 +228,10 @@ path = "evidence/autoformalization/review.md"
 question = "reads about equally as how-to and reference: one mode per document?"
 file = "2fdde3fdfb38"
 answer = "Reference: findings looked up by question, from `Answer first` to `Where practice runs ahead of the evidence`; it sets the reader no task."
+
+[[answer]]
+check = "document-mode"
+path = "decisions/0010-move-to-reader-ergonomics-v1.4.1.md"
+question = "reads about equally as reference and explanation: one mode per document?"
+file = "084651734bf9"
+answer = "Explanation: like every record here it says why the pin moved, from `Context` to `Consequences`; what it lists, such as `All 25 linked files resolve there`, are the reasons for the move, not entries to look up."

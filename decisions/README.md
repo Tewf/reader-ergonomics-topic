@@ -1,6 +1,6 @@
 # Decisions
 
-One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md) of
+One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md) of
 reader-ergonomics: the decision in one sentence under its title, then its status, context, decision and consequences.
 
 ## Contents
@@ -16,7 +16,8 @@ reader-ergonomics: the decision in one sentence under its title, then its status
 | [0007 Derive the decision records from the topic](0007-derive-the-decision-records-from-the-topic.md) | the first derived shape, used and checked here |
 | [0008 Move to v1.2.0, drop the local quote check](0008-move-to-v1.2.0-and-drop-the-local-quote-check.md) | the standard now carries the check, kept strict here |
 | [0009 Follow the standard's decision record](0009-follow-the-standards-decision-record.md) | the shape moved down to reader-ergonomics v1.3.0 |
-| [0010 The AI-augmented topic, as an extension](0010-ai-augmented-topic-as-an-extension.md) | on its own branch until its review names a baseline; one problem, proofs in Lean first |
+| [0010 Move to reader-ergonomics v1.4.1](0010-move-to-reader-ergonomics-v1.4.1.md) | the standard now checks figure widths and shrinks figures on a phone |
+| [0011 The AI-augmented topic, as an extension](0011-ai-augmented-topic-as-an-extension.md) | on its own branch until its review names a baseline; one problem, proofs in Lean first |
 
 ## See also
 
