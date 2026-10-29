@@ -56,13 +56,6 @@ answer = "One role: this review's pool of sources, counted and scored row by row
 
 [[answer]]
 check = "document-mode"
-path = "README.md"
-question = "reads about equally as how-to and reference: one mode per document?"
-file = "1f4e4a6332fa"
-answer = "Reference: the front page, read to learn what the repository holds and what its review found. Its one task, Check it, is two commands and stays."
-
-[[answer]]
-check = "document-mode"
 path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "2bbee33c8deb"
@@ -130,3 +123,10 @@ path = "checks/local/topic.py"
 question = "changed together with checks/test_topic.py in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "705154f56779"
 answer = "A check and its tests change together by design. They stay apart because the standard's runner executes every module in checks/local/, which must not include the tests; the test file names the check by its path."
+
+[[answer]]
+check = "document-mode"
+path = "README.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "425287eb8666"
+answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."

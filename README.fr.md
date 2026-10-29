@@ -79,6 +79,7 @@ donne le plan.
 |---|---|
 | [shapes](shapes/) | le topic, la base dont dérive toute forme, et comment les quatre formes générales de reader-ergonomics s'y ajustent |
 | [la vérification](checks/local/topic.py) | s'exécute sur chaque topic de ce dépôt, à toute profondeur : titre, résumé, listé par son parent avec ce résumé, aucun cycle d'inclusion |
+| [decisions](decisions/) | un compte rendu par choix d'architecture, chacun ouvert par la décision en une phrase |
 
 - Le topic a cinq blocs : titre, résumé, corps, contenu et voir aussi. Chacun est relié à un principe de
   reader-ergonomics et aux preuves d'ici ([topic](shapes/topic.md)).

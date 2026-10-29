@@ -45,4 +45,5 @@ python3 ../reader-ergonomics/checks/run.py . --tiers program,meaning --judge fla
 
 - No em dash or en dash in prose; use a comma, a colon, parentheses, or a hyphen for ranges.
 - Commit messages follow the standard's commit shape: a subject of at most 72 characters, then why.
+- A choice that shapes the repository gets a record in [decisions/](decisions/).
 - The maintainer decides every push.
