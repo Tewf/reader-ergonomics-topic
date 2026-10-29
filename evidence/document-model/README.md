@@ -29,11 +29,11 @@ Question: how is a unit that can hold units of its own type stored, so that it i
 | Recursion is common in schemas and shallow in instances: 58% of DTDs hold recursive elements; 99% of web XML documents have fewer than 8 levels | measured, descriptive (secondary) | review.md 5 |
 | No version of the OHCO thesis is free of counterexample | supported with caveat (argument from cases) | review.md 2 |
 | Where reuse is not enforced, copies are common: mean clone coverage 13.6% over 28 specifications, up to 71.6% | measured, descriptive, one study | review.md 3 |
-| Clone detection finds duplicated prose at precision above 85% after tailoring; recall was not measured | measured, one study | review.md 5 |
-| In 2008, half of 276 technical communicators used single sourcing; half of its users reported significant downsides; about 1 in 10 had seen a failure | measured, descriptive (survey, secondary) | review.md 3 |
+| Clone detection finds duplicated prose at precision above 85% after tailoring; recall was not measured | measured, descriptive, one study | review.md 5 |
+| In 2008, half of 276 respondents used single sourcing or content management; half of its users reported significant downsides; about 1 in 10 had seen a failure | measured, descriptive (survey, secondary) | review.md 3 |
 | Reused components lose context for translators, and the sources disagree on quality | supported with caveat (integrative review of 60 articles) | review.md 0; against.md |
 | 85.4% of 180,000 web XML files are well-formed; about a third of those that name a schema validate | measured, descriptive (secondary) | review.md 5 |
-| Every system read that allows references forbids, reports or caps a cycle, or leaves it undefined; none keeps a self-containing unit | convention, descriptive count of 14 systems | state-of-the-art.md |
+| Every system read on cycles that allows references forbids, reports or caps a cycle, or leaves it undefined; none keeps a self-containing unit | convention, descriptive count of 14 systems | state-of-the-art.md |
 | A unit with two parents is allowed only by reference, with a rule per use for links, navigation or permissions | convention, descriptive | position.md |
 | Automated writing feedback improves students' writing, g = 0.55 | measured (meta-analysis, secondary; students, not documentation) | review.md 0 |
 | The evidence for design patterns in general is weak; none of it concerns documents | measured, systematic review (secondary) | review.md 0 |

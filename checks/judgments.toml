@@ -14,13 +14,6 @@ answer = "Reference: findings against the rules, looked up by question. Its impe
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/document-model/sources.md"
-question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "432bfad093e3"
-answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."
-
-[[answer]]
-check = "logical-lines"
 path = "evidence/information-typing/sources.md"
 question = "110 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "09bd3f4a7676"
@@ -39,13 +32,6 @@ path = "checks/local"
 question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
 answer = "It stays: checks/local/ is the folder the extension contract names for an extension's own checks (reader-ergonomics extending.md), and the standard's runner reads it there."
-
-[[answer]]
-check = "logical-lines"
-path = "evidence/document-model/protocol.md"
-question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "34024a5c4d7b"
-answer = "One role: the record from which another reviewer can rerun this review's search. It stays whole."
 
 [[answer]]
 check = "logical-lines"
@@ -77,13 +63,6 @@ answer = "Reference: a front page, read to learn what its folder holds and what 
 
 [[answer]]
 check = "logical-lines"
-path = "evidence/document-model/review.md"
-question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "8e83a5a3a8a6"
-answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
-
-[[answer]]
-check = "logical-lines"
 path = "evidence/information-typing/review.md"
 question = "83 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
 file = "1e0959e34218"
@@ -102,13 +81,6 @@ path = "evidence/README.md"
 question = "changed together with evidence/document-model/protocol.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "95fc64ae669b"
 answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
-
-[[answer]]
-check = "paraphrase"
-path = "evidence/document-model/review.md"
-question = "says nearly what evidence/information-typing/review.md (line 107) says, similarity 0.95: one fact in two places?"
-file = "8e83a5a3a8a6"
-answer = "Not one fact: the same template line holds different facts, the sites searched and the threads counted for this review; the shared Q/A method is linked from the evidence README."
 
 [[answer]]
 check = "document-mode"
@@ -130,3 +102,24 @@ path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "b9bd14138558"
 answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/protocol.md"
+question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "45d3c2eeec45"
+answer = "One role: the record from which another reviewer can rerun this review's search. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/review.md"
+question = "96 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "0fcd8189902d"
+answer = "One role: the reading log of this review's literature, strand by strand. It stays whole."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/document-model/sources.md"
+question = "127 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "4e9864ae9f2d"
+answer = "One role: this review's pool of sources, counted and scored row by row. It stays whole."

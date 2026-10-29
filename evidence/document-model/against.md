@@ -34,7 +34,7 @@ This file gathers the evidence against the tree model and its reuse: the critiqu
 - The corpus studies of XML are old: Choi 2002, Mignet 2003, Mlýnková 2006, Grijzenhout 2011. Choi and Mignet were read through Mlýnková 2006, Grijzenhout through its abstract.
 - Their documents are web XML of every kind (feeds, data, configuration), not documentation.
 - Juergens 2010 measures copies in requirements specifications; its reading and inspection costs are computed from published rates, not observed.
-- Dayton 2010 is a self-selected sample of 276 from one society in 2008, read by abstract.
+- Dayton 2010 surveyed 1,000 STC members in 2008-05 and 276 answered (27.6%), so the respondents selected themselves; read by abstract.
 - Fleckenstein 2023 pools studies of students' essays, not documentation or linters; its heterogeneity is high.
 - Johnson 2020 is a preprint, read by abstract, on one wiki.
 

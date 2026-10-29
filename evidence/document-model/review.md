@@ -12,7 +12,7 @@ Each grey score is in [sources](sources.md), marked as the [evidence README](../
 - DeRose 2004 (read) reviews the options for markup **overlap** (CONCUR, segmentation, MECS, milestones) against stated criteria. In Bible texts the book, chapter and verse hierarchy and the story and paragraph hierarchy diverge throughout; a milestone variant became the OSIS norm.
 - Marinelli 2008 compares formats for overlapping markup toward a unified one (title and venue only).
 - Murata 2005 (abstract) classes schema languages as tree grammars: DTD local, XML Schema single-type, RELAX NG regular, with a validation algorithm for each.
-- Zhang 2012 (abstract) reviews the 23 GoF patterns to 2009: 611 candidates, 10 papers with 11 experiments, no firm support for the claims made for patterns in general, some for maintenance. Ampatzoglou 2013 and Bafandeh Mayvan 2017 map the same field (title and venue). None studies documents.
+- Zhang 2012 (abstract, secondary) reviews the 23 GoF patterns to 2009: 611 candidates, 10 papers with 11 experiments, no firm support for the claims made for patterns in general, some for maintenance. Ampatzoglou 2013 and Bafandeh Mayvan 2017 map the same field (title and venue). None studies documents.
 - Fleckenstein 2023 (abstract) pools automated writing evaluation: 20 studies, k = 84, N = 2,828, g = 0.55 on students' writing, heterogeneity high (secondary).
 - How this review differs: none of these joins the stored tree, its reuse and its checking. This one asks it for a recursive topic, compares how standards treat cycles, and scores standards and tools as grey sources.
 
@@ -66,10 +66,10 @@ Each grey score is in [sources](sources.md), marked as the [evidence README](../
 - GoF leaves a Composite child's number of parents open and mentions shared components (SESE 2022c, an answer reading the book; secondary); Calder 1990 shares glyphs as flyweights (title and venue).
 - Copies are common where reuse is not enforced (measured, descriptive):
   - Juergens 2010 (read): 28 requirements specifications, 8,667 pages; mean clone coverage 13.6%, from 0% to 71.6%, 6 of 28 above 20%. The mean blow-up of 3,578 words is converted into about 16 minutes of reading and 6 hours of inspection per document, from published rates: an estimate.
-  - Luciv 2018 (abstract): documentation of 19 projects, of every kind, holds exact and near duplicates. Nosál 2016 (read): 6,102 documentation fragments repeated at least four times in the Java 8 sources, one of them 344 times.
+  - Luciv 2018 (abstract, secondary): documentation of 19 projects, of every kind, holds exact and near duplicates. Nosál 2016 (read): 6,102 documentation fragments repeated at least four times in the Java 8 sources, one of them 344 times.
   - Inconsistent code clones are reviewed in [file-structure](https://github.com/Tewf/reader-ergonomics/blob/40cd9fb3ed21a01a8913788edc46ade9562a797d/evidence/file-structure/against.md) (Juergens 2009), linked, not repeated.
-- Dayton 2010 (abstract): 1,000 STC members surveyed in 2008-05, 276 answers. Half used single sourcing or content management; about 1 in 10 had seen an implementation fail; half the users reported significant downsides; about 1 in 9 used DITA.
-- Batova 2018 (abstract): over 12 months at one company moving to CCM, writers' motivation fell when CCM meant only efficiency and rose with job crafting.
+- Dayton 2010 (abstract, secondary): 1,000 STC members surveyed in 2008-05, 276 answers. Half used single sourcing or content management; about 1 in 10 had seen an implementation fail; half the users reported significant downsides; about 1 in 9 used DITA.
+- Batova 2018 (abstract, secondary): over 12 months at one company moving to CCM, writers' motivation fell when CCM meant only efficiency and rose with job crafting.
 - Rockley 2002 (information models for single sourcing) and Sapienza 2007 (single sourcing through intertextuality) were read by title and venue only.
 - This search found no study that measures readers of reused fragments.
 
@@ -111,7 +111,7 @@ Each grey score is in [sources](sources.md), marked as the [evidence README](../
 | Sphinx, Asciidoctor, MediaWiki | read 2026 | tables of contents, includes, templates, each with a cycle rule | stars; Wikipedia |
 | Notion, ProseMirror | 2021; read 2026 | one parent per block; schema content expressions | the owners' accounts |
 
-Q/A sites (Stack Overflow, Software Engineering, Writing; 9 threads, all at or above 10 of 20; strings in [protocol](protocol.md)). Practitioner opinion, no data.
+Q/A sites (Stack Overflow, Software Engineering, Writing; 11 threads, 9 from the strings and 2 by handoff, all at or above 10 of 20 for the first rater; strings in [protocol](protocol.md)). Practitioner opinion, no data.
 
 - Q3, repeat or refer: the more a set is read like a book, the less it should repeat; read one page at a time, as aviation checklists are, it should repeat (WSE 2018g).
 - The accepted answer there: reuse tools let text stored once appear many times at read time, because readers dip into a set rather than read it whole. Repeating serves the reader now, referring keeps content correct over time (WSE 2018f); single sourcing separates content from design (WSE 2011a).

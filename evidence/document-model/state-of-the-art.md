@@ -31,7 +31,7 @@ Two records are kept apart: most adopted (what people use) and best evidence (wh
 | Logseq | nested blocks | block reference; embed of a block with its descendants | not read here | Logseq 2023 |
 | ProseMirror | content expressions | one node value in several places | none possible among values (an inference from immutability) | ProseMirror 2026 |
 
-- Of the 10 systems with reuse by reference, 5 forbid or report a cycle (XML, XInclude, DITA-OT, MediaWiki, Sphinx), and 2 cap depth (Asciidoctor, MediaWiki). In 3 texts it is undefined or unaddressed (JSON Schema, DITA, OPML), and 1 was not read on cycles (Logseq). MediaWiki does both.
+- Of the 10 systems whose reuse is by reference (TEI pointers and ProseMirror shared values set aside), 5 forbid or report a cycle (XML, XInclude, DITA-OT, MediaWiki, Sphinx), and 2 cap depth (Asciidoctor, MediaWiki). In 3 texts it is undefined or unaddressed (JSON Schema, DITA, OPML), and 1 was not read on cycles (Logseq). MediaWiki does both.
 - No system read stores a unit that contains itself on purpose.
 
 ## Adoption counts, descriptive, taken 2026-10-29

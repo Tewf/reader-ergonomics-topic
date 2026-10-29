@@ -71,7 +71,7 @@ Decide how to store a unit that holds units of its own type, so it forms a tree 
 - Academic: ordered hierarchy of content objects, descriptive markup, overlapping hierarchies, concurrent markup, transclusion, content reuse, single sourcing, component content management, recursive XML schema, real-world schemas, documentation clones, controlled language checker, automated writing evaluation.
 - Acronyms: OHCO, SGML, XML, DTD, XSD, TEI, DITA, CCM, GODDAG, LMNL, TAG, EARMARK, AWE.
 - Authors: Renear, DeRose, Coombs, Sperberg-McQueen, Huitfeldt, Nelson, Priestley, Rockley, Andersen, Batova, Murata, Mlýnková, Juergens, Vitali.
-- Zero or two results were read as wrong queries, not absence. On arXiv every overlap string returned 0, since the field publishes in digital humanities venues. "Prose linting" returned 2, so it was rephrased three ways (F15 to F17).
+- Zero or two results were read as wrong queries, not absence. On arXiv every overlap string returned 0, since the field publishes in digital humanities venues. "Prose linting" returned 2 (F15), so it was rephrased twice (F16, F17).
 
 ## Not reviewed here
 

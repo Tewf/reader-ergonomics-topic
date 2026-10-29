@@ -6,7 +6,7 @@ Each "not known" below is a statement about this search, not about the world.
 
 - Andersen 2015 and Batova 2014 review component content management from practice and translation; neither treats the stored tree, its recursion or its cycles.
 - DeRose 2004 and Marinelli 2008 review overlap; they compare encodings, not reuse or checking.
-- Murata 2005 classifies schema languages; Zhang 2012 finds weak evidence for design patterns, in code only.
+- Murata 2005 classifies schema languages; Zhang 2012 finds weak evidence for design patterns, in code only (also reviewed in reader-ergonomics-software-design, evidence/architecture-design).
 - This search did not find a review that joins a recursive content model, reuse by reference and cycle checking for documents.
 - This review adds: a comparison of how 14 systems treat a cycle through a reference; corpus numbers on recursion in real documents; and 36 scored grey sources.
 
@@ -17,7 +17,7 @@ Each "not known" below is a statement about this search, not about the world.
 - Recursion is common in schemas and rare and shallow in instances. 58% of DTDs hold recursive elements (Choi 2002, secondary); 99% of web documents have fewer than 8 levels, and 15% use recursion (Mignet 2003, secondary).
 - Text has structures that one hierarchy cannot hold; every version of OHCO met a counterexample (Renear 1996).
 - Where reuse is not enforced, copies are common: mean clone coverage 13.6% over 28 specifications (Juergens 2010).
-- Single sourcing is adopted with costs: in 2008, half of 276 respondents used it, half of the users reported significant downsides, about 1 in 10 had seen a failure (Dayton 2010, secondary).
+- Single sourcing is adopted with costs. In 2008, half of 276 respondents used single sourcing or content management; half of the users reported significant downsides, and about 1 in 10 had seen a failure (Dayton 2010, secondary).
 - Systems that allow references forbid, report or cap cycles, or leave them undefined; none read keeps a self-containing unit (state-of-the-art.md).
 
 ## Not known
@@ -71,7 +71,7 @@ Each "not known" below is a statement about this search, not about the world.
 - Whatever depends on position then needs a rule per use. DITA's `@copy-to` gives each use its own links and navigation (OASIS 2015); Sphinx picks one parent (Sphinx 2026); Notion keeps one parent for permissions (Notion 2021).
 - Meaning that crosses the hierarchy is a graph held beside the tree: overlap, links and variants as stand-off pointers or a hypergraph (Renear 1996; TEI 2026, chapter 21; Haentjens Dekker 2017).
 - DITA keeps the links between topics in maps rather than in the topics, to keep each topic reusable, and allows nested topics only with special care (OASIS 2015, 2.2.1.6).
-- For a model as reader, a graph of community summaries beat conventional retrieval on questions about a whole corpus (Edge 2024, abstract); it was not compared with a tree of summaries.
+- Graphs of summaries for a model as reader (Edge 2024) are reviewed in [progressive-disclosure](../progressive-disclosure/review.md); here they bear only on storage.
 - So the evidence allows: one containment tree per reading, a reference graph that must stay acyclic, and cross-links held apart. It does not show that either view helps human readers.
 
 ## What this repository adds

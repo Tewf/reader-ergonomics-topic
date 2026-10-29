@@ -13,7 +13,7 @@ This file is the document-model pool: the flow from hits to sources, then each s
 
 - Formal:
   - 43,464 records were returned: Semantic Scholar 43,178 and arXiv 286.
-  - Six noise strings account for 39,879 of them (F11, F26, F32, F34 on Semantic Scholar; F11 and A2 on arXiv); without them, 3,585.
+  - Six noise strings account for 39,886 of them (F11, F26, F32, F34 on Semantic Scholar; F11, A1 and A2 on arXiv); without them, 3,578.
   - 457 were screened by title: 433 from the strings, with repeats, and 24 from forward snowballing.
   - 46 were included, 6 of them first by snowballing and 2 by handoff from the sibling reviews (Priestley 2001 was also found by F8).
 - Grey:
@@ -69,7 +69,7 @@ The figure draws the stages of the table for the document model.
 | Di Iorio 2011 | formal | F3 | data model; title and venue only | review 2 |
 | Schmidt 2009 | formal | F2 | data structure; title and venue only | frame; review 2 |
 | Schmidt 2010 | formal | narrative lead; forward snowball | critique; abstract | review 2; against |
-| Haentjens Dekker 2017 | formal | forward snowball | data model; abstract read on the proceedings page | frame; review 2; position; against |
+| Haentjens Dekker 2017 | formal | F26; confirmed by forward snowball | data model; abstract read on the proceedings page | frame; review 2; position; against |
 | Nelson 1965 | formal | narrative lead | proposal; read in a reprint | frame; review 3 |
 | Nelson 1995 | formal | F4 | title and venue only | review 3 |
 | Nelson 1999 | formal | narrative lead; F27 | design account; read in the author's copy | frame; review 3 |
@@ -124,8 +124,8 @@ Subtotals as in the [evidence README](../README.md#method).
 | Orgmode 2026 | grey tier 2 | handoff from progressive-disclosure | 12 of 20 (2.5 / 3.5 / 3.5 / 0 / 0.5 / 0.5 / 1 / 0.5) | review 1 |
 | Logseq 2023 | grey tier 2 | handoff from progressive-disclosure | 12 of 20 (2.5 / 2.5 / 3 / 1 / 0.5 / 1 / 1 / 0.5) | review 3; state-of-the-art |
 | WSE 2011a | grey tier 2 (Q/A) | NM3 | 11 of 20 (1.5 / 3 / 3 / 1 / 0.5 / 1 / 0.5 / 0.5) | review 6 |
-| WSE 2014a | grey tier 2 (Q/A) | NM8; also in information-typing | 11 of 20 (2 / 3 / 4 / 1 / 0 / 0.5 / 0 / 0.5) | review 6; against |
-| WSE 2018b | grey tier 2 (Q/A) | NM8, NM12; also in information-typing | 12 of 20 (1 / 3.5 / 4 / 1 / 1 / 1 / 0 / 0.5) | frame; review 6; against |
+| WSE 2014a | grey tier 2 (Q/A) | NM8; also in information-typing | 11 of 20 (2 / 3 / 3.5 / 1 / 0 / 1 / 0 / 0.5), the score information-typing gave | review 6; against |
+| WSE 2018b | grey tier 2 (Q/A) | NM8, NM12; also in information-typing | 13 of 20 (1.5 / 4 / 3.5 / 1 / 1 / 1.5 / 0 / 0.5), the score information-typing gave | frame; review 6; against |
 | WSE 2018g | grey tier 2 (Q/A) | NM13 | 13 of 20 (1 / 4 / 4 / 1 / 0 / 2 / 0.5 / 0.5) | review 6; against |
 | WSE 2018f | grey tier 2 (Q/A) | NM3 | 11 of 20 (0.5 / 4 / 3.5 / 1 / 0.5 / 1 / 0 / 0.5) | review 6 |
 | SESE 2014f | grey tier 2 (Q/A) | NM7 | 11.5 of 20 (2 / 2.5 / 4 / 1 / 0.5 / 0.5 / 0.5 / 0.5) | review 1 |
@@ -143,4 +143,4 @@ GitHub 2026d is the reviewer's count of public repository metadata, not a source
 - By tier: 9 tier 1 (standards and two books) and 15 tier 2 (project documentation, community specifications, a pull request, a wiki page). Then 1 tier 3 (a company post), and 11 Q/A threads at tier 2.
 - The highest scores go to standards: TEI 2026 (18.5), Bray 2008 (18), Wright 2022, OASIS 2015 and Clark 2001 (17).
 - Gamma 1995 scores 11 with its unseen parts at 0; it supports only the pattern's intent and the case-study title.
-- Two threads are shared with information-typing under the same keys (WSE 2014a, WSE 2018b); SO 2016b keeps the score information-typing gave it.
+- Three threads are shared with information-typing under the same keys (WSE 2014a, WSE 2018b, SO 2016b); each keeps the score information-typing gave it, so a source has one score.

@@ -28,7 +28,7 @@ The six sub-questions Q1 to Q6 are stated in [frame](frame.md). In short: docume
 
 ## 4. Formal search
 
-Four strings returned mostly unrelated work and carry no weight; they are marked noise. OpenAlex counted every string at 10:11 UTC, by the method of the [evidence README](../README.md#method).
+Six strings returned mostly unrelated work and carry no weight; they are marked noise. OpenAlex counted every string at 10:11 UTC, by the method of the [evidence README](../README.md#method).
 
 | Id | String as run | Semantic Scholar | arXiv | OpenAlex |
 |---|---|---|---|---|
