@@ -41,16 +41,7 @@ The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL
 
 ## How a shape derives from it
 
-```text
- topic    title · summary · body · contents · see also
-   ▲  each shape below derives from it
-   ├─ note     + terms  + check yourself  + open
-   │           see also: Links
-   ├─ report   + what it tests  + plan and steps
-   │           + checks
-   ├─ folder   + example  + rules for the folder
-   └─ commit   title and summary share one line
-```
+![Note, report, folder and commit each derive from the topic shape and add their own parts.](topic-shapes.svg)
 
 - **Keep every block.** A derived shape keeps all five. It may call a block by another of its accepted names, from
   the table below, and by no other. It may leave Contents or See also empty while there is nothing to hold.

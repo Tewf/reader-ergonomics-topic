@@ -1,0 +1,27 @@
+digraph progressive_disclosure {
+  graph [rankdir=TB, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter", compound=true];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  subgraph cluster_stored {
+    label=<<b>stored: any depth</b>>; labeljust=l; style="rounded"; color="#6A6D77"; fontname="Inter"; fontsize=13;
+  A [label=<<b>A</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  B [label=<<b>B</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  C [label=<<b>C</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  D [label=<<b>D</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  F [label=<<b>F</b><br/><font point-size="11" color="#55575F">the focus</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  G [label=<<b>G</b><br/><font point-size="11" color="#55575F">… any depth</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  H [label=<<b>H</b><br/><font point-size="11" color="#55575F">… any depth</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+    A -> B -> C -> D -> F; F -> G; F -> H;
+  }
+  subgraph cluster_shown {
+    label=<<b>shown: the focus F, at most three levels</b>>; labeljust=l; style="rounded"; color="#6A6D77"; fontname="Inter"; fontsize=13;
+  P [label=<<b>A ▸ … ▸ D</b><br/><font point-size="11" color="#55575F">condition 1: the path to the root,</font><br/><font point-size="11" color="#55575F">elided visibly</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  SF [label=<<b>F</b><br/><font point-size="11" color="#55575F">the focus, opened, its summary;</font><br/><font point-size="11" color="#55575F">condition 2: what most readers need</font><br/><font point-size="11" color="#55575F">sits here, above the first fold</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  SG [label=<<b>G ▸</b><br/><font point-size="11" color="#55575F">summary</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  SH [label=<<b>H ▸</b><br/><font point-size="11" color="#55575F">summary</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+    P -> SF; SF -> SG; SF -> SH;
+  C3 [label=<<font point-size="11" color="#55575F">condition 3: each folded child</font><br/><font point-size="11" color="#55575F">shows its summary</font>>, fillcolor="#FFFFFF", color="#6A6D77", style="rounded,filled,dashed"];
+    SG -> C3 [style=dashed, color="#6A6D77", arrowhead=none]; SH -> C3 [style=dashed, color="#6A6D77", arrowhead=none];
+  }
+  F -> SF [label=" show", constraint=false, color="#B4541A", fontcolor="#B4541A"];
+}

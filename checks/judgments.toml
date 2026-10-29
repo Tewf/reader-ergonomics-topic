@@ -77,37 +77,16 @@ answer = "It stays: ai-augmented/ is the extension's own folder, now `README.md`
 
 [[answer]]
 check = "co-change"
-path = "README.fr.md"
-question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "117c5c0d2967"
-answer = "One links the other already: the French front page lists the `decisions` folder, `un compte rendu par choix d'architecture`, whose README lists each record. A change that shapes the repository adds a record there and a line on both front pages, so they move together by design."
-
-[[answer]]
-check = "co-change"
-path = "README.md"
-question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "dfffd0778ea6"
-answer = "One links the other already: the front page lists the `decisions` folder, whose README lists each record. A change that shapes the repository adds a record there and a line here, so the two move together by design."
-
-[[answer]]
-check = "co-change"
 path = "checks/config.toml"
 question = "changed together with checks/local/topic.py in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "a8bbbad76a62"
 answer = "They change together by design: `checks/local/topic.py` reads its settings from the `[topic]` table here. The config stays in checks/, where the standard reads it, and the check stays in checks/local/, where its runner does."
 
 [[answer]]
-check = "co-change"
-path = "checks/config.toml"
-question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "a8bbbad76a62"
-answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md`, under `[shape_conformance]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
-
-[[answer]]
 check = "document-mode"
 path = "README.md"
 question = "reads about equally as how-to and reference: one mode per document?"
-file = "dfffd0778ea6"
+file = "64f72ea98b9b"
 answer = "Reference: the front page, read for `What the review found` and `The baseline the topic must beat`. Its one task, `Check it`, is two commands, and stays."
 
 [[answer]]
@@ -270,3 +249,24 @@ path = "evidence/information-typing/review.md"
 question = "changed together with evidence/progressive-disclosure/review.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
 file = "2375152207f0"
 answer = "They change together when the pin moves: each links the standard at its pinned commit, `03cfbc9dd1d243aa86f8ba3168abc61be2bab19f`, and five of their shared commits are pin moves; the rest are a rename and one correction that spanned the reviews. Each stays in its own folder, and evidence/README.md links every review."
+
+[[answer]]
+check = "co-change"
+path = "README.fr.md"
+question = "changed together with decisions/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "ac6176a10499"
+answer = "One links the other already: the French front page lists the `decisions` folder, `un compte rendu par choix d'architecture`, whose README lists each record. A change that shapes the repository adds a record there and a line on both front pages, so they move together by design."
+
+[[answer]]
+check = "co-change"
+path = "README.md"
+question = "changed together with decisions/README.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "64f72ea98b9b"
+answer = "One links the other already: the front page lists the `decisions` folder, whose README lists each record. A change that shapes the repository adds a record there and a line here, so the two move together by design."
+
+[[answer]]
+check = "co-change"
+path = "checks/config.toml"
+question = "changed together with decisions/README.md in 4 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "a8bbbad76a62"
+answer = "They change together by design: a choice about the checks is recorded in decisions/ and applied here, and this file declares the records themselves, `decisions/0*.md` under `[shape_conformance]`, and the folder's README as the topic's filled example, `topic = [\"decisions/README.md\"]`. Each stays where its reader looks: the rule in checks/, the reason in decisions/."
