@@ -47,7 +47,7 @@ digraph where_it_sits {
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
-- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/extending.md)).
+- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/extending.md)).
   This repository links down to the standard, never up to the extensions.
 - **One extension says it will use it:** reader-ergonomics-learning pins a release and states that its shapes will
   derive from the topic; none is written yet. That the others will use it is a hypothesis. If none does, this
@@ -102,7 +102,7 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 - On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
   Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared
   as types.
-- The [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
+- The [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
   records follow it, and the check verifies that each one says so.
 - This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
   [checks/test_topic.py](checks/test_topic.py).

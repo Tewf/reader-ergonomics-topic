@@ -4,7 +4,7 @@
 the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
 
 **Status:** accepted, 2026-10-29; its review named the baseline, B1, with both passes in, and it joined master the
-same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md).
+same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
 
 ## Context
 

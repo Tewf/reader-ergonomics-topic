@@ -3,7 +3,7 @@
 **Decision:** the topic allows metadata before the summary, names the summary's labels, and lets a typed child be
 listed by its type; the Nygard decision record stays outside it as written.
 
-**Status:** accepted, 2026-10-29, released as v0.2.0. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29, released as v0.2.0. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md).
 
 ## Context
 

@@ -6,7 +6,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 
 | Reader | Baseline | Why this one |
 |---|---|---|
-| Human | **B1, shallow outline with overview plus detail**: the same content as one linear document, at most three heading levels, with its contents list always visible beside the text | overview plus detail gave the best essays and was preferred in the one document-reading comparison (Hornbæk 2003, p. 140); it is the standard practice (Cockburn 2009); the three-level cap is the [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/principles/document/shallow-outline.md) the node must obey anyway |
+| Human | **B1, shallow outline with overview plus detail**: the same content as one linear document, at most three heading levels, with its contents list always visible beside the text | overview plus detail gave the best essays and was preferred in the one document-reading comparison (Hornbæk 2003, p. 140); it is the standard practice (Cockburn 2009); the three-level cap is the [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/principles/document/shallow-outline.md) the node must obey anyway |
 | Human, control | **B0, fully expanded tree**: every level open, no contents pane | the "stable" interface of Chimera 1994, which isolates the effect of folding |
 | Model | **DOS RAG**: passages retrieved and kept in the document's original order, at a matched token budget (Laitenberger 2025) | it matched or beat summary trees and an agent on three benchmarks |
 | Model, agent | **one level of disclosure**: a short description, then an index of chunks, read on demand (He 2026) | no cell rewarded a second level: it tied one level within noise or trailed it (He 2026, tables 1 and 2) |
@@ -27,7 +27,7 @@ This file names the baseline a nested, foldable node must beat, for a human read
 | Reader task | Outcome | Instrument | Prior study to borrow from |
 |---|---|---|---|
 | Find a fact | time to correct answer; accuracy | timed questions whose answers sit at known depths: top, middle, leaf | Chimera 1994 (nine timed tasks) |
-| Understand the whole | blind-graded summary or essay; recall of high-level against low-level idea units | essay after reading; free recall scored by level | Hornbæk 2003; the levels effect ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/evidence/psycholinguistics/review.md)) |
+| Understand the whole | blind-graded summary or essay; recall of high-level against low-level idea units | essay after reading; free recall scored by level | Hornbæk 2003; the levels effect ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/evidence/psycholinguistics/review.md)) |
 | Reach below the fold | share of readers opening folded nodes; accuracy on questions answered only below the fold | logged opens; questions placed by depth | McDonald 2009; Wikimedia 2016 |
 | Keep bearings | correct naming of the path from the focus to the root; a lostness measure | prompt at random moments; navigation logs | the disorientation literature (Otter 2000, title only) |
 | Depth in storage, with view capped | all outcomes above | the same content stored at depth 3, 5 and 7, each shown capped at three levels, against B1 | none found: this is the gap (position.md) |

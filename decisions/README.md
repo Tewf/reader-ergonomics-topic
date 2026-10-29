@@ -1,6 +1,6 @@
 # Decisions
 
-One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/adb53c52fa8eefe0e621e520365157bbbcad1a1a/shapes/decision-record.md) of
+One record per choice that shapes this repository. Each follows the [decision record](https://github.com/Tewf/reader-ergonomics/blob/7a76cc6a86b7a5c1e451e4416534d113abd0f594/shapes/decision-record.md) of
 reader-ergonomics: the decision in one sentence under its title, then its status, context, decision and consequences.
 
 **Shape:** [topic](../shapes/topic.md), as the filled example the shape points to.
@@ -23,6 +23,7 @@ reader-ergonomics: the decision in one sentence under its title, then its status
 | [0012 The AI-augmented topic, as an extension](0012-ai-augmented-topic-as-an-extension.md) | the topic's extension, joined to master once its review named B1; one problem, proofs in Lean first |
 | [0013 Move to reader-ergonomics v1.11.0](0013-move-to-reader-ergonomics-v1.11.0.md) | the standard now checks the drawn figures: typed, alt, source, contrast |
 | [0014 Move to reader-ergonomics v1.12.0](0014-move-to-reader-ergonomics-v1.12.0.md) | every workflow now checks out the standard at one commit, checked |
+| [0015 Move to reader-ergonomics v1.13.0](0015-move-to-reader-ergonomics-v1.13.0.md) | every link into the standard now names the pinned commit, checked |
 
 ## See also
 
