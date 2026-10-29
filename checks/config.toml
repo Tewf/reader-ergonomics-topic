@@ -1,0 +1,14 @@
+# Merged onto reader-ergonomics' own config, table by table; a value here wins (extending.md, the interface).
+extends = "reader-ergonomics"
+
+# The topic check, checks/local/topic.py: which files form this repository's tree of topics, and its two bounds.
+[topic]
+files = ["README.md", "evidence/", "shapes/"]
+root = "README.md"
+exempt = []
+summary_words = 60   # PROVISIONAL: the longest summary that still stands for a folded topic; no study sets it
+listing_words = 3    # PROVISIONAL: fewer words beside a link, and the listing is a bare link, not a summary
+
+# The standard's three, and the answers file: it changes with every file it answers for, so it co-changes by construction.
+[co_change]
+exempt = ["standard.md", "llms.txt", "evidence/bibliography.md", "checks/judgments.toml"]
