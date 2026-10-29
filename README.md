@@ -13,9 +13,12 @@ The name is the field's own. A **topic** is the unit of DITA and of topic-based 
 
 This page in French: [README.fr.md](README.fr.md).
 
-> **Status:** the literature review is done (2026-10-29): three multivocal reviews, 218 sources, in
-> [evidence](evidence/). The topic template and its check are written; no reader study has tested them. It is not
-> an official standard, not a peer-reviewed study and not a new result.
+> **Status:** one template, the topic; its check; and three multivocal reviews of 218 sources, done 2026-10-29, in
+> [evidence](evidence/). No reader study has tested the template. Its gain over DITA's base topic is stated as a test
+> with four outcomes ([baseline](evidence/information-typing/baseline.md)), none of them run yet. The AI-augmented
+> strand, on checking reasoning written as topics, left for a repository of its own the same day
+> ([0016](decisions/0016-move-the-ai-augmented-strand-out.md)). It is not an official standard, not a peer-reviewed
+> study and not a new result.
 >
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
@@ -61,7 +64,7 @@ digraph where_it_sits {
 | in | the topic shape: the blocks every topic has, and how a topic holds or points to other topics | one template, kept in one place |
 | in | one check a program runs on a topic at any depth | what a program can check, a program checks |
 | out | the genres: papers, proofs, talks, design documents | they stay in their own repositories |
-| out | what a research claim is, how it is proved or verified | another problem, with its own evidence |
+| out | what a research claim is, how it is proved or verified | another problem, with its own evidence; the strand that took it up left for a sibling repository ([0016](decisions/0016-move-the-ai-augmented-strand-out.md)) |
 
 ## What the review found
 

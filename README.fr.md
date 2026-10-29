@@ -10,9 +10,12 @@ un nœud ([progressive disclosure](evidence/progressive-disclosure/frame.md)).
 
 Cette page en anglais : [README.md](README.md). Les deux versions suivent le même état.
 
-> **État :** la revue de littérature est faite (2026-10-29) : trois revues multivocales, 218 sources, dans
-> [evidence](evidence/). Le gabarit du topic et sa vérification sont écrits ; aucune étude auprès de lecteurs ne les
-> a testés. Ce n'est ni une norme officielle, ni une étude évaluée par des pairs, ni un résultat nouveau.
+> **État :** un gabarit, le topic ; sa vérification ; et trois revues multivocales de 218 sources, faites le 2026-10-29,
+> dans [evidence](evidence/). Aucune étude auprès de lecteurs n'a testé le gabarit. Son gain sur le topic de base de
+> DITA est posé comme un test à quatre issues ([baseline](evidence/information-typing/baseline.md)), dont aucune n'a
+> encore été menée. Le volet augmenté par l'IA, sur la vérification d'un raisonnement écrit en topics, est parti le
+> même jour pour un dépôt à lui ([0016](decisions/0016-move-the-ai-augmented-strand-out.md)). Ce n'est ni une norme
+> officielle, ni une étude évaluée par des pairs, ni un résultat nouveau.
 >
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
 > reader-ergonomics. Les corrections sont bienvenues sous forme d'issues.
@@ -58,7 +61,7 @@ digraph where_it_sits {
 | dedans | la forme du topic : les blocs de tout topic, et comment un topic contient d'autres topics ou pointe vers eux | un seul gabarit, gardé en un seul endroit |
 | dedans | une vérification qu'un programme exécute sur un topic à toute profondeur | ce qu'un programme peut vérifier, un programme le vérifie |
 | dehors | les genres : articles, preuves, exposés, documents de conception | ils restent dans leurs propres dépôts |
-| dehors | ce qu'est une affirmation de recherche, comment on la prouve ou la vérifie | un autre problème, avec ses propres preuves |
+| dehors | ce qu'est une affirmation de recherche, comment on la prouve ou la vérifie | un autre problème, avec ses propres preuves ; le volet qui s'en chargeait est parti pour un dépôt voisin ([0016](decisions/0016-move-the-ai-augmented-strand-out.md)) |
 
 ## Ce que la revue a trouvé
 
