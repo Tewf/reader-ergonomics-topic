@@ -78,9 +78,9 @@ git clone https://github.com/Tewf/reader-ergonomics
 python3 reader-ergonomics/checks/run.py path/to/this/repository
 ```
 
-CI runs the same checks on every push, and a run fails on any error ([checks.yml](.github/workflows/checks.yml)). Every
+CI runs the same checks on every push, and a run fails on any error ([checks.yml](https://github.com/Tewf/recursive-atom/blob/master/.github/workflows/checks.yml)). Every
 push to master also renders the site, [tewf.github.io/recursive-atom](https://tewf.github.io/recursive-atom/)
-([pages.yml](.github/workflows/pages.yml)).
+([pages.yml](https://github.com/Tewf/recursive-atom/blob/master/.github/workflows/pages.yml)).
 
 ## Licence
 
