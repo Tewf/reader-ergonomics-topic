@@ -6,6 +6,7 @@ reader-ergonomics out beside this repository (as CI does, under the name standar
 """
 import importlib.util
 import os
+import random
 import shutil
 import sys
 import tempfile
@@ -131,6 +132,131 @@ class TopicCheck(unittest.TestCase):
         self.write("docs/other.md", TOPIC.format(title="Other"))
         found = [(f.path, f.kind) for f in topic.check(self.root, config)]
         self.assertEqual(found, [("docs/other.md", "warning")])
+
+
+class ErrorPaths(TopicCheck):
+    """Inputs a careless check would crash on, or pass silently."""
+
+    def test_an_empty_topic_fails_without_crashing(self) -> None:
+        self.write("README.md", "")
+        self.assertIn(("README.md", "error", "a topic opens with its title, one '# ' heading"), self.found())
+
+    def test_front_matter_alone_is_no_title(self) -> None:
+        self.write("README.md", "---\ntitle: x\n---\n")
+        self.assertIn("a topic opens with its title", " ".join(message for _, _, message in self.found()))
+
+    def test_bytes_that_are_not_utf8_are_read_not_skipped(self) -> None:
+        (self.root / "README.md").write_bytes(b"# Title\n\nA summary \xff\xfe of the topic.\n")
+        self.assertEqual(self.found(), [])
+
+    def test_no_declared_topics_means_no_findings(self) -> None:
+        self.write("README.md", "no title")
+        self.assertEqual(topic.check(self.root, {"topic": {"files": []}}), [])
+
+    def test_a_topic_with_no_readme_above_has_no_containing_topic(self) -> None:
+        config = {"topic": dict(CONFIG["topic"], files=["docs/"])}
+        self.write("docs/page.md", TOPIC.format(title="Page"))
+        messages = [finding.message for finding in topic.check(self.root, config)]
+        self.assertTrue(any(message.startswith("no containing topic") for message in messages))
+
+    def test_an_address_or_anchor_is_not_a_listing(self) -> None:
+        self.write("README.md", TOPIC.format(title="Root") + "\n[docs](https://example.org/docs/README.md) and [here](#docs)\n")
+        self.write("docs/README.md", TOPIC.format(title="Docs"))
+        self.assertIn("docs/README.md", [path for path, kind, _ in self.found() if kind == "error"])
+
+    def test_an_inclusion_of_a_missing_file_is_not_a_cycle(self) -> None:
+        self.write("README.md", TOPIC.format(title="Root"))
+        self.write("index.qmd", "{{< include missing.md >}}\n")
+        self.assertEqual(self.found(), [])
+
+    def test_a_file_that_includes_itself_is_a_cycle(self) -> None:
+        self.write("README.md", TOPIC.format(title="Root"))
+        self.write("a.qmd", "{{< include a.qmd >}}\n")
+        self.assertIn("inclusion cycle: a.qmd -> a.qmd", [message for _, _, message in self.found()])
+
+
+def random_tree(root: Path, rng: random.Random) -> list[str]:
+    """A tree of topics in folders and files, each listed by its parent with a summary; returns every topic path."""
+    paths = []
+
+    def grow(folder: str, depth: int) -> None:
+        readme = f"{folder}/README.md" if folder else "README.md"
+        lines = [TOPIC.format(title=f"Topic {len(paths)}")]
+        paths.append(readme)
+        for index in range(rng.randint(1 if depth < 2 else 0, 3) if depth < 6 else 0):
+            if rng.random() < 0.5:
+                child = f"{folder}/sub{index}" if folder else f"docs{index}"
+                lines.append(f"- [child {index}]({child.split('/')[-1]}/): a summary of child {index}")
+                grow(child, depth + 1)
+            else:
+                name = f"page{index}.md"
+                page = f"{folder}/{name}" if folder else name
+                (root / page).parent.mkdir(parents=True, exist_ok=True)
+                (root / page).write_text(TOPIC.format(title=f"Page {index}"), encoding="utf-8")
+                paths.append(page)
+                lines.append(f"- [page {index}]({name}): a summary of page {index}")
+        (root / readme).parent.mkdir(parents=True, exist_ok=True)
+        (root / readme).write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    grow("", 0)
+    return paths
+
+
+class Properties(unittest.TestCase):
+    """Invariants on random trees: a sound tree passes; one break gives exactly one finding, where it is."""
+
+    SEEDS = range(100)
+    ALL = {"topic": {"files": ["README.md", "docs0/", "docs1/", "docs2/", "page0.md", "page1.md", "page2.md"],
+                     "root": "README.md", "summary_words": 12, "listing_words": 3}}
+
+    def each_tree(self):
+        for seed in self.SEEDS:
+            root = Path(tempfile.mkdtemp())
+            try:
+                rng = random.Random(seed)
+                yield seed, root, rng, random_tree(root, rng)
+            finally:
+                shutil.rmtree(root)
+
+    def test_a_sound_tree_of_any_shape_passes(self) -> None:
+        for seed, root, _, paths in self.each_tree():
+            with self.subTest(seed=seed, topics=len(paths)):
+                self.assertEqual(topic.check(root, self.ALL), [])
+
+    def test_removing_one_listing_breaks_exactly_that_topic(self) -> None:
+        for seed, root, rng, paths in self.each_tree():
+            if len(paths) < 2:
+                continue
+            victim = rng.choice(paths[1:])
+            parent = topic.containing(victim, set(paths))
+            text = (root / parent).read_text(encoding="utf-8")
+            target = victim.rsplit("/", 2)[-2] + "/" if victim.endswith("README.md") else victim.rsplit("/", 1)[-1]
+            kept = [line for line in text.splitlines() if f"]({target})" not in line]
+            (root / parent).write_text("\n".join(kept) + "\n", encoding="utf-8")
+            with self.subTest(seed=seed, victim=victim):
+                found = [(f.path, f.kind) for f in topic.check(root, self.ALL)]
+                self.assertEqual(found, [(victim, "error")])
+
+    def test_a_heading_in_place_of_one_summary_breaks_exactly_that_topic(self) -> None:
+        for seed, root, rng, paths in self.each_tree():
+            victim = rng.choice(paths)
+            text = (root / victim).read_text(encoding="utf-8")
+            (root / victim).write_text(text.replace("A short summary of this topic.", "## Detail", 1), encoding="utf-8")
+            with self.subTest(seed=seed, victim=victim):
+                found = [(f.path, f.kind) for f in topic.check(root, self.ALL)]
+                self.assertEqual(found, [(victim, "error")])
+
+    def test_one_inclusion_cycle_is_reported_once(self) -> None:
+        for seed, root, rng, paths in self.each_tree():
+            ring = rng.sample(paths, min(len(paths), rng.randint(1, 4)))
+            for here, there in zip(ring, ring[1:] + ring[:1]):
+                rel = os.path.relpath(there, os.path.dirname(here) or ".")
+                with (root / here).open("a", encoding="utf-8") as handle:
+                    handle.write("\n{{< include " + rel + " >}}\n")
+            with self.subTest(seed=seed, ring=ring):
+                cycles = [f.message for f in topic.check(root, self.ALL) if f.message.startswith("inclusion cycle")]
+                self.assertEqual(len(cycles), 1)
+                self.assertEqual(set(cycles[0].removeprefix("inclusion cycle: ").split(" -> ")), set(ring))
 
 
 if __name__ == "__main__":

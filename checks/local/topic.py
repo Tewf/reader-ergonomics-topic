@@ -17,6 +17,19 @@ has none. Following parents from any topic reaches the root, so the rules hold a
 
 Heading depth, links that resolve and the headings a shape requires are reader-ergonomics' own checks.
 Time O(text) for the blocks and the links, O(files + inclusions) for the cycles.
+
+What a run with no error guarantees, for the files `[topic] files` declares:
+- each opens with one `# ` title, followed by a summary block, or by one an allowed label marks;
+- each but the root is linked from its containing topic, so a chain of links leads from the root to it;
+- no markdown file in scope includes itself through `{{< include >}}`, directly or at any depth.
+
+What it does not guarantee:
+- that a summary stands for its topic, or that a listing repeats the child's own summary (meaning);
+- anything about nesting inside one file: sections are not topics here;
+- links given as absolute addresses, and inclusions by any mechanism other than the Quarto shortcode.
+
+A file it cannot decode is read with replacement characters, never skipped; an inclusion of a missing file is
+ignored by the cycle search, since reader-ergonomics' link check reports what is missing.
 """
 from __future__ import annotations
 
