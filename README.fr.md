@@ -98,7 +98,7 @@ donne le plan.
 - Sur six formes des extensions de genre dont il n'a pas été tiré, cinq s'ajustent ; un compte rendu de décision
   sans résumé ne s'ajuste pas. Exécutée sur ces trois dépôts, 113 documents, la vérification trouve 7 défauts une
   fois leurs étapes de revue déclarées comme types.
-- Le [compte rendu de décision](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/shapes/decision-record.md), écrit d'abord ici, vit maintenant dans reader-ergonomics (v1.3.0). Les
+- Le [compte rendu de décision](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md), écrit d'abord ici, vit maintenant dans reader-ergonomics (v1.3.0). Les
   comptes rendus de ce dépôt le suivent, et la vérification contrôle que chacun le déclare.
 - Ce dépôt est son propre premier arbre de topics : la vérification s'y exécute en CI, et ses tests sont dans
   [checks/test_topic.py](checks/test_topic.py).

@@ -55,7 +55,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 - Condition 1: the ancestral line must be shown, or elided visibly, since a capped view cannot hold all ancestors of a deep node (state-of-the-art.md, lower bounds). Breadcrumbs are the practice name.
 - Condition 2: what most readers need must sit above the cap, because folded and layered content is read less (McDonald 2009; Wikimedia 2016; GOV.UK 2026b).
 - Condition 3: each folded node must carry a summary that stands for it, so the reader can judge whether to open it.
-- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/evidence/psycholinguistics/review.md)).
+- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/psycholinguistics/review.md)).
 - Folded views were slowed when a chapter title did not predict its contents (Chimera 1994); folding without a name hides more than it shows (SESE 2014e).
 - What is not allowed: claiming the cap of three levels is measured for documents. It is a convention borrowed from menus and outlines.
 - For a model reader, the cap is one level of disclosure, not three (He 2026); this is one study, a preprint.
@@ -85,7 +85,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 ## What this repository adds
 
 - A reading of the depth question from the reader's side, with the three conditions above as candidate rules, each graded convention, untested until compared (baseline.md):
-  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/principles/document/overview-first.md));
+  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/overview-first.md));
   - a view shows at most three levels and always the path to the root;
   - what most readers need is never below the first fold.
 - It does not claim a new result or the state of the art.

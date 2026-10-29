@@ -67,7 +67,7 @@ Each grey score is in [sources](sources.md), marked as the [evidence README](../
 - Copies are common where reuse is not enforced (measured, descriptive):
   - Juergens 2010 (read): 28 requirements specifications, 8,667 pages; mean clone coverage 13.6%, from 0% to 71.6%, 6 of 28 above 20%. The mean blow-up of 3,578 words is converted into about 16 minutes of reading and 6 hours of inspection per document, from published rates: an estimate.
   - Luciv 2018 (abstract, secondary): documentation of 19 projects, of every kind, holds exact and near duplicates. Nosál 2016 (read): 6,102 documentation fragments repeated at least four times in the Java 8 sources, one of them 344 times.
-  - Inconsistent code clones are reviewed in [file-structure](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/evidence/file-structure/against.md) (Juergens 2009), linked, not repeated.
+  - Inconsistent code clones are reviewed in [file-structure](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/file-structure/against.md) (Juergens 2009), linked, not repeated.
 - Dayton 2010 (abstract, secondary): 1,000 STC members surveyed in 2008-05, 276 answers. Half used single sourcing or content management; about 1 in 10 had seen an implementation fail; half the users reported significant downsides; about 1 in 9 used DITA.
 - Batova 2018 (abstract, secondary): over 12 months at one company moving to CCM, writers' motivation fell when CCM meant only efficiency and rose with job crafting.
 - Rockley 2002 (information models for single sourcing) and Sapienza 2007 (single sourcing through intertextuality) were read by title and venue only.
@@ -98,7 +98,7 @@ Each grey score is in [sources](sources.md), marked as the [evidence README](../
   - Macdonald 1982 describes the Writer's Workbench, computer aids for text analysis (title and venue only).
   - Juergens 2010: clone detection on specifications reached precision above 85% for each document after 1 to 33 minutes of tailoring (mean 99%), from as low as 2% before; recall was not measured.
   - Fleckenstein 2023 (strand 0) is the only effect size found for automated feedback on writing, and it concerns students.
-- Checking tools for documentation are compared with the reader-ergonomics checks in its [checks README](https://github.com/Tewf/reader-ergonomics/blob/d408349e4bc0f8e9ac7672645bd2aa393e5e6704/checks/README.md); docs as code is reviewed in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).
+- Checking tools for documentation are compared with the reader-ergonomics checks in its [checks README](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/checks/README.md); docs as code is reviewed in [architecture-descriptions](https://github.com/Tewf/reader-ergonomics-software-design/blob/master/evidence/architecture-descriptions/review.md).
 
 ## 6. Practice
 
