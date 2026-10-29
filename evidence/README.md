@@ -74,12 +74,24 @@ encyclopedia page under it, and will change at its next release.
 ## Audit
 
 - Every DOI was resolved against Crossref when the reviews were written.
-- On 2026-10-29, the numbers behind four conclusions were checked against the primary text:
-  - Furnas 1986, fisheye against flat views (pages 20 and 21 of the paper);
-  - Horn 1969, typed maps against prose (the report's results table and t test);
-  - He 2026, levels of disclosure for agents (full text);
-  - Juergens 2010, clone coverage (its table).
-- All were correct. One line had left out a condition: Furnas's mixed view, 64%, now stands beside 52% and 75%.
-- Laitenberger 2025 and He 2026 were checked to exist, with their authors, in the arXiv record.
-- Not done: an audit of every numeric line, as the sibling repositories ran. Claims without a number were not audited
-  this way.
+- On 2026-10-29, the numbers behind four conclusions were checked against the primary text by the maintainer's
+  session: Furnas 1986, Horn 1969, He 2026 and Juergens 2010. All were correct; one line had left out Furnas's mixed
+  view (64%).
+- Then every line carrying a number, or graded measured, was audited against its primary source, one auditor per
+  review, none of whom had written it: 159 rows.
+
+| Review | Rows | Correct | Imprecise | Wrong | Unverifiable | Checked before, or repeats |
+|---|---|---|---|---|---|---|
+| information-typing | 51 | 41 | 3 | 2 | 1 | 4 |
+| progressive-disclosure | 66 | 48 | 11 | 0 | 1 | 6 |
+| document-model | 42 | 29 | 5 | 0 | 0 | 8 |
+| all | 159 | 118 | 19 | 2 | 2 | 18 |
+
+- Every wrong and imprecise row is corrected. Each correction to a number was checked in its source before it was
+  written, since a correction is a claim too.
+- The two wrong rows: a review called "the largest" that is not, and a company page said to show no numbers that
+  shows nine.
+- The two unverifiable rows: the direction of an effect in Kintsch 1982 is softened to what the abstract read
+  supports; Höök 1997 stays marked "(secondary)", since its abstract could not be reached again.
+- The audit also found missing "(secondary)" marks, grades above their evidence, and findings stated in two reviews;
+  all are fixed.

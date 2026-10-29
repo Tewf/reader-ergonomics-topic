@@ -34,13 +34,6 @@ file = "425287eb8666"
 answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
 
 [[answer]]
-check = "document-mode"
-path = "evidence/README.md"
-question = "reads about equally as reference and how-to: one mode per document?"
-file = "95fc64ae669b"
-answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
-
-[[answer]]
 check = "logical-lines"
 path = "evidence/document-model/protocol.md"
 question = "124 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
@@ -97,13 +90,6 @@ file = "5771a3b8597b"
 answer = "No: it lists separate findings against the rules, each with its source. The one relation it touches, depth in storage against depth in view, is drawn in position.md."
 
 [[answer]]
-check = "co-change"
-path = "evidence/README.md"
-question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
-file = "95fc64ae669b"
-answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
-
-[[answer]]
 check = "document-mode"
 path = "evidence/information-typing/against.md"
 question = "reads about equally as reference and how-to: one mode per document?"
@@ -130,3 +116,17 @@ path = "evidence/progressive-disclosure/frame.md"
 question = "reads about equally as reference and how-to: one mode per document?"
 file = "8c9b9ac17a00"
 answer = "Reference: a table of names, looked up by term. Its imperative words (fold, zoom, show) are the names of the designs reviewed, not steps for the reader."
+
+[[answer]]
+check = "co-change"
+path = "evidence/README.md"
+question = "changed together with evidence/document-model/protocol.md in 3 commits (75% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "e750e49688b8"
+answer = "One links the other already: the protocol names its shared rules by a link to the evidence README's method. They changed together because those shared rules moved out of the protocols into the README."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/README.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "e750e49688b8"
+answer = "Reference: a front page, read to learn what its folder holds and what it found. Its few imperative words name designs or commands, not a procedure for the reader."
