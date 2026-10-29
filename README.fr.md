@@ -21,6 +21,27 @@ Cette page en anglais : [README.md](README.md). Les deux versions suivent le mê
 
 ![Trois niveaux : learning épingle le topic et d'autres projets peuvent en faire leur squelette ; le topic obéit à reader-ergonomics, dont sa CI exécute les vérifications.](where-it-sits.fr.svg)
 
+<details>
+<summary>Source Graphviz</summary>
+
+```dot
+digraph where_it_sits {
+  graph [rankdir=TB, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  LE [label=<<b>reader-ergonomics-learning</b><br/><font point-size="11" color="#55575F">niveau 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  OT [label=<<b>reader-ergonomics-academic, -presentations,</b><br/><font point-size="11" color="#55575F">-software-design, autres projets</font><br/><font point-size="11" color="#55575F">niveau 2</font>>, fillcolor="#E6F2EA", color="#2E7D4F", style="rounded,filled,dashed"];
+  TO [label=<<b>reader-ergonomics-topic</b><br/><font point-size="11" color="#55575F">une forme de topic, imbriquée à toute</font><br/><font point-size="11" color="#55575F">profondeur, sa revue et sa vérification</font><br/><font point-size="11" color="#55575F">niveau 1</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  RE [label=<<b>reader-ergonomics</b><br/><font point-size="11" color="#55575F">comment un texte sert son lecteur</font><br/><font point-size="11" color="#55575F">niveau 0</font>>, fillcolor="#E8EEF8", color="#2F5DA8"];
+  LE -> TO [label=" épingle une version ; ses formes\l dériveront du topic\l"];
+  OT -> TO [style=dashed, color="#6A6D77", label=" peuvent prendre le topic pour\l squelette (une hypothèse)\l"];
+  TO -> RE [label=" obéit aux principes ; la CI\l exécute leurs vérifications ici\l"];
+  {rank=same; LE; OT}
+}
+```
+
+</details>
+
 - **Il obéit à [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, donc il se place un niveau au-dessus,
   et un projet qui l'utilise se place au-dessus de lui. Aucun niveau ne dépend d'un niveau supérieur.
 - **reader-ergonomics ne pointe jamais vers lui :** la norme ne pointe vers aucune extension. Ce dépôt pointe vers
@@ -79,7 +100,7 @@ donne le plan.
 - Sur six formes des extensions de genre dont il n'a pas été tiré, cinq s'ajustent ; un compte rendu de décision
   sans résumé ne s'ajuste pas. Exécutée sur ces trois dépôts, 113 documents, la vérification trouve 7 défauts une
   fois leurs étapes de revue déclarées comme types.
-- Le [compte rendu de décision](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md), écrit d'abord ici, vit maintenant dans reader-ergonomics (v1.3.0). Les
+- Le [compte rendu de décision](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md), écrit d'abord ici, vit maintenant dans reader-ergonomics (v1.3.0). Les
   comptes rendus de ce dépôt le suivent, et la vérification contrôle que chacun le déclare.
 - Ce dépôt est son propre premier arbre de topics : la vérification s'y exécute en CI, et ses tests sont dans
   [checks/test_topic.py](checks/test_topic.py).

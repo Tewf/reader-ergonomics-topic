@@ -1,9 +1,10 @@
-# 0011: The AI-augmented topic, as this repository's extension
+# 0012: The AI-augmented topic, as this repository's extension
 
 **Decision:** the AI-augmented topic is this repository's extension, started on its own branch. It has one problem,
 the topic as the interface between a person, a model and a proof assistant, and one first instance: proofs in Lean.
 
-**Status:** accepted, 2026-10-29; it joins master once its review names a baseline. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29; its review named the baseline, B1, with both passes in, and it joined master the
+same day. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md).
 
 ## Context
 
@@ -24,7 +25,7 @@ the topic as the interface between a person, a model and a proof assistant, and 
 - Nothing is built before the review names the baseline to beat.
 - **Bad:** the repository takes a second subject beside the topic, with a review that, once its formal pass is in,
   is larger than any of the other three, and the audits grow with it. While the extension lives on its branch, every
-  change to master is merged in, and this record was renumbered four times, from 0007 to 0011.
+  change to master is merged in, and this record was renumbered five times, from 0007 to 0012.
 
 ## See also
 

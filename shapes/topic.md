@@ -31,17 +31,40 @@ folder and whose Contents table lists each record by its title and summary.
 
 | Block | Rule | Principle | Evidence |
 |---|---|---|---|
-| Title | one per topic; it names what the topic holds | [names predict content](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/collection/names-predict-content.md) | DITA requires a title on every topic ([information typing](../evidence/information-typing/review.md)) |
-| Summary | right after the title, or after its metadata (a byline, a status); at most 60 words; it may be labelled Abstract or Summary; it stands for the topic when folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
-| Body | the parts in the reader's order; at most three heading levels | [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/shallow-outline.md) | readers keep the top levels best (levels effect, reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/psycholinguistics)) |
-| Contents | each child by its title and its summary, or by its type alone when the type's role is stated once | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
-| See also | links, never copies | [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/collection/one-place-per-fact.md) | the standards reuse by reference ([document model](../evidence/document-model/position.md)) |
+| Title | one per topic; it names what the topic holds | [names predict content](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/collection/names-predict-content.md) | DITA requires a title on every topic ([information typing](../evidence/information-typing/review.md)) |
+| Summary | right after the title, or after its metadata (a byline, a status); at most 60 words; it may be labelled Abstract or Summary; it stands for the topic when folded or listed | [overview first](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/document/overview-first.md) | a folded node must carry a summary ([progressive disclosure](../evidence/progressive-disclosure/position.md)) |
+| Body | the parts in the reader's order; at most three heading levels | [shallow outline](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/document/shallow-outline.md) | readers keep the top levels best (levels effect, reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/psycholinguistics)) |
+| Contents | each child by its title and its summary, or by its type alone when the type's role is stated once | [signal the structure](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/page/signal-the-structure.md) | readers rarely open a layer they cannot judge from outside ([progressive disclosure](../evidence/progressive-disclosure/review.md)) |
+| See also | links, never copies | [one place per fact](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/collection/one-place-per-fact.md) | the standards reuse by reference ([document model](../evidence/document-model/position.md)) |
 
 The 60 words are a tunable: `summary_words` in `checks/config.toml`, PROVISIONAL until a reader study sets it.
 
 ## How a shape derives from it
 
 ![Note, report, folder and commit each derive from the topic shape and add their own parts.](topic-shapes.svg)
+
+<details>
+<summary>Graphviz source</summary>
+
+```dot
+digraph topic_shapes {
+  graph [rankdir=BT, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter"];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  TP [label=<<b>topic</b><br/><font point-size="11" color="#55575F">title · summary · body · contents · see also</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  NO [label=<<b>note</b><br/><font point-size="11" color="#55575F">+ terms + check yourself + open</font><br/><font point-size="11" color="#55575F">see also: Links</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  RP [label=<<b>report</b><br/><font point-size="11" color="#55575F">+ what it tests + plan and steps</font><br/><font point-size="11" color="#55575F">+ checks</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  FO [label=<<b>folder</b><br/><font point-size="11" color="#55575F">+ example + rules for the folder</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  CO [label=<<b>commit</b><br/><font point-size="11" color="#55575F">title and summary share one line</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  NO -> TP [label=" derives from"];
+  RP -> TP;
+  FO -> TP;
+  CO -> TP;
+  {rank=same; NO; RP; FO; CO}
+}
+```
+
+</details>
 
 - **Keep every block.** A derived shape keeps all five. It may call a block by another of its accepted names, from
   the table below, and by no other. It may leave Contents or See also empty while there is nothing to hold.
@@ -58,11 +81,11 @@ The accepted names, in one place. A shape that needs a new name adds it here fir
 | Block | Accepted names | Used by |
 |---|---|---|
 | Title | the one `# ` heading; a subject line | every shape; a commit |
-| Summary | summary, abstract, short description, decision | the topic; papers; DITA; the [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md) |
+| Summary | summary, abstract, short description, decision | the topic; papers; DITA; the [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md) |
 | Contents | contents, files, steps | the topic and a folder; a review's README; a report |
 | See also | see also, links, references, uses | the topic and a folder; a note; papers; a proof |
 
-The [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md) was first written here, then moved down to reader-ergonomics (v1.3.0), where three
+The [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md) was first written here, then moved down to reader-ergonomics (v1.3.0), where three
 levels can link it; it fits the topic like the four general shapes. The topic's own derived shapes will come from
 its extension.
 

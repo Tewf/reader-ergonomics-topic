@@ -12,7 +12,7 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 - Chen 1996 (abstract, secondary): a meta-analysis of 23 hypertext experiments, 56 effect sizes. Hypertext users were more effective and less efficient; maps of the organisation raised usefulness; results varied strongly.
 - Dillon 1998 (abstract): hypermedia helps learning only for tasks of repeated searching and manipulation; method flaws limit every conclusion.
 - Brusilovsky 2001 (read in the relevant sections): a survey of adaptive hypermedia. It lists **stretchtext**, text that expands in place, among the canned-text adaptation technologies, beside inserting, altering and dimming fragments.
-- DeStefano 2007 is held by [learning-science](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/learning-science/review.md) (strand 6) and not read again.
+- DeStefano 2007 is held by [learning-science](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/learning-science/review.md) (strand 6) and not read again.
 - Located by title only: Knutov 2009 (adaptive hypermedia survey), Lam 2011 (multi-level interfaces from study evidence).
 - How this review differs: text nested to any depth, not maps or images; it adds layered documents, outliners and model readers (position.md).
 
@@ -49,7 +49,7 @@ Terms are in [frame](frame.md); markings and scores, in the [evidence README](..
 
 ## 3. Q2: hierarchical against networked hypertext
 
-The linked reviews hold the overview and map effects: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/reading-order/review.md) (strand 1) and [learning-science](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/learning-science/review.md) (strand 6), with DeStefano 2007 and Amadieu 2009.
+The linked reviews hold the overview and map effects: [reading-order](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/reading-order/review.md) (strand 1) and [learning-science](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/learning-science/review.md) (strand 6), with DeStefano 2007 and Amadieu 2009.
 
 - Mohageg 1992 (full text): 64 novices, 16 per structure. Hierarchical links beat network links: mean task time 109.21 s against 149.35 s, linear 155.56 s, F(3, 60) = 4.59, p < .01 (Experiment A, p. 359).
 - The abstract's 49 s less per task is an average not found in the pages read. The combination, 115.78 s, did no worse than the hierarchy, with no consistent gain for novices.
@@ -71,7 +71,7 @@ The linked reviews hold the overview and map effects: [reading-order](https://gi
 
 - No study found varies the depth of a stored tree while holding the depth in view fixed.
 - Measured levels: Chimera 1994 tested three levels in view at most; Furnas 1986 shows the ancestral line plus one or two rings around the focus.
-- For menus, two levels beat three: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/file-structure/against.md) (Kiger 1984; Larson 1998).
+- For menus, two levels beat three: [file-structure](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/file-structure/against.md) (Kiger 1984; Larson 1998).
 - For proofs, about 4 to 10 steps per level, a convention: [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/blob/master/evidence/mathematical-writing/review.md).
 - Nielsen 2006b: designs beyond two disclosure levels typically have low usability; no data given.
 - For model readers, He 2026 (strand 6) found one level of disclosure enough and a second harmful.
@@ -109,7 +109,7 @@ The linked reviews hold the overview and map effects: [reading-order](https://gi
 | Tree retrieval (RAPTOR, GraphRAG, PageIndex) | trees or graphs of summaries for model readers | counts in state-of-the-art.md; PageIndex reports 98.7% on FinanceBench itself (VectifyAI 2026, example only) |
 
 - Wikimedia 2016 is not a strict A/B test: about 0.05% of mobile users per group, run in 2015-12 and 2016-01; the session chart covers 2016-01-02 to 2016-01-08.
-- Wang 2023 (example only, held by [typography-and-layout](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/typography-and-layout/review.md)) says folded content may be missed.
+- Wang 2023 (example only, held by [typography-and-layout](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/typography-and-layout/review.md)) says folded content may be missed.
 
 Q/A sites (searched 2026-10-29; 12 threads, 2 under 10 of 20; strings in [protocol](protocol.md)). Practitioner opinion, no data.
 

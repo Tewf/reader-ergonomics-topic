@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618 480" role="img" aria-labelledby="t d"><title id="t">Progressive disclosure: how the pool of sources was built</title>
-<desc id="d">Returned by the strings: Formal 6,485, Grey None; then Screened: Formal 422, Grey 377; then Included as new: Formal 41, Grey 23; plus Carried from the earlier pass: Formal 6, Grey 1; equals In the review: 71.</desc>
+<desc id="d">Returned by the strings: Formal 6,485, Grey not counted; then Screened: Formal 422, Grey 377; then Included as new: Formal 41, Grey 23; plus Carried from the earlier pass: Formal 6, Grey 1; equals In the review: 71.</desc>
 <style>
   .box { fill: #FFFFFF; stroke: #6A6D77; stroke-width: 1.5; }
   .total { fill: #EFEFF3; stroke: #101014; stroke-width: 1.5; }
@@ -27,7 +27,7 @@
 <text class="n" x="281.0" y="78.0" text-anchor="middle">6,485</text>
 <path class="arrow" d="M281.0,98 v26"/>
 <rect class="box" x="412" y="44" width="190" height="54" rx="12"/>
-<text class="na" x="507.0" y="75.0" text-anchor="middle">None</text>
+<text class="na" x="507.0" y="75.0" text-anchor="middle">not counted</text>
 <path class="arrow" d="M507.0,98 v26"/>
 <text class="label" x="16" y="159.0">Screened</text>
 <rect class="box" x="186" y="128" width="190" height="54" rx="12"/>

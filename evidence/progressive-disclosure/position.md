@@ -25,6 +25,41 @@ Each "not known" below is a statement about this search, not about the world. Te
 
 ![A tree stored at any depth is shown from a focus: the path to the root elided, the focus opened with what most readers need, and each child folded to its summary.](progressive-disclosure.svg)
 
+<details>
+<summary>Graphviz source</summary>
+
+```dot
+digraph progressive_disclosure {
+  graph [rankdir=TB, nodesep=0.4, ranksep=0.5, bgcolor="white", pad=0.2, fontname="Inter", compound=true];
+  node  [shape=box, style="rounded,filled", fontname="Inter", fontsize=13, margin="0.2,0.1", penwidth=1.5, fontcolor="#1F2328"];
+  edge  [fontname="Inter", fontsize=11, color="#3D434B", fontcolor="#55575F", penwidth=1.3, arrowsize=0.8];
+  subgraph cluster_stored {
+    label=<<b>stored: any depth</b>>; labeljust=l; style="rounded"; color="#6A6D77"; fontname="Inter"; fontsize=13;
+  A [label=<<b>A</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  B [label=<<b>B</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  C [label=<<b>C</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  D [label=<<b>D</b>>, fillcolor="#FFFFFF", color="#3D434B"];
+  F [label=<<b>F</b><br/><font point-size="11" color="#55575F">the focus</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  G [label=<<b>G</b><br/><font point-size="11" color="#55575F">… any depth</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  H [label=<<b>H</b><br/><font point-size="11" color="#55575F">… any depth</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+    A -> B -> C -> D -> F; F -> G; F -> H;
+  }
+  subgraph cluster_shown {
+    label=<<b>shown: the focus F, at most three levels</b>>; labeljust=l; style="rounded"; color="#6A6D77"; fontname="Inter"; fontsize=13;
+  P [label=<<b>A ▸ … ▸ D</b><br/><font point-size="11" color="#55575F">condition 1: the path to the root,</font><br/><font point-size="11" color="#55575F">elided visibly</font>>, fillcolor="#FFFFFF", color="#3D434B"];
+  SF [label=<<b>F</b><br/><font point-size="11" color="#55575F">the focus, opened, its summary;</font><br/><font point-size="11" color="#55575F">condition 2: what most readers need</font><br/><font point-size="11" color="#55575F">sits here, above the first fold</font>>, fillcolor="#FBEDE4", color="#B4541A", penwidth=2.6];
+  SG [label=<<b>G ▸</b><br/><font point-size="11" color="#55575F">summary</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+  SH [label=<<b>H ▸</b><br/><font point-size="11" color="#55575F">summary</font>>, fillcolor="#E6F2EA", color="#2E7D4F"];
+    P -> SF; SF -> SG; SF -> SH;
+  C3 [label=<<font point-size="11" color="#55575F">condition 3: each folded child</font><br/><font point-size="11" color="#55575F">shows its summary</font>>, fillcolor="#FFFFFF", color="#6A6D77", style="rounded,filled,dashed"];
+    SG -> C3 [style=dashed, color="#6A6D77", arrowhead=none]; SH -> C3 [style=dashed, color="#6A6D77", arrowhead=none];
+  }
+  F -> SF [label=" show", constraint=false, color="#B4541A", fontcolor="#B4541A"];
+}
+```
+
+</details>
+
 - The figure reads left to right: the same tree, stored in full on the left, shown capped on the right, where the focus F is drawn again.
 - Why it is allowed:
   - nothing found shows a cost of depth in storage that the reader does not see;
@@ -34,7 +69,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 - Condition 1: the ancestral line must be shown, or elided visibly, since a capped view cannot hold all ancestors of a deep node (state-of-the-art.md, lower bounds). Breadcrumbs are the practice name.
 - Condition 2: what most readers need must sit above the cap, because folded and layered content is read less (McDonald 2009; Wikimedia 2016; GOV.UK 2026b).
 - Condition 3: each folded node must carry a summary that stands for it, so the reader can judge whether to open it.
-- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/evidence/psycholinguistics/review.md)).
+- It is the levels effect turned into a rule ([psycholinguistics](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/evidence/psycholinguistics/review.md)).
 - Folded views were slowed when a chapter title did not predict its contents (Chimera 1994); folding without a name hides more than it shows (SESE 2014e).
 - What is not allowed: claiming the cap of three levels is measured for documents. It is a convention borrowed from menus and outlines.
 - For a model reader, the cap is one level of disclosure, not three (He 2026); this is one study, a preprint.
@@ -64,7 +99,7 @@ Each "not known" below is a statement about this search, not about the world. Te
 ## What this repository adds
 
 - A reading of the depth question from the reader's side, with the three conditions above as candidate rules, each graded convention, untested until compared (baseline.md):
-  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/principles/document/overview-first.md));
+  - every node opens with a summary that stands for it when folded ([overview first](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/principles/document/overview-first.md));
   - a view shows at most three levels and always the path to the root;
   - what most readers need is never below the first fold.
 - It does not claim a new result or the state of the art.

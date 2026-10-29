@@ -3,7 +3,7 @@
 **Decision:** this repository checks against reader-ergonomics v1.4.1, whose figure-width check and phone stylesheet
 take over what its text figures were measured against by hand.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md).
 
 ## Context
 

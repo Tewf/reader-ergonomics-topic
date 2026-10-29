@@ -2,7 +2,7 @@
 
 **Decision:** this repository checks against reader-ergonomics v1.1.1, at commit 257958e, instead of v1.0.0.
 
-**Status:** accepted, 2026-10-29; its pin superseded by [0008](0008-move-to-v1.2.0-and-drop-the-local-quote-check.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/03cfbc9dd1d243aa86f8ba3168abc61be2bab19f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29; its pin superseded by [0008](0008-move-to-v1.2.0-and-drop-the-local-quote-check.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/e8864477a53d713251ba42a4cf7b7a0d761243a2/shapes/decision-record.md).
 
 ## Context
 
