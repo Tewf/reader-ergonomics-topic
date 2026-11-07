@@ -1,7 +1,7 @@
 # Evidence
 
 One literature review per part of the template, in the steps reader-ergonomics uses for its own
-[evidence](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence): frame, review, state of the art, position, the
+[evidence](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence): frame, review, state of the art, position, the
 case against, baseline. Every work cited is listed once in the [bibliography](bibliography.md), with its citation and a stable link.
 
 | Review | Question | The repository's question it answers |
@@ -57,11 +57,11 @@ Works already reviewed in a sibling repository are linked there, with one line o
 
 | Repository and topic | Holds |
 |---|---|
-| reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/psycholinguistics) | the levels effect, rhetorical structure theory |
-| reader-ergonomics [file-structure](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/file-structure) | depth against breadth of menus and folders |
-| reader-ergonomics [reading-order](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/reading-order) | advance organizers, elaboration theory and zoom-lens sequencing |
-| reader-ergonomics [learning-science](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/learning-science) | atomic notes, hypertext load, signaling |
-| reader-ergonomics [documentation](https://github.com/Tewf/reader-ergonomics/tree/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/evidence/documentation) | Diataxis and documentation types |
+| reader-ergonomics [psycholinguistics](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence/psycholinguistics) | the levels effect, rhetorical structure theory |
+| reader-ergonomics [file-structure](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence/file-structure) | depth against breadth of menus and folders |
+| reader-ergonomics [reading-order](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence/reading-order) | advance organizers, elaboration theory and zoom-lens sequencing |
+| reader-ergonomics [learning-science](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence/learning-science) | atomic notes, hypertext load, signaling |
+| reader-ergonomics [documentation](https://github.com/Tewf/reader-ergonomics/tree/0206e6950b4feca4194af419384c217863b7c42e/evidence/documentation) | Diataxis and documentation types |
 | reader-ergonomics-academic [academic-papers](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/academic-papers) | IMRaD, moves and steps (Swales) |
 | reader-ergonomics-academic [mathematical-writing](https://github.com/Tewf/reader-ergonomics-academic/tree/master/evidence/mathematical-writing) | structured proofs |
 | reader-ergonomics-presentations [presentations](https://github.com/Tewf/reader-ergonomics-presentations/tree/master/evidence/presentations) | Minto, assertion-evidence, slide builds |

@@ -3,7 +3,7 @@
 **Decision:** this repository checks against reader-ergonomics v1.12.0, whose standard-pin check holds every workflow
 step that checks out the standard to one commit.
 
-**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/bfbe9f7ed27bfdca0c6a4922d0b3e302f9e55d3f/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md).
 
 ## Context
 
