@@ -3,7 +3,7 @@
 **Decision:** the AI-augmented strand leaves, with its git history, for a repository of its own that will pin a
 release of the topic. The topic keeps one template, its check and its three reviews.
 
-**Status:** accepted, 2026-10-29. Supersedes [0012](0012-ai-augmented-topic-as-an-extension.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. Supersedes [0012](0012-ai-augmented-topic-as-an-extension.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md).
 
 ## Context
 

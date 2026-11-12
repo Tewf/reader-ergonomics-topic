@@ -14,7 +14,7 @@ Their blocks are unchanged since v1.0.0.
 
 Each cell says which part of the shape fills the topic's block.
 
-| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/commit.md) | [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md) |
+| Topic block | [note](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/note.md) | [report](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/report.md) | [folder](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/readme-and-folder.md) | [commit](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/commit.md) | [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md) |
 |---|---|---|---|---|---|
 | Title | the topic, named as the field names it | the problem, named by what solving it achieves | what the folder is for | the subject line | NNNN and the choice |
 | Summary | one quoted line: what this is and why it matters | one quoted line: what is asked | one or two sentences: the folder's role | the subject line again | the line labelled Decision |

@@ -1,7 +1,7 @@
 # Contributing to this repository
 
 For anyone changing this repository, person or language model. To apply the reader-ergonomics standard elsewhere,
-read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/standard.md);
+read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/standard.md);
 this file is about this repository only.
 
 ## Before writing
@@ -35,7 +35,7 @@ Run them against the release CI uses, not a checkout that may have moved on. Ext
 
 ```sh
 rm -rf checks/out/standard && mkdir -p checks/out/standard
-git -C ../reader-ergonomics archive 0206e69 | tar -x -C checks/out/standard   # the commit checks.yml pins
+git -C ../reader-ergonomics archive 65e4247 | tar -x -C checks/out/standard   # the commit checks.yml pins
 READER_ERGONOMICS_CHECKS=checks/out/standard/checks python3 -m unittest discover -s checks   # the topic check's tests
 python3 checks/out/standard/checks/run.py . --tiers program,meaning --judge flag            # the repository, as CI runs it
 ```

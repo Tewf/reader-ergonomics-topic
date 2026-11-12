@@ -3,7 +3,7 @@
 **Decision:** the decision record is the first shape derived from the topic, this repository's records follow it,
 and the check verifies that each one says so.
 
-**Status:** accepted, 2026-10-29. The shape moved to the standard: [0009](0009-follow-the-standards-decision-record.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md).
+**Status:** accepted, 2026-10-29. The shape moved to the standard: [0009](0009-follow-the-standards-decision-record.md). **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md).
 
 ## Context
 
@@ -13,7 +13,7 @@ and the check verifies that each one says so.
 
 ## Decision
 
-- [shapes/decision-record.md](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md) derives from the topic, block by block.
+- [shapes/decision-record.md](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md) derives from the topic, block by block.
 - Every record links that shape in its Status line; the topic check fails a declared file that does not.
 - The topic lists the accepted names of each block in one table; a shape uses those names, and a new one is added
   there first.

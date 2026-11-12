@@ -4,6 +4,12 @@ Every release of this repository, newest first, in the form of [Keep a Changelog
 A move to a new release of reader-ergonomics is recorded here, not in decisions/; records 0006 to 0015 hold the moves
 made before this file.
 
+## [Unreleased]
+
+### Changed
+
+- Pinned reader-ergonomics v1.24.2 (`65e4247`), from v1.22.1 (`0206e69`): fixes that remove false findings in the sentence, term and figure checks, and `[defined_terms] cues`.
+
 ## [0.6.2] - 2026-11-07
 
 ### Changed

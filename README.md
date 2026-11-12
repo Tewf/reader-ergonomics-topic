@@ -57,7 +57,7 @@ The topic is meant to be copied and kept as your own. Copy it from a tagged rele
    ```
 
 5. How to take your own version of the family, and where a disagreement goes: the standard's
-   [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/README.md#take-your-own-version).
+   [Take your own version](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/README.md#take-your-own-version).
 
 ## Where it sits
 
@@ -86,7 +86,7 @@ digraph where_it_sits {
 
 - **It obeys [reader-ergonomics](https://github.com/Tewf/reader-ergonomics)**, so it sits one level above it, and a
   project that uses it sits above it in turn. No level depends on a level above it.
-- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/extending.md)).
+- **reader-ergonomics never links to it:** the standard links to no extension ([extending.md](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/extending.md)).
   This repository links down to the standard, never up to the extensions.
 - **One extension says it will use it:** reader-ergonomics-learning pins a release and states that its shapes will
   derive from the topic; none is written yet. That the others will use it is a hypothesis. If none does, this
@@ -140,7 +140,7 @@ and what a program check catches. Each review's `baseline.md` gives the design.
 - On six forms of the genre extensions it was not built from, five fit; a decision record with no summary does not.
   Run on those three repositories, 113 documents, the check finds 7 faults once their review steps are declared, in that run's configuration
   as types.
-- The [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
+- The [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md), first written here, now lives in reader-ergonomics (v1.3.0). This repository's
   records follow it, and the check verifies that each one says so.
 - This repository is its own first tree of topics: the check runs on it in CI, and the tests of the check are in
   [checks/test_topic.py](checks/test_topic.py).

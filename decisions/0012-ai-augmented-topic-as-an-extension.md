@@ -5,7 +5,7 @@ the topic as the interface between a person, a model and a proof assistant, and 
 
 **Status:** accepted, 2026-10-29; its review named the baseline, B1, with both passes in, and it joined master the
 same day. Superseded the same day by [0016](0016-move-the-ai-augmented-strand-out.md): the strand moved to a
-repository of its own. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/0206e6950b4feca4194af419384c217863b7c42e/shapes/decision-record.md).
+repository of its own. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md).
 
 ## Context
 
